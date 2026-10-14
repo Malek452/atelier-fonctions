@@ -1,0 +1,16 @@
+import e1 from './exercise-1';
+import e2 from './exercise-2';
+import e3 from './exercise-3';
+import e4 from './exercise-4';
+import e5 from './exercise-5';
+import e6 from './exercise-6';
+import e7 from './exercise-7';
+import e8 from './exercise-8';
+import e9 from './exercise-9';
+import e10 from './exercise-10';
+import e11 from './exercise-11';
+import e12 from './exercise-12';
+import type { Exercise } from '../types';
+export const exercises: Exercise[] = [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12];
+export const activities = exercises.flatMap((e) => e.activities);
+export const getActivity = (id: string) => activities.find((a) => a.id === id);

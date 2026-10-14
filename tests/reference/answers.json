@@ -1,0 +1,924 @@
+[
+  {
+    "id": "1q1",
+    "tex": "10^2 10^3",
+    "result": "10^5",
+    "answer": {
+      "kind": "expression",
+      "expected": "10^5",
+      "form": "simplified",
+      "positiveX": true
+    }
+  },
+  {
+    "id": "1q2",
+    "tex": "\\frac{7^3 7^{0.5}}{7^2}",
+    "result": "7^{3/2}",
+    "answer": {
+      "kind": "expression",
+      "expected": "7^(3/2)",
+      "form": "simplified",
+      "positiveX": true
+    }
+  },
+  {
+    "id": "1q3",
+    "tex": "\\frac{5^7+5^2}{5^2}",
+    "result": "3126",
+    "answer": {
+      "kind": "expression",
+      "expected": "3126",
+      "form": "simplified",
+      "positiveX": true
+    }
+  },
+  {
+    "id": "1q4",
+    "tex": "\\frac{2^4(4^{0.5})^4}{2^2}",
+    "result": "64",
+    "answer": {
+      "kind": "expression",
+      "expected": "64",
+      "form": "simplified",
+      "positiveX": true
+    }
+  },
+  {
+    "id": "1q5",
+    "tex": "(x^{-2})^3(x^3)^2",
+    "result": "1",
+    "answer": {
+      "kind": "expression",
+      "expected": "1",
+      "form": "simplified",
+      "positiveX": true
+    }
+  },
+  {
+    "id": "1q6",
+    "tex": "x^2x^3",
+    "result": "x^5",
+    "answer": {
+      "kind": "expression",
+      "expected": "x^5",
+      "form": "simplified",
+      "positiveX": true
+    }
+  },
+  {
+    "id": "1q7",
+    "tex": "\\frac{(x^3)^{0.5}}{\\sqrt{x}}",
+    "result": "x",
+    "answer": {
+      "kind": "expression",
+      "expected": "x",
+      "form": "simplified",
+      "positiveX": true
+    }
+  },
+  {
+    "id": "1q8",
+    "tex": "\\frac{x^{3.5}x^{0.5}}{x^2}",
+    "result": "x^2",
+    "answer": {
+      "kind": "expression",
+      "expected": "x^2",
+      "form": "simplified",
+      "positiveX": true
+    }
+  },
+  {
+    "id": "2q1",
+    "tex": "x^2+3x+10=0",
+    "result": "\\varnothing",
+    "answer": {
+      "kind": "set",
+      "expected": "{}"
+    }
+  },
+  {
+    "id": "2q2",
+    "tex": "2x^2+3x-5=0",
+    "result": "\\{-\\tfrac52,1\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{-5/2;1}"
+    }
+  },
+  {
+    "id": "2q3",
+    "tex": "10x^3+12x^2-14x=0",
+    "result": "\\{\\frac{-3-2\\sqrt{11}}5,0,\\frac{-3+2\\sqrt{11}}5\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{(-3-2*sqrt(11))/5;0;(-3+2*sqrt(11))/5}"
+    }
+  },
+  {
+    "id": "2q4",
+    "tex": "7x+\\frac4x-1=0",
+    "result": "\\varnothing",
+    "answer": {
+      "kind": "set",
+      "expected": "{}"
+    }
+  },
+  {
+    "id": "2q5",
+    "tex": "1+\\frac1x-\\frac6{x^2}=0",
+    "result": "\\{-3,2\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{-3;2}"
+    }
+  },
+  {
+    "id": "2q6",
+    "tex": "\\frac1{x-1}=\\frac{x+5}{x-3}",
+    "result": "\\{\\frac{-3-\\sqrt{17}}2,\\frac{-3+\\sqrt{17}}2\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{(-3-sqrt(17))/2;(-3+sqrt(17))/2}"
+    }
+  },
+  {
+    "id": "2d1",
+    "tex": "f_1(x)=\\frac1{x^2+3x+10}",
+    "result": "\\mathbb R",
+    "answer": {
+      "kind": "set",
+      "expected": "R"
+    }
+  },
+  {
+    "id": "2d2",
+    "tex": "f_2(x)=\\exp\\!\\left(\\frac1{10x^3+12x^2-14x}\\right)",
+    "result": "\\mathbb R\\setminus\\{\\frac{-3-2\\sqrt{11}}5,0,\\frac{-3+2\\sqrt{11}}5\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "R\\{(-3-2*sqrt(11))/5;0;(-3+2*sqrt(11))/5}"
+    }
+  },
+  {
+    "id": "2d3",
+    "tex": "f_3(x)=\\frac1{2x^2+3x-5}",
+    "result": "\\mathbb R\\setminus\\{-\\tfrac52,1\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "R\\{-5/2;1}"
+    }
+  },
+  {
+    "id": "2d4",
+    "tex": "f_4(x)=\\frac2{(7x+4/x-1)^2}",
+    "result": "\\mathbb R\\setminus\\{0\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "R\\{0}"
+    }
+  },
+  {
+    "id": "2d5",
+    "tex": "f_5(x)=\\frac3{1+1/x-6/x^2}",
+    "result": "\\mathbb R\\setminus\\{-3,0,2\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "R\\{-3;0;2}"
+    }
+  },
+  {
+    "id": "2d6",
+    "tex": "f_6(x)=\\frac1{\\sqrt[3]{\\frac1{x-1}-\\frac{x+5}{x-3}}}",
+    "result": "\\mathbb R\\setminus\\{\\frac{-3-\\sqrt{17}}2,\\frac{-3+\\sqrt{17}}2,1,3\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "R\\{(-3-sqrt(17))/2;(-3+sqrt(17))/2;1;3}"
+    }
+  },
+  {
+    "id": "3q1",
+    "tex": "2x^2+3x-5>0",
+    "result": "]-\\infty,-\\tfrac52[\\;\\cup\\;]1,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-inf;-5/2[U]1;inf["
+    }
+  },
+  {
+    "id": "3q2",
+    "tex": "7x+\\frac4x-1\\ge0",
+    "result": "]0,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]0;inf["
+    }
+  },
+  {
+    "id": "3q3",
+    "tex": "1+\\frac1x-\\frac6{x^2}<0",
+    "result": "]-3,0[\\cup]0,2[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-3;0[U]0;2["
+    }
+  },
+  {
+    "id": "3q4",
+    "tex": "x-3\\ge(x+5)(x-1)",
+    "result": "[\\frac{-3-\\sqrt{17}}2,\\frac{-3+\\sqrt{17}}2]",
+    "answer": {
+      "kind": "set",
+      "expected": "[(-3-sqrt(17))/2;(-3+sqrt(17))/2]"
+    }
+  },
+  {
+    "id": "3d1",
+    "tex": "f_1(x)=\\frac1{\\sqrt{10x^3+12x^2-14x}}",
+    "result": "]\\frac{-3-2\\sqrt{11}}5,0[\\cup]\\frac{-3+2\\sqrt{11}}5,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "](-3-2*sqrt(11))/5;0[U](-3+2*sqrt(11))/5;inf["
+    }
+  },
+  {
+    "id": "3d2",
+    "tex": "f_2(x)=\\sqrt{7x+4/x-1}",
+    "result": "]0,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]0;inf["
+    }
+  },
+  {
+    "id": "3d3",
+    "tex": "f_3(x)=3\\ln\\!\\left(\\frac6{x^2}-1-\\frac1x\\right)",
+    "result": "]-3,0[\\cup]0,2[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-3;0[U]0;2["
+    }
+  },
+  {
+    "id": "3d4",
+    "tex": "f_4(x)=\\sqrt{x-3-(x+5)(x-1)}",
+    "result": "[\\frac{-3-\\sqrt{17}}2,\\frac{-3+\\sqrt{17}}2]",
+    "answer": {
+      "kind": "set",
+      "expected": "[(-3-sqrt(17))/2;(-3+sqrt(17))/2]"
+    }
+  },
+  {
+    "id": "4q1",
+    "tex": "e^2e^3",
+    "result": "e^5",
+    "answer": {
+      "kind": "expression",
+      "expected": "e^5",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q2",
+    "tex": "\\frac{e^3e^{0.5}}{e^2}",
+    "result": "e^{3/2}",
+    "answer": {
+      "kind": "expression",
+      "expected": "e^(3/2)",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q3",
+    "tex": "\\frac{e^7+e^2}{e^2}",
+    "result": "e^5+1",
+    "answer": {
+      "kind": "expression",
+      "expected": "e^5+1",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q4",
+    "tex": "\\frac{(e^{3.5})^2(e^{0.5})^4}{e^2}",
+    "result": "e^7",
+    "answer": {
+      "kind": "expression",
+      "expected": "e^7",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q5",
+    "tex": "(e^{-2})^3(e^3)^2",
+    "result": "1",
+    "answer": {
+      "kind": "expression",
+      "expected": "1",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q6",
+    "tex": "(e^{2x})^2e^{3x}",
+    "result": "e^{7x}",
+    "answer": {
+      "kind": "expression",
+      "expected": "e^(7*x)",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q7",
+    "tex": "\\frac{e^{3x}e^{0.5}}{e^{x-1}}",
+    "result": "e^{2x+3/2}",
+    "answer": {
+      "kind": "expression",
+      "expected": "e^(2*x+3/2)",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q8",
+    "tex": "\\frac{e^{7x}+e^x}{e^x}",
+    "result": "e^{6x}+1",
+    "answer": {
+      "kind": "expression",
+      "expected": "e^(6*x)+1",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q9",
+    "tex": "\\frac{2^{x+1}2^{x+1}}{4^x}",
+    "result": "4",
+    "answer": {
+      "kind": "expression",
+      "expected": "4",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "4q10",
+    "tex": "(e^{-2x})^3(e^{3x})^2",
+    "result": "1",
+    "answer": {
+      "kind": "expression",
+      "expected": "1",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "5q1",
+    "tex": "e^{2x+1}=5",
+    "result": "\\{\\tfrac{\\ln5-1}2\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{(log(5)-1)/2}"
+    }
+  },
+  {
+    "id": "5q2",
+    "tex": "3e^{-x}=4",
+    "result": "\\{\\ln(3/4)\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{log(3/4)}"
+    }
+  },
+  {
+    "id": "5q3",
+    "tex": "e^{2x}-e^x=0",
+    "result": "\\{0\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{0}"
+    }
+  },
+  {
+    "id": "5q4",
+    "tex": "e^{2x}+2e^x=0",
+    "result": "\\varnothing",
+    "answer": {
+      "kind": "set",
+      "expected": "{}"
+    }
+  },
+  {
+    "id": "5q5",
+    "tex": "10e^{2x}+12e^x-14=0",
+    "result": "\\{\\ln(\\frac{-3+2\\sqrt{11}}5)\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{log((-3+2*sqrt(11))/5)}"
+    }
+  },
+  {
+    "id": "5q6",
+    "tex": "e^{3x}-5e^{2x}+e^x=0",
+    "result": "\\{\\ln(\\frac{5-\\sqrt{21}}2),\\ln(\\frac{5+\\sqrt{21}}2)\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{log((5-sqrt(21))/2);log((5+sqrt(21))/2)}"
+    }
+  },
+  {
+    "id": "5q7",
+    "tex": "e^{-x}-e^{2x-3}=0",
+    "result": "\\{1\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{1}"
+    }
+  },
+  {
+    "id": "5d1",
+    "tex": "f_1(x)=\\frac5{e^{2x}-e^x}",
+    "result": "\\mathbb R\\setminus\\{0\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "R\\{0}"
+    }
+  },
+  {
+    "id": "5d2",
+    "tex": "f_2(x)=\\ln(e^{2x}+2e^x)",
+    "result": "\\mathbb R",
+    "answer": {
+      "kind": "set",
+      "expected": "R"
+    }
+  },
+  {
+    "id": "5d3",
+    "tex": "f_3(x)=\\ln(10e^{2x}+12e^x-14)",
+    "result": "]\\ln(\\frac{-3+2\\sqrt{11}}5),+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]log((-3+2*sqrt(11))/5);inf["
+    }
+  },
+  {
+    "id": "5d4",
+    "tex": "f_4(x)=\\frac{e^x}{e^{3x}-5e^{2x}+e^x}",
+    "result": "\\mathbb R\\setminus\\{\\ln(\\frac{5-\\sqrt{21}}2),\\ln(\\frac{5+\\sqrt{21}}2)\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "R\\{log((5-sqrt(21))/2);log((5+sqrt(21))/2)}"
+    }
+  },
+  {
+    "id": "6q1",
+    "tex": "e^4-e^x\\ge0",
+    "result": "]-\\infty,4]",
+    "answer": {
+      "kind": "set",
+      "expected": "]-inf;4]"
+    }
+  },
+  {
+    "id": "6q2",
+    "tex": "(4-2x)(e-e^x)\\ge0",
+    "result": "]-\\infty,1]\\cup[2,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-inf;1]U[2;inf["
+    }
+  },
+  {
+    "id": "6q3",
+    "tex": "e^{x+6}<\\frac1{e^x}",
+    "result": "]-\\infty,-3[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-inf;-3["
+    }
+  },
+  {
+    "id": "6q4",
+    "tex": "\\frac{2-e^{-2x}}{e^{-2x}}<1",
+    "result": "]-\\infty,0[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-inf;0["
+    }
+  },
+  {
+    "id": "6q5",
+    "tex": "\\frac{e^x-1}{e^x+2}>0",
+    "result": "]0,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]0;inf["
+    }
+  },
+  {
+    "id": "6d1",
+    "tex": "f_1(x)=\\sqrt[4]{e^4-e^x}",
+    "result": "]-\\infty,4]",
+    "answer": {
+      "kind": "set",
+      "expected": "]-inf;4]"
+    }
+  },
+  {
+    "id": "6d2",
+    "tex": "f_2(x)=\\sqrt{(4-2x)(e-e^x)}",
+    "result": "]-\\infty,1]\\cup[2,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-inf;1]U[2;inf["
+    }
+  },
+  {
+    "id": "6d3",
+    "tex": "f_3(x)=\\frac1{\\sqrt{1/e^x-e^{x+6}}}",
+    "result": "]-\\infty,-3[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-inf;-3["
+    }
+  },
+  {
+    "id": "6d4",
+    "tex": "f_4(x)=\\ln\\!\\left(\\frac{e^x-1}{e^x+2}\\right)",
+    "result": "]0,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]0;inf["
+    }
+  },
+  {
+    "id": "7q1",
+    "tex": "\\ln(2\\sqrt3)+2\\ln(\\sqrt3)",
+    "result": "\\ln2+\\frac32\\ln3",
+    "answer": {
+      "kind": "expression",
+      "expected": "log(2)+3/2*log(3)",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "7q2",
+    "tex": "\\ln(e^2-1)-\\ln(1+e)",
+    "result": "\\ln(e-1)",
+    "answer": {
+      "kind": "expression",
+      "expected": "log(e-1)",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "7q3",
+    "tex": "\\ln\\!\\left(\\frac{3e^2}{\\sqrt e}\\right)",
+    "result": "\\ln3+\\frac32",
+    "answer": {
+      "kind": "expression",
+      "expected": "log(3)+3/2",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "7q4",
+    "tex": "\\ln\\!\\left(\\frac{81}{32}\\right)",
+    "result": "4\\ln3-5\\ln2",
+    "answer": {
+      "kind": "expression",
+      "expected": "4*log(3)-5*log(2)",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "7q5",
+    "tex": "2\\ln(3\\sqrt2)-2\\ln(2\\sqrt3)",
+    "result": "\\ln\\!\\left(\\frac32\\right)",
+    "answer": {
+      "kind": "expression",
+      "expected": "log(3/2)",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "7q6",
+    "tex": "\\ln(3^4)-2\\ln(3\\sqrt e)",
+    "result": "2\\ln3-1",
+    "answer": {
+      "kind": "expression",
+      "expected": "2*log(3)-1",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "8q1",
+    "tex": "\\ln x=5\\ln2",
+    "result": "\\{32\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{32}"
+    }
+  },
+  {
+    "id": "8q2",
+    "tex": "\\ln(x+2)=\\ln7",
+    "result": "\\{5\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{5}"
+    }
+  },
+  {
+    "id": "8q3",
+    "tex": "6(\\ln x)^2-2\\ln x=0",
+    "result": "\\{1,e^{1/3}\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{1;e^(1/3)}"
+    }
+  },
+  {
+    "id": "8q4",
+    "tex": "\\frac{1-2\\ln x}{2+\\ln x}=0",
+    "result": "\\{\\sqrt e\\}",
+    "answer": {
+      "kind": "set",
+      "expected": "{sqrt(e)}"
+    }
+  },
+  {
+    "id": "8d1",
+    "tex": "f_1(x)=(\\ln x-5\\ln2)^3",
+    "result": "]0,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]0;inf["
+    }
+  },
+  {
+    "id": "8d2",
+    "tex": "f_2(x)=(\\ln(x+2)-\\ln7)^{-2}",
+    "result": "]-2,5[\\cup]5,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]-2;5[U]5;inf["
+    }
+  },
+  {
+    "id": "8d3",
+    "tex": "f_3(x)=\\frac1{6(\\ln x)^2-2\\ln x}",
+    "result": "]0,1[\\cup]1,e^{1/3}[\\cup]e^{1/3},+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]0;1[U]1;e^(1/3)[U]e^(1/3);inf["
+    }
+  },
+  {
+    "id": "8d4",
+    "tex": "f_4(x)=\\frac{2+\\ln x}{1-2\\ln x}",
+    "result": "]0,\\sqrt e[\\cup]\\sqrt e,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]0;sqrt(e)[U]sqrt(e);inf["
+    }
+  },
+  {
+    "id": "9q1",
+    "tex": "\\ln(2+5x)\\le\\ln(x+6)",
+    "result": "]-\\tfrac25,1]",
+    "answer": {
+      "kind": "set",
+      "expected": "]-2/5;1]"
+    }
+  },
+  {
+    "id": "9q2",
+    "tex": "\\ln(x+1)+\\ln(x-3)<\\ln3",
+    "result": "]3,1+\\sqrt7[",
+    "answer": {
+      "kind": "set",
+      "expected": "]3;1+sqrt(7)["
+    }
+  },
+  {
+    "id": "9q3",
+    "tex": "2\\frac{1+\\ln x}{x}\\ge0",
+    "result": "[e^{-1},+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "[e^(-1);inf["
+    }
+  },
+  {
+    "id": "9d1",
+    "tex": "f_1(x)=\\sqrt{\\ln(2+5x)-\\ln(x+6)}",
+    "result": "[1,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "[1;inf["
+    }
+  },
+  {
+    "id": "9d2",
+    "tex": "f_2(x)=\\exp(\\ln(x+1)+\\ln(x-3)-\\ln3)",
+    "result": "]3,+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]3;inf["
+    }
+  },
+  {
+    "id": "9d3",
+    "tex": "f_3(x)=\\ln\\!\\left(2\\frac{1+\\ln x}{x}\\right)",
+    "result": "]e^{-1},+\\infty[",
+    "answer": {
+      "kind": "set",
+      "expected": "]e^(-1);inf["
+    }
+  },
+  {
+    "id": "10q1",
+    "tex": "\\cos x=0",
+    "result": "x=\\tfrac\\pi2+k\\pi",
+    "answer": {
+      "kind": "choice",
+      "options": [
+        "x=k\\pi,\\ k\\in\\mathbb Z",
+        "x=\\tfrac\\pi2",
+        "x=\\tfrac\\pi2+k\\pi,\\ k\\in\\mathbb Z"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10q2",
+    "tex": "\\sin x=0",
+    "result": "x=k\\pi",
+    "answer": {
+      "kind": "choice",
+      "options": [
+        "x=2k\\pi,\\ k\\in\\mathbb Z",
+        "x=\\tfrac\\pi2+k\\pi,\\ k\\in\\mathbb Z",
+        "x=k\\pi,\\ k\\in\\mathbb Z"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10q3",
+    "tex": "\\cos x=\\pi",
+    "result": "\\varnothing",
+    "answer": {
+      "kind": "set",
+      "expected": "{}"
+    }
+  },
+  {
+    "id": "10q4",
+    "tex": "\\sin x=\\tfrac12",
+    "result": "x=\\tfrac\\pi6+2k\\pi\\;\\text{ou}\\;\\tfrac{5\\pi}6+2k\\pi",
+    "answer": {
+      "kind": "choice",
+      "options": [
+        "x=\\tfrac\\pi6+k\\pi",
+        "x=\\tfrac\\pi3+2k\\pi",
+        "x=\\tfrac\\pi6+2k\\pi\\;\\text{ou}\\;\\tfrac{5\\pi}6+2k\\pi"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10q5",
+    "tex": "\\cos x=-\\tfrac{\\sqrt2}2",
+    "result": "x=\\tfrac{3\\pi}4+2k\\pi\\;\\text{ou}\\;\\tfrac{5\\pi}4+2k\\pi",
+    "answer": {
+      "kind": "choice",
+      "options": [
+        "x=\\tfrac\\pi4+k\\pi",
+        "x=\\tfrac{3\\pi}4+2k\\pi",
+        "x=\\tfrac{3\\pi}4+2k\\pi\\;\\text{ou}\\;\\tfrac{5\\pi}4+2k\\pi"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10q6",
+    "tex": "\\sin x=\\tfrac{\\sqrt2}2",
+    "result": "x=\\tfrac\\pi4+2k\\pi\\;\\text{ou}\\;\\tfrac{3\\pi}4+2k\\pi",
+    "answer": {
+      "kind": "choice",
+      "options": [
+        "x=\\tfrac\\pi4+k\\pi",
+        "x=\\tfrac{5\\pi}4+2k\\pi",
+        "x=\\tfrac\\pi4+2k\\pi\\;\\text{ou}\\;\\tfrac{3\\pi}4+2k\\pi"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10q7",
+    "tex": "\\sin x=1",
+    "result": "x=\\tfrac\\pi2+2k\\pi",
+    "answer": {
+      "kind": "choice",
+      "options": ["x=\\tfrac\\pi2+k\\pi", "x=2k\\pi", "x=\\tfrac\\pi2+2k\\pi"],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10q8",
+    "tex": "\\cos x=-1",
+    "result": "x=\\pi+2k\\pi",
+    "answer": {
+      "kind": "choice",
+      "options": ["x=k\\pi", "x=\\tfrac\\pi2+2k\\pi", "x=\\pi+2k\\pi"],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10d1",
+    "tex": "f_1(x)=\\sin x-\\cos x",
+    "result": "\\mathbb R",
+    "answer": {
+      "kind": "set",
+      "expected": "R"
+    }
+  },
+  {
+    "id": "10d2",
+    "tex": "f_2(x)=\\frac{\\cos x}{\\sin x}",
+    "result": "\\mathbb R\\setminus\\{k\\pi:k\\in\\mathbb Z\\}",
+    "answer": {
+      "kind": "choice",
+      "options": [
+        "\\mathbb R",
+        "\\mathbb R\\setminus\\{\\pi/2+k\\pi:k\\in\\mathbb Z\\}",
+        "\\mathbb R\\setminus\\{k\\pi:k\\in\\mathbb Z\\}"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10d3",
+    "tex": "f_3(x)=\\ln(\\sin x)+5",
+    "result": "\\bigcup_{k\\in\\mathbb Z}]2k\\pi,(2k+1)\\pi[",
+    "answer": {
+      "kind": "choice",
+      "options": [
+        "\\bigcup_{k\\in\\mathbb Z}[2k\\pi,(2k+1)\\pi]",
+        "\\mathbb R\\setminus\\{k\\pi:k\\in\\mathbb Z\\}",
+        "\\bigcup_{k\\in\\mathbb Z}]2k\\pi,(2k+1)\\pi["
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "id": "10d4",
+    "tex": "f_4(x)=\\frac{2\\sin x+4\\cos x}{2\\sin x-1}",
+    "result": "\\mathbb R\\setminus\\{\\pi/6+2k\\pi,5\\pi/6+2k\\pi:k\\in\\mathbb Z\\}",
+    "answer": {
+      "kind": "choice",
+      "options": [
+        "\\mathbb R\\setminus\\{k\\pi:k\\in\\mathbb Z\\}",
+        "\\mathbb R",
+        "\\mathbb R\\setminus\\{\\pi/6+2k\\pi,5\\pi/6+2k\\pi:k\\in\\mathbb Z\\}"
+      ],
+      "correct": 2
+    }
+  },
+  {
+    "id": "11q1",
+    "tex": "0<a\\le b,\\qquad r=\\frac ba",
+    "result": "r=\\sqrt2",
+    "answer": {
+      "kind": "expression",
+      "expected": "sqrt(2)",
+      "form": "simplified",
+      "positiveX": false
+    }
+  },
+  {
+    "id": "12q1",
+    "tex": "T_{\\mathrm T}=24\\,h,\\qquad T_{\\mathrm L}=28\\times24\\,h",
+    "result": "T=\\frac{224}{9}\\,h=24\\,h\\ 53\\,min\\ 20\\,s",
+    "answer": {
+      "kind": "number",
+      "expected": 24.88888888888889,
+      "tolerance": 1e-8,
+      "unit": "heures"
+    }
+  }
+]

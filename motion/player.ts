@@ -1,0 +1,78 @@
+import { Player, Stage, Vector2 } from '@motion-canvas/core';
+import project from './project?project';
+import type { Activity } from '../src/types';
+import { STEP_SECONDS as STEP, SETTLED_SECONDS } from './timing';
+const FPS = 30;
+export interface Controller {
+  seek(step: number): void;
+  replay(step: number, speed: number): void;
+  pause(): void;
+  destroy(): void;
+}
+export function mount(
+  host: HTMLElement,
+  activity: Activity,
+  onReady: () => void,
+  onError: (message: string) => void,
+): Controller {
+  const stage = new Stage();
+  stage.configure({ size: new Vector2(1000, 400), resolutionScale: 1, background: '#182923' });
+  stage.finalBuffer.setAttribute('aria-hidden', 'true');
+  host.replaceChildren(stage.finalBuffer);
+  const player = new Player(
+    { ...project, variables: { activity } },
+    { fps: FPS, size: new Vector2(1000, 400) },
+    { loop: false, muted: true },
+    0,
+  );
+  let disposed = false,
+    stopAt = -1;
+  const unrender = player.onRender.subscribe(async () => {
+    try {
+      if (!disposed)
+        await stage.render(player.playback.currentScene, player.playback.previousScene);
+    } catch (e) {
+      onError(String(e));
+      player.deactivate();
+    }
+  });
+  const uncalc = player.onRecalculated.subscribe(() => {
+    if (!disposed) onReady();
+  });
+  const unframe = player.onFrameChanged.subscribe((frame) => {
+    if (stopAt >= 0 && frame >= stopAt) {
+      player.togglePlayback(false);
+      stopAt = -1;
+    }
+  });
+  const unlog = player.logger.onLogged.subscribe((payload) => {
+    if (payload.level === 'error') onError(payload.message);
+  });
+  return {
+    seek(step) {
+      stopAt = -1;
+      player.togglePlayback(false);
+      player.requestSeek(Math.round((step * STEP + SETTLED_SECONDS) * FPS));
+    },
+    replay(step, speed) {
+      player.setSpeed(speed);
+      const begin = Math.max(0, step * STEP);
+      stopAt = Math.round((begin + SETTLED_SECONDS) * FPS);
+      player.requestSeek(Math.round(begin * FPS));
+      player.togglePlayback(true);
+    },
+    pause() {
+      player.togglePlayback(false);
+      stopAt = -1;
+    },
+    destroy() {
+      disposed = true;
+      player.deactivate();
+      unrender();
+      uncalc();
+      unframe();
+      unlog();
+      host.replaceChildren();
+    },
+  };
+}
