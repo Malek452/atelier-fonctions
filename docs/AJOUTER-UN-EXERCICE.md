@@ -4,6 +4,14 @@ Créer un fichier `src/content/exercise-N.ts` conforme à `Exercise` et l’impo
 
 Une activité comporte un énoncé, un résultat exact, une suite d’étapes et les éventuelles notes sur le document source. Une étape contient `title`, `tex` et `why`. Commencer par l’énoncé ; terminer par le résultat avec les conditions conservées. Éviter les étapes qui font à la fois une factorisation, une résolution et une sélection des racines.
 
+## Justifier chaque transformation
+
+Le commentaire `why` explique l’opération effectuée dans la formule affichée et la propriété qui la rend valide. Écrire les conditions nécessaires lorsqu’elles interviennent : dénominateur non nul, argument d’un logarithme strictement positif, argument d’une racine carrée positif ou nul. Conserver les restrictions de l’expression initiale même après simplification.
+
+Pour résoudre une équation, préciser pourquoi les transformations sont équivalentes. Diviser par une expression qui peut s’annuler fait perdre des solutions ; élever au carré peut en ajouter. Dans ces cas, distinguer les implications et vérifier les candidats dans l’équation initiale. Pour une inéquation, justifier le signe du facteur avant de multiplier ou de diviser ; si ce signe est inconnu, distinguer les cas ou utiliser un tableau de signes.
+
+Employer les termes mathématiques français précis : « conditions d’existence », « ensemble de définition », « fonctions réciproques », « strictement positif » lorsque zéro est exclu. Expliquer les termes nouveaux : l’injectivité signifie ici que deux images égales ont des antécédents égaux. Les propriétés du logarithme d’un produit ou d’un quotient s’appliquent à des arguments strictement positifs. Une conclusion doit indiquer pourquoi toutes les valeurs retenues conviennent et pourquoi aucune autre ne convient.
+
 ## Indiquer ce qui change
 
 `focus` désigne une sous-expression LaTeX exacte et complète à souligner dans la formule actuelle. `fromFocus` désigne une sous-expression de l’étape précédente à souligner avant la transformation. Ne pas couper une commande LaTeX ni un groupe. Si le fragment apparaît plusieurs fois, préciser `focusOccurrence` (à partir de 1). Pour une sélection dans l’étape précédente, utiliser `fromFocusOccurrence` : ce choix est indépendant de la sélection précédente. Les lettres contenues dans une commande, comme le a de `\Delta`, ne sont pas des occurrences de la variable a. Sans indication, le lecteur souligne un membre d’égalité ou l’expression entière.

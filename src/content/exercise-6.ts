@@ -21,12 +21,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'e^4-e^x\\ge0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'L’inéquation est définie sur ℝ. On utilisera la stricte croissance de l’exponentielle pour comparer les exposants.',
         },
         {
           title: 'Ajouter eˣ des deux côtés',
           tex: 'e^4\\ge e^x',
-          why: 'On déplace le terme en ajoutant la même quantité aux deux membres.',
+          why: 'On ajoute eˣ aux deux membres : −eˣ + eˣ = 0 à gauche. Ajouter la même quantité conserve le sens de l’inégalité et donne une inéquation équivalente.',
         },
         {
           title: 'Lire l’inégalité dans l’autre ordre',
@@ -36,7 +36,7 @@ export default {
         {
           title: 'Utiliser la croissance de exp',
           tex: 'x\\le4',
-          why: 'L’exponentielle est strictement croissante : l’ordre des valeurs est celui des exposants.',
+          why: 'La fonction exp est strictement croissante sur ℝ : eᵘ ≤ eᵛ si et seulement si u ≤ v. Ici, eˣ ≤ e⁴ équivaut donc à x ≤ 4.',
         },
         {
           title: 'Inclure la borne',
@@ -46,7 +46,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=]-\\infty,4]',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'La stricte croissance de exp donne eˣ ≤ e⁴ si et seulement si x ≤ 4. L’égalité est autorisée : la borne 4 est incluse.',
         },
       ],
       visual: 'substitution',
@@ -61,12 +61,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '(4-2x)(e-e^x)\\ge0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Les deux facteurs sont définis sur ℝ. On déterminera leurs zéros et leurs signes pour savoir où leur produit est positif ou nul.',
         },
         {
-          title: 'Annuler le premier facteur',
+          title: 'Chercher le zéro du premier facteur',
           tex: '4-2x=0',
-          why: 'On cherche les valeurs où un facteur change de signe.',
+          why: 'On cherche d’abord le zéro du premier facteur ; son signe sera ensuite étudié de part et d’autre de cette valeur.',
         },
         {
           title: 'Résoudre ce premier cas',
@@ -74,29 +74,29 @@ export default {
           why: 'On ajoute 2x des deux côtés, puis on divise par 2.',
         },
         {
-          title: 'Annuler le second facteur',
+          title: 'Chercher le zéro du second facteur',
           tex: 'e-e^x=0\\quad\\Longrightarrow\\quad e^x=e^1',
           why: 'e s’écrit aussi e puissance 1.',
         },
         {
           title: 'Résoudre ce second cas',
           tex: 'x=1',
-          why: 'L’égalité des exponentielles donne l’égalité des exposants.',
+          why: 'Par injectivité de exp, eˣ = e¹ si et seulement si x = 1.',
         },
         {
-          title: 'Signer 4 − 2x',
+          title: 'Étudier le signe de 4 − 2x',
           tex: '4-2x>0\\ \\text{si }x<2;\\quad4-2x<0\\ \\text{si }x>2',
-          why: 'Le coefficient de x est négatif. Le facteur décroît, donc il est positif avant son zéro et négatif après.',
+          why: 'Le coefficient −2 de x est strictement négatif. La fonction affine 4 − 2x est strictement décroissante : elle est strictement positive pour x < 2, nulle en 2 et strictement négative pour x > 2.',
         },
         {
-          title: 'Signer e − eˣ',
+          title: 'Étudier le signe de e − eˣ',
           tex: 'e-e^x>0\\ \\text{si }x<1;\\quad e-e^x<0\\ \\text{si }x>1',
-          why: 'Avant x = 1, eˣ est plus petit que e ; après, il est plus grand.',
+          why: 'La fonction exp est strictement croissante : eˣ < e si x < 1 et eˣ > e si x > 1. On en déduit le signe de e − eˣ.',
         },
         {
           title: 'Multiplier les signes',
           tex: '\\begin{array}{c|ccc}x&]-\\infty,1[&]1,2[&]2,+\\infty[\\\\4-2x&+&+&-\\\\e-e^x&+&-&-\\\\\\text{produit}&+&-&+\\end{array}',
-          why: 'Deux signes identiques donnent un produit positif. Des signes différents donnent un produit négatif.',
+          why: 'Sur chacun des intervalles considérés, les facteurs sont non nuls. Leur produit est strictement positif s’ils ont le même signe et strictement négatif s’ils ont des signes opposés.',
         },
         {
           title: 'Inclure les zéros',
@@ -106,7 +106,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=]-\\infty,1]\\cup[2,+\\infty[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le produit est strictement positif sur ]−∞, 1[ et ]2, +∞[, et nul en 1 et en 2. Comme on demande un produit positif ou nul, ces deux bornes sont incluses.',
         },
       ],
       visual: 'signs',
@@ -121,7 +121,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'e^{x+6}<\\frac1{e^x}',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Comme eˣ > 0 pour tout réel x, le quotient 1/eˣ est défini sur ℝ. On l’écrira sous la forme e^(−x), puis on comparera les exposants.',
         },
         {
           title: 'Réécrire l’inverse',
@@ -131,7 +131,7 @@ export default {
         {
           title: 'Comparer les exposants',
           tex: 'x+6<-x',
-          why: 'Comme exp est croissante, on conserve le sens de l’inégalité.',
+          why: 'La fonction exp est strictement croissante sur ℝ : eᵘ < eᵛ si et seulement si u < v. On obtient donc une inéquation équivalente en comparant les exposants.',
         },
         {
           title: 'Ajouter x des deux côtés',
@@ -144,14 +144,14 @@ export default {
           why: 'On soustrait la même quantité aux deux membres.',
         },
         {
-          title: 'Diviser par le nombre positif 2',
+          title: 'Diviser par le nombre strictement positif 2',
           tex: 'x<-3',
-          why: 'Diviser par un nombre positif conserve le sens. La borne −3 est exclue car l’inégalité est stricte.',
+          why: 'On divise les deux membres par 2 > 0 : l’inéquation est équivalente et garde le même sens. La borne −3 est exclue car elle donne une égalité, alors qu’on demande <.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=]-\\infty,-3[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Les transformations sont équivalentes sur ℝ. On obtient x < −3 ; la borne −3 est exclue car elle donne l’égalité des deux membres.',
         },
       ],
       visual: 'substitution',
@@ -166,12 +166,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{2-e^{-2x}}{e^{-2x}}<1',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le dénominateur e^(−2x) est strictement positif pour tout réel x. On peut donc multiplier les deux membres par ce dénominateur en conservant le sens de l’inégalité.',
         },
         {
           title: 'Vérifier le signe du dénominateur',
           tex: 'e^{-2x}>0',
-          why: 'Une exponentielle est toujours positive. On peut donc multiplier l’inégalité par ce dénominateur sans changer son sens.',
+          why: 'Pour tout réel x, e^(−2x) > 0. La fraction est donc définie ; multiplier les deux membres par ce dénominateur donne une inéquation équivalente de même sens.',
         },
         {
           title: 'Multiplier les deux membres',
@@ -186,7 +186,7 @@ export default {
         {
           title: 'Diviser par 2',
           tex: '1<e^{-2x}',
-          why: '2 est positif : le sens est conservé.',
+          why: 'On divise les deux membres par 2 > 0 : le sens de l’inégalité est conservé.',
         },
         {
           title: 'Écrire 1 comme une exponentielle',
@@ -211,7 +211,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=]-\\infty,0[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le dénominateur est toujours strictement positif. Les transformations équivalentes donnent x < 0 ; en x = 0, le quotient vaut 1 et ne satisfait pas l’inégalité stricte.',
         },
       ],
       visual: 'substitution',
@@ -226,17 +226,17 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{e^x-1}{e^x+2}>0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le dénominateur eˣ + 2 est strictement positif sur ℝ. Le quotient est donc défini et a le même signe que son numérateur.',
         },
         {
-          title: 'Signer le dénominateur',
+          title: 'Étudier le signe du dénominateur',
           tex: 'e^x+2>0',
-          why: 'eˣ est positif et on lui ajoute 2. Le dénominateur ne s’annule jamais.',
+          why: 'Pour tout réel x, eˣ > 0, donc eˣ + 2 > 2 > 0. Le dénominateur est strictement positif et ne s’annule jamais.',
         },
         {
           title: 'Garder le signe du numérateur',
           tex: 'e^x-1>0',
-          why: 'Le dénominateur étant positif, le quotient est positif exactement lorsque son numérateur l’est.',
+          why: 'Le dénominateur étant strictement positif, le quotient a le signe de son numérateur. Il est strictement positif si et seulement si eˣ − 1 > 0.',
         },
         {
           title: 'Ajouter 1 des deux côtés',
@@ -251,12 +251,12 @@ export default {
         {
           title: 'Comparer les exposants',
           tex: 'x>0',
-          why: 'La croissance de exp conserve l’ordre.',
+          why: 'La stricte croissance de exp donne eˣ > e⁰ si et seulement si x > 0.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=]0,+\\infty[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le quotient a le signe de eˣ − 1, qui est strictement positif si et seulement si x > 0. La valeur 0 est exclue car elle annule le numérateur.',
         },
       ],
       visual: 'substitution',
@@ -271,7 +271,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_1(x)=\\sqrt[4]{e^4-e^x}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir la racine quatrième',
@@ -281,7 +281,7 @@ export default {
         {
           title: 'Ajouter eˣ des deux côtés',
           tex: 'e^4\\ge e^x',
-          why: 'On déplace le terme en ajoutant la même quantité aux deux membres.',
+          why: 'On ajoute eˣ aux deux membres : −eˣ + eˣ = 0 à gauche. Ajouter la même quantité conserve le sens de l’inégalité et donne une inéquation équivalente.',
         },
         {
           title: 'Lire l’inégalité dans l’autre ordre',
@@ -291,7 +291,7 @@ export default {
         {
           title: 'Utiliser la croissance de exp',
           tex: 'x\\le4',
-          why: 'L’exponentielle est strictement croissante : l’ordre des valeurs est celui des exposants.',
+          why: 'La fonction exp est strictement croissante sur ℝ : eᵘ ≤ eᵛ si et seulement si u ≤ v. Ici, eˣ ≤ e⁴ équivaut donc à x ≤ 4.',
         },
         {
           title: 'Inclure la borne',
@@ -301,7 +301,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]-\\infty,4]',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'La quantité sous la racine quatrième est positive ou nulle si et seulement si x ≤ 4. À x = 4, cette racine vaut 0 et reste définie.',
         },
       ],
       visual: 'substitution',
@@ -316,7 +316,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_2(x)=\\sqrt{(4-2x)(e-e^x)}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir la racine carrée',
@@ -324,9 +324,9 @@ export default {
           why: 'L’argument sous la racine doit être positif ou nul.',
         },
         {
-          title: 'Annuler le premier facteur',
+          title: 'Chercher le zéro du premier facteur',
           tex: '4-2x=0',
-          why: 'On cherche les valeurs où un facteur change de signe.',
+          why: 'On cherche d’abord le zéro du premier facteur ; son signe sera ensuite étudié de part et d’autre de cette valeur.',
         },
         {
           title: 'Résoudre ce premier cas',
@@ -334,29 +334,29 @@ export default {
           why: 'On ajoute 2x des deux côtés, puis on divise par 2.',
         },
         {
-          title: 'Annuler le second facteur',
+          title: 'Chercher le zéro du second facteur',
           tex: 'e-e^x=0\\quad\\Longrightarrow\\quad e^x=e^1',
           why: 'e s’écrit aussi e puissance 1.',
         },
         {
           title: 'Résoudre ce second cas',
           tex: 'x=1',
-          why: 'L’égalité des exponentielles donne l’égalité des exposants.',
+          why: 'Par injectivité de exp, eˣ = e¹ si et seulement si x = 1.',
         },
         {
-          title: 'Signer 4 − 2x',
+          title: 'Étudier le signe de 4 − 2x',
           tex: '4-2x>0\\ \\text{si }x<2;\\quad4-2x<0\\ \\text{si }x>2',
-          why: 'Le coefficient de x est négatif. Le facteur décroît, donc il est positif avant son zéro et négatif après.',
+          why: 'Le coefficient −2 de x est strictement négatif. La fonction affine 4 − 2x est strictement décroissante : elle est strictement positive pour x < 2, nulle en 2 et strictement négative pour x > 2.',
         },
         {
-          title: 'Signer e − eˣ',
+          title: 'Étudier le signe de e − eˣ',
           tex: 'e-e^x>0\\ \\text{si }x<1;\\quad e-e^x<0\\ \\text{si }x>1',
-          why: 'Avant x = 1, eˣ est plus petit que e ; après, il est plus grand.',
+          why: 'La fonction exp est strictement croissante : eˣ < e si x < 1 et eˣ > e si x > 1. On en déduit le signe de e − eˣ.',
         },
         {
           title: 'Multiplier les signes',
           tex: '\\begin{array}{c|ccc}x&]-\\infty,1[&]1,2[&]2,+\\infty[\\\\4-2x&+&+&-\\\\e-e^x&+&-&-\\\\\\text{produit}&+&-&+\\end{array}',
-          why: 'Deux signes identiques donnent un produit positif. Des signes différents donnent un produit négatif.',
+          why: 'Sur chacun des intervalles considérés, les facteurs sont non nuls. Leur produit est strictement positif s’ils ont le même signe et strictement négatif s’ils ont des signes opposés.',
         },
         {
           title: 'Inclure les zéros',
@@ -366,7 +366,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]-\\infty,1]\\cup[2,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le tableau de signes donne un produit positif ou nul sur ces deux intervalles. Les valeurs 1 et 2 annulent le produit : leur racine carrée vaut 0, donc elles sont incluses.',
         },
       ],
       visual: 'substitution',
@@ -381,10 +381,10 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_3(x)=\\frac1{\\sqrt{1/e^x-e^{x+6}}}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
-          title: 'Définir l’inverse de exp',
+          title: 'Vérifier que eˣ est non nul',
           tex: 'e^x>0',
           why: '1/eˣ existe pour tout réel x.',
         },
@@ -406,7 +406,7 @@ export default {
         {
           title: 'Comparer les exposants',
           tex: 'x+6<-x',
-          why: 'Comme exp est croissante, on conserve le sens de l’inégalité.',
+          why: 'La fonction exp est strictement croissante sur ℝ : eᵘ < eᵛ si et seulement si u < v. On obtient donc une inéquation équivalente en comparant les exposants.',
         },
         {
           title: 'Ajouter x des deux côtés',
@@ -419,14 +419,14 @@ export default {
           why: 'On soustrait la même quantité aux deux membres.',
         },
         {
-          title: 'Diviser par le nombre positif 2',
+          title: 'Diviser par le nombre strictement positif 2',
           tex: 'x<-3',
-          why: 'Diviser par un nombre positif conserve le sens. La borne −3 est exclue car l’inégalité est stricte.',
+          why: 'On divise les deux membres par 2 > 0 : l’inéquation est équivalente et garde le même sens. La borne −3 est exclue car elle donne une égalité, alors qu’on demande <.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=]-\\infty,-3[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'La quantité sous la racine doit être strictement positive, car cette racine est au dénominateur. Cette condition équivaut à x < −3 ; la borne −3 est exclue.',
         },
       ],
       visual: 'substitution',
@@ -441,7 +441,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_4(x)=\\ln\\!\\left(\\frac{e^x-1}{e^x+2}\\right)',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le logarithme',
@@ -449,14 +449,14 @@ export default {
           why: 'Il faut un argument strictement positif, et une fraction définie.',
         },
         {
-          title: 'Signer le dénominateur',
+          title: 'Étudier le signe du dénominateur',
           tex: 'e^x+2>0',
-          why: 'eˣ est positif et on lui ajoute 2. Le dénominateur ne s’annule jamais.',
+          why: 'Pour tout réel x, eˣ > 0, donc eˣ + 2 > 2 > 0. Le dénominateur est strictement positif et ne s’annule jamais.',
         },
         {
           title: 'Garder le signe du numérateur',
           tex: 'e^x-1>0',
-          why: 'Le dénominateur étant positif, le quotient est positif exactement lorsque son numérateur l’est.',
+          why: 'Le dénominateur étant strictement positif, le quotient a le signe de son numérateur. Il est strictement positif si et seulement si eˣ − 1 > 0.',
         },
         {
           title: 'Ajouter 1 des deux côtés',
@@ -471,12 +471,12 @@ export default {
         {
           title: 'Comparer les exposants',
           tex: 'x>0',
-          why: 'La croissance de exp conserve l’ordre.',
+          why: 'La stricte croissance de exp donne eˣ > e⁰ si et seulement si x > 0.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=]0,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le dénominateur eˣ + 2 est toujours strictement positif. L’argument du logarithme est strictement positif si et seulement si x > 0 : c’est l’ensemble de définition.',
         },
       ],
       visual: 'substitution',

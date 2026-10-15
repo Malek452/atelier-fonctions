@@ -27,13 +27,13 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'x^2+3x+10=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le trinôme est défini pour tout réel x. On cherche ses racines réelles en calculant son discriminant.',
         },
         ...discriminantSteps({ a: 1, b: 3, c: 10 }),
         {
           title: 'Retenir le résultat',
           tex: 'S=\\varnothing',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le discriminant est strictement négatif : le trinôme ne possède aucune racine réelle. L’ensemble des solutions S est donc vide.',
         },
       ],
       visual: 'algebra',
@@ -48,7 +48,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '2x^2+3x-5=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le trinôme est défini pour tout réel x. On cherche toutes les valeurs de x qui annulent ce trinôme.',
         },
         ...quadraticSteps({ a: 2, b: 3, c: -5, roots: ['-\\frac52', '1'] }),
         {
@@ -59,7 +59,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{-\\tfrac52,1\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le discriminant est strictement positif : les deux racines calculées sont les seules solutions réelles. L’équation est définie en chacune d’elles.',
         },
       ],
       visual: 'signs',
@@ -74,12 +74,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '10x^3+12x^2-14x=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le polynôme est défini sur ℝ. On le factorise pour appliquer la propriété du produit nul, sans diviser par x.',
         },
         {
           title: 'Repérer un facteur dans chaque terme',
           tex: '2x\\cdot5x^2+12x^2-14x=0',
-          why: '10x³ = 2x × 5x². On fait apparaître le même facteur 2x dans chaque terme.',
+          why: 'On commence par réécrire le premier terme : 10x³ = 2x × 5x². Le facteur 2x sera ensuite mis en évidence dans les deux autres termes.',
           focus: '2x\\cdot5x^2',
         },
         {
@@ -95,14 +95,14 @@ export default {
           focus: '2x\\cdot(-7)',
         },
         {
-          title: 'Mettre le facteur commun devant',
+          title: 'Mettre 2x en facteur',
           tex: '2x(5x^2+6x-7)=0',
-          why: 'La distributivité utilisée à l’envers permet de sortir 2x. On ne divise pas par x : cela ferait perdre la solution x = 0.',
+          why: 'On utilise la distributivité pour mettre 2x en facteur. Cette identité est valable pour tout réel x, y compris x = 0 ; aucune division par x n’est effectuée.',
         },
         {
           title: 'Séparer les deux possibilités',
           tex: '2x=0\\quad\\text{ou}\\quad5x^2+6x-7=0',
-          why: 'Un produit vaut zéro lorsqu’au moins un de ses facteurs vaut zéro.',
+          why: 'Un produit de réels est nul si et seulement si au moins un de ses facteurs est nul. Les deux cas sont reliés par « ou ».',
         },
         {
           title: 'Résoudre le premier cas',
@@ -118,7 +118,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{\\frac{-3-2\\sqrt{11}}5,0,\\frac{-3+2\\sqrt{11}}5\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'La propriété du produit nul donne x = 0 ou l’une des deux racines du trinôme. Ces trois valeurs, et elles seules, annulent le polynôme initial.',
         },
       ],
       visual: 'signs',
@@ -133,7 +133,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '7x+\\frac4x-1=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Avant de résoudre, on détermine les conditions d’existence : la fraction 4/x impose x ≠ 0. Les transformations suivantes seront faites sous cette condition.',
         },
         {
           title: 'Exclure la division par zéro',
@@ -143,7 +143,7 @@ export default {
         {
           title: 'Multiplier chaque membre par x',
           tex: 'x\\left(7x+\\frac4x-1\\right)=x\\cdot0',
-          why: 'Comme x ≠ 0, cette multiplication conserve les solutions de l’égalité.',
+          why: 'On travaille sous la condition x ≠ 0. Multiplier les deux membres par x est alors réversible : on obtient une équation équivalente, avec exactement les mêmes solutions sur cet ensemble.',
         },
         {
           title: 'Distribuer x au premier terme',
@@ -246,10 +246,10 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '1+\\frac1x-\\frac6{x^2}=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Avant de résoudre, on exclut x = 0 : les dénominateurs x et x² doivent être non nuls. On cherchera ensuite les solutions parmi les autres réels.',
         },
         {
-          title: 'Garder la valeur interdite',
+          title: 'Déterminer la valeur interdite',
           tex: 'x\\ne0',
           why: 'Les dénominateurs x et x² doivent être non nuls.',
         },
@@ -262,7 +262,7 @@ export default {
         {
           title: 'Réécrire la deuxième fraction',
           tex: '\\frac{x^2}{x^2}+\\frac{x}{x^2}-\\frac6{x^2}=0',
-          why: 'On multiplie le numérateur et le dénominateur de 1/x par x.',
+          why: 'Comme x ≠ 0, multiplier le numérateur et le dénominateur de 1/x par x conserve la valeur de la fraction.',
           focus: '\\frac{x}{x^2}',
         },
         {
@@ -272,7 +272,7 @@ export default {
           focus: 'x^2+x-6',
         },
         {
-          title: 'Annuler seulement le numérateur',
+          title: 'Résoudre l’équation du numérateur nul',
           tex: 'x^2+x-6=0',
           why: 'Une fraction définie est nulle exactement lorsque son numérateur est nul.',
         },
@@ -285,7 +285,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{-3,2\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Pour x ≠ 0, les équations successives sont équivalentes. Les deux racines −3 et 2 sont non nulles : elles sont donc exactement les solutions de l’équation initiale.',
         },
       ],
       visual: 'signs',
@@ -300,7 +300,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac1{x-1}=\\frac{x+5}{x-3}',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Avant de résoudre, cherchons les valeurs interdites. Les dénominateurs x − 1 et x − 3 doivent être non nuls : on doit donc avoir x ≠ 1 et x ≠ 3.',
         },
         {
           title: 'Contrôler le premier dénominateur',
@@ -315,7 +315,7 @@ export default {
         {
           title: 'Multiplier par les deux dénominateurs',
           tex: 'x-3=(x+5)(x-1)',
-          why: 'Pour x différent de 1 et 3, on multiplie l’égalité par (x − 1)(x − 3). Les dénominateurs se simplifient.',
+          why: 'Pour x ≠ 1 et x ≠ 3, le produit (x − 1)(x − 3) est non nul. Multiplier les deux membres par ce produit donne une équation équivalente sur cet ensemble et permet de simplifier les dénominateurs.',
         },
         ...expandBinomial((expression) => 'x-3=' + expression),
         {
@@ -344,7 +344,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{\\frac{-3-\\sqrt{17}}2,\\frac{-3+\\sqrt{17}}2\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Les transformations sont équivalentes pour x ≠ 1 et x ≠ 3. Les deux racines respectent ces conditions : elles constituent donc l’ensemble des solutions.',
         },
       ],
       visual: 'algebra',
@@ -359,7 +359,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_1(x)=\\frac1{x^2+3x+10}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Regarder le dénominateur',
@@ -375,7 +375,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le dénominateur ne s’annule pour aucun réel x. La fonction est donc définie sur tout ℝ.',
         },
       ],
       visual: 'algebra',
@@ -390,12 +390,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_2(x)=\\exp\\!\\left(\\frac1{10x^3+12x^2-14x}\\right)',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Commencer à l’intérieur de exp',
           tex: '\\frac1{10x^3+12x^2-14x}',
-          why: 'L’exponentielle accepte tout nombre réel, mais il faut d’abord pouvoir calculer son exposant.',
+          why: 'La fonction exponentielle est définie sur ℝ. Pour la composer avec une fraction, il faut d’abord que cette fraction soit définie.',
         },
         {
           title: 'Interdire le dénominateur nul',
@@ -420,12 +420,12 @@ export default {
         {
           title: 'Réunir les trois exclusions',
           tex: 'x\\notin\\{\\frac{-3-2\\sqrt{11}}5,0,\\frac{-3+2\\sqrt{11}}5\\}',
-          why: 'Un produit est non nul seulement si aucun de ses facteurs ne vaut zéro.',
+          why: 'Un produit de réels est non nul si et seulement si chacun de ses facteurs est non nul. Toutes les exclusions doivent donc être respectées simultanément.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R\\setminus\\{\\frac{-3-2\\sqrt{11}}5,0,\\frac{-3+2\\sqrt{11}}5\\}',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'L’exponentielle est définie pour tout réel. Seuls les trois zéros du dénominateur de son exposant sont exclus de l’ensemble de définition.',
         },
       ],
       visual: 'algebra',
@@ -440,17 +440,17 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_3(x)=\\frac1{2x^2+3x-5}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Interdire le dénominateur nul',
           tex: '2x^2+3x-5\\ne0',
-          why: 'Le numérateur peut être quelconque, mais on ne peut pas diviser par zéro.',
+          why: 'Le numérateur constant 1 est défini. La fraction existe si et seulement si son dénominateur est non nul.',
         },
         {
           title: 'Écrire les deux facteurs',
           tex: '(2x+5)(x-1)\\ne0',
-          why: 'La résolution de 2.2 donne les racines −5/2 et 1 et cette factorisation.',
+          why: 'Un trinôme de coefficient dominant a et de racines r₁, r₂ s’écrit a(x − r₁)(x − r₂). Ici, 2(x + 5/2)(x − 1) = (2x + 5)(x − 1).',
         },
         {
           title: 'Exclure le premier zéro',
@@ -465,7 +465,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R\\setminus\\{-\\tfrac52,1\\}',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le dénominateur s’annule exactement en −5/2 et en 1. La fonction est définie pour tous les autres réels.',
         },
       ],
       visual: 'algebra',

@@ -21,7 +21,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\cos x=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.',
         },
         {
           title: 'Lire la coordonnée cherchée',
@@ -31,12 +31,12 @@ export default {
         {
           title: 'Se placer sur un seul tour',
           tex: '0\\le x<2\\pi',
-          why: 'Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.',
+          why: 'Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.',
         },
         {
           title: 'Repérer le premier angle',
           tex: '\\cos(\\pi/2)=0',
-          why: 'On lit une valeur remarquable du cercle trigonométrique.',
+          why: 'Le point supérieur du cercle trigonométrique a pour coordonnées (0, 1) : son abscisse est nulle et son angle est π/2.',
           circle: {
             angle: 1.5707963267948966,
             label: '\\cos(\\pi/2)=0',
@@ -46,7 +46,7 @@ export default {
         {
           title: 'Repérer le second angle',
           tex: '\\cos(3\\pi/2)=0',
-          why: 'Un second point du cercle possède la même coordonnée. Il donne une autre solution.',
+          why: 'Le point inférieur a pour coordonnées (0, −1) et pour angle 3π/2. Ce sont les deux seuls points du cercle d’abscisse nulle.',
           circle: {
             angle: 4.71238898038469,
             label: '\\cos(3\\pi/2)=0',
@@ -56,7 +56,7 @@ export default {
         {
           title: 'Retrouver tous les tours',
           tex: 'x=\\theta+2k\\pi,\\qquad k\\in\\mathbb Z',
-          why: 'À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.',
+          why: 'Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.',
         },
         {
           title: 'Réunir les deux familles',
@@ -81,7 +81,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\sin x=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.',
         },
         {
           title: 'Lire la coordonnée cherchée',
@@ -91,12 +91,12 @@ export default {
         {
           title: 'Se placer sur un seul tour',
           tex: '0\\le x<2\\pi',
-          why: 'Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.',
+          why: 'Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.',
         },
         {
           title: 'Repérer le premier angle',
           tex: '\\sin(0)=0',
-          why: 'On lit une valeur remarquable du cercle trigonométrique.',
+          why: 'Le point de coordonnées (1, 0) correspond à l’angle 0 : son ordonnée, donc son sinus, est nulle.',
           circle: {
             angle: 0,
             label: '\\sin(0)=0',
@@ -106,7 +106,7 @@ export default {
         {
           title: 'Repérer le second angle',
           tex: '\\sin(\\pi)=0',
-          why: 'Un second point du cercle possède la même coordonnée. Il donne une autre solution.',
+          why: 'Le point de coordonnées (−1, 0) correspond à l’angle π. Ce sont les deux seuls points du cercle d’ordonnée nulle.',
           circle: {
             angle: 3.141592653589793,
             label: '\\sin(\\pi)=0',
@@ -116,7 +116,7 @@ export default {
         {
           title: 'Retrouver tous les tours',
           tex: 'x=\\theta+2k\\pi,\\qquad k\\in\\mathbb Z',
-          why: 'À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.',
+          why: 'Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.',
         },
         {
           title: 'Réunir les deux familles',
@@ -141,10 +141,10 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\cos x=\\pi',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le cosinus est défini sur ℝ et prend ses valeurs dans [−1, 1]. On vérifie d’abord si la valeur π peut être atteinte.',
         },
         {
-          title: 'Rappeler les limites du cosinus',
+          title: 'Rappeler l’encadrement du cosinus',
           tex: '-1\\le\\cos x\\le1',
           why: 'Sur le cercle unité, une abscisse reste toujours entre −1 et 1.',
         },
@@ -161,7 +161,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\varnothing',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Comme cos(x) ≤ 1 pour tout réel x et π > 1, aucun réel ne satisfait l’équation. L’ensemble des solutions est vide.',
         },
       ],
       visual: 'trig',
@@ -176,7 +176,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\sin x=\\tfrac12',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.',
         },
         {
           title: 'Lire la coordonnée cherchée',
@@ -186,12 +186,12 @@ export default {
         {
           title: 'Se placer sur un seul tour',
           tex: '0\\le x<2\\pi',
-          why: 'Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.',
+          why: 'Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.',
         },
         {
           title: 'Repérer le premier angle',
           tex: '\\sin(\\pi/6)=1/2',
-          why: 'On lit une valeur remarquable du cercle trigonométrique.',
+          why: 'La valeur remarquable sin(π/6) = 1/2 donne un premier angle solution dans [0, 2π[.',
           circle: {
             angle: 0.5235987755982988,
             label: '\\sin(\\pi/6)=1/2',
@@ -201,7 +201,7 @@ export default {
         {
           title: 'Repérer le second angle',
           tex: '\\sin(5\\pi/6)=1/2',
-          why: 'Un second point du cercle possède la même coordonnée. Il donne une autre solution.',
+          why: 'La symétrie par rapport à l’axe des ordonnées conserve le sinus : sin(π − π/6) = 1/2. La droite d’ordonnée 1/2 coupe le cercle en exactement ces deux points.',
           circle: {
             angle: 2.6179938779914944,
             label: '\\sin(5\\pi/6)=1/2',
@@ -211,7 +211,7 @@ export default {
         {
           title: 'Retrouver tous les tours',
           tex: 'x=\\theta+2k\\pi,\\qquad k\\in\\mathbb Z',
-          why: 'À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.',
+          why: 'Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.',
         },
         {
           title: 'Retenir le résultat',
@@ -231,7 +231,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\cos x=-\\tfrac{\\sqrt2}2',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.',
         },
         {
           title: 'Lire la coordonnée cherchée',
@@ -241,12 +241,12 @@ export default {
         {
           title: 'Se placer sur un seul tour',
           tex: '0\\le x<2\\pi',
-          why: 'Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.',
+          why: 'Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.',
         },
         {
           title: 'Repérer le premier angle',
           tex: '\\cos(3\\pi/4)=-\\sqrt2/2',
-          why: 'On lit une valeur remarquable du cercle trigonométrique.',
+          why: 'Comme cos(π/4) = √2/2 et cos(π − θ) = −cos(θ), on obtient cos(3π/4) = −√2/2.',
           circle: {
             angle: 2.356194490192345,
             label: '\\cos(3\\pi/4)=-\\sqrt2/2',
@@ -256,7 +256,7 @@ export default {
         {
           title: 'Repérer le second angle',
           tex: '\\cos(5\\pi/4)=-\\sqrt2/2',
-          why: 'Un second point du cercle possède la même coordonnée. Il donne une autre solution.',
+          why: 'La symétrie par rapport à l’axe des abscisses conserve le cosinus : 2π − 3π/4 = 5π/4. La droite d’abscisse −√2/2 coupe le cercle en exactement ces deux points.',
           circle: {
             angle: 3.9269908169872414,
             label: '\\cos(5\\pi/4)=-\\sqrt2/2',
@@ -266,7 +266,7 @@ export default {
         {
           title: 'Retrouver tous les tours',
           tex: 'x=\\theta+2k\\pi,\\qquad k\\in\\mathbb Z',
-          why: 'À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.',
+          why: 'Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.',
         },
         {
           title: 'Retenir le résultat',
@@ -286,7 +286,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\sin x=\\tfrac{\\sqrt2}2',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.',
         },
         {
           title: 'Lire la coordonnée cherchée',
@@ -296,12 +296,12 @@ export default {
         {
           title: 'Se placer sur un seul tour',
           tex: '0\\le x<2\\pi',
-          why: 'Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.',
+          why: 'Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.',
         },
         {
           title: 'Repérer le premier angle',
           tex: '\\sin(\\pi/4)=\\sqrt2/2',
-          why: 'On lit une valeur remarquable du cercle trigonométrique.',
+          why: 'La valeur remarquable sin(π/4) = √2/2 donne un premier angle solution dans [0, 2π[.',
           circle: {
             angle: 0.7853981633974483,
             label: '\\sin(\\pi/4)=\\sqrt2/2',
@@ -311,7 +311,7 @@ export default {
         {
           title: 'Repérer le second angle',
           tex: '\\sin(3\\pi/4)=\\sqrt2/2',
-          why: 'Un second point du cercle possède la même coordonnée. Il donne une autre solution.',
+          why: 'La symétrie par rapport à l’axe des ordonnées conserve le sinus : sin(π − π/4) = √2/2. La droite d’ordonnée √2/2 coupe le cercle en exactement ces deux points.',
           circle: {
             angle: 2.356194490192345,
             label: '\\sin(3\\pi/4)=\\sqrt2/2',
@@ -321,7 +321,7 @@ export default {
         {
           title: 'Retrouver tous les tours',
           tex: 'x=\\theta+2k\\pi,\\qquad k\\in\\mathbb Z',
-          why: 'À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.',
+          why: 'Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.',
         },
         {
           title: 'Retenir le résultat',
@@ -341,7 +341,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\sin x=1',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.',
         },
         {
           title: 'Lire la coordonnée cherchée',
@@ -351,12 +351,12 @@ export default {
         {
           title: 'Se placer sur un seul tour',
           tex: '0\\le x<2\\pi',
-          why: 'Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.',
+          why: 'Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.',
         },
         {
           title: 'Repérer le premier angle',
           tex: '\\sin(\\pi/2)=1',
-          why: 'On lit une valeur remarquable du cercle trigonométrique.',
+          why: 'L’unique point du cercle d’ordonnée 1 est (0, 1), associé à l’angle π/2 dans [0, 2π[.',
           circle: {
             angle: 1.5707963267948966,
             label: '\\sin(\\pi/2)=1',
@@ -366,7 +366,7 @@ export default {
         {
           title: 'Retrouver tous les tours',
           tex: 'x=\\theta+2k\\pi,\\qquad k\\in\\mathbb Z',
-          why: 'À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.',
+          why: 'Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.',
         },
         {
           title: 'Retenir le résultat',
@@ -386,7 +386,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\cos x=-1',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.',
         },
         {
           title: 'Lire la coordonnée cherchée',
@@ -396,12 +396,12 @@ export default {
         {
           title: 'Se placer sur un seul tour',
           tex: '0\\le x<2\\pi',
-          why: 'Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.',
+          why: 'Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.',
         },
         {
           title: 'Repérer le premier angle',
           tex: '\\cos(\\pi)=-1',
-          why: 'On lit une valeur remarquable du cercle trigonométrique.',
+          why: 'L’unique point du cercle d’abscisse −1 est (−1, 0), associé à l’angle π dans [0, 2π[.',
           circle: {
             angle: 3.141592653589793,
             label: '\\cos(\\pi)=-1',
@@ -411,7 +411,7 @@ export default {
         {
           title: 'Retrouver tous les tours',
           tex: 'x=\\theta+2k\\pi,\\qquad k\\in\\mathbb Z',
-          why: 'À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.',
+          why: 'Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.',
         },
         {
           title: 'Retenir le résultat',
@@ -431,7 +431,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_1(x)=\\sin x-\\cos x',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le sinus',
@@ -456,7 +456,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le sinus et le cosinus sont définis sur ℝ ; leur différence l’est également. L’ensemble de définition est donc ℝ.',
         },
       ],
       visual: 'trig',
@@ -471,7 +471,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_2(x)=\\frac{\\cos x}{\\sin x}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Vérifier les fonctions usuelles',
@@ -491,12 +491,12 @@ export default {
         {
           title: 'Répéter les valeurs interdites',
           tex: 'x\\ne k\\pi,\\qquad k\\in\\mathbb Z',
-          why: 'Les zéros sont espacés d’un demi-tour, soit π radians. On retire tous les multiples entiers de π.',
+          why: 'La condition porte sur tous les entiers k : x ne doit être égal à aucun multiple kπ. Ces multiples sont exactement les zéros de sin(x).',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R\\setminus\\{k\\pi:k\\in\\mathbb Z\\}',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'On exclut tous les multiples entiers de π, qui sont exactement les zéros de sin(x). Le quotient est défini pour tous les autres réels.',
         },
       ],
       visual: 'trig',
@@ -511,7 +511,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_3(x)=\\ln(\\sin x)+5',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le logarithme',
@@ -519,14 +519,14 @@ export default {
           why: 'Le sinus doit être strictement positif, pas seulement défini.',
         },
         {
-          title: 'Lire une hauteur positive',
+          title: 'Repérer une ordonnée strictement positive',
           tex: '0<x<\\pi',
-          why: 'Sur un tour, le sinus est positif dans la moitié supérieure du cercle.',
+          why: 'Sur [0, 2π[, sin(x) est strictement positif exactement pour 0 < x < π : ce sont les points du demi-cercle supérieur, extrémités exclues.',
         },
         {
           title: 'Exclure les extrémités',
           tex: '\\sin0=\\sin\\pi=0',
-          why: 'Le logarithme de zéro n’existe pas. Les deux bornes restent ouvertes.',
+          why: 'Le logarithme de zéro n’est pas défini. Les extrémités 0 et π sont donc exclues de l’intervalle.',
         },
         {
           title: 'Répéter à chaque tour',
@@ -541,7 +541,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=\\bigcup_{k\\in\\mathbb Z}]2k\\pi,(2k+1)\\pi[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le sinus est strictement positif exactement sur les intervalles indiqués. Leurs extrémités sont exclues, car le sinus y vaut 0 et ln(0) n’est pas défini.',
         },
       ],
       visual: 'trig',
@@ -556,7 +556,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_4(x)=\\frac{2\\sin x+4\\cos x}{2\\sin x-1}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Repérer l’unique restriction',
@@ -581,12 +581,12 @@ export default {
         {
           title: 'Exclure tous les tours correspondants',
           tex: 'x\\ne\\pi/6+2k\\pi,\\quad x\\ne5\\pi/6+2k\\pi,\\quad k\\in\\mathbb Z',
-          why: 'Il faut retirer ces deux familles, et conserver tous les autres réels.',
+          why: 'Pour chaque entier k, les deux valeurs π/6 + 2kπ et 5π/6 + 2kπ annulent le dénominateur. On exclut toutes ces valeurs et seulement celles-ci.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R\\setminus\\{\\pi/6+2k\\pi,5\\pi/6+2k\\pi:k\\in\\mathbb Z\\}',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'On exclut les deux familles d’angles pour lesquelles sin(x) = 1/2, car elles annulent le dénominateur. Aucune restriction ne provient du numérateur.',
         },
       ],
       visual: 'trig',

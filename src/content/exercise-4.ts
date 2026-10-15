@@ -21,12 +21,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'e^2e^3',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.',
         },
         {
           title: 'Repérer la base e',
           tex: 'e^2\\times e^3',
-          why: 'Le nombre e est une constante positive. Les règles de puissances s’appliquent donc à e.',
+          why: 'Le nombre e est une constante strictement positive. Pour tous réels u et v, eᵘ × eᵛ = e^(u + v).',
         },
         {
           title: 'Additionner les exposants',
@@ -50,7 +50,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'e^5',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.',
         },
       ],
       visual: 'powers',
@@ -65,7 +65,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{e^3e^{0.5}}{e^2}',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.',
         },
         {
           title: 'Écrire 0,5 comme une fraction',
@@ -104,7 +104,7 @@ export default {
         {
           title: 'Calculer 3 − 2',
           tex: 'e^{1+1/2}',
-          why: 'On calcule d’abord la partie entière : 3 − 2 = 1.',
+          why: 'On regroupe les deux termes entiers de l’exposant : 3 − 2 = 1 ; le terme 1/2 reste inchangé.',
           focus: '1+1/2',
           collect: {
             left: '3',
@@ -122,7 +122,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'e^{3/2}',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.',
         },
       ],
       visual: 'powers',
@@ -137,10 +137,10 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{e^7+e^2}{e^2}',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.',
         },
         {
-          title: 'Partager la division',
+          title: 'Décomposer le quotient de la somme',
           tex: '\\frac{e^7}{e^2}+\\frac{e^2}{e^2}',
           why: 'On divise chaque terme de la somme par le même dénominateur.',
         },
@@ -173,7 +173,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'e^5+1',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.',
         },
       ],
       visual: 'powers',
@@ -188,7 +188,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{(e^{3.5})^2(e^{0.5})^4}{e^2}',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.',
         },
         {
           title: 'Traiter la première puissance',
@@ -233,7 +233,7 @@ export default {
         {
           title: 'Simplifier le facteur commun',
           tex: 'e^7\\times1',
-          why: 'Le facteur e² du numérateur se simplifie avec e² au dénominateur.',
+          why: 'Comme e² ≠ 0, le quotient e²/e² vaut 1. On peut donc simplifier ce facteur commun au numérateur et au dénominateur.',
           focus: '1',
         },
         {
@@ -244,7 +244,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'e^7',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.',
         },
       ],
       visual: 'powers',
@@ -259,12 +259,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '(e^{-2})^3(e^3)^2',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.',
         },
         {
           title: 'Traiter le premier facteur',
           tex: 'e^{(-2)\\times3}(e^{3})^2',
-          why: 'Pour une puissance élevée à une puissance, on multiplie les deux exposants. On ne touche pas encore au second facteur.',
+          why: 'La base est strictement positive : la règle (aᵘ)ᵛ = a^(u × v) s’applique. On multiplie les deux exposants du premier facteur ; le second facteur reste inchangé.',
           focus: '(-2)\\times3',
           fromFocus: '(e^{-2})^3',
           power: {
@@ -279,7 +279,7 @@ export default {
         {
           title: 'Calculer le premier exposant',
           tex: 'e^{-6}(e^{3})^2',
-          why: 'Le premier exposant est multiplié par 3.',
+          why: '(−2) × 3 = −6. Le second facteur reste inchangé.',
           focus: '-6',
         },
         {
@@ -299,13 +299,13 @@ export default {
         {
           title: 'Calculer le second exposant',
           tex: 'e^{-6}e^{6}',
-          why: 'On effectue la multiplication par 2.',
+          why: '3 × 2 = 6.',
           focus: 'e^{6}',
         },
         {
           title: 'Multiplier les deux puissances',
           tex: 'e^{-6+6}',
-          why: 'Les deux bases sont identiques : cette fois, on additionne les exposants.',
+          why: 'On utilise aᵘ × aᵛ = a^(u + v), pour une base a > 0. Ici, les deux facteurs ont la même base : leurs exposants s’additionnent.',
           focus: '-6+6',
           fromFocus: 'e^{-6}e^{6}',
           power: {
@@ -329,7 +329,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '1',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.',
         },
       ],
       visual: 'powers',
@@ -344,7 +344,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '(e^{2x})^2e^{3x}',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'L’exponentielle est définie et strictement positive sur ℝ. On simplifie ce produit en appliquant les règles des puissances de base e.',
         },
         {
           title: 'Traiter la puissance de puissance',
@@ -395,7 +395,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'e^{7x}',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout réel x, par les règles des puissances de base e.',
         },
       ],
       visual: 'powers',
@@ -410,7 +410,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{e^{3x}e^{0.5}}{e^{x-1}}',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Le dénominateur e^(x − 1) est strictement positif pour tout réel x. Le quotient est donc défini sur ℝ ; on applique les règles des puissances de base e.',
         },
         {
           title: 'Écrire 0,5 comme une fraction',
@@ -433,9 +433,9 @@ export default {
           },
         },
         {
-          title: 'Soustraire tout l’exposant du bas',
+          title: 'Soustraire l’exposant du dénominateur',
           tex: 'e^{3x+1/2-(x-1)}',
-          why: 'Le quotient soustrait l’exposant entier x − 1. Les parenthèses sont indispensables.',
+          why: 'Les puissances ont la même base e. On soustrait l’exposant du dénominateur, x − 1, à celui du numérateur. Les parenthèses permettent de soustraire toute l’expression x − 1.',
           focus: '-(x-1)',
           fromFocus: '\\frac{e^{3x+1/2}}{e^{x-1}}',
           power: {
@@ -474,7 +474,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'e^{2x+3/2}',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout réel x ; les puissances au dénominateur ne s’annulent jamais.',
         },
       ],
       visual: 'powers',
@@ -489,12 +489,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{e^{7x}+e^x}{e^x}',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Le dénominateur eˣ est strictement positif pour tout réel x. Le quotient est donc défini sur ℝ ; on applique les règles des puissances de base e.',
         },
         {
-          title: 'Partager la fraction',
+          title: 'Décomposer le quotient de la somme',
           tex: '\\frac{e^{7x}}{e^x}+\\frac{e^x}{e^x}',
-          why: 'Le dénominateur eˣ est toujours positif. On divise chacun des deux termes par eˣ.',
+          why: 'Pour tout réel x, eˣ > 0. La distributivité donne (A + B)/eˣ = A/eˣ + B/eˣ : on divise chaque terme du numérateur par le même dénominateur non nul.',
         },
         {
           title: 'Traiter le premier quotient',
@@ -531,7 +531,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'e^{6x}+1',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout réel x ; les puissances au dénominateur ne s’annulent jamais.',
         },
       ],
       visual: 'powers',
@@ -546,7 +546,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{2^{x+1}2^{x+1}}{4^x}',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Les bases 2 et 4 sont strictement positives ; le dénominateur 4ˣ est non nul. Le quotient est défini sur ℝ. On réécrit toutes les puissances avec la base 2.',
         },
         {
           title: 'Écrire 4 comme une puissance de 2',
@@ -591,7 +591,7 @@ export default {
           },
         },
         {
-          title: 'Réduire le numérateur',
+          title: 'Réduire l’exposant du numérateur',
           tex: '\\frac{2^{2x+2}}{2^{2x}}',
           why: 'x + x = 2x et 1 + 1 = 2.',
           focus: '2x+2',
@@ -611,14 +611,14 @@ export default {
           },
         },
         {
-          title: 'Annuler les opposés',
+          title: 'Additionner les termes opposés',
           tex: '2^2=4',
           why: '2x − 2x = 0. Il reste 2 à l’exposant, donc 4.',
         },
         {
           title: 'Retenir le résultat',
           tex: '4',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout réel x ; les puissances au dénominateur ne s’annulent jamais.',
         },
       ],
       visual: 'powers',
@@ -633,12 +633,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '(e^{-2x})^3(e^{3x})^2',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'L’exponentielle est définie et strictement positive sur ℝ. On simplifie ce produit en appliquant les règles des puissances de base e.',
         },
         {
           title: 'Traiter le premier facteur',
           tex: 'e^{(-2x)\\times3}(e^{3x})^2',
-          why: 'Pour une puissance élevée à une puissance, on multiplie les deux exposants. On ne touche pas encore au second facteur.',
+          why: 'La base est strictement positive : la règle (aᵘ)ᵛ = a^(u × v) s’applique. On multiplie les deux exposants du premier facteur ; le second facteur reste inchangé.',
           focus: '(-2x)\\times3',
           fromFocus: '(e^{-2x})^3',
           power: {
@@ -653,7 +653,7 @@ export default {
         {
           title: 'Calculer le premier exposant',
           tex: 'e^{-6x}(e^{3x})^2',
-          why: 'Le premier exposant est multiplié par 3.',
+          why: '(−2x) × 3 = −6x. Le second facteur reste inchangé.',
           focus: '-6x',
         },
         {
@@ -673,13 +673,13 @@ export default {
         {
           title: 'Calculer le second exposant',
           tex: 'e^{-6x}e^{6x}',
-          why: 'On effectue la multiplication par 2.',
+          why: '3x × 2 = 6x.',
           focus: 'e^{6x}',
         },
         {
           title: 'Multiplier les deux puissances',
           tex: 'e^{-6x+6x}',
-          why: 'Les deux bases sont identiques : cette fois, on additionne les exposants.',
+          why: 'On utilise aᵘ × aᵛ = a^(u + v), pour une base a > 0. Ici, les deux facteurs ont la même base : leurs exposants s’additionnent.',
           focus: '-6x+6x',
           fromFocus: 'e^{-6x}e^{6x}',
           power: {
@@ -703,7 +703,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '1',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout réel x, par les règles des puissances de base e.',
         },
       ],
       visual: 'powers',

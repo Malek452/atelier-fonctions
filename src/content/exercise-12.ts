@@ -22,7 +22,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'T_{\\mathrm T}=24\\,h,\\qquad T_{\\mathrm L}=28\\times24\\,h',
-          why: 'La Terre tourne en 24 h, la Lune en 28 jours. Une haute mer a lieu à midi. Dans le modèle proposé, quel délai, en heures, sépare deux hautes mers homologues ? En déduire l’heure demain. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'On utilise le modèle de l’énoncé : deux rotations uniformes dans le même sens, de périodes 24 h et 28 jours. On cherche le délai entre deux retours au même alignement, puis l’heure de la haute mer correspondante.',
         },
         {
           title: 'Convertir les jours en heures',
@@ -47,7 +47,7 @@ export default {
         {
           title: 'Mettre au même dénominateur',
           tex: '\\omega_{\\mathrm{rel}}=\\frac{28}{672}-\\frac1{672}',
-          why: 'Comme 672 = 28 × 24, on multiplie le haut et le bas de la première fraction par 28.',
+          why: 'Comme 672 = 28 × 24, on multiplie le numérateur et le dénominateur de 1/24 par 28. Ce facteur non nul conserve la valeur de la fraction.',
         },
         {
           title: 'Soustraire les numérateurs',
@@ -57,7 +57,7 @@ export default {
         {
           title: 'Écrire la condition d’un tour de rattrapage',
           tex: '\\frac{27}{672}T=1',
-          why: 'Vitesse × durée = avance. Le même alignement revient pour une avance relative d’un tour.',
+          why: 'Pour une rotation uniforme, vitesse relative × durée = nombre de tours gagnés. Le premier retour au même alignement correspond à un tour d’avance relative, d’où (27/672)T = 1.',
         },
         {
           title: 'Isoler la durée',
@@ -92,7 +92,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'T=\\frac{224}{9}\\,h=24\\,h\\ 53\\,min\\ 20\\,s',
-          why: 'Ce résultat découle des hypothèses de l’énoncé et du modèle explicité dans les étapes.',
+          why: 'Dans ce modèle, un tour d’avance relative prend exactement 224/9 heures. À partir de midi, le retour au même alignement a donc lieu le lendemain à 12 h 53 min 20 s.',
         },
       ],
       visual: 'tide',

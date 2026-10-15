@@ -21,7 +21,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '10^2 10^3',
-          why: 'Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.',
+          why: 'Les deux facteurs ont la même base 10. Pour les multiplier, on conserve cette base et on additionne leurs exposants.',
         },
         {
           title: 'Repérer la même base',
@@ -55,7 +55,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '10^5',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.',
         },
       ],
       visual: 'powers',
@@ -70,7 +70,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{7^3 7^{0.5}}{7^2}',
-          why: 'Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.',
+          why: 'La base 7 est strictement positive. On applique les règles des puissances de même base ; les puissances au dénominateur sont non nulles.',
         },
         {
           title: 'Écrire 0,5 comme une fraction',
@@ -109,7 +109,7 @@ export default {
         {
           title: 'Calculer 3 − 2',
           tex: '7^{1+1/2}',
-          why: 'On calcule d’abord la partie entière : 3 − 2 = 1.',
+          why: 'On regroupe les deux termes entiers de l’exposant : 3 − 2 = 1 ; le terme 1/2 reste inchangé.',
           focus: '1+1/2',
           collect: {
             left: '3',
@@ -127,7 +127,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '7^{3/2}',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.',
         },
       ],
       visual: 'powers',
@@ -142,10 +142,10 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{5^7+5^2}{5^2}',
-          why: 'Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.',
+          why: 'La base 5 est strictement positive. On applique les règles des puissances de même base ; les puissances au dénominateur sont non nulles.',
         },
         {
-          title: 'Partager la division',
+          title: 'Décomposer le quotient de la somme',
           tex: '\\frac{5^7}{5^2}+\\frac{5^2}{5^2}',
           why: 'Le même dénominateur divise chacun des deux termes de la somme. On ne peut pas additionner les exposants à travers un signe +.',
         },
@@ -189,7 +189,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '3126',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.',
         },
       ],
       visual: 'powers',
@@ -204,7 +204,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{2^4(4^{0.5})^4}{2^2}',
-          why: 'Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.',
+          why: 'On simplifie d’abord la puissance d’une puissance en multipliant les exposants 0,5 et 4. On utilisera ensuite 4 = 2² pour réunir les puissances de même base.',
         },
         {
           title: 'Multiplier les deux exposants',
@@ -314,12 +314,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '(x^{-2})^3(x^3)^2',
-          why: 'Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.',
+          why: 'L’énoncé suppose x > 0. Cette hypothèse garantit que les puissances et les quotients écrits sont définis ; on la conserve pendant toute la simplification.',
         },
         {
           title: 'Traiter le premier facteur',
           tex: 'x^{(-2)\\times3}(x^{3})^2',
-          why: 'Pour une puissance élevée à une puissance, on multiplie les deux exposants. On ne touche pas encore au second facteur.',
+          why: 'La base est strictement positive : la règle (aᵘ)ᵛ = a^(u × v) s’applique. On multiplie les deux exposants du premier facteur ; le second facteur reste inchangé.',
           focus: '(-2)\\times3',
           fromFocus: '(x^{-2})^3',
           power: {
@@ -334,7 +334,7 @@ export default {
         {
           title: 'Calculer le premier exposant',
           tex: 'x^{-6}(x^{3})^2',
-          why: 'Le premier exposant est multiplié par 3.',
+          why: '(−2) × 3 = −6. Le second facteur reste inchangé.',
           focus: '-6',
         },
         {
@@ -354,13 +354,13 @@ export default {
         {
           title: 'Calculer le second exposant',
           tex: 'x^{-6}x^{6}',
-          why: 'On effectue la multiplication par 2.',
+          why: '3 × 2 = 6. Les deux facteurs sont maintenant x^(−6) et x⁶.',
           focus: 'x^{6}',
         },
         {
           title: 'Multiplier les deux puissances',
           tex: 'x^{-6+6}',
-          why: 'Les deux bases sont identiques : cette fois, on additionne les exposants.',
+          why: 'On utilise aᵘ × aᵛ = a^(u + v), pour une base a > 0. Ici, les deux facteurs ont la même base : leurs exposants s’additionnent.',
           focus: '-6+6',
           fromFocus: 'x^{-6}x^{6}',
           power: {
@@ -384,7 +384,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '1',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout x > 0, conformément à l’hypothèse de l’énoncé.',
         },
       ],
       visual: 'powers',
@@ -399,7 +399,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'x^2x^3',
-          why: 'Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.',
+          why: 'L’énoncé suppose x > 0. Cette hypothèse garantit que les puissances et les quotients écrits sont définis ; on la conserve pendant toute la simplification.',
         },
         {
           title: 'Lire le produit',
@@ -428,7 +428,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'x^5',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout x > 0, conformément à l’hypothèse de l’énoncé.',
         },
       ],
       visual: 'powers',
@@ -443,7 +443,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{(x^3)^{0.5}}{\\sqrt{x}}',
-          why: 'Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.',
+          why: 'L’énoncé suppose x > 0. Cette hypothèse garantit que les puissances et les quotients écrits sont définis ; on la conserve pendant toute la simplification.',
         },
         {
           title: 'Écrire 0,5 comme une fraction',
@@ -480,7 +480,7 @@ export default {
           focus: '3/2',
         },
         {
-          title: 'Passer au quotient',
+          title: 'Appliquer la règle du quotient',
           tex: 'x^{3/2-1/2}',
           why: 'Le numérateur et le dénominateur ont la même base x : on soustrait les exposants.',
           focus: '3/2-1/2',
@@ -507,7 +507,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'x',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout x > 0, conformément à l’hypothèse de l’énoncé.',
         },
       ],
       visual: 'powers',
@@ -522,7 +522,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{x^{3.5}x^{0.5}}{x^2}',
-          why: 'Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.',
+          why: 'L’énoncé suppose x > 0. Cette hypothèse garantit que les puissances et les quotients écrits sont définis ; on la conserve pendant toute la simplification.',
         },
         {
           title: 'Multiplier au numérateur',
@@ -566,7 +566,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'x^2',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'L’expression obtenue est égale à l’expression initiale pour tout x > 0, conformément à l’hypothèse de l’énoncé.',
         },
       ],
       visual: 'powers',

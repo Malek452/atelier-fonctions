@@ -23,12 +23,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln(2+5x)\\le\\ln(x+6)',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'On exige d’abord 2 + 5x > 0 et x + 6 > 0 pour définir les deux logarithmes. On résoudra ensuite l’inéquation sur l’ensemble ainsi obtenu.',
         },
         {
           title: 'Définir le premier logarithme',
           tex: '2+5x>0\\quad\\Longrightarrow\\quad x>-\\frac25',
-          why: 'On soustrait 2, puis on divise par 5 qui est positif.',
+          why: 'On soustrait 2 aux deux membres, puis on divise par 5 > 0. Ces opérations conservent le sens de l’inégalité.',
         },
         {
           title: 'Définir le second logarithme',
@@ -43,7 +43,7 @@ export default {
         {
           title: 'Comparer les arguments',
           tex: '2+5x\\le x+6',
-          why: 'Le logarithme est croissant : il conserve l’ordre sur les nombres positifs.',
+          why: 'La fonction ln est strictement croissante sur ]0, +∞[. Pour deux arguments strictement positifs, ln(a) ≤ ln(b) si et seulement si a ≤ b.',
         },
         {
           title: 'Soustraire x des deux membres',
@@ -58,17 +58,17 @@ export default {
         {
           title: 'Diviser par 4',
           tex: 'x\\le1',
-          why: '4 est positif : le sens ne change pas.',
+          why: 'On divise les deux membres par 4 > 0 : le sens de l’inégalité est conservé.',
         },
         {
-          title: 'Croiser avec le domaine',
+          title: 'Prendre l’intersection avec l’ensemble de définition',
           tex: '-\\frac25<x\\le1',
           why: 'On doit respecter à la fois la définition des logarithmes et l’inégalité obtenue.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=]-\\tfrac25,1]',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'On prend l’intersection de x > −2/5, condition d’existence, et de x ≤ 1, condition obtenue par équivalence. La borne −2/5 est exclue et la borne 1 est incluse.',
         },
       ],
       visual: 'logs',
@@ -83,12 +83,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln(x+1)+\\ln(x-3)<\\ln3',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'On exige x + 1 > 0 et x − 3 > 0, soit x > 3. C’est sur cet ensemble que l’on peut réunir les deux logarithmes et résoudre l’inéquation.',
         },
         {
           title: 'Définir le premier logarithme',
           tex: 'x+1>0\\quad\\Longrightarrow\\quad x>-1',
-          why: 'Un argument de logarithme doit être positif.',
+          why: 'Le logarithme népérien est défini uniquement pour un argument strictement positif. Ici x + 1 > 0 équivaut à x > −1.',
         },
         {
           title: 'Définir le second logarithme',
@@ -98,12 +98,12 @@ export default {
         {
           title: 'Réunir les logarithmes',
           tex: '\\ln((x+1)(x-3))<\\ln3',
-          why: 'Les deux facteurs sont positifs sur le domaine. On utilise ln(a) + ln(b) = ln(ab).',
+          why: 'Sur x > 3, on a x + 1 > 0 et x − 3 > 0. On peut donc appliquer ln(a) + ln(b) = ln(ab) aux deux arguments.',
         },
         {
           title: 'Comparer les arguments',
           tex: '(x+1)(x-3)<3',
-          why: 'ln est strictement croissante sur les nombres positifs.',
+          why: 'La fonction ln est strictement croissante sur ]0, +∞[. Les deux arguments étant strictement positifs, comparer leurs logarithmes revient, par équivalence, à les comparer.',
         },
         ...expandBinomial((expression) => expression + '<3', 1, -3, 'Distribuer les deux termes'),
         {
@@ -115,17 +115,17 @@ export default {
         {
           title: 'Lire où le trinôme est négatif',
           tex: '1-\\sqrt7<x<1+\\sqrt7',
-          why: 'Le coefficient de x² est positif : le trinôme est négatif entre ses deux racines.',
+          why: 'Le coefficient de x² vaut 1 > 0. Le trinôme est strictement négatif exactement entre ses deux racines distinctes ; les racines sont exclues par l’inégalité stricte.',
         },
         {
           title: 'Respecter aussi x > 3',
           tex: '3<x<1+\\sqrt7',
-          why: 'La racine inférieure est sous 3 et la racine supérieure au-dessus de 3. On ne garde que la partie compatible avec le domaine.',
+          why: 'On a 1 − √7 < 1 < 3 et, puisque 7 > 4, 1 + √7 > 3. L’intersection avec x > 3 est donc ]3, 1 + √7[.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=]3,1+\\sqrt7[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'On prend l’intersection de ]3, +∞[, ensemble de définition, avec ]1 − √7, 1 + √7[, obtenu par l’étude du trinôme. Les deux extrémités du résultat sont exclues.',
         },
       ],
       visual: 'logs',
@@ -140,20 +140,20 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '2\\frac{1+\\ln x}{x}\\ge0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'La condition x > 0 définit ln(x) et garantit que le dénominateur est non nul. On utilisera ensuite le signe strictement positif de 2/x.',
         },
         {
           title: 'Définir ln x',
           tex: 'x>0',
-          why: 'Cette condition garantit aussi que le dénominateur x est non nul et positif.',
+          why: 'La condition x > 0 définit ln(x) et garantit que le dénominateur x est strictement positif, donc non nul.',
         },
         {
-          title: 'Diviser par le coefficient positif 2',
+          title: 'Diviser par le coefficient strictement positif 2',
           tex: '\\frac{1+\\ln x}{x}\\ge0',
           why: 'Diviser par 2 ne change pas le sens de l’inégalité.',
         },
         {
-          title: 'Multiplier par x positif',
+          title: 'Multiplier par x strictement positif',
           tex: '1+\\ln x\\ge0',
           why: 'Comme x > 0, le sens de l’inégalité reste le même.',
         },
@@ -165,12 +165,12 @@ export default {
         {
           title: 'Appliquer la croissance de exp',
           tex: 'x\\ge e^{-1}',
-          why: 'exp est croissante et exp(ln(x)) = x. La borne e⁻¹ est positive et autorisée.',
+          why: 'La fonction exp est strictement croissante sur ℝ et, pour x > 0, exp(ln(x)) = x. Ainsi ln(x) ≥ −1 équivaut à x ≥ e^(−1). La borne est strictement positive et satisfait l’inégalité.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=[e^{-1},+\\infty[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Sur x > 0, les transformations sont équivalentes et donnent x ≥ e^(−1). Cette borne est strictement positive et annule le numérateur : elle est incluse.',
         },
       ],
       visual: 'logs',
@@ -186,7 +186,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_1(x)=\\sqrt{\\ln(2+5x)-\\ln(x+6)}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir les deux logarithmes',
@@ -194,7 +194,7 @@ export default {
           why: 'Les deux arguments doivent être strictement positifs.',
         },
         {
-          title: 'Croiser les deux conditions',
+          title: 'Prendre l’intersection des deux conditions',
           tex: 'x>-\\frac25',
           why: 'Les conditions x > −2/5 et x > −6 se réduisent à la plus forte.',
         },
@@ -209,9 +209,9 @@ export default {
           why: 'On ajoute ln(x + 6) aux deux membres.',
         },
         {
-          title: 'Comparer les arguments positifs',
+          title: 'Comparer les arguments strictement positifs',
           tex: '2+5x\\ge x+6',
-          why: 'ln est croissant : le sens est conservé.',
+          why: 'Sous la condition x > −2/5, les deux logarithmes sont définis. La stricte croissance de ln permet de comparer leurs arguments par équivalence, en conservant le sens de l’inégalité.',
         },
         {
           title: 'Soustraire x des deux côtés',
@@ -226,12 +226,12 @@ export default {
         {
           title: 'Diviser par 4',
           tex: 'x\\ge1',
-          why: '4 est positif. Ces valeurs respectent toutes x > −2/5.',
+          why: 'On divise les deux membres par 4 > 0 sans changer le sens de l’inégalité. Les valeurs x ≥ 1 respectent toutes la condition x > −2/5.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=[1,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'La condition de la racine donne x ≥ 1. Tous ces réels vérifient aussi x > −2/5, nécessaire aux logarithmes. La borne 1 donne une racine nulle, donc elle est incluse.',
         },
       ],
       visual: 'logs',
@@ -247,7 +247,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_2(x)=\\exp(\\ln(x+1)+\\ln(x-3)-\\ln3)',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le premier logarithme',
@@ -265,7 +265,7 @@ export default {
           why: 'ln(3) est défini sans condition sur x.',
         },
         {
-          title: 'Prendre les conditions ensemble',
+          title: 'Imposer les deux conditions simultanément',
           tex: 'x>3',
           why: 'x > 3 implique déjà x > −1.',
         },
@@ -277,7 +277,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]3,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Les deux logarithmes variables sont définis simultanément si et seulement si x > 3. L’exponentielle extérieure n’ajoute aucune restriction.',
         },
       ],
       visual: 'logs',
@@ -292,12 +292,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_3(x)=\\ln\\!\\left(2\\frac{1+\\ln x}{x}\\right)',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le logarithme intérieur',
           tex: 'x>0',
-          why: 'Cela garantit aussi que le dénominateur x est positif et non nul.',
+          why: 'Il faut x > 0 pour définir ln(x). Le dénominateur x est alors strictement positif et non nul.',
         },
         {
           title: 'Définir le logarithme extérieur',
@@ -305,7 +305,7 @@ export default {
           why: 'L’argument entier du logarithme extérieur doit être strictement positif.',
         },
         {
-          title: 'Retirer les facteurs positifs',
+          title: 'Diviser par le facteur strictement positif 2/x',
           tex: '1+\\ln x>0',
           why: '2/x est strictement positif sur le domaine. Il ne change donc pas le signe.',
         },
@@ -317,12 +317,12 @@ export default {
         {
           title: 'Appliquer exp',
           tex: 'x>e^{-1}',
-          why: 'exp est croissante. L’inégalité reste stricte : x = e⁻¹ annulerait l’argument du logarithme extérieur.',
+          why: 'La stricte croissance de exp et l’identité exp(ln(x)) = x pour x > 0 donnent ln(x) > −1 si et seulement si x > e^(−1). L’égalité annulerait l’argument du logarithme extérieur et reste exclue.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=]e^{-1},+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le logarithme intérieur impose x > 0. Sur cet ensemble, l’argument du logarithme extérieur est strictement positif si et seulement si x > e^(−1). La borne est exclue car elle annule cet argument.',
         },
       ],
       visual: 'logs',

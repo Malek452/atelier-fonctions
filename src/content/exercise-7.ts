@@ -20,18 +20,18 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln(2\\sqrt3)+2\\ln(\\sqrt3)',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Les arguments des logarithmes, ici 2√3 et √3, sont strictement positifs. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.',
         },
         {
-          title: 'Ouvrir le logarithme du produit',
+          title: 'Décomposer le logarithme du produit',
           tex: '\\ln2+\\ln(\\sqrt3)+2\\ln(\\sqrt3)',
-          why: 'Pour deux nombres positifs, ln(ab) = ln(a) + ln(b). On transforme seulement le premier logarithme.',
+          why: 'Pour a > 0 et b > 0, ln(ab) = ln(a) + ln(b). Ici 2 > 0 et √3 > 0 : on applique cette propriété au premier logarithme.',
           focus: '\\ln2+\\ln(\\sqrt3)',
         },
         {
           title: 'Réécrire la première racine',
           tex: '\\ln2+\\tfrac12\\ln3+2\\ln(\\sqrt3)',
-          why: '√3 = 3 puissance 1/2 et ln(aᵖ) = p ln(a).',
+          why: 'Pour a > 0 et p réel, ln(aᵖ) = p ln(a). Ici √3 = 3^(1/2), donc ln(√3) = (1/2)ln(3).',
           focus: '\\tfrac12\\ln3',
         },
         {
@@ -62,7 +62,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '\\ln2+\\frac32\\ln3',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.',
         },
       ],
       visual: 'logs',
@@ -77,7 +77,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln(e^2-1)-\\ln(1+e)',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Les arguments des logarithmes, ici e² − 1 et 1 + e, sont strictement positifs. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.',
         },
         {
           title: 'Vérifier les arguments',
@@ -87,7 +87,7 @@ export default {
         {
           title: 'Réunir la différence',
           tex: '\\ln\\!\\left(\\frac{e^2-1}{1+e}\\right)',
-          why: 'Pour des nombres positifs, ln(a) − ln(b) = ln(a/b).',
+          why: 'Pour a > 0 et b > 0, ln(a) − ln(b) = ln(a/b). Les deux arguments e² − 1 et 1 + e vérifient ces conditions.',
         },
         {
           title: 'Reconnaître une différence de carrés',
@@ -104,12 +104,12 @@ export default {
         {
           title: 'Simplifier le quotient égal à 1',
           tex: '\\ln(e-1)',
-          why: 'Le facteur (e + 1)/(e + 1) vaut 1. L’argument restant e − 1 est positif.',
+          why: 'Comme e + 1 ≠ 0, le quotient (e + 1)/(e + 1) vaut 1. L’argument restant e − 1 est strictement positif puisque e > 1.',
         },
         {
           title: 'Retenir le résultat',
           tex: '\\ln(e-1)',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.',
         },
       ],
       visual: 'logs',
@@ -124,7 +124,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln\\!\\left(\\frac{3e^2}{\\sqrt e}\\right)',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'L’argument du logarithme, 3e²/√e, est strictement positif. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.',
         },
         {
           title: 'Réécrire la racine',
@@ -145,9 +145,9 @@ export default {
           focus: '3/2',
         },
         {
-          title: 'Séparer le produit positif',
+          title: 'Décomposer le logarithme du produit',
           tex: '\\ln3+\\ln(e^{3/2})',
-          why: 'ln(ab) = ln(a) + ln(b) pour a et b positifs.',
+          why: 'Pour a > 0 et b > 0, ln(ab) = ln(a) + ln(b). Ici 3 > 0 et e^(3/2) > 0, donc cette propriété s’applique.',
         },
         {
           title: 'Retrouver l’exposant',
@@ -158,7 +158,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '\\ln3+\\frac32',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.',
         },
       ],
       visual: 'logs',
@@ -173,12 +173,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln\\!\\left(\\frac{81}{32}\\right)',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'L’argument du logarithme, 81/32, est strictement positif. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.',
         },
         {
           title: 'Séparer le quotient',
           tex: '\\ln81-\\ln32',
-          why: 'Les deux nombres sont positifs : ln(a/b) = ln(a) − ln(b).',
+          why: 'Pour a > 0 et b > 0, ln(a/b) = ln(a) − ln(b). Ici 81 et 32 sont strictement positifs.',
         },
         {
           title: 'Réécrire 81',
@@ -187,9 +187,9 @@ export default {
           focus: '3^4',
         },
         {
-          title: 'Sortir le premier exposant',
+          title: 'Appliquer la propriété du logarithme d’une puissance',
           tex: '4\\ln3-\\ln32',
-          why: 'ln(3⁴) = 4 ln(3).',
+          why: 'Pour a > 0 et p réel, ln(aᵖ) = p ln(a). Ici 3 > 0, donc ln(3⁴) = 4 ln(3).',
           focus: '4\\ln3',
         },
         {
@@ -199,15 +199,15 @@ export default {
           focus: '2^5',
         },
         {
-          title: 'Sortir le second exposant',
+          title: 'Appliquer la propriété à la seconde puissance',
           tex: '4\\ln3-5\\ln2',
-          why: 'Le signe moins devant le second logarithme reste en place.',
+          why: 'Comme 2 > 0, ln(2⁵) = 5 ln(2). Le signe moins devant ce logarithme est conservé.',
           focus: '-5\\ln2',
         },
         {
           title: 'Retenir le résultat',
           tex: '4\\ln3-5\\ln2',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.',
         },
       ],
       visual: 'logs',
@@ -222,10 +222,10 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '2\\ln(3\\sqrt2)-2\\ln(2\\sqrt3)',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Les arguments des logarithmes, ici 3√2 et 2√3, sont strictement positifs. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.',
         },
         {
-          title: 'Faire entrer le premier coefficient',
+          title: 'Appliquer 2 ln(a) = ln(a²) au premier terme',
           tex: '\\ln((3\\sqrt2)^2)-2\\ln(2\\sqrt3)',
           why: '2 ln(a) = ln(a²) lorsque a > 0. On traite seulement le premier logarithme.',
           focus: '(3\\sqrt2)^2',
@@ -237,7 +237,7 @@ export default {
           focus: '18',
         },
         {
-          title: 'Faire entrer le second coefficient',
+          title: 'Appliquer 2 ln(a) = ln(a²) au second terme',
           tex: '\\ln18-\\ln((2\\sqrt3)^2)',
           why: 'On applique la même règle au second terme en gardant le signe moins.',
           focus: '(2\\sqrt3)^2',
@@ -251,7 +251,7 @@ export default {
         {
           title: 'Réunir les logarithmes',
           tex: '\\ln(18/12)',
-          why: 'Une différence de logarithmes est le logarithme du quotient.',
+          why: 'Comme 18 > 0 et 12 > 0, la propriété ln(a) − ln(b) = ln(a/b) s’applique : ln(18) − ln(12) = ln(18/12).',
         },
         {
           title: 'Simplifier la fraction',
@@ -261,7 +261,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '\\ln\\!\\left(\\frac32\\right)',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.',
         },
       ],
       visual: 'logs',
@@ -276,18 +276,18 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln(3^4)-2\\ln(3\\sqrt e)',
-          why: 'Simplifier l’expression. On gardera les parties non travaillées inchangées.',
+          why: 'Les arguments des logarithmes, ici 3⁴ et 3√e, sont strictement positifs. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.',
         },
         {
-          title: 'Sortir le premier exposant',
+          title: 'Appliquer la propriété du logarithme d’une puissance',
           tex: '4\\ln3-2\\ln(3\\sqrt e)',
-          why: 'ln(3⁴) = 4 ln(3). On garde le second terme intact.',
+          why: 'Pour a > 0 et p réel, ln(aᵖ) = p ln(a). Ici 3 > 0, donc ln(3⁴) = 4 ln(3). On garde le second terme intact.',
           focus: '4\\ln3',
         },
         {
-          title: 'Ouvrir le logarithme du produit',
+          title: 'Décomposer le logarithme du produit',
           tex: '4\\ln3-2(\\ln3+\\ln\\sqrt e)',
-          why: 'Le coefficient −2 multiplie tout le logarithme : les parenthèses sont nécessaires.',
+          why: 'Puisque 3 > 0 et √e > 0, ln(3√e) = ln(3) + ln(√e). Le facteur −2 multiplie cette somme entière, d’où les parenthèses.',
           focus: '\\ln3+\\ln\\sqrt e',
         },
         {
@@ -343,7 +343,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: '2\\ln3-1',
-          why: 'C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.',
+          why: 'Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.',
         },
       ],
       visual: 'logs',

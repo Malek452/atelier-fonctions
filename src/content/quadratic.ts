@@ -43,7 +43,7 @@ export function discriminantSteps({ a, b, c, variable = 'x' }: Omit<Quadratic, '
       ...step(
         'Écrire la formule du discriminant',
         '\\Delta=b^2-4ac',
-        'Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.',
+        'Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.',
       ),
       statement: true,
     },
@@ -148,7 +148,7 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
     ...step(
       'Remplacer Δ sous la racine',
       `\\sqrt{\\Delta}=\\sqrt{${delta}}`,
-      `Δ vaut ${delta}. On cherche maintenant sa racine carrée positive.`,
+      `Δ = ${delta} > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut ${delta}.`,
     ),
     statement: true,
   });
@@ -166,8 +166,8 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
         'Calculer la racine de Δ',
         `\\sqrt{\\Delta}=${radical}`,
         remainder === 1
-          ? `${squareFactor} est positif et ${squareFactor}² = ${delta}, donc √Δ = ${squareFactor}.`
-          : `Pour des facteurs positifs, la racine d’un produit est le produit des racines : √${squareFactor * squareFactor} = ${squareFactor}.`,
+          ? `${squareFactor} > 0 et ${squareFactor}² = ${delta}, donc √Δ = ${squareFactor}, par définition de la racine carrée.`
+          : `Pour u ≥ 0 et v ≥ 0, √(uv) = √u × √v. Ainsi √(${squareFactor * squareFactor} × ${remainder}) = ${squareFactor}√${remainder}, puisque √${squareFactor * squareFactor} = ${squareFactor}.`,
       ),
     );
 
@@ -181,7 +181,7 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
           : 'Écrire la formule de la seconde racine',
         prefix + fraction(`-b${sign}${sqrtDelta}`, '2a'),
         index === 0
-          ? 'Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.'
+          ? 'Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.'
           : 'La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.',
         `${sign}${sqrtDelta}`,
       ),
@@ -256,7 +256,7 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
           'Simplifier la fraction',
           prefix + roots[index],
           remainder === 1
-            ? `On réduit la fraction ${numerator}/${2 * a} pour obtenir cette valeur exacte.`
+            ? `On divise le numérateur ${numerator} et le dénominateur ${2 * a} par leur diviseur commun non nul ${divisor}. Cette simplification conserve la valeur de la fraction.`
             : `On divise tous les termes du numérateur et le dénominateur par leur facteur commun ${divisor}.`,
           undefined,
           fraction(numerator, 2 * a),

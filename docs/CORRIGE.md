@@ -14,7 +14,7 @@ Simplifier l’expression.
 
 $$10^2 10^3$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.
+1. **Lire l’énoncé.** Les deux facteurs ont la même base 10. Pour les multiplier, on conserve cette base et on additionne leurs exposants.
 
 $$10^2 10^3$$
 
@@ -34,7 +34,7 @@ $$10^5$$
 
 $$10^5=100000$$
 
-6. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+6. **Retenir le résultat.** On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.
 
 $$10^5$$
 
@@ -46,7 +46,7 @@ Simplifier l’expression.
 
 $$\frac{7^3 7^{0.5}}{7^2}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.
+1. **Lire l’énoncé.** La base 7 est strictement positive. On applique les règles des puissances de même base ; les puissances au dénominateur sont non nulles.
 
 $$\frac{7^3 7^{0.5}}{7^2}$$
 
@@ -62,7 +62,7 @@ $$\frac{7^{3+1/2}}{7^2}$$
 
 $$7^{3+1/2-2}$$
 
-5. **Calculer 3 − 2.** On calcule d’abord la partie entière : 3 − 2 = 1.
+5. **Calculer 3 − 2.** On regroupe les deux termes entiers de l’exposant : 3 − 2 = 1 ; le terme 1/2 reste inchangé.
 
 $$7^{1+1/2}$$
 
@@ -70,7 +70,7 @@ $$7^{1+1/2}$$
 
 $$7^{3/2}$$
 
-7. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+7. **Retenir le résultat.** On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.
 
 $$7^{3/2}$$
 
@@ -82,11 +82,11 @@ Simplifier l’expression.
 
 $$\frac{5^7+5^2}{5^2}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.
+1. **Lire l’énoncé.** La base 5 est strictement positive. On applique les règles des puissances de même base ; les puissances au dénominateur sont non nulles.
 
 $$\frac{5^7+5^2}{5^2}$$
 
-2. **Partager la division.** Le même dénominateur divise chacun des deux termes de la somme. On ne peut pas additionner les exposants à travers un signe +.
+2. **Décomposer le quotient de la somme.** Le même dénominateur divise chacun des deux termes de la somme. On ne peut pas additionner les exposants à travers un signe +.
 
 $$\frac{5^7}{5^2}+\frac{5^2}{5^2}$$
 
@@ -110,7 +110,7 @@ $$3125+1$$
 
 $$3126$$
 
-8. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+8. **Retenir le résultat.** On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.
 
 $$3126$$
 
@@ -122,7 +122,7 @@ Simplifier l’expression.
 
 $$\frac{2^4(4^{0.5})^4}{2^2}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.
+1. **Lire l’énoncé.** On simplifie d’abord la puissance d’une puissance en multipliant les exposants 0,5 et 4. On utilisera ensuite 4 = 2² pour réunir les puissances de même base.
 
 $$\frac{2^4(4^{0.5})^4}{2^2}$$
 
@@ -178,15 +178,15 @@ Simplifier l’expression.
 
 $$(x^{-2})^3(x^3)^2$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.
+1. **Lire l’énoncé.** L’énoncé suppose x > 0. Cette hypothèse garantit que les puissances et les quotients écrits sont définis ; on la conserve pendant toute la simplification.
 
 $$(x^{-2})^3(x^3)^2$$
 
-2. **Traiter le premier facteur.** Pour une puissance élevée à une puissance, on multiplie les deux exposants. On ne touche pas encore au second facteur.
+2. **Traiter le premier facteur.** La base est strictement positive : la règle (aᵘ)ᵛ = a^(u × v) s’applique. On multiplie les deux exposants du premier facteur ; le second facteur reste inchangé.
 
 $$x^{(-2)\times3}(x^{3})^2$$
 
-3. **Calculer le premier exposant.** Le premier exposant est multiplié par 3.
+3. **Calculer le premier exposant.** (−2) × 3 = −6. Le second facteur reste inchangé.
 
 $$x^{-6}(x^{3})^2$$
 
@@ -194,11 +194,11 @@ $$x^{-6}(x^{3})^2$$
 
 $$x^{-6}x^{3\times2}$$
 
-5. **Calculer le second exposant.** On effectue la multiplication par 2.
+5. **Calculer le second exposant.** 3 × 2 = 6. Les deux facteurs sont maintenant x^(−6) et x⁶.
 
 $$x^{-6}x^{6}$$
 
-6. **Multiplier les deux puissances.** Les deux bases sont identiques : cette fois, on additionne les exposants.
+6. **Multiplier les deux puissances.** On utilise aᵘ × aᵛ = a^(u + v), pour une base a > 0. Ici, les deux facteurs ont la même base : leurs exposants s’additionnent.
 
 $$x^{-6+6}$$
 
@@ -210,7 +210,7 @@ $$x^0$$
 
 $$1$$
 
-9. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+9. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout x > 0, conformément à l’hypothèse de l’énoncé.
 
 $$1$$
 
@@ -222,7 +222,7 @@ Simplifier l’expression.
 
 $$x^2x^3$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.
+1. **Lire l’énoncé.** L’énoncé suppose x > 0. Cette hypothèse garantit que les puissances et les quotients écrits sont définis ; on la conserve pendant toute la simplification.
 
 $$x^2x^3$$
 
@@ -238,7 +238,7 @@ $$x^{2+3}$$
 
 $$x^5$$
 
-5. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+5. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout x > 0, conformément à l’hypothèse de l’énoncé.
 
 $$x^5$$
 
@@ -250,7 +250,7 @@ Simplifier l’expression.
 
 $$\frac{(x^3)^{0.5}}{\sqrt{x}}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.
+1. **Lire l’énoncé.** L’énoncé suppose x > 0. Cette hypothèse garantit que les puissances et les quotients écrits sont définis ; on la conserve pendant toute la simplification.
 
 $$\frac{(x^3)^{0.5}}{\sqrt{x}}$$
 
@@ -270,7 +270,7 @@ $$\frac{x^{3\times1/2}}{x^{1/2}}$$
 
 $$\frac{x^{3/2}}{x^{1/2}}$$
 
-6. **Passer au quotient.** Le numérateur et le dénominateur ont la même base x : on soustrait les exposants.
+6. **Appliquer la règle du quotient.** Le numérateur et le dénominateur ont la même base x : on soustrait les exposants.
 
 $$x^{3/2-1/2}$$
 
@@ -282,7 +282,7 @@ $$x^{2/2}$$
 
 $$x^1=x$$
 
-9. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+9. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout x > 0, conformément à l’hypothèse de l’énoncé.
 
 $$x$$
 
@@ -294,7 +294,7 @@ Simplifier l’expression.
 
 $$\frac{x^{3.5}x^{0.5}}{x^2}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. Dans tout cet exercice, x > 0. Nous transformons une seule partie à chaque étape.
+1. **Lire l’énoncé.** L’énoncé suppose x > 0. Cette hypothèse garantit que les puissances et les quotients écrits sont définis ; on la conserve pendant toute la simplification.
 
 $$\frac{x^{3.5}x^{0.5}}{x^2}$$
 
@@ -314,7 +314,7 @@ $$x^{4-2}$$
 
 $$x^2$$
 
-6. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+6. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout x > 0, conformément à l’hypothèse de l’énoncé.
 
 $$x^2$$
 
@@ -330,7 +330,7 @@ Résoudre dans ℝ.
 
 $$x^2+3x+10=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le trinôme est défini pour tout réel x. On cherche ses racines réelles en calculant son discriminant.
 
 $$x^2+3x+10=0$$
 
@@ -338,7 +338,7 @@ $$x^2+3x+10=0$$
 
 $$a=1,\quad b=3,\quad c=10$$
 
-3. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+3. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -370,7 +370,7 @@ $$\Delta=9-(40)$$
 
 $$\Delta=-31$$
 
-11. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+11. **Retenir le résultat.** Le discriminant est strictement négatif : le trinôme ne possède aucune racine réelle. L’ensemble des solutions S est donc vide.
 
 $$S=\varnothing$$
 
@@ -382,7 +382,7 @@ Résoudre dans ℝ.
 
 $$2x^2+3x-5=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le trinôme est défini pour tout réel x. On cherche toutes les valeurs de x qui annulent ce trinôme.
 
 $$2x^2+3x-5=0$$
 
@@ -394,7 +394,7 @@ $$2x^2+3x-5=0$$
 
 $$a=2,\quad b=3,\quad c=-5$$
 
-4. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+4. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -430,15 +430,15 @@ $$\Delta=9+40$$
 
 $$\Delta=49$$
 
-13. **Remplacer Δ sous la racine.** Δ vaut 49. On cherche maintenant sa racine carrée positive.
+13. **Remplacer Δ sous la racine.** Δ = 49 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 49.
 
 $$\sqrt{\Delta}=\sqrt{49}$$
 
-14. **Calculer la racine de Δ.** 7 est positif et 7² = 49, donc √Δ = 7.
+14. **Calculer la racine de Δ.** 7 > 0 et 7² = 49, donc √Δ = 7, par définition de la racine carrée.
 
 $$\sqrt{\Delta}=7$$
 
-15. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+15. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -466,7 +466,7 @@ $$x_1=\frac{-(3)-7}{4}$$
 
 $$x_1=\frac{-10}{4}$$
 
-22. **Simplifier la fraction.** On réduit la fraction -10/4 pour obtenir cette valeur exacte.
+22. **Simplifier la fraction.** On divise le numérateur -10 et le dénominateur 4 par leur diviseur commun non nul 2. Cette simplification conserve la valeur de la fraction.
 
 $$x_1=-\frac52$$
 
@@ -498,7 +498,7 @@ $$x_2=\frac{-(3)+7}{4}$$
 
 $$x_2=\frac{4}{4}$$
 
-30. **Simplifier la fraction.** On réduit la fraction 4/4 pour obtenir cette valeur exacte.
+30. **Simplifier la fraction.** On divise le numérateur 4 et le dénominateur 4 par leur diviseur commun non nul 4. Cette simplification conserve la valeur de la fraction.
 
 $$x_2=1$$
 
@@ -506,7 +506,7 @@ $$x_2=1$$
 
 $$x=-\frac52\quad\text{ou}\quad x=1$$
 
-32. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+32. **Retenir le résultat.** Le discriminant est strictement positif : les deux racines calculées sont les seules solutions réelles. L’équation est définie en chacune d’elles.
 
 $$S=\{-\tfrac52,1\}$$
 
@@ -518,11 +518,11 @@ Résoudre dans ℝ.
 
 $$10x^3+12x^2-14x=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le polynôme est défini sur ℝ. On le factorise pour appliquer la propriété du produit nul, sans diviser par x.
 
 $$10x^3+12x^2-14x=0$$
 
-2. **Repérer un facteur dans chaque terme.** 10x³ = 2x × 5x². On fait apparaître le même facteur 2x dans chaque terme.
+2. **Repérer un facteur dans chaque terme.** On commence par réécrire le premier terme : 10x³ = 2x × 5x². Le facteur 2x sera ensuite mis en évidence dans les deux autres termes.
 
 $$2x\cdot5x^2+12x^2-14x=0$$
 
@@ -534,11 +534,11 @@ $$2x\cdot5x^2+2x\cdot6x-14x=0$$
 
 $$2x\cdot5x^2+2x\cdot6x+2x\cdot(-7)=0$$
 
-5. **Mettre le facteur commun devant.** La distributivité utilisée à l’envers permet de sortir 2x. On ne divise pas par x : cela ferait perdre la solution x = 0.
+5. **Mettre 2x en facteur.** On utilise la distributivité pour mettre 2x en facteur. Cette identité est valable pour tout réel x, y compris x = 0 ; aucune division par x n’est effectuée.
 
 $$2x(5x^2+6x-7)=0$$
 
-6. **Séparer les deux possibilités.** Un produit vaut zéro lorsqu’au moins un de ses facteurs vaut zéro.
+6. **Séparer les deux possibilités.** Un produit de réels est nul si et seulement si au moins un de ses facteurs est nul. Les deux cas sont reliés par « ou ».
 
 $$2x=0\quad\text{ou}\quad5x^2+6x-7=0$$
 
@@ -554,7 +554,7 @@ $$5x^2+6x-7=0$$
 
 $$a=5,\quad b=6,\quad c=-7$$
 
-10. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+10. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -590,7 +590,7 @@ $$\Delta=36+140$$
 
 $$\Delta=176$$
 
-19. **Remplacer Δ sous la racine.** Δ vaut 176. On cherche maintenant sa racine carrée positive.
+19. **Remplacer Δ sous la racine.** Δ = 176 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 176.
 
 $$\sqrt{\Delta}=\sqrt{176}$$
 
@@ -598,11 +598,11 @@ $$\sqrt{\Delta}=\sqrt{176}$$
 
 $$\sqrt{\Delta}=\sqrt{16\times11}$$
 
-21. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √16 = 4.
+21. **Calculer la racine de Δ.** Pour u ≥ 0 et v ≥ 0, √(uv) = √u × √v. Ainsi √(16 × 11) = 4√11, puisque √16 = 4.
 
 $$\sqrt{\Delta}=4\sqrt{11}$$
 
-22. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+22. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -666,7 +666,7 @@ $$x_2=\frac{-6+4\sqrt{11}}{10}$$
 
 $$x_2=\frac{-3+2\sqrt{11}}5$$
 
-38. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+38. **Retenir le résultat.** La propriété du produit nul donne x = 0 ou l’une des deux racines du trinôme. Ces trois valeurs, et elles seules, annulent le polynôme initial.
 
 $$S=\{\frac{-3-2\sqrt{11}}5,0,\frac{-3+2\sqrt{11}}5\}$$
 
@@ -678,7 +678,7 @@ Résoudre dans ℝ.
 
 $$7x+\frac4x-1=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Avant de résoudre, on détermine les conditions d’existence : la fraction 4/x impose x ≠ 0. Les transformations suivantes seront faites sous cette condition.
 
 $$7x+\frac4x-1=0$$
 
@@ -686,7 +686,7 @@ $$7x+\frac4x-1=0$$
 
 $$x\ne0$$
 
-3. **Multiplier chaque membre par x.** Comme x ≠ 0, cette multiplication conserve les solutions de l’égalité.
+3. **Multiplier chaque membre par x.** On travaille sous la condition x ≠ 0. Multiplier les deux membres par x est alors réversible : on obtient une équation équivalente, avec exactement les mêmes solutions sur cet ensemble.
 
 $$x\left(7x+\frac4x-1\right)=x\cdot0$$
 
@@ -722,7 +722,7 @@ $$7x^2-x+4=0$$
 
 $$a=7,\quad b=-1,\quad c=4$$
 
-12. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+12. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -766,11 +766,11 @@ Résoudre dans ℝ.
 
 $$1+\frac1x-\frac6{x^2}=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Avant de résoudre, on exclut x = 0 : les dénominateurs x et x² doivent être non nuls. On cherchera ensuite les solutions parmi les autres réels.
 
 $$1+\frac1x-\frac6{x^2}=0$$
 
-2. **Garder la valeur interdite.** Les dénominateurs x et x² doivent être non nuls.
+2. **Déterminer la valeur interdite.** Les dénominateurs x et x² doivent être non nuls.
 
 $$x\ne0$$
 
@@ -778,7 +778,7 @@ $$x\ne0$$
 
 $$\frac{x^2}{x^2}+\frac1x-\frac6{x^2}=0$$
 
-4. **Réécrire la deuxième fraction.** On multiplie le numérateur et le dénominateur de 1/x par x.
+4. **Réécrire la deuxième fraction.** Comme x ≠ 0, multiplier le numérateur et le dénominateur de 1/x par x conserve la valeur de la fraction.
 
 $$\frac{x^2}{x^2}+\frac{x}{x^2}-\frac6{x^2}=0$$
 
@@ -786,7 +786,7 @@ $$\frac{x^2}{x^2}+\frac{x}{x^2}-\frac6{x^2}=0$$
 
 $$\frac{x^2+x-6}{x^2}=0$$
 
-6. **Annuler seulement le numérateur.** Une fraction définie est nulle exactement lorsque son numérateur est nul.
+6. **Résoudre l’équation du numérateur nul.** Une fraction définie est nulle exactement lorsque son numérateur est nul.
 
 $$x^2+x-6=0$$
 
@@ -798,7 +798,7 @@ $$x^2+x-6=0$$
 
 $$a=1,\quad b=1,\quad c=-6$$
 
-9. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+9. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -834,15 +834,15 @@ $$\Delta=1+24$$
 
 $$\Delta=25$$
 
-18. **Remplacer Δ sous la racine.** Δ vaut 25. On cherche maintenant sa racine carrée positive.
+18. **Remplacer Δ sous la racine.** Δ = 25 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 25.
 
 $$\sqrt{\Delta}=\sqrt{25}$$
 
-19. **Calculer la racine de Δ.** 5 est positif et 5² = 25, donc √Δ = 5.
+19. **Calculer la racine de Δ.** 5 > 0 et 5² = 25, donc √Δ = 5, par définition de la racine carrée.
 
 $$\sqrt{\Delta}=5$$
 
-20. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+20. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -870,7 +870,7 @@ $$x_1=\frac{-(1)-5}{2}$$
 
 $$x_1=\frac{-6}{2}$$
 
-27. **Simplifier la fraction.** On réduit la fraction -6/2 pour obtenir cette valeur exacte.
+27. **Simplifier la fraction.** On divise le numérateur -6 et le dénominateur 2 par leur diviseur commun non nul 2. Cette simplification conserve la valeur de la fraction.
 
 $$x_1=-3$$
 
@@ -902,7 +902,7 @@ $$x_2=\frac{-(1)+5}{2}$$
 
 $$x_2=\frac{4}{2}$$
 
-35. **Simplifier la fraction.** On réduit la fraction 4/2 pour obtenir cette valeur exacte.
+35. **Simplifier la fraction.** On divise le numérateur 4 et le dénominateur 2 par leur diviseur commun non nul 2. Cette simplification conserve la valeur de la fraction.
 
 $$x_2=2$$
 
@@ -910,7 +910,7 @@ $$x_2=2$$
 
 $$-3\ne0,\qquad2\ne0$$
 
-37. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+37. **Retenir le résultat.** Pour x ≠ 0, les équations successives sont équivalentes. Les deux racines −3 et 2 sont non nulles : elles sont donc exactement les solutions de l’équation initiale.
 
 $$S=\{-3,2\}$$
 
@@ -922,7 +922,7 @@ Résoudre dans ℝ.
 
 $$\frac1{x-1}=\frac{x+5}{x-3}$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Avant de résoudre, cherchons les valeurs interdites. Les dénominateurs x − 1 et x − 3 doivent être non nuls : on doit donc avoir x ≠ 1 et x ≠ 3.
 
 $$\frac1{x-1}=\frac{x+5}{x-3}$$
 
@@ -934,7 +934,7 @@ $$x-1\ne0\quad\Longrightarrow\quad x\ne1$$
 
 $$x-3\ne0\quad\Longrightarrow\quad x\ne3$$
 
-4. **Multiplier par les deux dénominateurs.** Pour x différent de 1 et 3, on multiplie l’égalité par (x − 1)(x − 3). Les dénominateurs se simplifient.
+4. **Multiplier par les deux dénominateurs.** Pour x ≠ 1 et x ≠ 3, le produit (x − 1)(x − 3) est non nul. Multiplier les deux membres par ce produit donne une équation équivalente sur cet ensemble et permet de simplifier les dénominateurs.
 
 $$x-3=(x+5)(x-1)$$
 
@@ -986,7 +986,7 @@ $$x^2+3x-2=0$$
 
 $$a=1,\quad b=3,\quad c=-2$$
 
-17. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+17. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -1022,11 +1022,11 @@ $$\Delta=9+8$$
 
 $$\Delta=17$$
 
-26. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
+26. **Remplacer Δ sous la racine.** Δ = 17 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 17.
 
 $$\sqrt{\Delta}=\sqrt{17}$$
 
-27. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+27. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -1078,7 +1078,7 @@ $$x_2=\frac{-3+\sqrt{17}}{2}$$
 
 $$1^2+3\cdot1-2=2,\quad3^2+3\cdot3-2=16$$
 
-40. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+40. **Retenir le résultat.** Les transformations sont équivalentes pour x ≠ 1 et x ≠ 3. Les deux racines respectent ces conditions : elles constituent donc l’ensemble des solutions.
 
 $$S=\{\frac{-3-\sqrt{17}}2,\frac{-3+\sqrt{17}}2\}$$
 
@@ -1090,7 +1090,7 @@ Déterminer l’ensemble de définition.
 
 $$f_1(x)=\frac1{x^2+3x+10}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_1(x)=\frac1{x^2+3x+10}$$
 
@@ -1102,7 +1102,7 @@ $$x^2+3x+10\ne0$$
 
 $$a=1,\quad b=3,\quad c=10$$
 
-4. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+4. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -1138,7 +1138,7 @@ $$\Delta=-31$$
 
 $$x\in\mathbb R$$
 
-13. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+13. **Retenir le résultat.** Le dénominateur ne s’annule pour aucun réel x. La fonction est donc définie sur tout ℝ.
 
 $$D=\mathbb R$$
 
@@ -1150,11 +1150,11 @@ Déterminer l’ensemble de définition.
 
 $$f_2(x)=\exp\!\left(\frac1{10x^3+12x^2-14x}\right)$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_2(x)=\exp\!\left(\frac1{10x^3+12x^2-14x}\right)$$
 
-2. **Commencer à l’intérieur de exp.** L’exponentielle accepte tout nombre réel, mais il faut d’abord pouvoir calculer son exposant.
+2. **Commencer à l’intérieur de exp.** La fonction exponentielle est définie sur ℝ. Pour la composer avec une fraction, il faut d’abord que cette fraction soit définie.
 
 $$\frac1{10x^3+12x^2-14x}$$
 
@@ -1174,11 +1174,11 @@ $$x\ne0$$
 
 $$x\ne\frac{-3-2\sqrt{11}}5,\qquad x\ne\frac{-3+2\sqrt{11}}5$$
 
-7. **Réunir les trois exclusions.** Un produit est non nul seulement si aucun de ses facteurs ne vaut zéro.
+7. **Réunir les trois exclusions.** Un produit de réels est non nul si et seulement si chacun de ses facteurs est non nul. Toutes les exclusions doivent donc être respectées simultanément.
 
 $$x\notin\{\frac{-3-2\sqrt{11}}5,0,\frac{-3+2\sqrt{11}}5\}$$
 
-8. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+8. **Retenir le résultat.** L’exponentielle est définie pour tout réel. Seuls les trois zéros du dénominateur de son exposant sont exclus de l’ensemble de définition.
 
 $$D=\mathbb R\setminus\{\frac{-3-2\sqrt{11}}5,0,\frac{-3+2\sqrt{11}}5\}$$
 
@@ -1190,15 +1190,15 @@ Déterminer l’ensemble de définition.
 
 $$f_3(x)=\frac1{2x^2+3x-5}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_3(x)=\frac1{2x^2+3x-5}$$
 
-2. **Interdire le dénominateur nul.** Le numérateur peut être quelconque, mais on ne peut pas diviser par zéro.
+2. **Interdire le dénominateur nul.** Le numérateur constant 1 est défini. La fraction existe si et seulement si son dénominateur est non nul.
 
 $$2x^2+3x-5\ne0$$
 
-3. **Écrire les deux facteurs.** La résolution de 2.2 donne les racines −5/2 et 1 et cette factorisation.
+3. **Écrire les deux facteurs.** Un trinôme de coefficient dominant a et de racines r₁, r₂ s’écrit a(x − r₁)(x − r₂). Ici, 2(x + 5/2)(x − 1) = (2x + 5)(x − 1).
 
 $$(2x+5)(x-1)\ne0$$
 
@@ -1210,7 +1210,7 @@ $$2x+5\ne0\quad\Longrightarrow\quad x\ne-\frac52$$
 
 $$x-1\ne0\quad\Longrightarrow\quad x\ne1$$
 
-6. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+6. **Retenir le résultat.** Le dénominateur s’annule exactement en −5/2 et en 1. La fonction est définie pour tous les autres réels.
 
 $$D=\mathbb R\setminus\{-\tfrac52,1\}$$
 
@@ -1222,7 +1222,7 @@ Déterminer l’ensemble de définition.
 
 $$f_4(x)=\frac2{(7x+4/x-1)^2}$$
 
-1. **Lire les deux niveaux de dénominateur.** La fraction 4/x doit d’abord exister. Ensuite, le carré au dénominateur de la grande fraction doit être non nul.
+1. **Lire les deux niveaux de dénominateur.** La fraction intérieure 4/x impose x ≠ 0. Le carré qui est au dénominateur du quotient extérieur doit aussi être non nul.
 
 $$f_4(x)=\frac{2}{\left(7x+\frac4x-1\right)^2}$$
 
@@ -1230,11 +1230,11 @@ $$f_4(x)=\frac{2}{\left(7x+\frac4x-1\right)^2}$$
 
 $$x\ne0$$
 
-3. **Interdire le dénominateur extérieur nul.** La grande fraction a pour numérateur 2. On doit pouvoir diviser par le carré situé au dénominateur.
+3. **Interdire le dénominateur extérieur nul.** Le quotient extérieur a pour dénominateur (7x + 4/x − 1)². Ce carré doit être non nul pour que la division soit définie.
 
 $$\left(7x+\frac4x-1\right)^2\ne0$$
 
-4. **Enlever le carré dans la condition.** Le carré d’un réel est nul si et seulement si ce réel est nul. On cherche donc si la base du carré peut s’annuler.
+4. **Utiliser la condition de non-annulation du carré.** Le carré d’un réel est nul si et seulement si ce réel est nul. On cherche donc si la base du carré peut s’annuler.
 
 $$7x+\frac4x-1\ne0$$
 
@@ -1262,7 +1262,7 @@ $$x\ne0\quad\text{et}\quad 7x^2-x+4\ne0$$
 
 $$a=7,\quad b=-1,\quad c=4$$
 
-11. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+11. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -1310,7 +1310,7 @@ Déterminer l’ensemble de définition.
 
 $$f_5(x)=\frac3{1+1/x-6/x^2}$$
 
-1. **Lire les dénominateurs emboîtés.** On vérifie d’abord les fractions intérieures, puis le dénominateur de la grande fraction.
+1. **Lire les dénominateurs emboîtés.** On vérifie d’abord que les fractions 1/x et 6/x² sont définies, puis que le dénominateur du quotient extérieur est non nul.
 
 $$f_5(x)=\frac{3}{1+\frac1x-\frac6{x^2}}$$
 
@@ -1318,7 +1318,7 @@ $$f_5(x)=\frac{3}{1+\frac1x-\frac6{x^2}}$$
 
 $$x\ne0$$
 
-3. **Interdire le dénominateur extérieur nul.** Même quand les petites fractions existent, leur somme ne doit pas être nulle : elle sert de dénominateur à la fonction.
+3. **Interdire le dénominateur extérieur nul.** Pour x ≠ 0, les fractions intérieures sont définies. L’expression 1 + 1/x − 6/x² doit en plus être non nulle, car elle est au dénominateur du quotient extérieur.
 
 $$1+\frac1x-\frac6{x^2}\ne0$$
 
@@ -1326,7 +1326,7 @@ $$1+\frac1x-\frac6{x^2}\ne0$$
 
 $$\frac{x^2}{x^2}+\frac1x-\frac6{x^2}\ne0$$
 
-5. **Mettre 1/x au même dénominateur.** On multiplie le numérateur et le dénominateur de 1/x par x.
+5. **Mettre 1/x au même dénominateur.** Comme x ≠ 0, multiplier le numérateur et le dénominateur de 1/x par x conserve la valeur de la fraction.
 
 $$\frac{x^2}{x^2}+\frac{x}{x^2}-\frac6{x^2}\ne0$$
 
@@ -1370,7 +1370,7 @@ $$x\ne-3\quad\text{et}\quad x\ne2$$
 
 $$x\ne-3,\qquad x\ne0,\qquad x\ne2$$
 
-16. **Retenir le domaine.** Toutes les autres valeurs réelles permettent de calculer les deux petites fractions puis la grande fraction.
+16. **Retenir le domaine.** Pour tout réel x distinct de −3, 0 et 2, les fractions intérieures sont définies et le dénominateur extérieur est non nul. Ces conditions sont donc nécessaires et suffisantes.
 
 $$D=\mathbb R\setminus\{-3,0,2\}$$
 
@@ -1408,7 +1408,7 @@ $$x\ne3$$
 
 $$u(x)=\frac1{x-1}-\frac{x+5}{x-3}$$
 
-7. **Comprendre la racine cubique.** Une racine cubique accepte les nombres négatifs, nuls et positifs. Il n’y a aucune condition u ≥ 0.
+7. **Comprendre la racine cubique.** La racine cubique est définie pour tout réel u, y compris lorsque u < 0. Elle n’impose donc aucune condition de signe.
 
 $$\sqrt[3]{u}\quad\text{existe pour tout }u\in\mathbb R$$
 
@@ -1496,7 +1496,7 @@ $$x^2+3x-2=0$$
 
 $$a=1,\quad b=3,\quad c=-2$$
 
-29. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+29. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -1532,11 +1532,11 @@ $$\Delta=9+8$$
 
 $$\Delta=17$$
 
-38. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
+38. **Remplacer Δ sous la racine.** Δ = 17 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 17.
 
 $$\sqrt{\Delta}=\sqrt{17}$$
 
-39. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+39. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -1612,7 +1612,7 @@ Résoudre dans ℝ.
 
 $$2x^2+3x-5>0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le trinôme est défini sur ℝ. On cherche où il est strictement positif : ses racines et un tableau de signes permettront de déterminer les intervalles solutions.
 
 $$2x^2+3x-5>0$$
 
@@ -1628,7 +1628,7 @@ $$2x^2+3x-5=0$$
 
 $$a=2,\quad b=3,\quad c=-5$$
 
-5. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+5. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -1664,15 +1664,15 @@ $$\Delta=9+40$$
 
 $$\Delta=49$$
 
-14. **Remplacer Δ sous la racine.** Δ vaut 49. On cherche maintenant sa racine carrée positive.
+14. **Remplacer Δ sous la racine.** Δ = 49 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 49.
 
 $$\sqrt{\Delta}=\sqrt{49}$$
 
-15. **Calculer la racine de Δ.** 7 est positif et 7² = 49, donc √Δ = 7.
+15. **Calculer la racine de Δ.** 7 > 0 et 7² = 49, donc √Δ = 7, par définition de la racine carrée.
 
 $$\sqrt{\Delta}=7$$
 
-16. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+16. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -1700,7 +1700,7 @@ $$x_1=\frac{-(3)-7}{4}$$
 
 $$x_1=\frac{-10}{4}$$
 
-23. **Simplifier la fraction.** On réduit la fraction -10/4 pour obtenir cette valeur exacte.
+23. **Simplifier la fraction.** On divise le numérateur -10 et le dénominateur 4 par leur diviseur commun non nul 2. Cette simplification conserve la valeur de la fraction.
 
 $$x_1=-\frac52$$
 
@@ -1732,7 +1732,7 @@ $$x_2=\frac{-(3)+7}{4}$$
 
 $$x_2=\frac{4}{4}$$
 
-31. **Simplifier la fraction.** On réduit la fraction 4/4 pour obtenir cette valeur exacte.
+31. **Simplifier la fraction.** On divise le numérateur 4 et le dénominateur 4 par leur diviseur commun non nul 4. Cette simplification conserve la valeur de la fraction.
 
 $$x_2=1$$
 
@@ -1740,11 +1740,11 @@ $$x_2=1$$
 
 $$(2x+5)(x-1)>0$$
 
-33. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+33. **Placer les valeurs dans le tableau.** La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&-\frac52&&1&&+\infty\\\hline 2x+5&&&&&&&\\x-1&&&&&&&\\\hline (2x+5)(x-1)&&&&&&&\\\hline\end{array}$$
 
-34. **Compléter la ligne 1.** 2x + 5 s’annule en −5/2. Son coefficient de x est positif : signe − à gauche de ce zéro, signe + à droite.
+34. **Compléter la ligne 1.** 2x + 5 s’annule en −5/2. Son coefficient de x est strictement positif : signe − à gauche de ce zéro, signe + à droite.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&-\frac52&&1&&+\infty\\\hline 2x+5&&-&0&+&&+&\\x-1&&&&&&&\\\hline (2x+5)(x-1)&&&&&&&\\\hline\end{array}$$
 
@@ -1764,7 +1764,7 @@ $$\begin{array}{c|ccccccc}\hline x&-\infty&&-\frac52&&1&&+\infty\\\hline 2x+5&&-
 
 $$x<-\frac52\quad\text{ou}\quad x>1$$
 
-39. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+39. **Retenir le résultat.** Le tableau donne un trinôme strictement positif à l’extérieur des deux racines. Les racines sont exclues puisque l’inégalité est stricte.
 
 $$S=]-\infty,-\tfrac52[\;\cup\;]1,+\infty[$$
 
@@ -1776,7 +1776,7 @@ Résoudre dans ℝ.
 
 $$7x+\frac4x-1\ge0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** La fraction 4/x impose x ≠ 0. Sur cet ensemble, on étudiera le signe du quotient obtenu après réduction au même dénominateur.
 
 $$7x+\frac4x-1\ge0$$
 
@@ -1784,7 +1784,7 @@ $$7x+\frac4x-1\ge0$$
 
 $$x\ne0$$
 
-3. **Réunir sur le dénominateur x.** On écrit 7x = 7x²/x et −1 = −x/x, puis on réunit les numérateurs.
+3. **Réunir sur le dénominateur x.** Pour x ≠ 0, on peut écrire 7x = 7x²/x et −1 = −x/x. Les termes ont alors le même dénominateur ; on additionne leurs numérateurs avec leurs signes.
 
 $$\frac{7x^2+4-x}{x}\ge0$$
 
@@ -1796,7 +1796,7 @@ $$7x^2-x+4=0$$
 
 $$a=7,\quad b=-1,\quad c=4$$
 
-6. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+6. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -1828,19 +1828,19 @@ $$\Delta=1-(112)$$
 
 $$\Delta=-111$$
 
-14. **Déduire son signe.** Sans racine et avec un coefficient de x² positif, ce trinôme est strictement positif partout.
+14. **Déduire son signe.** Un trinôme dont le discriminant est strictement négatif garde le signe de son coefficient dominant sur ℝ. Ici a = 7 > 0 : il est donc strictement positif pour tout réel x.
 
 $$7x^2-x+4>0$$
 
-15. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+15. **Placer les valeurs dans le tableau.** La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&&&&\\x&&&&&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-16. **Compléter la ligne 1.** Le numérateur a un discriminant négatif et un coefficient de x² positif. Il est strictement positif sur toute la droite réelle.
+16. **Compléter la ligne 1.** Le discriminant du numérateur est strictement négatif et son coefficient dominant vaut 7 > 0. Ce trinôme garde donc le signe + sur tout ℝ et ne s’annule jamais.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&&&&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-17. **Compléter la ligne 2.** x est négatif avant 0, nul en 0 et positif après 0.
+17. **Compléter la ligne 2.** Pour x < 0, le signe de x est − ; pour x > 0, il est + ; en x = 0, sa valeur est nulle.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
@@ -1852,7 +1852,7 @@ $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&-&\Vert&+&\\\hline\end{array}$$
 
-20. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+20. **Retenir le résultat.** Le numérateur est strictement positif sur ℝ : le quotient est positif ou nul exactement pour x > 0. La valeur 0 reste interdite par le dénominateur.
 
 $$S=]0,+\infty[$$
 
@@ -1864,7 +1864,7 @@ Résoudre dans ℝ.
 
 $$1+\frac1x-\frac6{x^2}<0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Les fractions imposent x ≠ 0. On cherchera où l’expression est strictement négative en conservant cette valeur interdite dans le tableau de signes.
 
 $$1+\frac1x-\frac6{x^2}<0$$
 
@@ -1876,7 +1876,7 @@ $$x\ne0$$
 
 $$\frac{x^2}{x^2}+\frac1x-\frac6{x^2}<0$$
 
-4. **Réécrire la deuxième fraction.** On multiplie le numérateur et le dénominateur de 1/x par x.
+4. **Réécrire la deuxième fraction.** Comme x ≠ 0, multiplier le numérateur et le dénominateur de 1/x par x conserve la valeur de la fraction.
 
 $$\frac{x^2}{x^2}+\frac{x}{x^2}-\frac6{x^2}<0$$
 
@@ -1884,7 +1884,7 @@ $$\frac{x^2}{x^2}+\frac{x}{x^2}-\frac6{x^2}<0$$
 
 $$\frac{x^2+x-6}{x^2}<0$$
 
-6. **Utiliser le signe du carré.** Pour x ≠ 0, x² est positif. Multiplier par ce dénominateur conserve le sens de l’inégalité.
+6. **Utiliser le signe du carré.** Pour x ≠ 0, x² est strictement positif. Multiplier les deux membres par x² donne donc une inéquation équivalente, de même sens ; la condition x ≠ 0 reste imposée.
 
 $$x^2+x-6<0$$
 
@@ -1896,7 +1896,7 @@ $$(x+3)(x-2)<0$$
 
 $$\frac{(x+3)(x-2)}{x^2}<0$$
 
-9. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+9. **Placer les valeurs dans le tableau.** La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&&&&&&&&\\x-2&&&&&&&&&\\x^2&&&&&&&&&\\\hline \frac{(x+3)(x-2)}{x^2}&&&&&&&&&\\\hline\end{array}$$
 
@@ -1908,7 +1908,7 @@ $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0&+&&+&&+&\\x-2&&-&&-&&-&0&+&\\x^2&&&&&&&&&\\\hline \frac{(x+3)(x-2)}{x^2}&&&&&&&&&\\\hline\end{array}$$
 
-12. **Compléter la ligne 3.** Le carré x² est positif des deux côtés de 0 et nul en 0. Son signe ne change pas en traversant 0.
+12. **Compléter la ligne 3.** Pour tout x ≠ 0, x² est strictement positif ; pour x = 0, il est nul. Le signe reste donc + de part et d’autre de 0.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0&+&&+&&+&\\x-2&&-&&-&&-&0&+&\\x^2&&+&&+&0&+&&+&\\\hline \frac{(x+3)(x-2)}{x^2}&&&&&&&&&\\\hline\end{array}$$
 
@@ -1920,7 +1920,7 @@ $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0&+&&+&&+&\\x-2&&-&&-&&-&0&+&\\x^2&&+&&+&0&+&&+&\\\hline \frac{(x+3)(x-2)}{x^2}&&+&0&-&\Vert&-&0&+&\\\hline\end{array}$$
 
-15. **Prendre les signes opposés.** Entre les deux racines, x + 3 est positif et x − 2 est négatif : leur produit est négatif.
+15. **Prendre les signes opposés.** Le produit (x + 3)(x − 2) est strictement négatif exactement pour −3 < x < 2. Pour le quotient initial, on conserve en plus la condition x ≠ 0.
 
 $$-3<x<2$$
 
@@ -1928,7 +1928,7 @@ $$-3<x<2$$
 
 $$]-3,0[\ \cup\ ]0,2[$$
 
-17. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+17. **Retenir le résultat.** Le quotient est strictement négatif entre −3 et 2, sauf en 0 où il n’est pas défini. Les valeurs −3 et 2 sont exclues car elles annulent le numérateur.
 
 $$S=]-3,0[\cup]0,2[$$
 
@@ -1940,7 +1940,7 @@ Résoudre dans ℝ.
 
 $$x-3\ge(x+5)(x-1)$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Les deux membres sont définis sur ℝ. On développera le produit, puis on étudiera le signe du trinôme obtenu.
 
 $$x-3\ge(x+5)(x-1)$$
 
@@ -1996,7 +1996,7 @@ $$x^2+3x-2=0$$
 
 $$a=1,\quad b=3,\quad c=-2$$
 
-15. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+15. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -2032,11 +2032,11 @@ $$\Delta=9+8$$
 
 $$\Delta=17$$
 
-24. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
+24. **Remplacer Δ sous la racine.** Δ = 17 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 17.
 
 $$\sqrt{\Delta}=\sqrt{17}$$
 
-25. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+25. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -2092,7 +2092,7 @@ $$x_1=\frac{-3-\sqrt{17}}2,\quad x_2=\frac{-3+\sqrt{17}}2$$
 
 $$(x-x_1)(x-x_2)\le0$$
 
-39. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+39. **Placer les valeurs dans le tableau.** La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&&&&&&\\x-x_2&&&&&&&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
@@ -2104,7 +2104,7 @@ $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
-42. **Compléter la ligne du résultat.** Le trinôme est (x − x₁)(x − x₂). Son coefficient dominant est 1. Le produit est positif à l’extérieur des racines, négatif entre elles et nul aux racines.
+42. **Compléter la ligne du résultat.** On a x₁ < x₂. Les facteurs ont le même signe à l’extérieur des racines et des signes opposés entre elles. Le produit est donc strictement positif à l’extérieur, strictement négatif à l’intérieur et nul aux racines.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&+&0&-&0&+&\\\hline\end{array}$$
 
@@ -2112,11 +2112,11 @@ $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&+&0&-&0&+&\\\hline\end{array}$$
 
-44. **Retenir l’intervalle entre les racines.** Le coefficient de x² est positif. Le trinôme est négatif entre ses deux racines et nul aux extrémités : on garde les bornes.
+44. **Retenir l’intervalle entre les racines.** Le coefficient de x² vaut 1 > 0. Le trinôme est strictement négatif entre ses deux racines et nul en chacune d’elles. Comme on demande ≤ 0, les deux bornes sont incluses.
 
 $$\frac{-3-\sqrt{17}}2\le x\le\frac{-3+\sqrt{17}}2$$
 
-45. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+45. **Retenir le résultat.** Le trinôme est négatif ou nul entre ses deux racines, bornes incluses. Les transformations précédentes étant équivalentes, cet intervalle est l’ensemble des solutions.
 
 $$S=[\frac{-3-\sqrt{17}}2,\frac{-3+\sqrt{17}}2]$$
 
@@ -2130,7 +2130,7 @@ $$f_1(x)=\frac1{\sqrt{10x^3+12x^2-14x}}$$
 
 **Lecture de l’énoncé.** Cette fonction contient le polynôme cubique de l’exercice 2.3, pas le trinôme de la question 3.1.
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_1(x)=\frac1{\sqrt{10x^3+12x^2-14x}}$$
 
@@ -2146,31 +2146,31 @@ $$10x^3+12x^2-14x>0$$
 
 $$\alpha=\frac{-3-2\sqrt{11}}5,\qquad\beta=\frac{-3+2\sqrt{11}}5$$
 
-5. **Factoriser le polynôme.** On étudie séparément les trois facteurs variables ; le coefficient 10 est positif.
+5. **Factoriser le polynôme.** Comme 5x² + 6x − 7 = 5(x − α)(x − β), le polynôme vaut 10x(x − α)(x − β). Le facteur 10 > 0 ne change pas le signe du produit.
 
 $$10x(x-\alpha)(x-\beta)>0$$
 
-6. **Ordonner les trois zéros.** Ils découpent la droite réelle en quatre intervalles.
+6. **Ordonner les trois zéros.** On a −3 − 2√11 < 0 et 2√11 > 3 puisque 44 > 9. Comme 5 > 0, on obtient α < 0 < β. Ces trois zéros délimitent quatre intervalles.
 
 $$\alpha<0<\beta$$
 
-7. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+7. **Placer les valeurs dans le tableau.** La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&\alpha&&0&&\beta&&+\infty\\\hline x&&&&&&&&&\\x-\alpha&&&&&&&&&\\x-\beta&&&&&&&&&\\\hline 10x(x-\alpha)(x-\beta)&&&&&&&&&\\\hline\end{array}$$
 
-8. **Compléter la ligne 1.** x est négatif avant 0, puis positif après 0 ; il s’annule en 0.
+8. **Compléter la ligne 1.** x est strictement négatif pour x < 0, nul en 0 et strictement positif pour x > 0.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&\alpha&&0&&\beta&&+\infty\\\hline x&&-&&-&0&+&&+&\\x-\alpha&&&&&&&&&\\x-\beta&&&&&&&&&\\\hline 10x(x-\alpha)(x-\beta)&&&&&&&&&\\\hline\end{array}$$
 
-9. **Compléter la ligne 2.** x − α est négatif avant α, puis positif après α ; il s’annule en α.
+9. **Compléter la ligne 2.** x − α est strictement négatif pour x < α, nul en α et strictement positif pour x > α.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&\alpha&&0&&\beta&&+\infty\\\hline x&&-&&-&0&+&&+&\\x-\alpha&&-&0&+&&+&&+&\\x-\beta&&&&&&&&&\\\hline 10x(x-\alpha)(x-\beta)&&&&&&&&&\\\hline\end{array}$$
 
-10. **Compléter la ligne 3.** x − β est négatif avant β, puis positif après β ; il s’annule en β.
+10. **Compléter la ligne 3.** x − β est strictement négatif pour x < β, nul en β et strictement positif pour x > β.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&\alpha&&0&&\beta&&+\infty\\\hline x&&-&&-&0&+&&+&\\x-\alpha&&-&0&+&&+&&+&\\x-\beta&&-&&-&&-&0&+&\\\hline 10x(x-\alpha)(x-\beta)&&&&&&&&&\\\hline\end{array}$$
 
-11. **Compléter la ligne du résultat.** Le facteur 10 est positif. On multiplie les trois signes : −, puis +, puis −, puis +. Les trois zéros sont α, 0 et β.
+11. **Compléter la ligne du résultat.** Le facteur 10 est strictement positif. On multiplie les trois signes : −, puis +, puis −, puis +. Les trois zéros sont α, 0 et β.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&\alpha&&0&&\beta&&+\infty\\\hline x&&-&&-&0&+&&+&\\x-\alpha&&-&0&+&&+&&+&\\x-\beta&&-&&-&&-&0&+&\\\hline 10x(x-\alpha)(x-\beta)&&-&0&+&0&-&0&+&\\\hline\end{array}$$
 
@@ -2182,7 +2182,7 @@ $$\begin{array}{c|ccccccccc}\hline x&-\infty&&\alpha&&0&&\beta&&+\infty\\\hline 
 
 $$\alpha<x<0\quad\text{ou}\quad x>\beta$$
 
-14. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+14. **Retenir le résultat.** Le polynôme sous la racine est strictement positif sur ces deux intervalles. Ses trois zéros sont exclus car la racine carrée est au dénominateur.
 
 $$D=]\frac{-3-2\sqrt{11}}5,0[\cup]\frac{-3+2\sqrt{11}}5,+\infty[$$
 
@@ -2194,7 +2194,7 @@ Déterminer l’ensemble de définition.
 
 $$f_2(x)=\sqrt{7x+4/x-1}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_2(x)=\sqrt{7x+4/x-1}$$
 
@@ -2206,7 +2206,7 @@ $$x\ne0$$
 
 $$7x+4/x-1\ge0$$
 
-4. **Réunir sur le dénominateur x.** On écrit 7x = 7x²/x et −1 = −x/x, puis on réunit les numérateurs.
+4. **Réunir sur le dénominateur x.** Pour x ≠ 0, on peut écrire 7x = 7x²/x et −1 = −x/x. Les termes ont alors le même dénominateur ; on additionne leurs numérateurs avec leurs signes.
 
 $$\frac{7x^2+4-x}{x}\ge0$$
 
@@ -2218,7 +2218,7 @@ $$7x^2-x+4=0$$
 
 $$a=7,\quad b=-1,\quad c=4$$
 
-7. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+7. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -2250,19 +2250,19 @@ $$\Delta=1-(112)$$
 
 $$\Delta=-111$$
 
-15. **Déduire son signe.** Sans racine et avec un coefficient de x² positif, ce trinôme est strictement positif partout.
+15. **Déduire son signe.** Un trinôme dont le discriminant est strictement négatif garde le signe de son coefficient dominant sur ℝ. Ici a = 7 > 0 : il est donc strictement positif pour tout réel x.
 
 $$7x^2-x+4>0$$
 
-16. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+16. **Placer les valeurs dans le tableau.** La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&&&&\\x&&&&&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-17. **Compléter la ligne 1.** Le numérateur a un discriminant négatif et un coefficient de x² positif. Il est strictement positif sur toute la droite réelle.
+17. **Compléter la ligne 1.** Le discriminant du numérateur est strictement négatif et son coefficient dominant vaut 7 > 0. Ce trinôme garde donc le signe + sur tout ℝ et ne s’annule jamais.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&&&&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-18. **Compléter la ligne 2.** x est négatif avant 0, nul en 0 et positif après 0.
+18. **Compléter la ligne 2.** Pour x < 0, le signe de x est − ; pour x > 0, il est + ; en x = 0, sa valeur est nulle.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
@@ -2274,7 +2274,7 @@ $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&-&\Vert&+&\\\hline\end{array}$$
 
-21. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+21. **Retenir le résultat.** Pour x > 0, la quantité sous la racine est strictement positive. Elle est strictement négative pour x < 0 et non définie en 0 : l’ensemble de définition est donc ]0, +∞[.
 
 $$D=]0,+\infty[$$
 
@@ -2286,7 +2286,7 @@ Déterminer l’ensemble de définition.
 
 $$f_3(x)=3\ln\!\left(\frac6{x^2}-1-\frac1x\right)$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_3(x)=3\ln\!\left(\frac6{x^2}-1-\frac1x\right)$$
 
@@ -2298,11 +2298,11 @@ $$x\ne0$$
 
 $$\frac6{x^2}-1-\frac1x>0$$
 
-4. **Reconnaître une expression opposée.** Le signe moins change le signe des trois termes.
+4. **Reconnaître une expression opposée.** On utilise la distributivité : −(1 + 1/x − 6/x²) = −1 − 1/x + 6/x², pour x ≠ 0.
 
 $$-\left(1+\frac1x-\frac6{x^2}\right)>0$$
 
-5. **Multiplier par −1.** Multiplier une inégalité par un nombre négatif inverse son sens.
+5. **Multiplier par −1.** Multiplier les deux membres d’une inégalité par un nombre strictement négatif donne une inégalité équivalente de sens opposé. Ici, on multiplie par −1.
 
 $$1+\frac1x-\frac6{x^2}<0$$
 
@@ -2310,7 +2310,7 @@ $$1+\frac1x-\frac6{x^2}<0$$
 
 $$\frac{(x+3)(x-2)}{x^2}<0$$
 
-7. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+7. **Placer les valeurs dans le tableau.** La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&&&&&&&&\\x-2&&&&&&&&&\\x^2&&&&&&&&&\\\hline \frac{(x+3)(x-2)}{x^2}&&&&&&&&&\\\hline\end{array}$$
 
@@ -2322,7 +2322,7 @@ $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0&+&&+&&+&\\x-2&&-&&-&&-&0&+&\\x^2&&&&&&&&&\\\hline \frac{(x+3)(x-2)}{x^2}&&&&&&&&&\\\hline\end{array}$$
 
-10. **Compléter la ligne 3.** Le carré x² est positif des deux côtés de 0 et nul en 0. Son signe ne change pas en traversant 0.
+10. **Compléter la ligne 3.** Pour tout x ≠ 0, x² est strictement positif ; pour x = 0, il est nul. Le signe reste donc + de part et d’autre de 0.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0&+&&+&&+&\\x-2&&-&&-&&-&0&+&\\x^2&&+&&+&0&+&&+&\\\hline \frac{(x+3)(x-2)}{x^2}&&&&&&&&&\\\hline\end{array}$$
 
@@ -2330,7 +2330,7 @@ $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0&+&&+&&+&\\x-2&&-&&-&&-&0&+&\\x^2&&+&&+&0&+&&+&\\\hline \frac{(x+3)(x-2)}{x^2}&&+&0&-&\Vert&-&0&+&\\\hline\end{array}$$
 
-12. **Lire les intervalles à conserver.** L’argument de ln est positif quand le quotient du tableau est négatif. On conserve les deux intervalles marqués −. Les racines et la valeur interdite 0 sont exclues.
+12. **Lire les intervalles à conserver.** L’argument de ln est strictement positif si et seulement si le quotient du tableau est strictement négatif. On retient les intervalles marqués − ; −3 et 2 annulent l’argument, et 0 est une valeur interdite.
 
 $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0&+&&+&&+&\\x-2&&-&&-&&-&0&+&\\x^2&&+&&+&0&+&&+&\\\hline \frac{(x+3)(x-2)}{x^2}&&+&0&-&\Vert&-&0&+&\\\hline\end{array}$$
 
@@ -2338,7 +2338,7 @@ $$\begin{array}{c|ccccccccc}\hline x&-\infty&&-3&&0&&2&&+\infty\\\hline x+3&&-&0
 
 $$-3<x<2,\qquad x\ne0$$
 
-14. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+14. **Retenir le résultat.** L’argument du logarithme est strictement positif exactement sur ces deux intervalles. Il est nul en −3 et en 2, et non défini en 0 : ces trois valeurs sont exclues.
 
 $$D=]-3,0[\cup]0,2[$$
 
@@ -2350,7 +2350,7 @@ Déterminer l’ensemble de définition.
 
 $$f_4(x)=\sqrt{x-3-(x+5)(x-1)}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_4(x)=\sqrt{x-3-(x+5)(x-1)}$$
 
@@ -2414,7 +2414,7 @@ $$x^2+3x-2=0$$
 
 $$a=1,\quad b=3,\quad c=-2$$
 
-17. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+17. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -2450,11 +2450,11 @@ $$\Delta=9+8$$
 
 $$\Delta=17$$
 
-26. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
+26. **Remplacer Δ sous la racine.** Δ = 17 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 17.
 
 $$\sqrt{\Delta}=\sqrt{17}$$
 
-27. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+27. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -2510,7 +2510,7 @@ $$x_1=\frac{-3-\sqrt{17}}2,\quad x_2=\frac{-3+\sqrt{17}}2$$
 
 $$(x-x_1)(x-x_2)\le0$$
 
-41. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+41. **Placer les valeurs dans le tableau.** La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&&&&&&\\x-x_2&&&&&&&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
@@ -2522,7 +2522,7 @@ $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
-44. **Compléter la ligne du résultat.** Le trinôme est (x − x₁)(x − x₂). Son coefficient dominant est 1. Le produit est positif à l’extérieur des racines, négatif entre elles et nul aux racines.
+44. **Compléter la ligne du résultat.** On a x₁ < x₂. Les facteurs ont le même signe à l’extérieur des racines et des signes opposés entre elles. Le produit est donc strictement positif à l’extérieur, strictement négatif à l’intérieur et nul aux racines.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&+&0&-&0&+&\\\hline\end{array}$$
 
@@ -2530,11 +2530,11 @@ $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&+&0&-&0&+&\\\hline\end{array}$$
 
-46. **Retenir l’intervalle entre les racines.** Le coefficient de x² est positif. Le trinôme est négatif entre ses deux racines et nul aux extrémités : on garde les bornes.
+46. **Retenir l’intervalle entre les racines.** Le coefficient de x² vaut 1 > 0. Le trinôme est strictement négatif entre ses deux racines et nul en chacune d’elles. Comme on demande ≤ 0, les deux bornes sont incluses.
 
 $$\frac{-3-\sqrt{17}}2\le x\le\frac{-3+\sqrt{17}}2$$
 
-47. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+47. **Retenir le résultat.** La quantité sous la racine est positive ou nulle entre les deux racines. Aux deux extrémités, elle vaut 0 ; la racine carrée reste définie, donc les bornes sont incluses.
 
 $$D=[\frac{-3-\sqrt{17}}2,\frac{-3+\sqrt{17}}2]$$
 
@@ -2550,11 +2550,11 @@ Simplifier l’expression.
 
 $$e^2e^3$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.
 
 $$e^2e^3$$
 
-2. **Repérer la base e.** Le nombre e est une constante positive. Les règles de puissances s’appliquent donc à e.
+2. **Repérer la base e.** Le nombre e est une constante strictement positive. Pour tous réels u et v, eᵘ × eᵛ = e^(u + v).
 
 $$e^2\times e^3$$
 
@@ -2566,7 +2566,7 @@ $$e^{2+3}$$
 
 $$e^5$$
 
-5. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+5. **Retenir le résultat.** On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.
 
 $$e^5$$
 
@@ -2578,7 +2578,7 @@ Simplifier l’expression.
 
 $$\frac{e^3e^{0.5}}{e^2}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.
 
 $$\frac{e^3e^{0.5}}{e^2}$$
 
@@ -2594,7 +2594,7 @@ $$\frac{e^{3+1/2}}{e^2}$$
 
 $$e^{3+1/2-2}$$
 
-5. **Calculer 3 − 2.** On calcule d’abord la partie entière : 3 − 2 = 1.
+5. **Calculer 3 − 2.** On regroupe les deux termes entiers de l’exposant : 3 − 2 = 1 ; le terme 1/2 reste inchangé.
 
 $$e^{1+1/2}$$
 
@@ -2602,7 +2602,7 @@ $$e^{1+1/2}$$
 
 $$e^{3/2}$$
 
-7. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+7. **Retenir le résultat.** On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.
 
 $$e^{3/2}$$
 
@@ -2614,11 +2614,11 @@ Simplifier l’expression.
 
 $$\frac{e^7+e^2}{e^2}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.
 
 $$\frac{e^7+e^2}{e^2}$$
 
-2. **Partager la division.** On divise chaque terme de la somme par le même dénominateur.
+2. **Décomposer le quotient de la somme.** On divise chaque terme de la somme par le même dénominateur.
 
 $$\frac{e^7}{e^2}+\frac{e^2}{e^2}$$
 
@@ -2634,7 +2634,7 @@ $$e^5+\frac{e^2}{e^2}$$
 
 $$e^5+1$$
 
-6. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+6. **Retenir le résultat.** On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.
 
 $$e^5+1$$
 
@@ -2646,7 +2646,7 @@ Simplifier l’expression.
 
 $$\frac{(e^{3.5})^2(e^{0.5})^4}{e^2}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.
 
 $$\frac{(e^{3.5})^2(e^{0.5})^4}{e^2}$$
 
@@ -2666,7 +2666,7 @@ $$\frac{e^7e^{0.5\times4}}{e^2}$$
 
 $$\frac{e^7e^2}{e^2}$$
 
-6. **Simplifier le facteur commun.** Le facteur e² du numérateur se simplifie avec e² au dénominateur.
+6. **Simplifier le facteur commun.** Comme e² ≠ 0, le quotient e²/e² vaut 1. On peut donc simplifier ce facteur commun au numérateur et au dénominateur.
 
 $$e^7\times1$$
 
@@ -2674,7 +2674,7 @@ $$e^7\times1$$
 
 $$e^7$$
 
-8. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+8. **Retenir le résultat.** On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.
 
 $$e^7$$
 
@@ -2686,15 +2686,15 @@ Simplifier l’expression.
 
 $$(e^{-2})^3(e^3)^2$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Le nombre e est strictement positif. On simplifie l’expression numérique en appliquant les règles des puissances de même base.
 
 $$(e^{-2})^3(e^3)^2$$
 
-2. **Traiter le premier facteur.** Pour une puissance élevée à une puissance, on multiplie les deux exposants. On ne touche pas encore au second facteur.
+2. **Traiter le premier facteur.** La base est strictement positive : la règle (aᵘ)ᵛ = a^(u × v) s’applique. On multiplie les deux exposants du premier facteur ; le second facteur reste inchangé.
 
 $$e^{(-2)\times3}(e^{3})^2$$
 
-3. **Calculer le premier exposant.** Le premier exposant est multiplié par 3.
+3. **Calculer le premier exposant.** (−2) × 3 = −6. Le second facteur reste inchangé.
 
 $$e^{-6}(e^{3})^2$$
 
@@ -2702,11 +2702,11 @@ $$e^{-6}(e^{3})^2$$
 
 $$e^{-6}e^{3\times2}$$
 
-5. **Calculer le second exposant.** On effectue la multiplication par 2.
+5. **Calculer le second exposant.** 3 × 2 = 6.
 
 $$e^{-6}e^{6}$$
 
-6. **Multiplier les deux puissances.** Les deux bases sont identiques : cette fois, on additionne les exposants.
+6. **Multiplier les deux puissances.** On utilise aᵘ × aᵛ = a^(u + v), pour une base a > 0. Ici, les deux facteurs ont la même base : leurs exposants s’additionnent.
 
 $$e^{-6+6}$$
 
@@ -2718,7 +2718,7 @@ $$e^0$$
 
 $$1$$
 
-9. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+9. **Retenir le résultat.** On obtient cette valeur exacte en appliquant successivement les règles des puissances et les opérations indiquées.
 
 $$1$$
 
@@ -2730,7 +2730,7 @@ Simplifier l’expression.
 
 $$(e^{2x})^2e^{3x}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** L’exponentielle est définie et strictement positive sur ℝ. On simplifie ce produit en appliquant les règles des puissances de base e.
 
 $$(e^{2x})^2e^{3x}$$
 
@@ -2750,7 +2750,7 @@ $$e^{4x+3x}$$
 
 $$e^{7x}$$
 
-6. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+6. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout réel x, par les règles des puissances de base e.
 
 $$e^{7x}$$
 
@@ -2762,7 +2762,7 @@ Simplifier l’expression.
 
 $$\frac{e^{3x}e^{0.5}}{e^{x-1}}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Le dénominateur e^(x − 1) est strictement positif pour tout réel x. Le quotient est donc défini sur ℝ ; on applique les règles des puissances de base e.
 
 $$\frac{e^{3x}e^{0.5}}{e^{x-1}}$$
 
@@ -2774,7 +2774,7 @@ $$\frac{e^{3x}e^{1/2}}{e^{x-1}}$$
 
 $$\frac{e^{3x+1/2}}{e^{x-1}}$$
 
-4. **Soustraire tout l’exposant du bas.** Le quotient soustrait l’exposant entier x − 1. Les parenthèses sont indispensables.
+4. **Soustraire l’exposant du dénominateur.** Les puissances ont la même base e. On soustrait l’exposant du dénominateur, x − 1, à celui du numérateur. Les parenthèses permettent de soustraire toute l’expression x − 1.
 
 $$e^{3x+1/2-(x-1)}$$
 
@@ -2790,7 +2790,7 @@ $$e^{2x+1/2+1}$$
 
 $$e^{2x+3/2}$$
 
-8. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+8. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout réel x ; les puissances au dénominateur ne s’annulent jamais.
 
 $$e^{2x+3/2}$$
 
@@ -2802,11 +2802,11 @@ Simplifier l’expression.
 
 $$\frac{e^{7x}+e^x}{e^x}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Le dénominateur eˣ est strictement positif pour tout réel x. Le quotient est donc défini sur ℝ ; on applique les règles des puissances de base e.
 
 $$\frac{e^{7x}+e^x}{e^x}$$
 
-2. **Partager la fraction.** Le dénominateur eˣ est toujours positif. On divise chacun des deux termes par eˣ.
+2. **Décomposer le quotient de la somme.** Pour tout réel x, eˣ > 0. La distributivité donne (A + B)/eˣ = A/eˣ + B/eˣ : on divise chaque terme du numérateur par le même dénominateur non nul.
 
 $$\frac{e^{7x}}{e^x}+\frac{e^x}{e^x}$$
 
@@ -2822,7 +2822,7 @@ $$e^{6x}+\frac{e^x}{e^x}$$
 
 $$e^{6x}+1$$
 
-6. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+6. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout réel x ; les puissances au dénominateur ne s’annulent jamais.
 
 $$e^{6x}+1$$
 
@@ -2834,7 +2834,7 @@ Simplifier l’expression.
 
 $$\frac{2^{x+1}2^{x+1}}{4^x}$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Les bases 2 et 4 sont strictement positives ; le dénominateur 4ˣ est non nul. Le quotient est défini sur ℝ. On réécrit toutes les puissances avec la base 2.
 
 $$\frac{2^{x+1}2^{x+1}}{4^x}$$
 
@@ -2854,7 +2854,7 @@ $$\frac{2^{x+1}2^{x+1}}{2^{2x}}$$
 
 $$\frac{2^{(x+1)+(x+1)}}{2^{2x}}$$
 
-6. **Réduire le numérateur.** x + x = 2x et 1 + 1 = 2.
+6. **Réduire l’exposant du numérateur.** x + x = 2x et 1 + 1 = 2.
 
 $$\frac{2^{2x+2}}{2^{2x}}$$
 
@@ -2862,11 +2862,11 @@ $$\frac{2^{2x+2}}{2^{2x}}$$
 
 $$2^{2x+2-2x}$$
 
-8. **Annuler les opposés.** 2x − 2x = 0. Il reste 2 à l’exposant, donc 4.
+8. **Additionner les termes opposés.** 2x − 2x = 0. Il reste 2 à l’exposant, donc 4.
 
 $$2^2=4$$
 
-9. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+9. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout réel x ; les puissances au dénominateur ne s’annulent jamais.
 
 $$4$$
 
@@ -2878,15 +2878,15 @@ Simplifier l’expression.
 
 $$(e^{-2x})^3(e^{3x})^2$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** L’exponentielle est définie et strictement positive sur ℝ. On simplifie ce produit en appliquant les règles des puissances de base e.
 
 $$(e^{-2x})^3(e^{3x})^2$$
 
-2. **Traiter le premier facteur.** Pour une puissance élevée à une puissance, on multiplie les deux exposants. On ne touche pas encore au second facteur.
+2. **Traiter le premier facteur.** La base est strictement positive : la règle (aᵘ)ᵛ = a^(u × v) s’applique. On multiplie les deux exposants du premier facteur ; le second facteur reste inchangé.
 
 $$e^{(-2x)\times3}(e^{3x})^2$$
 
-3. **Calculer le premier exposant.** Le premier exposant est multiplié par 3.
+3. **Calculer le premier exposant.** (−2x) × 3 = −6x. Le second facteur reste inchangé.
 
 $$e^{-6x}(e^{3x})^2$$
 
@@ -2894,11 +2894,11 @@ $$e^{-6x}(e^{3x})^2$$
 
 $$e^{-6x}e^{3x\times2}$$
 
-5. **Calculer le second exposant.** On effectue la multiplication par 2.
+5. **Calculer le second exposant.** 3x × 2 = 6x.
 
 $$e^{-6x}e^{6x}$$
 
-6. **Multiplier les deux puissances.** Les deux bases sont identiques : cette fois, on additionne les exposants.
+6. **Multiplier les deux puissances.** On utilise aᵘ × aᵛ = a^(u + v), pour une base a > 0. Ici, les deux facteurs ont la même base : leurs exposants s’additionnent.
 
 $$e^{-6x+6x}$$
 
@@ -2910,7 +2910,7 @@ $$e^0$$
 
 $$1$$
 
-9. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+9. **Retenir le résultat.** L’expression obtenue est égale à l’expression initiale pour tout réel x, par les règles des puissances de base e.
 
 $$1$$
 
@@ -2926,15 +2926,15 @@ Résoudre dans ℝ.
 
 $$e^{2x+1}=5$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** L’équation est définie pour tout réel x. Comme e^(2x + 1) et 5 sont strictement positifs, on pourra appliquer le logarithme népérien aux deux membres.
 
 $$e^{2x+1}=5$$
 
-2. **Appliquer ln aux deux membres.** Les deux membres sont positifs. Le logarithme permet de retrouver l’exposant.
+2. **Appliquer ln aux deux membres.** Les deux membres sont strictement positifs. Comme ln est injective sur ]0, +∞[, appliquer ln aux deux membres donne une équation équivalente.
 
 $$\ln(e^{2x+1})=\ln5$$
 
-3. **Annuler les fonctions inverses.** Pour tout réel u, ln(eᵘ) = u.
+3. **Utiliser la réciprocité de ln et exp.** Pour tout réel u, ln(eᵘ) = u.
 
 $$2x+1=\ln5$$
 
@@ -2942,11 +2942,11 @@ $$2x+1=\ln5$$
 
 $$2x=\ln5-1$$
 
-5. **Diviser les deux membres par 2.** Le 2 multiplie x : on divise tout le membre de droite par 2.
+5. **Diviser les deux membres par 2.** On divise les deux membres par 2, qui est non nul : 2x/2 = x et le membre de droite entier devient (ln(5) − 1)/2.
 
 $$x=\frac{\ln5-1}2$$
 
-6. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+6. **Retenir le résultat.** Les transformations sont équivalentes : ln est injective sur ]0, +∞[ et la division par 2 est réversible. La valeur obtenue est donc l’unique solution réelle.
 
 $$S=\{\tfrac{\ln5-1}2\}$$
 
@@ -2958,15 +2958,15 @@ Résoudre dans ℝ.
 
 $$3e^{-x}=4$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** L’équation est définie sur ℝ. On isolera e^(−x), puis on utilisera le logarithme népérien pour déterminer x.
 
 $$3e^{-x}=4$$
 
-2. **Diviser les deux membres par 3.** On commence par isoler l’exponentielle. Le coefficient 3 devient un diviseur du membre de droite.
+2. **Diviser les deux membres par 3.** On divise les deux membres par 3, qui est non nul : 3e^(−x)/3 = e^(−x) et 4/3 reste à droite. L’équation obtenue est équivalente.
 
 $$e^{-x}=\frac43$$
 
-3. **Appliquer ln.** 4/3 est positif : on peut prendre son logarithme.
+3. **Appliquer ln.** e^(−x) et 4/3 sont strictement positifs. L’injectivité de ln sur ]0, +∞[ autorise à appliquer ln aux deux membres par équivalence.
 
 $$\ln(e^{-x})=\ln(4/3)$$
 
@@ -2982,7 +2982,7 @@ $$x=-\ln(4/3)$$
 
 $$x=\ln(3/4)$$
 
-7. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+7. **Retenir le résultat.** Pour tout A > 0, l’équation eᵘ = A équivaut à u = ln(A). Avec u = −x et A = 4/3, on obtient l’unique solution x = −ln(4/3) = ln(3/4).
 
 $$S=\{\ln(3/4)\}$$
 
@@ -2994,7 +2994,7 @@ Résoudre dans ℝ.
 
 $$e^{2x}-e^x=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Les exponentielles sont définies sur ℝ. On factorisera par eˣ, qui est strictement positif et ne s’annule donc jamais.
 
 $$e^{2x}-e^x=0$$
 
@@ -3002,11 +3002,11 @@ $$e^{2x}-e^x=0$$
 
 $$e^x\cdot e^x-e^x=0$$
 
-3. **Mettre eˣ en facteur.** On sort le facteur commun eˣ. Les termes restants restent dans la parenthèse.
+3. **Mettre eˣ en facteur.** On utilise la distributivité pour mettre le facteur commun eˣ en facteur. L’identité obtenue est valable pour tout réel x.
 
 $$e^x(e^x-1)=0$$
 
-4. **Écarter le facteur jamais nul.** L’exponentielle est strictement positive : eˣ ne peut jamais être zéro. Seule la parenthèse pourrait s’annuler.
+4. **Diviser par le facteur non nul eˣ.** Pour tout réel x, eˣ > 0. On peut donc diviser les deux membres par eˣ ; le produit est nul si et seulement si le facteur entre parenthèses est nul.
 
 $$e^x-1=0$$
 
@@ -3014,11 +3014,11 @@ $$e^x-1=0$$
 
 $$e^x=1$$
 
-6. **Conclure avec le signe de exp.** 1 = e⁰. Deux exponentielles égales ont le même exposant, donc x = 0.
+6. **Utiliser l’injectivité de exp.** La fonction exp est strictement croissante, donc injective : eᵘ = eᵛ si et seulement si u = v. Comme 1 = e⁰, on obtient x = 0.
 
 $$x=0$$
 
-7. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+7. **Retenir le résultat.** Puisque eˣ ≠ 0, l’équation initiale équivaut à eˣ = 1, puis à x = 0. Cette valeur est l’unique solution.
 
 $$S=\{0\}$$
 
@@ -3030,7 +3030,7 @@ Résoudre dans ℝ.
 
 $$e^{2x}+2e^x=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Les exponentielles sont définies sur ℝ. On factorisera par eˣ, puis on vérifiera si le second facteur peut être nul.
 
 $$e^{2x}+2e^x=0$$
 
@@ -3038,11 +3038,11 @@ $$e^{2x}+2e^x=0$$
 
 $$e^x\cdot e^x+2e^x=0$$
 
-3. **Mettre eˣ en facteur.** On sort le facteur commun eˣ. Les termes restants restent dans la parenthèse.
+3. **Mettre eˣ en facteur.** On utilise la distributivité pour mettre le facteur commun eˣ en facteur. L’identité obtenue est valable pour tout réel x.
 
 $$e^x(e^x+2)=0$$
 
-4. **Écarter le facteur jamais nul.** L’exponentielle est strictement positive : eˣ ne peut jamais être zéro. Seule la parenthèse pourrait s’annuler.
+4. **Diviser par le facteur non nul eˣ.** Pour tout réel x, eˣ > 0. On peut donc diviser les deux membres par eˣ ; le produit est nul si et seulement si le facteur entre parenthèses est nul.
 
 $$e^x+2=0$$
 
@@ -3054,7 +3054,7 @@ $$e^x=-2$$
 
 $$e^x>0\quad\text{mais}\quad -2<0$$
 
-7. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+7. **Retenir le résultat.** L’équation initiale imposerait eˣ = −2, alors que eˣ > 0 pour tout réel x. Elle n’a donc aucune solution réelle.
 
 $$S=\varnothing$$
 
@@ -3066,11 +3066,11 @@ Résoudre dans ℝ.
 
 $$10e^{2x}+12e^x-14=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** L’équation est définie sur ℝ. On posera X = eˣ pour obtenir une équation du second degré, en conservant la condition X > 0.
 
 $$10e^{2x}+12e^x-14=0$$
 
-2. **Nommer la nouvelle variable.** La lettre X représente eˣ. Attention : elle ne peut prendre que des valeurs strictement positives.
+2. **Nommer la nouvelle variable.** On pose X = eˣ. L’exponentielle réalise une bijection de ℝ sur ]0, +∞[ : X doit être strictement positif et chaque X > 0 correspond à l’unique réel x = ln(X).
 
 $$X=e^x,\qquad X>0$$
 
@@ -3090,7 +3090,7 @@ $$5X^2+6X-7=0$$
 
 $$a=5,\quad b=6,\quad c=-7$$
 
-7. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+7. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -3126,7 +3126,7 @@ $$\Delta=36+140$$
 
 $$\Delta=176$$
 
-16. **Remplacer Δ sous la racine.** Δ vaut 176. On cherche maintenant sa racine carrée positive.
+16. **Remplacer Δ sous la racine.** Δ = 176 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 176.
 
 $$\sqrt{\Delta}=\sqrt{176}$$
 
@@ -3134,11 +3134,11 @@ $$\sqrt{\Delta}=\sqrt{176}$$
 
 $$\sqrt{\Delta}=\sqrt{16\times11}$$
 
-18. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √16 = 4.
+18. **Calculer la racine de Δ.** Pour u ≥ 0 et v ≥ 0, √(uv) = √u × √v. Ainsi √(16 × 11) = 4√11, puisque √16 = 4.
 
 $$\sqrt{\Delta}=4\sqrt{11}$$
 
-19. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+19. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$X_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -3202,11 +3202,11 @@ $$X_2=\frac{-6+4\sqrt{11}}{10}$$
 
 $$X_2=\frac{-3+2\sqrt{11}}5$$
 
-35. **Rejeter la première racine.** Son numérateur est négatif et son dénominateur est positif. Elle ne peut donc pas représenter eˣ.
+35. **Rejeter la première racine.** Le numérateur −3 − 2√11 est strictement négatif et le dénominateur 5 strictement positif. Cette racine est donc strictement négative et ne peut pas être égale à eˣ.
 
 $$\frac{-3-2\sqrt{11}}5<0$$
 
-36. **Garder la racine positive.** Comme 2√11 > 3, le numérateur est positif. Cette racine respecte X > 0.
+36. **Garder la racine positive.** Les deux nombres 2√11 et 3 sont positifs, et leurs carrés vérifient 44 > 9. Ainsi 2√11 > 3 : le numérateur est strictement positif et la racine respecte X > 0.
 
 $$X=\frac{-3+2\sqrt{11}}5>0$$
 
@@ -3214,11 +3214,11 @@ $$X=\frac{-3+2\sqrt{11}}5>0$$
 
 $$e^x=\frac{-3+2\sqrt{11}}5$$
 
-38. **Prendre le logarithme.** Le logarithme d’un nombre positif est l’unique exposant qui donne ce nombre.
+38. **Prendre le logarithme.** Pour tout A > 0, eˣ = A si et seulement si x = ln(A), car ln est la fonction réciproque de exp. La racine conservée est strictement positive.
 
 $$x=\ln\!\left(\frac{-3+2\sqrt{11}}5\right)$$
 
-39. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+39. **Retenir le résultat.** Une seule racine du trinôme est strictement positive. Elle correspond à un unique réel x par x = ln(X) : on obtient ainsi l’unique solution de l’équation initiale.
 
 $$S=\{\ln(\frac{-3+2\sqrt{11}}5)\}$$
 
@@ -3230,11 +3230,11 @@ Résoudre dans ℝ.
 
 $$e^{3x}-5e^{2x}+e^x=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** L’équation est définie sur ℝ. On factorisera par eˣ, puis on posera X = eˣ ; seules les racines strictement positives en X pourront convenir.
 
 $$e^{3x}-5e^{2x}+e^x=0$$
 
-2. **Sortir le facteur commun eˣ.** e³ˣ = eˣ × e²ˣ, −5e²ˣ = eˣ × (−5eˣ) et eˣ = eˣ × 1.
+2. **Mettre le facteur commun eˣ en facteur.** e³ˣ = eˣ × e²ˣ, −5e²ˣ = eˣ × (−5eˣ) et eˣ = eˣ × 1.
 
 $$e^x(e^{2x}-5e^x+1)=0$$
 
@@ -3242,7 +3242,7 @@ $$e^x(e^{2x}-5e^x+1)=0$$
 
 $$e^{2x}-5e^x+1=0$$
 
-4. **Changer de variable.** On remplace eˣ par X, donc e²ˣ par X².
+4. **Changer de variable.** On pose X = eˣ > 0, donc e^(2x) = X². Chaque valeur X > 0 correspond à un unique réel x = ln(X), ce qui permettra de revenir à l’inconnue initiale.
 
 $$X^2-5X+1=0,\qquad X=e^x>0$$
 
@@ -3254,7 +3254,7 @@ $$X^2-5X+1=0$$
 
 $$a=1,\quad b=-5,\quad c=1$$
 
-7. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+7. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -3286,11 +3286,11 @@ $$\Delta=25-(4)$$
 
 $$\Delta=21$$
 
-15. **Remplacer Δ sous la racine.** Δ vaut 21. On cherche maintenant sa racine carrée positive.
+15. **Remplacer Δ sous la racine.** Δ = 21 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 21.
 
 $$\sqrt{\Delta}=\sqrt{21}$$
 
-16. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+16. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$X_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -3338,7 +3338,7 @@ $$X_2=\frac{-(-5)+\sqrt{21}}{2}$$
 
 $$X_2=\frac{5+\sqrt{21}}{2}$$
 
-28. **Vérifier la plus petite racine.** 21 < 25, donc √21 < 5. Même la plus petite racine est positive : on garde les deux.
+28. **Vérifier la plus petite racine.** La racine carrée est strictement croissante sur [0, +∞[. Comme 0 < 21 < 25, on a 0 < √21 < 5 : les deux racines (5 − √21)/2 et (5 + √21)/2 sont strictement positives.
 
 $$0<\sqrt{21}<5\quad\Longrightarrow\quad\frac{5-\sqrt{21}}2>0$$
 
@@ -3350,7 +3350,7 @@ $$x=\ln\!\left(\frac{5-\sqrt{21}}2\right)$$
 
 $$x=\ln\!\left(\frac{5+\sqrt{21}}2\right)$$
 
-31. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+31. **Retenir le résultat.** Les deux racines en X sont strictement positives et distinctes. Chacune correspond à un unique réel x = ln(X) ; ces deux valeurs sont exactement les solutions recherchées.
 
 $$S=\{\ln(\frac{5-\sqrt{21}}2),\ln(\frac{5+\sqrt{21}}2)\}$$
 
@@ -3362,7 +3362,7 @@ Résoudre dans ℝ.
 
 $$e^{-x}-e^{2x-3}=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Les deux exponentielles sont définies sur ℝ. On les isolera dans les deux membres, puis on utilisera l’injectivité de exp : des images égales ont des antécédents égaux.
 
 $$e^{-x}-e^{2x-3}=0$$
 
@@ -3370,7 +3370,7 @@ $$e^{-x}-e^{2x-3}=0$$
 
 $$e^{-x}=e^{2x-3}$$
 
-3. **Comparer les exposants.** La fonction exponentielle prend chaque valeur positive une seule fois. Des exponentielles égales ont donc des exposants égaux.
+3. **Comparer les exposants.** La fonction exp est strictement croissante sur ℝ, donc injective. Pour tous réels u et v, eᵘ = eᵛ si et seulement si u = v ; on peut donc égaler les exposants.
 
 $$-x=2x-3$$
 
@@ -3382,7 +3382,7 @@ $$-3x=-3$$
 
 $$x=1$$
 
-6. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+6. **Retenir le résultat.** Par injectivité de exp, l’équation initiale équivaut à −x = 2x − 3. Cette équation du premier degré possède l’unique solution x = 1.
 
 $$S=\{1\}$$
 
@@ -3394,7 +3394,7 @@ Déterminer l’ensemble de définition.
 
 $$f_1(x)=\frac5{e^{2x}-e^x}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_1(x)=\frac5{e^{2x}-e^x}$$
 
@@ -3414,11 +3414,11 @@ $$e^x>0$$
 
 $$e^x\ne1=e^0$$
 
-6. **Comparer les exposants.** exp prend chaque valeur une seule fois : eˣ = e⁰ seulement si x = 0.
+6. **Comparer les exposants.** Par injectivité de exp, eˣ = e⁰ si et seulement si x = 0. La condition eˣ ≠ 1 équivaut donc à x ≠ 0.
 
 $$x\ne0$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** Le dénominateur eˣ(eˣ − 1) s’annule exactement pour x = 0. La fonction est définie pour tous les autres réels.
 
 $$D=\mathbb R\setminus\{0\}$$
 
@@ -3430,7 +3430,7 @@ Déterminer l’ensemble de définition.
 
 $$f_2(x)=\ln(e^{2x}+2e^x)$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_2(x)=\ln(e^{2x}+2e^x)$$
 
@@ -3438,19 +3438,19 @@ $$f_2(x)=\ln(e^{2x}+2e^x)$$
 
 $$e^{2x}+2e^x>0$$
 
-3. **Signer le premier terme.** Une exponentielle est strictement positive pour tout réel x.
+3. **Étudier le signe du premier terme.** Une exponentielle est strictement positive pour tout réel x.
 
 $$e^{2x}>0$$
 
-4. **Signer le second terme.** 2 est positif et eˣ est positif : leur produit l’est aussi.
+4. **Étudier le signe du second terme.** 2 > 0 et eˣ > 0 pour tout réel x. Le produit 2eˣ est donc strictement positif sur ℝ.
 
 $$2e^x>0$$
 
-5. **Additionner deux positifs.** La condition est automatiquement satisfaite.
+5. **Additionner deux termes strictement positifs.** La somme de deux réels strictement positifs est strictement positive. L’argument du logarithme est donc strictement positif pour tout réel x.
 
 $$e^{2x}+2e^x>0\quad\text{pour tout }x\in\mathbb R$$
 
-6. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+6. **Retenir le résultat.** La somme e^(2x) + 2eˣ est strictement positive pour tout réel x. Son logarithme est donc défini sur tout ℝ.
 
 $$D=\mathbb R$$
 
@@ -3462,7 +3462,7 @@ Déterminer l’ensemble de définition.
 
 $$f_3(x)=\ln(10e^{2x}+12e^x-14)$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_3(x)=\ln(10e^{2x}+12e^x-14)$$
 
@@ -3470,15 +3470,15 @@ $$f_3(x)=\ln(10e^{2x}+12e^x-14)$$
 
 $$10e^{2x}+12e^x-14>0$$
 
-3. **Changer de variable.** On se ramène à un trinôme, sans oublier que X est positif.
+3. **Changer de variable.** On pose X = eˣ, donc X > 0 et e^(2x) = X². On étudie le trinôme uniquement pour X > 0, puis on reviendra à x = ln(X).
 
 $$10X^2+12X-14>0,\qquad X=e^x>0$$
 
-4. **Nommer les deux racines.** Ces racines ont été calculées en 5.5. Le coefficient de X² est positif.
+4. **Nommer les deux racines.** Ces deux racines ont été calculées en 5.5. On a α < 0 < β et 10X² + 12X − 14 = 10(X − α)(X − β).
 
 $$\alpha=\frac{-3-2\sqrt{11}}5<0,\qquad\beta=\frac{-3+2\sqrt{11}}5>0$$
 
-5. **Lire les zones positives.** Un trinôme de coefficient dominant positif est positif à l’extérieur de ses deux racines.
+5. **Lire les zones positives.** Comme 10 > 0 et α < β, le produit 10(X − α)(X − β) est strictement positif exactement pour X < α ou X > β. Les racines sont exclues.
 
 $$X<\alpha\quad\text{ou}\quad X>\beta$$
 
@@ -3486,11 +3486,11 @@ $$X<\alpha\quad\text{ou}\quad X>\beta$$
 
 $$X>\beta$$
 
-7. **Revenir à x.** On applique ln, qui est croissant sur les nombres positifs. La borne est exclue car l’argument du logarithme initial y vaut zéro.
+7. **Revenir à x.** β > 0 et ln est strictement croissante sur ]0, +∞[ : eˣ > β équivaut à x > ln(β). L’égalité est exclue car elle annule l’argument du logarithme initial.
 
 $$x>\ln\!\left(\frac{-3+2\sqrt{11}}5\right)$$
 
-8. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+8. **Retenir le résultat.** L’argument du logarithme est strictement positif exactement lorsque x dépasse la borne indiquée. À cette borne il vaut 0, ce qui explique son exclusion.
 
 $$D=]\ln(\frac{-3+2\sqrt{11}}5),+\infty[$$
 
@@ -3502,7 +3502,7 @@ Déterminer l’ensemble de définition.
 
 $$f_4(x)=\frac{e^x}{e^{3x}-5e^{2x}+e^x}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_4(x)=\frac{e^x}{e^{3x}-5e^{2x}+e^x}$$
 
@@ -3514,19 +3514,19 @@ $$e^{3x}-5e^{2x}+e^x\ne0$$
 
 $$e^x(e^{2x}-5e^x+1)\ne0$$
 
-4. **Retirer le facteur jamais nul.** eˣ ne peut jamais annuler le dénominateur.
+4. **Diviser par le facteur non nul eˣ.** Comme eˣ > 0, le produit eˣ(e²ˣ − 5eˣ + 1) est non nul si et seulement si son second facteur est non nul.
 
 $$e^{2x}-5e^x+1\ne0$$
 
-5. **Exclure les deux racines en X.** Le trinôme en X = eˣ a deux racines positives.
+5. **Exclure les deux racines en X.** Le trinôme X² − 5X + 1 a exactement les deux racines indiquées, toutes deux strictement positives. On les exclut pour que le dénominateur soit non nul.
 
 $$e^x\ne\frac{5-\sqrt{21}}2,\qquad e^x\ne\frac{5+\sqrt{21}}2$$
 
-6. **Exprimer les valeurs interdites en x.** On applique ln à chacune des deux égalités interdites.
+6. **Exprimer les valeurs interdites en x.** Pour A > 0, eˣ = A équivaut à x = ln(A). Les deux racines étant strictement positives, leurs logarithmes sont exactement les deux valeurs interdites de x.
 
 $$x\ne\ln(\frac{5-\sqrt{21}}2),\qquad x\ne\ln(\frac{5+\sqrt{21}}2)$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** Les deux valeurs exclues sont exactement les zéros du dénominateur. Les exponentielles étant définies sur ℝ, aucune autre restriction n’est nécessaire.
 
 $$D=\mathbb R\setminus\{\ln(\frac{5-\sqrt{21}}2),\ln(\frac{5+\sqrt{21}}2)\}$$
 
@@ -3542,11 +3542,11 @@ Résoudre dans ℝ.
 
 $$e^4-e^x\ge0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** L’inéquation est définie sur ℝ. On utilisera la stricte croissance de l’exponentielle pour comparer les exposants.
 
 $$e^4-e^x\ge0$$
 
-2. **Ajouter eˣ des deux côtés.** On déplace le terme en ajoutant la même quantité aux deux membres.
+2. **Ajouter eˣ des deux côtés.** On ajoute eˣ aux deux membres : −eˣ + eˣ = 0 à gauche. Ajouter la même quantité conserve le sens de l’inégalité et donne une inéquation équivalente.
 
 $$e^4\ge e^x$$
 
@@ -3554,7 +3554,7 @@ $$e^4\ge e^x$$
 
 $$e^x\le e^4$$
 
-4. **Utiliser la croissance de exp.** L’exponentielle est strictement croissante : l’ordre des valeurs est celui des exposants.
+4. **Utiliser la croissance de exp.** La fonction exp est strictement croissante sur ℝ : eᵘ ≤ eᵛ si et seulement si u ≤ v. Ici, eˣ ≤ e⁴ équivaut donc à x ≤ 4.
 
 $$x\le4$$
 
@@ -3562,7 +3562,7 @@ $$x\le4$$
 
 $$x=4\quad\Longrightarrow\quad e^4-e^x=0$$
 
-6. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+6. **Retenir le résultat.** La stricte croissance de exp donne eˣ ≤ e⁴ si et seulement si x ≤ 4. L’égalité est autorisée : la borne 4 est incluse.
 
 $$S=]-\infty,4]$$
 
@@ -3574,11 +3574,11 @@ Résoudre dans ℝ.
 
 $$(4-2x)(e-e^x)\ge0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Les deux facteurs sont définis sur ℝ. On déterminera leurs zéros et leurs signes pour savoir où leur produit est positif ou nul.
 
 $$(4-2x)(e-e^x)\ge0$$
 
-2. **Annuler le premier facteur.** On cherche les valeurs où un facteur change de signe.
+2. **Chercher le zéro du premier facteur.** On cherche d’abord le zéro du premier facteur ; son signe sera ensuite étudié de part et d’autre de cette valeur.
 
 $$4-2x=0$$
 
@@ -3586,23 +3586,23 @@ $$4-2x=0$$
 
 $$2x=4\quad\Longrightarrow\quad x=2$$
 
-4. **Annuler le second facteur.** e s’écrit aussi e puissance 1.
+4. **Chercher le zéro du second facteur.** e s’écrit aussi e puissance 1.
 
 $$e-e^x=0\quad\Longrightarrow\quad e^x=e^1$$
 
-5. **Résoudre ce second cas.** L’égalité des exponentielles donne l’égalité des exposants.
+5. **Résoudre ce second cas.** Par injectivité de exp, eˣ = e¹ si et seulement si x = 1.
 
 $$x=1$$
 
-6. **Signer 4 − 2x.** Le coefficient de x est négatif. Le facteur décroît, donc il est positif avant son zéro et négatif après.
+6. **Étudier le signe de 4 − 2x.** Le coefficient −2 de x est strictement négatif. La fonction affine 4 − 2x est strictement décroissante : elle est strictement positive pour x < 2, nulle en 2 et strictement négative pour x > 2.
 
 $$4-2x>0\ \text{si }x<2;\quad4-2x<0\ \text{si }x>2$$
 
-7. **Signer e − eˣ.** Avant x = 1, eˣ est plus petit que e ; après, il est plus grand.
+7. **Étudier le signe de e − eˣ.** La fonction exp est strictement croissante : eˣ < e si x < 1 et eˣ > e si x > 1. On en déduit le signe de e − eˣ.
 
 $$e-e^x>0\ \text{si }x<1;\quad e-e^x<0\ \text{si }x>1$$
 
-8. **Multiplier les signes.** Deux signes identiques donnent un produit positif. Des signes différents donnent un produit négatif.
+8. **Multiplier les signes.** Sur chacun des intervalles considérés, les facteurs sont non nuls. Leur produit est strictement positif s’ils ont le même signe et strictement négatif s’ils ont des signes opposés.
 
 $$\begin{array}{c|ccc}x&]-\infty,1[&]1,2[&]2,+\infty[\\4-2x&+&+&-\\e-e^x&+&-&-\\\text{produit}&+&-&+\end{array}$$
 
@@ -3610,7 +3610,7 @@ $$\begin{array}{c|ccc}x&]-\infty,1[&]1,2[&]2,+\infty[\\4-2x&+&+&-\\e-e^x&+&-&-\\
 
 $$x\le1\quad\text{ou}\quad x\ge2$$
 
-10. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+10. **Retenir le résultat.** Le produit est strictement positif sur ]−∞, 1[ et ]2, +∞[, et nul en 1 et en 2. Comme on demande un produit positif ou nul, ces deux bornes sont incluses.
 
 $$S=]-\infty,1]\cup[2,+\infty[$$
 
@@ -3622,7 +3622,7 @@ Résoudre dans ℝ.
 
 $$e^{x+6}<\frac1{e^x}$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Comme eˣ > 0 pour tout réel x, le quotient 1/eˣ est défini sur ℝ. On l’écrira sous la forme e^(−x), puis on comparera les exposants.
 
 $$e^{x+6}<\frac1{e^x}$$
 
@@ -3630,7 +3630,7 @@ $$e^{x+6}<\frac1{e^x}$$
 
 $$e^{x+6}<e^{-x}$$
 
-3. **Comparer les exposants.** Comme exp est croissante, on conserve le sens de l’inégalité.
+3. **Comparer les exposants.** La fonction exp est strictement croissante sur ℝ : eᵘ < eᵛ si et seulement si u < v. On obtient donc une inéquation équivalente en comparant les exposants.
 
 $$x+6<-x$$
 
@@ -3642,11 +3642,11 @@ $$2x+6<0$$
 
 $$2x<-6$$
 
-6. **Diviser par le nombre positif 2.** Diviser par un nombre positif conserve le sens. La borne −3 est exclue car l’inégalité est stricte.
+6. **Diviser par le nombre strictement positif 2.** On divise les deux membres par 2 > 0 : l’inéquation est équivalente et garde le même sens. La borne −3 est exclue car elle donne une égalité, alors qu’on demande <.
 
 $$x<-3$$
 
-7. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+7. **Retenir le résultat.** Les transformations sont équivalentes sur ℝ. On obtient x < −3 ; la borne −3 est exclue car elle donne l’égalité des deux membres.
 
 $$S=]-\infty,-3[$$
 
@@ -3658,11 +3658,11 @@ Résoudre dans ℝ.
 
 $$\frac{2-e^{-2x}}{e^{-2x}}<1$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le dénominateur e^(−2x) est strictement positif pour tout réel x. On peut donc multiplier les deux membres par ce dénominateur en conservant le sens de l’inégalité.
 
 $$\frac{2-e^{-2x}}{e^{-2x}}<1$$
 
-2. **Vérifier le signe du dénominateur.** Une exponentielle est toujours positive. On peut donc multiplier l’inégalité par ce dénominateur sans changer son sens.
+2. **Vérifier le signe du dénominateur.** Pour tout réel x, e^(−2x) > 0. La fraction est donc définie ; multiplier les deux membres par ce dénominateur donne une inéquation équivalente de même sens.
 
 $$e^{-2x}>0$$
 
@@ -3674,7 +3674,7 @@ $$2-e^{-2x}<e^{-2x}$$
 
 $$2<2e^{-2x}$$
 
-5. **Diviser par 2.** 2 est positif : le sens est conservé.
+5. **Diviser par 2.** On divise les deux membres par 2 > 0 : le sens de l’inégalité est conservé.
 
 $$1<e^{-2x}$$
 
@@ -3694,7 +3694,7 @@ $$0>x$$
 
 $$x<0$$
 
-10. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+10. **Retenir le résultat.** Le dénominateur est toujours strictement positif. Les transformations équivalentes donnent x < 0 ; en x = 0, le quotient vaut 1 et ne satisfait pas l’inégalité stricte.
 
 $$S=]-\infty,0[$$
 
@@ -3706,15 +3706,15 @@ Résoudre dans ℝ.
 
 $$\frac{e^x-1}{e^x+2}>0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le dénominateur eˣ + 2 est strictement positif sur ℝ. Le quotient est donc défini et a le même signe que son numérateur.
 
 $$\frac{e^x-1}{e^x+2}>0$$
 
-2. **Signer le dénominateur.** eˣ est positif et on lui ajoute 2. Le dénominateur ne s’annule jamais.
+2. **Étudier le signe du dénominateur.** Pour tout réel x, eˣ > 0, donc eˣ + 2 > 2 > 0. Le dénominateur est strictement positif et ne s’annule jamais.
 
 $$e^x+2>0$$
 
-3. **Garder le signe du numérateur.** Le dénominateur étant positif, le quotient est positif exactement lorsque son numérateur l’est.
+3. **Garder le signe du numérateur.** Le dénominateur étant strictement positif, le quotient a le signe de son numérateur. Il est strictement positif si et seulement si eˣ − 1 > 0.
 
 $$e^x-1>0$$
 
@@ -3726,11 +3726,11 @@ $$e^x>1$$
 
 $$e^x>e^0$$
 
-6. **Comparer les exposants.** La croissance de exp conserve l’ordre.
+6. **Comparer les exposants.** La stricte croissance de exp donne eˣ > e⁰ si et seulement si x > 0.
 
 $$x>0$$
 
-7. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+7. **Retenir le résultat.** Le quotient a le signe de eˣ − 1, qui est strictement positif si et seulement si x > 0. La valeur 0 est exclue car elle annule le numérateur.
 
 $$S=]0,+\infty[$$
 
@@ -3742,7 +3742,7 @@ Déterminer l’ensemble de définition.
 
 $$f_1(x)=\sqrt[4]{e^4-e^x}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_1(x)=\sqrt[4]{e^4-e^x}$$
 
@@ -3750,7 +3750,7 @@ $$f_1(x)=\sqrt[4]{e^4-e^x}$$
 
 $$e^4-e^x\ge0$$
 
-3. **Ajouter eˣ des deux côtés.** On déplace le terme en ajoutant la même quantité aux deux membres.
+3. **Ajouter eˣ des deux côtés.** On ajoute eˣ aux deux membres : −eˣ + eˣ = 0 à gauche. Ajouter la même quantité conserve le sens de l’inégalité et donne une inéquation équivalente.
 
 $$e^4\ge e^x$$
 
@@ -3758,7 +3758,7 @@ $$e^4\ge e^x$$
 
 $$e^x\le e^4$$
 
-5. **Utiliser la croissance de exp.** L’exponentielle est strictement croissante : l’ordre des valeurs est celui des exposants.
+5. **Utiliser la croissance de exp.** La fonction exp est strictement croissante sur ℝ : eᵘ ≤ eᵛ si et seulement si u ≤ v. Ici, eˣ ≤ e⁴ équivaut donc à x ≤ 4.
 
 $$x\le4$$
 
@@ -3766,7 +3766,7 @@ $$x\le4$$
 
 $$x=4\quad\Longrightarrow\quad e^4-e^x=0$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** La quantité sous la racine quatrième est positive ou nulle si et seulement si x ≤ 4. À x = 4, cette racine vaut 0 et reste définie.
 
 $$D=]-\infty,4]$$
 
@@ -3778,7 +3778,7 @@ Déterminer l’ensemble de définition.
 
 $$f_2(x)=\sqrt{(4-2x)(e-e^x)}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_2(x)=\sqrt{(4-2x)(e-e^x)}$$
 
@@ -3786,7 +3786,7 @@ $$f_2(x)=\sqrt{(4-2x)(e-e^x)}$$
 
 $$(4-2x)(e-e^x)\ge0$$
 
-3. **Annuler le premier facteur.** On cherche les valeurs où un facteur change de signe.
+3. **Chercher le zéro du premier facteur.** On cherche d’abord le zéro du premier facteur ; son signe sera ensuite étudié de part et d’autre de cette valeur.
 
 $$4-2x=0$$
 
@@ -3794,23 +3794,23 @@ $$4-2x=0$$
 
 $$2x=4\quad\Longrightarrow\quad x=2$$
 
-5. **Annuler le second facteur.** e s’écrit aussi e puissance 1.
+5. **Chercher le zéro du second facteur.** e s’écrit aussi e puissance 1.
 
 $$e-e^x=0\quad\Longrightarrow\quad e^x=e^1$$
 
-6. **Résoudre ce second cas.** L’égalité des exponentielles donne l’égalité des exposants.
+6. **Résoudre ce second cas.** Par injectivité de exp, eˣ = e¹ si et seulement si x = 1.
 
 $$x=1$$
 
-7. **Signer 4 − 2x.** Le coefficient de x est négatif. Le facteur décroît, donc il est positif avant son zéro et négatif après.
+7. **Étudier le signe de 4 − 2x.** Le coefficient −2 de x est strictement négatif. La fonction affine 4 − 2x est strictement décroissante : elle est strictement positive pour x < 2, nulle en 2 et strictement négative pour x > 2.
 
 $$4-2x>0\ \text{si }x<2;\quad4-2x<0\ \text{si }x>2$$
 
-8. **Signer e − eˣ.** Avant x = 1, eˣ est plus petit que e ; après, il est plus grand.
+8. **Étudier le signe de e − eˣ.** La fonction exp est strictement croissante : eˣ < e si x < 1 et eˣ > e si x > 1. On en déduit le signe de e − eˣ.
 
 $$e-e^x>0\ \text{si }x<1;\quad e-e^x<0\ \text{si }x>1$$
 
-9. **Multiplier les signes.** Deux signes identiques donnent un produit positif. Des signes différents donnent un produit négatif.
+9. **Multiplier les signes.** Sur chacun des intervalles considérés, les facteurs sont non nuls. Leur produit est strictement positif s’ils ont le même signe et strictement négatif s’ils ont des signes opposés.
 
 $$\begin{array}{c|ccc}x&]-\infty,1[&]1,2[&]2,+\infty[\\4-2x&+&+&-\\e-e^x&+&-&-\\\text{produit}&+&-&+\end{array}$$
 
@@ -3818,7 +3818,7 @@ $$\begin{array}{c|ccc}x&]-\infty,1[&]1,2[&]2,+\infty[\\4-2x&+&+&-\\e-e^x&+&-&-\\
 
 $$x\le1\quad\text{ou}\quad x\ge2$$
 
-11. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+11. **Retenir le résultat.** Le tableau de signes donne un produit positif ou nul sur ces deux intervalles. Les valeurs 1 et 2 annulent le produit : leur racine carrée vaut 0, donc elles sont incluses.
 
 $$D=]-\infty,1]\cup[2,+\infty[$$
 
@@ -3830,11 +3830,11 @@ Déterminer l’ensemble de définition.
 
 $$f_3(x)=\frac1{\sqrt{1/e^x-e^{x+6}}}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_3(x)=\frac1{\sqrt{1/e^x-e^{x+6}}}$$
 
-2. **Définir l’inverse de exp.** 1/eˣ existe pour tout réel x.
+2. **Vérifier que eˣ est non nul.** 1/eˣ existe pour tout réel x.
 
 $$e^x>0$$
 
@@ -3850,7 +3850,7 @@ $$e^{-x}-e^{x+6}>0$$
 
 $$e^{x+6}<e^{-x}$$
 
-6. **Comparer les exposants.** Comme exp est croissante, on conserve le sens de l’inégalité.
+6. **Comparer les exposants.** La fonction exp est strictement croissante sur ℝ : eᵘ < eᵛ si et seulement si u < v. On obtient donc une inéquation équivalente en comparant les exposants.
 
 $$x+6<-x$$
 
@@ -3862,11 +3862,11 @@ $$2x+6<0$$
 
 $$2x<-6$$
 
-9. **Diviser par le nombre positif 2.** Diviser par un nombre positif conserve le sens. La borne −3 est exclue car l’inégalité est stricte.
+9. **Diviser par le nombre strictement positif 2.** On divise les deux membres par 2 > 0 : l’inéquation est équivalente et garde le même sens. La borne −3 est exclue car elle donne une égalité, alors qu’on demande <.
 
 $$x<-3$$
 
-10. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+10. **Retenir le résultat.** La quantité sous la racine doit être strictement positive, car cette racine est au dénominateur. Cette condition équivaut à x < −3 ; la borne −3 est exclue.
 
 $$D=]-\infty,-3[$$
 
@@ -3878,7 +3878,7 @@ Déterminer l’ensemble de définition.
 
 $$f_4(x)=\ln\!\left(\frac{e^x-1}{e^x+2}\right)$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_4(x)=\ln\!\left(\frac{e^x-1}{e^x+2}\right)$$
 
@@ -3886,11 +3886,11 @@ $$f_4(x)=\ln\!\left(\frac{e^x-1}{e^x+2}\right)$$
 
 $$\frac{e^x-1}{e^x+2}>0$$
 
-3. **Signer le dénominateur.** eˣ est positif et on lui ajoute 2. Le dénominateur ne s’annule jamais.
+3. **Étudier le signe du dénominateur.** Pour tout réel x, eˣ > 0, donc eˣ + 2 > 2 > 0. Le dénominateur est strictement positif et ne s’annule jamais.
 
 $$e^x+2>0$$
 
-4. **Garder le signe du numérateur.** Le dénominateur étant positif, le quotient est positif exactement lorsque son numérateur l’est.
+4. **Garder le signe du numérateur.** Le dénominateur étant strictement positif, le quotient a le signe de son numérateur. Il est strictement positif si et seulement si eˣ − 1 > 0.
 
 $$e^x-1>0$$
 
@@ -3902,11 +3902,11 @@ $$e^x>1$$
 
 $$e^x>e^0$$
 
-7. **Comparer les exposants.** La croissance de exp conserve l’ordre.
+7. **Comparer les exposants.** La stricte croissance de exp donne eˣ > e⁰ si et seulement si x > 0.
 
 $$x>0$$
 
-8. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+8. **Retenir le résultat.** Le dénominateur eˣ + 2 est toujours strictement positif. L’argument du logarithme est strictement positif si et seulement si x > 0 : c’est l’ensemble de définition.
 
 $$D=]0,+\infty[$$
 
@@ -3922,15 +3922,15 @@ Simplifier l’expression.
 
 $$\ln(2\sqrt3)+2\ln(\sqrt3)$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Les arguments des logarithmes, ici 2√3 et √3, sont strictement positifs. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.
 
 $$\ln(2\sqrt3)+2\ln(\sqrt3)$$
 
-2. **Ouvrir le logarithme du produit.** Pour deux nombres positifs, ln(ab) = ln(a) + ln(b). On transforme seulement le premier logarithme.
+2. **Décomposer le logarithme du produit.** Pour a > 0 et b > 0, ln(ab) = ln(a) + ln(b). Ici 2 > 0 et √3 > 0 : on applique cette propriété au premier logarithme.
 
 $$\ln2+\ln(\sqrt3)+2\ln(\sqrt3)$$
 
-3. **Réécrire la première racine.** √3 = 3 puissance 1/2 et ln(aᵖ) = p ln(a).
+3. **Réécrire la première racine.** Pour a > 0 et p réel, ln(aᵖ) = p ln(a). Ici √3 = 3^(1/2), donc ln(√3) = (1/2)ln(3).
 
 $$\ln2+\tfrac12\ln3+2\ln(\sqrt3)$$
 
@@ -3946,7 +3946,7 @@ $$\ln2+\tfrac12\ln3+\ln3$$
 
 $$\ln2+\tfrac32\ln3$$
 
-7. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+7. **Retenir le résultat.** Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.
 
 $$\ln2+\frac32\ln3$$
 
@@ -3958,7 +3958,7 @@ Simplifier l’expression.
 
 $$\ln(e^2-1)-\ln(1+e)$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Les arguments des logarithmes, ici e² − 1 et 1 + e, sont strictement positifs. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.
 
 $$\ln(e^2-1)-\ln(1+e)$$
 
@@ -3966,7 +3966,7 @@ $$\ln(e^2-1)-\ln(1+e)$$
 
 $$e^2-1>0,\qquad1+e>0$$
 
-3. **Réunir la différence.** Pour des nombres positifs, ln(a) − ln(b) = ln(a/b).
+3. **Réunir la différence.** Pour a > 0 et b > 0, ln(a) − ln(b) = ln(a/b). Les deux arguments e² − 1 et 1 + e vérifient ces conditions.
 
 $$\ln\!\left(\frac{e^2-1}{1+e}\right)$$
 
@@ -3978,11 +3978,11 @@ $$\ln\!\left(\frac{(e-1)(e+1)}{1+e}\right)$$
 
 $$\ln\!\left((e-1)\frac{e+1}{e+1}\right)$$
 
-6. **Simplifier le quotient égal à 1.** Le facteur (e + 1)/(e + 1) vaut 1. L’argument restant e − 1 est positif.
+6. **Simplifier le quotient égal à 1.** Comme e + 1 ≠ 0, le quotient (e + 1)/(e + 1) vaut 1. L’argument restant e − 1 est strictement positif puisque e > 1.
 
 $$\ln(e-1)$$
 
-7. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+7. **Retenir le résultat.** Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.
 
 $$\ln(e-1)$$
 
@@ -3994,7 +3994,7 @@ Simplifier l’expression.
 
 $$\ln\!\left(\frac{3e^2}{\sqrt e}\right)$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** L’argument du logarithme, 3e²/√e, est strictement positif. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.
 
 $$\ln\!\left(\frac{3e^2}{\sqrt e}\right)$$
 
@@ -4010,7 +4010,7 @@ $$\ln(3e^{2-1/2})$$
 
 $$\ln(3e^{3/2})$$
 
-5. **Séparer le produit positif.** ln(ab) = ln(a) + ln(b) pour a et b positifs.
+5. **Décomposer le logarithme du produit.** Pour a > 0 et b > 0, ln(ab) = ln(a) + ln(b). Ici 3 > 0 et e^(3/2) > 0, donc cette propriété s’applique.
 
 $$\ln3+\ln(e^{3/2})$$
 
@@ -4018,7 +4018,7 @@ $$\ln3+\ln(e^{3/2})$$
 
 $$\ln3+\frac32$$
 
-7. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+7. **Retenir le résultat.** Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.
 
 $$\ln3+\frac32$$
 
@@ -4030,11 +4030,11 @@ Simplifier l’expression.
 
 $$\ln\!\left(\frac{81}{32}\right)$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** L’argument du logarithme, 81/32, est strictement positif. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.
 
 $$\ln\!\left(\frac{81}{32}\right)$$
 
-2. **Séparer le quotient.** Les deux nombres sont positifs : ln(a/b) = ln(a) − ln(b).
+2. **Séparer le quotient.** Pour a > 0 et b > 0, ln(a/b) = ln(a) − ln(b). Ici 81 et 32 sont strictement positifs.
 
 $$\ln81-\ln32$$
 
@@ -4042,7 +4042,7 @@ $$\ln81-\ln32$$
 
 $$\ln(3^4)-\ln32$$
 
-4. **Sortir le premier exposant.** ln(3⁴) = 4 ln(3).
+4. **Appliquer la propriété du logarithme d’une puissance.** Pour a > 0 et p réel, ln(aᵖ) = p ln(a). Ici 3 > 0, donc ln(3⁴) = 4 ln(3).
 
 $$4\ln3-\ln32$$
 
@@ -4050,11 +4050,11 @@ $$4\ln3-\ln32$$
 
 $$4\ln3-\ln(2^5)$$
 
-6. **Sortir le second exposant.** Le signe moins devant le second logarithme reste en place.
+6. **Appliquer la propriété à la seconde puissance.** Comme 2 > 0, ln(2⁵) = 5 ln(2). Le signe moins devant ce logarithme est conservé.
 
 $$4\ln3-5\ln2$$
 
-7. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+7. **Retenir le résultat.** Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.
 
 $$4\ln3-5\ln2$$
 
@@ -4066,11 +4066,11 @@ Simplifier l’expression.
 
 $$2\ln(3\sqrt2)-2\ln(2\sqrt3)$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Les arguments des logarithmes, ici 3√2 et 2√3, sont strictement positifs. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.
 
 $$2\ln(3\sqrt2)-2\ln(2\sqrt3)$$
 
-2. **Faire entrer le premier coefficient.** 2 ln(a) = ln(a²) lorsque a > 0. On traite seulement le premier logarithme.
+2. **Appliquer 2 ln(a) = ln(a²) au premier terme.** 2 ln(a) = ln(a²) lorsque a > 0. On traite seulement le premier logarithme.
 
 $$\ln((3\sqrt2)^2)-2\ln(2\sqrt3)$$
 
@@ -4078,7 +4078,7 @@ $$\ln((3\sqrt2)^2)-2\ln(2\sqrt3)$$
 
 $$\ln18-2\ln(2\sqrt3)$$
 
-4. **Faire entrer le second coefficient.** On applique la même règle au second terme en gardant le signe moins.
+4. **Appliquer 2 ln(a) = ln(a²) au second terme.** On applique la même règle au second terme en gardant le signe moins.
 
 $$\ln18-\ln((2\sqrt3)^2)$$
 
@@ -4086,7 +4086,7 @@ $$\ln18-\ln((2\sqrt3)^2)$$
 
 $$\ln18-\ln12$$
 
-6. **Réunir les logarithmes.** Une différence de logarithmes est le logarithme du quotient.
+6. **Réunir les logarithmes.** Comme 18 > 0 et 12 > 0, la propriété ln(a) − ln(b) = ln(a/b) s’applique : ln(18) − ln(12) = ln(18/12).
 
 $$\ln(18/12)$$
 
@@ -4094,7 +4094,7 @@ $$\ln(18/12)$$
 
 $$\ln(3/2)$$
 
-8. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+8. **Retenir le résultat.** Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.
 
 $$\ln\!\left(\frac32\right)$$
 
@@ -4106,15 +4106,15 @@ Simplifier l’expression.
 
 $$\ln(3^4)-2\ln(3\sqrt e)$$
 
-1. **Lire l’énoncé.** Simplifier l’expression. On gardera les parties non travaillées inchangées.
+1. **Lire l’énoncé.** Les arguments des logarithmes, ici 3⁴ et 3√e, sont strictement positifs. On peut appliquer les propriétés du logarithme népérien pour obtenir une valeur exacte.
 
 $$\ln(3^4)-2\ln(3\sqrt e)$$
 
-2. **Sortir le premier exposant.** ln(3⁴) = 4 ln(3). On garde le second terme intact.
+2. **Appliquer la propriété du logarithme d’une puissance.** Pour a > 0 et p réel, ln(aᵖ) = p ln(a). Ici 3 > 0, donc ln(3⁴) = 4 ln(3). On garde le second terme intact.
 
 $$4\ln3-2\ln(3\sqrt e)$$
 
-3. **Ouvrir le logarithme du produit.** Le coefficient −2 multiplie tout le logarithme : les parenthèses sont nécessaires.
+3. **Décomposer le logarithme du produit.** Puisque 3 > 0 et √e > 0, ln(3√e) = ln(3) + ln(√e). Le facteur −2 multiplie cette somme entière, d’où les parenthèses.
 
 $$4\ln3-2(\ln3+\ln\sqrt e)$$
 
@@ -4138,7 +4138,7 @@ $$4\ln3-2\ln3-1$$
 
 $$2\ln3-1$$
 
-9. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+9. **Retenir le résultat.** Les propriétés du logarithme ont été appliquées à des arguments strictement positifs. L’expression obtenue est une valeur exacte de l’expression initiale.
 
 $$2\ln3-1$$
 
@@ -4154,7 +4154,7 @@ Résoudre dans ℝ.
 
 $$\ln x=5\ln2$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** On détermine d’abord la condition d’existence x > 0, nécessaire pour définir ln(x). Toutes les transformations seront faites sur cet ensemble.
 
 $$\ln x=5\ln2$$
 
@@ -4162,7 +4162,7 @@ $$\ln x=5\ln2$$
 
 $$x>0$$
 
-3. **Faire entrer le coefficient 5.** 5 ln(2) = ln(2⁵).
+3. **Appliquer 5 ln(2) = ln(2⁵).** Pour a > 0 et p réel, p ln(a) = ln(aᵖ). Comme 2 > 0, on a 5 ln(2) = ln(2⁵).
 
 $$\ln x=\ln(2^5)$$
 
@@ -4170,7 +4170,7 @@ $$\ln x=\ln(2^5)$$
 
 $$\ln x=\ln32$$
 
-5. **Comparer les arguments.** Sur les nombres positifs, ln prend chaque valeur une seule fois. Deux logarithmes égaux ont donc des arguments égaux.
+5. **Comparer les arguments.** La fonction ln est strictement croissante sur ]0, +∞[, donc injective. Pour a > 0 et b > 0, ln(a) = ln(b) si et seulement si a = b.
 
 $$x=32$$
 
@@ -4178,7 +4178,7 @@ $$x=32$$
 
 $$32>0$$
 
-7. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+7. **Retenir le résultat.** Sur x > 0, l’injectivité de ln donne x = 32. Cette valeur respecte la condition d’existence et constitue l’unique solution.
 
 $$S=\{32\}$$
 
@@ -4190,19 +4190,19 @@ Résoudre dans ℝ.
 
 $$\ln(x+2)=\ln7$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Les arguments des logarithmes doivent être strictement positifs. Ici, on doit avoir x + 2 > 0 ; le logarithme de 7 est déjà défini.
 
 $$\ln(x+2)=\ln7$$
 
-2. **Exiger un argument positif.** L’argument du logarithme de gauche est x + 2.
+2. **Exiger un argument strictement positif.** Pour définir ln(x + 2), il faut et il suffit que son argument x + 2 soit strictement positif.
 
 $$x+2>0$$
 
-3. **Isoler x dans la condition.** On soustrait 2. L’argument 7 du logarithme de droite est déjà positif.
+3. **Isoler x dans la condition.** On soustrait 2 aux deux membres de x + 2 > 0, ce qui donne x > −2. Comme 7 > 0, le logarithme de droite n’impose aucune autre condition.
 
 $$x>-2$$
 
-4. **Comparer les arguments.** ln est strictement croissante et prend chaque valeur une seule fois : les arguments sont égaux.
+4. **Comparer les arguments.** Sur x > −2, les deux arguments x + 2 et 7 sont strictement positifs. L’injectivité de ln donne ln(x + 2) = ln(7) si et seulement si x + 2 = 7.
 
 $$x+2=7$$
 
@@ -4214,7 +4214,7 @@ $$x=5$$
 
 $$5+2=7>0$$
 
-7. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+7. **Retenir le résultat.** Sur x > −2, l’équation équivaut à x + 2 = 7. La valeur 5 respecte cette condition et constitue l’unique solution.
 
 $$S=\{5\}$$
 
@@ -4226,11 +4226,11 @@ Résoudre dans ℝ.
 
 $$6(\ln x)^2-2\ln x=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** La condition d’existence est x > 0. On factorisera ensuite l’expression sans diviser par ln(x), car ln(x) peut être nul.
 
 $$6(\ln x)^2-2\ln x=0$$
 
-2. **Poser le domaine.** On doit pouvoir calculer ln(x).
+2. **Déterminer les conditions d’existence.** On doit pouvoir calculer ln(x).
 
 $$x>0$$
 
@@ -4242,7 +4242,7 @@ $$2\ln x\cdot3\ln x-2\ln x\cdot1=0$$
 
 $$2\ln x(3\ln x-1)=0$$
 
-5. **Séparer les cas.** Un produit nul a au moins un facteur nul ; le coefficient 2 ne peut pas être nul.
+5. **Séparer les cas.** Un produit de réels est nul si et seulement si au moins un facteur est nul. Comme 2 ≠ 0, on obtient ln(x) = 0 ou 3ln(x) − 1 = 0.
 
 $$\ln x=0\quad\text{ou}\quad3\ln x-1=0$$
 
@@ -4254,15 +4254,15 @@ $$x=e^0=1$$
 
 $$3\ln x=1$$
 
-8. **Diviser par 3.** On divise tout le membre de droite par 3.
+8. **Diviser par 3.** On divise les deux membres par 3 ≠ 0 : 3ln(x)/3 = ln(x) et 1/3 reste à droite. On obtient une équation équivalente.
 
 $$\ln x=\frac13$$
 
-9. **Revenir à x.** On applique exp. Les deux solutions 1 et e¹ᐟ³ sont positives.
+9. **Revenir à x.** Sur x > 0, on a exp(ln(x)) = x. L’injectivité de exp rend cette transformation équivalente ; les deux valeurs 1 et e^(1/3) sont strictement positives.
 
 $$x=e^{1/3}$$
 
-10. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+10. **Retenir le résultat.** La propriété du produit nul donne ln(x) = 0 ou ln(x) = 1/3. Les deux valeurs 1 et e^(1/3) sont strictement positives et vérifient l’équation initiale.
 
 $$S=\{1,e^{1/3}\}$$
 
@@ -4274,11 +4274,11 @@ Résoudre dans ℝ.
 
 $$\frac{1-2\ln x}{2+\ln x}=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Deux conditions d’existence sont nécessaires : x > 0 pour définir ln(x), et 2 + ln(x) ≠ 0 pour définir le quotient.
 
 $$\frac{1-2\ln x}{2+\ln x}=0$$
 
-2. **Définir le logarithme.** Première condition : l’argument de ln doit être positif.
+2. **Définir le logarithme.** Première condition d’existence : x > 0, car le logarithme népérien est défini uniquement sur ]0, +∞[.
 
 $$x>0$$
 
@@ -4290,7 +4290,7 @@ $$2+\ln x\ne0$$
 
 $$\ln x\ne-2\quad\Longrightarrow\quad x\ne e^{-2}$$
 
-5. **Annuler le numérateur.** Sur le domaine autorisé, seule l’annulation du numérateur rend la fraction nulle.
+5. **Résoudre l’équation du numérateur nul.** Pour x > 0 et x ≠ e^(−2), le dénominateur est non nul. Le quotient est donc nul si et seulement si son numérateur est nul.
 
 $$1-2\ln x=0$$
 
@@ -4306,11 +4306,11 @@ $$\ln x=\frac12$$
 
 $$x=e^{1/2}=\sqrt e$$
 
-9. **Contrôler le dénominateur.** Le logarithme de la solution vaut 1/2. Le dénominateur n’est donc pas nul.
+9. **Contrôler le dénominateur.** La valeur √e est strictement positive et son logarithme vaut 1/2. Le dénominateur vaut donc 2 + 1/2 = 5/2 ≠ 0 : les deux conditions d’existence sont respectées.
 
 $$2+\frac12=\frac52\ne0$$
 
-10. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+10. **Retenir le résultat.** La valeur √e est strictement positive et rend le dénominateur égal à 5/2, non nul. Elle est l’unique zéro admissible du numérateur, donc l’unique solution.
 
 $$S=\{\sqrt e\}$$
 
@@ -4322,7 +4322,7 @@ Déterminer l’ensemble de définition.
 
 $$f_1(x)=(\ln x-5\ln2)^3$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_1(x)=(\ln x-5\ln2)^3$$
 
@@ -4342,7 +4342,7 @@ $$\ln x-5\ln2\in\mathbb R$$
 
 $$u^3\text{ existe pour tout }u\in\mathbb R$$
 
-6. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+6. **Retenir le résultat.** La seule restriction est x > 0 pour définir ln(x). La différence et son cube sont ensuite définis pour toute valeur réelle obtenue.
 
 $$D=]0,+\infty[$$
 
@@ -4354,7 +4354,7 @@ Déterminer l’ensemble de définition.
 
 $$f_2(x)=(\ln(x+2)-\ln7)^{-2}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_2(x)=(\ln(x+2)-\ln7)^{-2}$$
 
@@ -4362,7 +4362,7 @@ $$f_2(x)=(\ln(x+2)-\ln7)^{-2}$$
 
 $$x+2>0\quad\Longrightarrow\quad x>-2$$
 
-3. **Lire l’exposant négatif.** La puissance −2 signifie un inverse de carré. Sa base ne peut pas être nulle.
+3. **Lire l’exposant négatif.** Pour u ≠ 0, u^(−2) = 1/u². Cette puissance impose donc que la différence u des deux logarithmes soit non nulle ; elle peut être strictement négative ou strictement positive.
 
 $$u^{-2}=\frac1{u^2}\quad(u\ne0)$$
 
@@ -4370,7 +4370,7 @@ $$u^{-2}=\frac1{u^2}\quad(u\ne0)$$
 
 $$\ln(x+2)-\ln7\ne0$$
 
-5. **Comparer les logarithmes.** Sur le domaine autorisé, ln prend chaque valeur une seule fois.
+5. **Comparer les logarithmes.** Sur x > −2, les arguments sont strictement positifs. Par injectivité de ln, leurs logarithmes sont différents si et seulement si les arguments sont différents.
 
 $$\ln(x+2)\ne\ln7\quad\Longrightarrow\quad x+2\ne7$$
 
@@ -4378,7 +4378,7 @@ $$\ln(x+2)\ne\ln7\quad\Longrightarrow\quad x+2\ne7$$
 
 $$x>-2,\qquad x\ne5$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** Il faut simultanément x > −2 pour le logarithme et x ≠ 5 pour la puissance d’exposant négatif. Ces conditions donnent les deux intervalles ouverts indiqués.
 
 $$D=]-2,5[\cup]5,+\infty[$$
 
@@ -4390,7 +4390,7 @@ Déterminer l’ensemble de définition.
 
 $$f_3(x)=\frac1{6(\ln x)^2-2\ln x}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_3(x)=\frac1{6(\ln x)^2-2\ln x}$$
 
@@ -4414,11 +4414,11 @@ $$\ln x\ne0\quad\Longrightarrow\quad x\ne1$$
 
 $$3\ln x-1\ne0\quad\Longrightarrow\quad x\ne e^{1/3}$$
 
-7. **Réunir les conditions.** On ne garde que les réels positifs, puis on y enlève ces deux valeurs.
+7. **Réunir les conditions.** On part de ]0, +∞[, ensemble de définition de ln, puis on en retire 1 et e^(1/3), qui annulent le dénominateur.
 
 $$x>0,\qquad x\notin\{1,e^{1/3}\}$$
 
-8. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+8. **Retenir le résultat.** Il faut x > 0 et un dénominateur non nul. Ses seuls zéros sont 1 et e^(1/3) : on les retire de ]0, +∞[.
 
 $$D=]0,1[\cup]1,e^{1/3}[\cup]e^{1/3},+\infty[$$
 
@@ -4432,7 +4432,7 @@ $$f_4(x)=\frac{2+\ln x}{1-2\ln x}$$
 
 **Lecture de l’énoncé.** La valeur e⁻² est autorisée ici : 2 + ln(x) est désormais au numérateur.
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_4(x)=\frac{2+\ln x}{1-2\ln x}$$
 
@@ -4448,7 +4448,7 @@ $$1-2\ln x\ne0$$
 
 $$1-2\ln x=0\quad\Longrightarrow\quad\ln x=\frac12$$
 
-5. **Exprimer la valeur interdite.** On enlève cette valeur du domaine positif.
+5. **Exprimer la valeur interdite.** On retire e^(1/2) = √e de ]0, +∞[, car cette valeur annule le dénominateur. Toutes les autres valeurs de cet intervalle sont admises.
 
 $$x\ne e^{1/2}=\sqrt e$$
 
@@ -4456,7 +4456,7 @@ $$x\ne e^{1/2}=\sqrt e$$
 
 $$x=e^{-2}\quad\Longrightarrow\quad1-2\ln x=5$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** La condition x > 0 définit le logarithme. On exclut ensuite uniquement √e, qui annule le dénominateur ; un zéro du numérateur est autorisé.
 
 $$D=]0,\sqrt e[\cup]\sqrt e,+\infty[$$
 
@@ -4472,11 +4472,11 @@ Résoudre dans ℝ.
 
 $$\ln(2+5x)\le\ln(x+6)$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** On exige d’abord 2 + 5x > 0 et x + 6 > 0 pour définir les deux logarithmes. On résoudra ensuite l’inéquation sur l’ensemble ainsi obtenu.
 
 $$\ln(2+5x)\le\ln(x+6)$$
 
-2. **Définir le premier logarithme.** On soustrait 2, puis on divise par 5 qui est positif.
+2. **Définir le premier logarithme.** On soustrait 2 aux deux membres, puis on divise par 5 > 0. Ces opérations conservent le sens de l’inégalité.
 
 $$2+5x>0\quad\Longrightarrow\quad x>-\frac25$$
 
@@ -4488,7 +4488,7 @@ $$x+6>0\quad\Longrightarrow\quad x>-6$$
 
 $$x>-\frac25$$
 
-5. **Comparer les arguments.** Le logarithme est croissant : il conserve l’ordre sur les nombres positifs.
+5. **Comparer les arguments.** La fonction ln est strictement croissante sur ]0, +∞[. Pour deux arguments strictement positifs, ln(a) ≤ ln(b) si et seulement si a ≤ b.
 
 $$2+5x\le x+6$$
 
@@ -4500,15 +4500,15 @@ $$2+4x\le6$$
 
 $$4x\le4$$
 
-8. **Diviser par 4.** 4 est positif : le sens ne change pas.
+8. **Diviser par 4.** On divise les deux membres par 4 > 0 : le sens de l’inégalité est conservé.
 
 $$x\le1$$
 
-9. **Croiser avec le domaine.** On doit respecter à la fois la définition des logarithmes et l’inégalité obtenue.
+9. **Prendre l’intersection avec l’ensemble de définition.** On doit respecter à la fois la définition des logarithmes et l’inégalité obtenue.
 
 $$-\frac25<x\le1$$
 
-10. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+10. **Retenir le résultat.** On prend l’intersection de x > −2/5, condition d’existence, et de x ≤ 1, condition obtenue par équivalence. La borne −2/5 est exclue et la borne 1 est incluse.
 
 $$S=]-\tfrac25,1]$$
 
@@ -4520,11 +4520,11 @@ Résoudre dans ℝ.
 
 $$\ln(x+1)+\ln(x-3)<\ln3$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** On exige x + 1 > 0 et x − 3 > 0, soit x > 3. C’est sur cet ensemble que l’on peut réunir les deux logarithmes et résoudre l’inéquation.
 
 $$\ln(x+1)+\ln(x-3)<\ln3$$
 
-2. **Définir le premier logarithme.** Un argument de logarithme doit être positif.
+2. **Définir le premier logarithme.** Le logarithme népérien est défini uniquement pour un argument strictement positif. Ici x + 1 > 0 équivaut à x > −1.
 
 $$x+1>0\quad\Longrightarrow\quad x>-1$$
 
@@ -4532,11 +4532,11 @@ $$x+1>0\quad\Longrightarrow\quad x>-1$$
 
 $$x-3>0\quad\Longrightarrow\quad x>3$$
 
-4. **Réunir les logarithmes.** Les deux facteurs sont positifs sur le domaine. On utilise ln(a) + ln(b) = ln(ab).
+4. **Réunir les logarithmes.** Sur x > 3, on a x + 1 > 0 et x − 3 > 0. On peut donc appliquer ln(a) + ln(b) = ln(ab) aux deux arguments.
 
 $$\ln((x+1)(x-3))<\ln3$$
 
-5. **Comparer les arguments.** ln est strictement croissante sur les nombres positifs.
+5. **Comparer les arguments.** La fonction ln est strictement croissante sur ]0, +∞[. Les deux arguments étant strictement positifs, comparer leurs logarithmes revient, par équivalence, à les comparer.
 
 $$(x+1)(x-3)<3$$
 
@@ -4584,7 +4584,7 @@ $$x^2-2x-6=0$$
 
 $$a=1,\quad b=-2,\quad c=-6$$
 
-17. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+17. **Écrire la formule du discriminant.** Pour un trinôme ax² + bx + c avec a ≠ 0, on définit Δ = b² − 4ac. Il y a deux racines réelles distinctes si Δ > 0, une racine double si Δ = 0 et aucune racine réelle si Δ < 0.
 
 $$\Delta=b^2-4ac$$
 
@@ -4620,7 +4620,7 @@ $$\Delta=4+24$$
 
 $$\Delta=28$$
 
-26. **Remplacer Δ sous la racine.** Δ vaut 28. On cherche maintenant sa racine carrée positive.
+26. **Remplacer Δ sous la racine.** Δ = 28 > 0. Sa racine carrée √Δ est l’unique réel strictement positif dont le carré vaut 28.
 
 $$\sqrt{\Delta}=\sqrt{28}$$
 
@@ -4628,11 +4628,11 @@ $$\sqrt{\Delta}=\sqrt{28}$$
 
 $$\sqrt{\Delta}=\sqrt{4\times7}$$
 
-28. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √4 = 2.
+28. **Calculer la racine de Δ.** Pour u ≥ 0 et v ≥ 0, √(uv) = √u × √v. Ainsi √(4 × 7) = 2√7, puisque √4 = 2.
 
 $$\sqrt{\Delta}=2\sqrt{7}$$
 
-29. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+29. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, les racines sont (−b − √Δ)/(2a) et (−b + √Δ)/(2a). On calcule d’abord la première : tout le numérateur est divisé par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
@@ -4696,15 +4696,15 @@ $$x_2=\frac{2+2\sqrt{7}}{2}$$
 
 $$x_2=1+\sqrt7$$
 
-45. **Lire où le trinôme est négatif.** Le coefficient de x² est positif : le trinôme est négatif entre ses deux racines.
+45. **Lire où le trinôme est négatif.** Le coefficient de x² vaut 1 > 0. Le trinôme est strictement négatif exactement entre ses deux racines distinctes ; les racines sont exclues par l’inégalité stricte.
 
 $$1-\sqrt7<x<1+\sqrt7$$
 
-46. **Respecter aussi x > 3.** La racine inférieure est sous 3 et la racine supérieure au-dessus de 3. On ne garde que la partie compatible avec le domaine.
+46. **Respecter aussi x > 3.** On a 1 − √7 < 1 < 3 et, puisque 7 > 4, 1 + √7 > 3. L’intersection avec x > 3 est donc ]3, 1 + √7[.
 
 $$3<x<1+\sqrt7$$
 
-47. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+47. **Retenir le résultat.** On prend l’intersection de ]3, +∞[, ensemble de définition, avec ]1 − √7, 1 + √7[, obtenu par l’étude du trinôme. Les deux extrémités du résultat sont exclues.
 
 $$S=]3,1+\sqrt7[$$
 
@@ -4718,19 +4718,19 @@ $$2\frac{1+\ln x}{x}\ge0$$
 
 **Lecture de l’énoncé.** Le 2 est un facteur multiplicatif : il ne s’agit pas d’une exponentielle.
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** La condition x > 0 définit ln(x) et garantit que le dénominateur est non nul. On utilisera ensuite le signe strictement positif de 2/x.
 
 $$2\frac{1+\ln x}{x}\ge0$$
 
-2. **Définir ln x.** Cette condition garantit aussi que le dénominateur x est non nul et positif.
+2. **Définir ln x.** La condition x > 0 définit ln(x) et garantit que le dénominateur x est strictement positif, donc non nul.
 
 $$x>0$$
 
-3. **Diviser par le coefficient positif 2.** Diviser par 2 ne change pas le sens de l’inégalité.
+3. **Diviser par le coefficient strictement positif 2.** Diviser par 2 ne change pas le sens de l’inégalité.
 
 $$\frac{1+\ln x}{x}\ge0$$
 
-4. **Multiplier par x positif.** Comme x > 0, le sens de l’inégalité reste le même.
+4. **Multiplier par x strictement positif.** Comme x > 0, le sens de l’inégalité reste le même.
 
 $$1+\ln x\ge0$$
 
@@ -4738,11 +4738,11 @@ $$1+\ln x\ge0$$
 
 $$\ln x\ge-1$$
 
-6. **Appliquer la croissance de exp.** exp est croissante et exp(ln(x)) = x. La borne e⁻¹ est positive et autorisée.
+6. **Appliquer la croissance de exp.** La fonction exp est strictement croissante sur ℝ et, pour x > 0, exp(ln(x)) = x. Ainsi ln(x) ≥ −1 équivaut à x ≥ e^(−1). La borne est strictement positive et satisfait l’inégalité.
 
 $$x\ge e^{-1}$$
 
-7. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+7. **Retenir le résultat.** Sur x > 0, les transformations sont équivalentes et donnent x ≥ e^(−1). Cette borne est strictement positive et annule le numérateur : elle est incluse.
 
 $$S=[e^{-1},+\infty[$$
 
@@ -4756,7 +4756,7 @@ $$f_1(x)=\sqrt{\ln(2+5x)-\ln(x+6)}$$
 
 **Lecture de l’énoncé.** Le sens est l’inverse de celui de la question 9.1. On ne recopie pas son ensemble de solutions.
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_1(x)=\sqrt{\ln(2+5x)-\ln(x+6)}$$
 
@@ -4764,7 +4764,7 @@ $$f_1(x)=\sqrt{\ln(2+5x)-\ln(x+6)}$$
 
 $$2+5x>0,\qquad x+6>0$$
 
-3. **Croiser les deux conditions.** Les conditions x > −2/5 et x > −6 se réduisent à la plus forte.
+3. **Prendre l’intersection des deux conditions.** Les conditions x > −2/5 et x > −6 se réduisent à la plus forte.
 
 $$x>-\frac25$$
 
@@ -4776,7 +4776,7 @@ $$\ln(2+5x)-\ln(x+6)\ge0$$
 
 $$\ln(2+5x)\ge\ln(x+6)$$
 
-6. **Comparer les arguments positifs.** ln est croissant : le sens est conservé.
+6. **Comparer les arguments strictement positifs.** Sous la condition x > −2/5, les deux logarithmes sont définis. La stricte croissance de ln permet de comparer leurs arguments par équivalence, en conservant le sens de l’inégalité.
 
 $$2+5x\ge x+6$$
 
@@ -4788,11 +4788,11 @@ $$2+4x\ge6$$
 
 $$4x\ge4$$
 
-9. **Diviser par 4.** 4 est positif. Ces valeurs respectent toutes x > −2/5.
+9. **Diviser par 4.** On divise les deux membres par 4 > 0 sans changer le sens de l’inégalité. Les valeurs x ≥ 1 respectent toutes la condition x > −2/5.
 
 $$x\ge1$$
 
-10. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+10. **Retenir le résultat.** La condition de la racine donne x ≥ 1. Tous ces réels vérifient aussi x > −2/5, nécessaire aux logarithmes. La borne 1 donne une racine nulle, donc elle est incluse.
 
 $$D=[1,+\infty[$$
 
@@ -4804,7 +4804,7 @@ Déterminer l’ensemble de définition.
 
 $$f_2(x)=\exp(\ln(x+1)+\ln(x-3)-\ln3)$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_2(x)=\exp(\ln(x+1)+\ln(x-3)-\ln3)$$
 
@@ -4820,7 +4820,7 @@ $$x-3>0\quad\Longrightarrow\quad x>3$$
 
 $$3>0$$
 
-5. **Prendre les conditions ensemble.** x > 3 implique déjà x > −1.
+5. **Imposer les deux conditions simultanément.** x > 3 implique déjà x > −1.
 
 $$x>3$$
 
@@ -4828,7 +4828,7 @@ $$x>3$$
 
 $$e^u\text{ existe pour tout }u\in\mathbb R$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** Les deux logarithmes variables sont définis simultanément si et seulement si x > 3. L’exponentielle extérieure n’ajoute aucune restriction.
 
 $$D=]3,+\infty[$$
 
@@ -4840,11 +4840,11 @@ Déterminer l’ensemble de définition.
 
 $$f_3(x)=\ln\!\left(2\frac{1+\ln x}{x}\right)$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_3(x)=\ln\!\left(2\frac{1+\ln x}{x}\right)$$
 
-2. **Définir le logarithme intérieur.** Cela garantit aussi que le dénominateur x est positif et non nul.
+2. **Définir le logarithme intérieur.** Il faut x > 0 pour définir ln(x). Le dénominateur x est alors strictement positif et non nul.
 
 $$x>0$$
 
@@ -4852,7 +4852,7 @@ $$x>0$$
 
 $$2\frac{1+\ln x}{x}>0$$
 
-4. **Retirer les facteurs positifs.** 2/x est strictement positif sur le domaine. Il ne change donc pas le signe.
+4. **Diviser par le facteur strictement positif 2/x.** 2/x est strictement positif sur le domaine. Il ne change donc pas le signe.
 
 $$1+\ln x>0$$
 
@@ -4860,11 +4860,11 @@ $$1+\ln x>0$$
 
 $$\ln x>-1$$
 
-6. **Appliquer exp.** exp est croissante. L’inégalité reste stricte : x = e⁻¹ annulerait l’argument du logarithme extérieur.
+6. **Appliquer exp.** La stricte croissance de exp et l’identité exp(ln(x)) = x pour x > 0 donnent ln(x) > −1 si et seulement si x > e^(−1). L’égalité annulerait l’argument du logarithme extérieur et reste exclue.
 
 $$x>e^{-1}$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** Le logarithme intérieur impose x > 0. Sur cet ensemble, l’argument du logarithme extérieur est strictement positif si et seulement si x > e^(−1). La borne est exclue car elle annule cet argument.
 
 $$D=]e^{-1},+\infty[$$
 
@@ -4880,7 +4880,7 @@ Résoudre dans ℝ.
 
 $$\cos x=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.
 
 $$\cos x=0$$
 
@@ -4888,19 +4888,19 @@ $$\cos x=0$$
 
 $$\cos x=0$$
 
-3. **Se placer sur un seul tour.** Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.
+3. **Se placer sur un seul tour.** Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.
 
 $$0\le x<2\pi$$
 
-4. **Repérer le premier angle.** On lit une valeur remarquable du cercle trigonométrique.
+4. **Repérer le premier angle.** Le point supérieur du cercle trigonométrique a pour coordonnées (0, 1) : son abscisse est nulle et son angle est π/2.
 
 $$\cos(\pi/2)=0$$
 
-5. **Repérer le second angle.** Un second point du cercle possède la même coordonnée. Il donne une autre solution.
+5. **Repérer le second angle.** Le point inférieur a pour coordonnées (0, −1) et pour angle 3π/2. Ce sont les deux seuls points du cercle d’abscisse nulle.
 
 $$\cos(3\pi/2)=0$$
 
-6. **Retrouver tous les tours.** À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.
+6. **Retrouver tous les tours.** Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.
 
 $$x=\theta+2k\pi,\qquad k\in\mathbb Z$$
 
@@ -4920,7 +4920,7 @@ Résoudre dans ℝ.
 
 $$\sin x=0$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.
 
 $$\sin x=0$$
 
@@ -4928,19 +4928,19 @@ $$\sin x=0$$
 
 $$\sin x=0$$
 
-3. **Se placer sur un seul tour.** Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.
+3. **Se placer sur un seul tour.** Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.
 
 $$0\le x<2\pi$$
 
-4. **Repérer le premier angle.** On lit une valeur remarquable du cercle trigonométrique.
+4. **Repérer le premier angle.** Le point de coordonnées (1, 0) correspond à l’angle 0 : son ordonnée, donc son sinus, est nulle.
 
 $$\sin(0)=0$$
 
-5. **Repérer le second angle.** Un second point du cercle possède la même coordonnée. Il donne une autre solution.
+5. **Repérer le second angle.** Le point de coordonnées (−1, 0) correspond à l’angle π. Ce sont les deux seuls points du cercle d’ordonnée nulle.
 
 $$\sin(\pi)=0$$
 
-6. **Retrouver tous les tours.** À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.
+6. **Retrouver tous les tours.** Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.
 
 $$x=\theta+2k\pi,\qquad k\in\mathbb Z$$
 
@@ -4960,11 +4960,11 @@ Résoudre dans ℝ.
 
 $$\cos x=\pi$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le cosinus est défini sur ℝ et prend ses valeurs dans [−1, 1]. On vérifie d’abord si la valeur π peut être atteinte.
 
 $$\cos x=\pi$$
 
-2. **Rappeler les limites du cosinus.** Sur le cercle unité, une abscisse reste toujours entre −1 et 1.
+2. **Rappeler l’encadrement du cosinus.** Sur le cercle unité, une abscisse reste toujours entre −1 et 1.
 
 $$-1\le\cos x\le1$$
 
@@ -4976,7 +4976,7 @@ $$\pi\approx3.14>1$$
 
 $$\cos x\ne\pi\quad\text{pour tout }x\in\mathbb R$$
 
-5. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+5. **Retenir le résultat.** Comme cos(x) ≤ 1 pour tout réel x et π > 1, aucun réel ne satisfait l’équation. L’ensemble des solutions est vide.
 
 $$S=\varnothing$$
 
@@ -4988,7 +4988,7 @@ Résoudre dans ℝ.
 
 $$\sin x=\tfrac12$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.
 
 $$\sin x=\tfrac12$$
 
@@ -4996,19 +4996,19 @@ $$\sin x=\tfrac12$$
 
 $$\sin x=1/2$$
 
-3. **Se placer sur un seul tour.** Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.
+3. **Se placer sur un seul tour.** Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.
 
 $$0\le x<2\pi$$
 
-4. **Repérer le premier angle.** On lit une valeur remarquable du cercle trigonométrique.
+4. **Repérer le premier angle.** La valeur remarquable sin(π/6) = 1/2 donne un premier angle solution dans [0, 2π[.
 
 $$\sin(\pi/6)=1/2$$
 
-5. **Repérer le second angle.** Un second point du cercle possède la même coordonnée. Il donne une autre solution.
+5. **Repérer le second angle.** La symétrie par rapport à l’axe des ordonnées conserve le sinus : sin(π − π/6) = 1/2. La droite d’ordonnée 1/2 coupe le cercle en exactement ces deux points.
 
 $$\sin(5\pi/6)=1/2$$
 
-6. **Retrouver tous les tours.** À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.
+6. **Retrouver tous les tours.** Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.
 
 $$x=\theta+2k\pi,\qquad k\in\mathbb Z$$
 
@@ -5024,7 +5024,7 @@ Résoudre dans ℝ.
 
 $$\cos x=-\tfrac{\sqrt2}2$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.
 
 $$\cos x=-\tfrac{\sqrt2}2$$
 
@@ -5032,19 +5032,19 @@ $$\cos x=-\tfrac{\sqrt2}2$$
 
 $$\cos x=-\sqrt2/2$$
 
-3. **Se placer sur un seul tour.** Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.
+3. **Se placer sur un seul tour.** Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.
 
 $$0\le x<2\pi$$
 
-4. **Repérer le premier angle.** On lit une valeur remarquable du cercle trigonométrique.
+4. **Repérer le premier angle.** Comme cos(π/4) = √2/2 et cos(π − θ) = −cos(θ), on obtient cos(3π/4) = −√2/2.
 
 $$\cos(3\pi/4)=-\sqrt2/2$$
 
-5. **Repérer le second angle.** Un second point du cercle possède la même coordonnée. Il donne une autre solution.
+5. **Repérer le second angle.** La symétrie par rapport à l’axe des abscisses conserve le cosinus : 2π − 3π/4 = 5π/4. La droite d’abscisse −√2/2 coupe le cercle en exactement ces deux points.
 
 $$\cos(5\pi/4)=-\sqrt2/2$$
 
-6. **Retrouver tous les tours.** À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.
+6. **Retrouver tous les tours.** Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.
 
 $$x=\theta+2k\pi,\qquad k\in\mathbb Z$$
 
@@ -5060,7 +5060,7 @@ Résoudre dans ℝ.
 
 $$\sin x=\tfrac{\sqrt2}2$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.
 
 $$\sin x=\tfrac{\sqrt2}2$$
 
@@ -5068,19 +5068,19 @@ $$\sin x=\tfrac{\sqrt2}2$$
 
 $$\sin x=\sqrt2/2$$
 
-3. **Se placer sur un seul tour.** Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.
+3. **Se placer sur un seul tour.** Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.
 
 $$0\le x<2\pi$$
 
-4. **Repérer le premier angle.** On lit une valeur remarquable du cercle trigonométrique.
+4. **Repérer le premier angle.** La valeur remarquable sin(π/4) = √2/2 donne un premier angle solution dans [0, 2π[.
 
 $$\sin(\pi/4)=\sqrt2/2$$
 
-5. **Repérer le second angle.** Un second point du cercle possède la même coordonnée. Il donne une autre solution.
+5. **Repérer le second angle.** La symétrie par rapport à l’axe des ordonnées conserve le sinus : sin(π − π/4) = √2/2. La droite d’ordonnée √2/2 coupe le cercle en exactement ces deux points.
 
 $$\sin(3\pi/4)=\sqrt2/2$$
 
-6. **Retrouver tous les tours.** À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.
+6. **Retrouver tous les tours.** Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.
 
 $$x=\theta+2k\pi,\qquad k\in\mathbb Z$$
 
@@ -5096,7 +5096,7 @@ Résoudre dans ℝ.
 
 $$\sin x=1$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.
 
 $$\sin x=1$$
 
@@ -5104,15 +5104,15 @@ $$\sin x=1$$
 
 $$\sin x=1$$
 
-3. **Se placer sur un seul tour.** Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.
+3. **Se placer sur un seul tour.** Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.
 
 $$0\le x<2\pi$$
 
-4. **Repérer le premier angle.** On lit une valeur remarquable du cercle trigonométrique.
+4. **Repérer le premier angle.** L’unique point du cercle d’ordonnée 1 est (0, 1), associé à l’angle π/2 dans [0, 2π[.
 
 $$\sin(\pi/2)=1$$
 
-5. **Retrouver tous les tours.** À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.
+5. **Retrouver tous les tours.** Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.
 
 $$x=\theta+2k\pi,\qquad k\in\mathbb Z$$
 
@@ -5128,7 +5128,7 @@ Résoudre dans ℝ.
 
 $$\cos x=-1$$
 
-1. **Lire l’énoncé.** Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Le sinus et le cosinus sont définis sur ℝ. On cherchera les angles solutions en radians sur [0, 2π[, puis on utilisera la périodicité pour obtenir toutes les solutions réelles.
 
 $$\cos x=-1$$
 
@@ -5136,15 +5136,15 @@ $$\cos x=-1$$
 
 $$\cos x=-1$$
 
-3. **Se placer sur un seul tour.** Les angles sont en radians. Un tour complet vaut 2π radians, soit 360 degrés.
+3. **Se placer sur un seul tour.** Les angles sont en radians. Le sinus et le cosinus sont 2π-périodiques : on commence par [0, 2π[, qui décrit exactement un tour, puis on ajoutera les multiples de 2π.
 
 $$0\le x<2\pi$$
 
-4. **Repérer le premier angle.** On lit une valeur remarquable du cercle trigonométrique.
+4. **Repérer le premier angle.** L’unique point du cercle d’abscisse −1 est (−1, 0), associé à l’angle π dans [0, 2π[.
 
 $$\cos(\pi)=-1$$
 
-5. **Retrouver tous les tours.** À partir d’un angle solution θ, ajouter ou retirer un nombre entier de tours ne change pas le point. k peut valoir 0, 1, −1, 2, −2, etc.
+5. **Retrouver tous les tours.** Par périodicité, chaque angle solution θ de [0, 2π[ donne les solutions θ + 2kπ, avec k entier. Réciproquement, tout réel se ramène à un unique angle de [0, 2π[ modulo 2π : aucune solution n’est omise.
 
 $$x=\theta+2k\pi,\qquad k\in\mathbb Z$$
 
@@ -5160,7 +5160,7 @@ Déterminer l’ensemble de définition.
 
 $$f_1(x)=\sin x-\cos x$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_1(x)=\sin x-\cos x$$
 
@@ -5180,7 +5180,7 @@ $$\sin x-\cos x\in\mathbb R$$
 
 $$\mathbb R\cap\mathbb R=\mathbb R$$
 
-6. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+6. **Retenir le résultat.** Le sinus et le cosinus sont définis sur ℝ ; leur différence l’est également. L’ensemble de définition est donc ℝ.
 
 $$D=\mathbb R$$
 
@@ -5192,7 +5192,7 @@ Déterminer l’ensemble de définition.
 
 $$f_2(x)=\frac{\cos x}{\sin x}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_2(x)=\frac{\cos x}{\sin x}$$
 
@@ -5208,11 +5208,11 @@ $$\sin x\ne0$$
 
 $$x=0\quad\text{ou}\quad x=\pi\pmod{2\pi}$$
 
-5. **Répéter les valeurs interdites.** Les zéros sont espacés d’un demi-tour, soit π radians. On retire tous les multiples entiers de π.
+5. **Répéter les valeurs interdites.** La condition porte sur tous les entiers k : x ne doit être égal à aucun multiple kπ. Ces multiples sont exactement les zéros de sin(x).
 
 $$x\ne k\pi,\qquad k\in\mathbb Z$$
 
-6. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+6. **Retenir le résultat.** On exclut tous les multiples entiers de π, qui sont exactement les zéros de sin(x). Le quotient est défini pour tous les autres réels.
 
 $$D=\mathbb R\setminus\{k\pi:k\in\mathbb Z\}$$
 
@@ -5224,7 +5224,7 @@ Déterminer l’ensemble de définition.
 
 $$f_3(x)=\ln(\sin x)+5$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_3(x)=\ln(\sin x)+5$$
 
@@ -5232,11 +5232,11 @@ $$f_3(x)=\ln(\sin x)+5$$
 
 $$\sin x>0$$
 
-3. **Lire une hauteur positive.** Sur un tour, le sinus est positif dans la moitié supérieure du cercle.
+3. **Repérer une ordonnée strictement positive.** Sur [0, 2π[, sin(x) est strictement positif exactement pour 0 < x < π : ce sont les points du demi-cercle supérieur, extrémités exclues.
 
 $$0<x<\pi$$
 
-4. **Exclure les extrémités.** Le logarithme de zéro n’existe pas. Les deux bornes restent ouvertes.
+4. **Exclure les extrémités.** Le logarithme de zéro n’est pas défini. Les extrémités 0 et π sont donc exclues de l’intervalle.
 
 $$\sin0=\sin\pi=0$$
 
@@ -5248,7 +5248,7 @@ $$2k\pi<x<(2k+1)\pi,\qquad k\in\mathbb Z$$
 
 $$\cdots\cup]-2\pi,-\pi[\cup]0,\pi[\cup]2\pi,3\pi[\cup\cdots$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** Le sinus est strictement positif exactement sur les intervalles indiqués. Leurs extrémités sont exclues, car le sinus y vaut 0 et ln(0) n’est pas défini.
 
 $$D=\bigcup_{k\in\mathbb Z}]2k\pi,(2k+1)\pi[$$
 
@@ -5260,7 +5260,7 @@ Déterminer l’ensemble de définition.
 
 $$f_4(x)=\frac{2\sin x+4\cos x}{2\sin x-1}$$
 
-1. **Lire l’énoncé.** Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.
+1. **Lire l’énoncé.** On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.
 
 $$f_4(x)=\frac{2\sin x+4\cos x}{2\sin x-1}$$
 
@@ -5280,11 +5280,11 @@ $$\sin x=\frac12$$
 
 $$x=\pi/6\quad\text{ou}\quad x=5\pi/6\pmod{2\pi}$$
 
-6. **Exclure tous les tours correspondants.** Il faut retirer ces deux familles, et conserver tous les autres réels.
+6. **Exclure tous les tours correspondants.** Pour chaque entier k, les deux valeurs π/6 + 2kπ et 5π/6 + 2kπ annulent le dénominateur. On exclut toutes ces valeurs et seulement celles-ci.
 
 $$x\ne\pi/6+2k\pi,\quad x\ne5\pi/6+2k\pi,\quad k\in\mathbb Z$$
 
-7. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+7. **Retenir le résultat.** On exclut les deux familles d’angles pour lesquelles sin(x) = 1/2, car elles annulent le dénominateur. Aucune restriction ne provient du numérateur.
 
 $$D=\mathbb R\setminus\{\pi/6+2k\pi,5\pi/6+2k\pi:k\in\mathbb Z\}$$
 
@@ -5302,7 +5302,7 @@ $$0<a\le b,\qquad r=\frac ba$$
 
 **Lecture de l’énoncé.** Coquille de la fiche : lire 21 × 29,7 cm (ou 210 × 297 mm), et non 21 × 29,7 mm. Le rapport des dimensions arrondies n’est pas exactement √2.
 
-1. **Lire l’énoncé.** Une feuille de côtés a et b conserve ses proportions une fois pliée en deux. Déterminer r = b/a, avec a ≤ b. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** Les longueurs vérifient 0 < a ≤ b. On traduit la conservation des proportions après pliage par une égalité de rapports, puis on détermine r = b/a.
 
 $$0<a\le b,\qquad r=\frac ba$$
 
@@ -5310,11 +5310,11 @@ $$0<a\le b,\qquad r=\frac ba$$
 
 $$r=\frac ba>0$$
 
-3. **Partager le grand côté en deux.** Le pli partage b en deux et conserve a. Après rotation, on compare le rapport a/(b/2) au rapport initial b/a.
+3. **Partager le grand côté en deux.** Le pli remplace b par b/2 et conserve a. Si b/2 ≥ a, le nouveau rapport grand côté/petit côté serait r/2, différent de r. Pour conserver les proportions, a doit donc devenir le grand côté.
 
 $$a\times b\longrightarrow (b/2)\times a$$
 
-4. **Égaler les deux rapports.** Conserver la même forme signifie conserver le même rapport entre les côtés correspondants.
+4. **Égaler les deux rapports.** Les rectangles doivent avoir le même rapport grand côté/petit côté. Après pliage, le grand côté est a et le petit b/2 : on impose donc b/a = a/(b/2).
 
 $$\frac ba=\frac{a}{b/2}$$
 
@@ -5322,11 +5322,11 @@ $$\frac ba=\frac{a}{b/2}$$
 
 $$\frac ba=\frac{2a}{b}$$
 
-6. **Multiplier par b.** b est une longueur positive. On peut multiplier les deux membres par b.
+6. **Multiplier par b.** Comme b > 0, on peut multiplier les deux membres par b ≠ 0. La transformation est réversible et conserve l’égalité.
 
 $$\frac{b^2}{a}=2a$$
 
-7. **Multiplier par a.** On supprime le dénominateur a, lui aussi positif.
+7. **Multiplier par a.** Comme a > 0, on multiplie les deux membres par a ≠ 0. On obtient une égalité équivalente.
 
 $$b^2=2a^2$$
 
@@ -5338,7 +5338,7 @@ $$\frac{b^2}{a^2}=2$$
 
 $$r^2=2$$
 
-10. **Choisir la racine positive.** Les deux racines de r² = 2 sont ±√2. Un rapport de longueurs est positif : on garde √2.
+10. **Choisir la racine positive.** Les deux solutions de r² = 2 sont −√2 et √2. Comme r = b/a > 0, seule la solution √2 convient.
 
 $$r=\sqrt2\approx1.4142$$
 
@@ -5346,7 +5346,7 @@ $$r=\sqrt2\approx1.4142$$
 
 $$1<\sqrt2<2\quad\Longrightarrow\quad b/2<a<b$$
 
-12. **Retenir le résultat.** Ce résultat découle des hypothèses de l’énoncé et du modèle explicité dans les étapes.
+12. **Retenir le résultat.** Le rapport strictement positif √2 est nécessaire et suffisant : il vérifie l’égalité des rapports et l’ordre des côtés après pliage. Les proportions sont déterminées, mais pas les dimensions de la feuille.
 
 $$r=\sqrt2$$
 
@@ -5364,7 +5364,7 @@ $$T_{\mathrm T}=24\,h,\qquad T_{\mathrm L}=28\times24\,h$$
 
 **Lecture de l’énoncé.** L’énoncé ne distingue pas les deux hautes mers possibles. On calcule ici celle homologue à midi, avec rotations uniformes dans le même sens. Ce modèle n’est pas une prévision réelle de marée à La Pallice.
 
-1. **Lire l’énoncé.** La Terre tourne en 24 h, la Lune en 28 jours. Une haute mer a lieu à midi. Dans le modèle proposé, quel délai, en heures, sépare deux hautes mers homologues ? En déduire l’heure demain. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.
+1. **Lire l’énoncé.** On utilise le modèle de l’énoncé : deux rotations uniformes dans le même sens, de périodes 24 h et 28 jours. On cherche le délai entre deux retours au même alignement, puis l’heure de la haute mer correspondante.
 
 $$T_{\mathrm T}=24\,h,\qquad T_{\mathrm L}=28\times24\,h$$
 
@@ -5384,7 +5384,7 @@ $$\omega_{\mathrm L}=\frac1{672}\ \mathrm{tour}/h$$
 
 $$\omega_{\mathrm{rel}}=\frac1{24}-\frac1{672}$$
 
-6. **Mettre au même dénominateur.** Comme 672 = 28 × 24, on multiplie le haut et le bas de la première fraction par 28.
+6. **Mettre au même dénominateur.** Comme 672 = 28 × 24, on multiplie le numérateur et le dénominateur de 1/24 par 28. Ce facteur non nul conserve la valeur de la fraction.
 
 $$\omega_{\mathrm{rel}}=\frac{28}{672}-\frac1{672}$$
 
@@ -5392,7 +5392,7 @@ $$\omega_{\mathrm{rel}}=\frac{28}{672}-\frac1{672}$$
 
 $$\omega_{\mathrm{rel}}=\frac{27}{672}\ \mathrm{tour}/h$$
 
-8. **Écrire la condition d’un tour de rattrapage.** Vitesse × durée = avance. Le même alignement revient pour une avance relative d’un tour.
+8. **Écrire la condition d’un tour de rattrapage.** Pour une rotation uniforme, vitesse relative × durée = nombre de tours gagnés. Le premier retour au même alignement correspond à un tour d’avance relative, d’où (27/672)T = 1.
 
 $$\frac{27}{672}T=1$$
 
@@ -5420,7 +5420,7 @@ $$\text{Demain : }12\,h\ 53\,min\ 20\,s$$
 
 $$T/2=12\,h\ 26\,min\ 40\,s$$
 
-15. **Retenir le résultat.** Ce résultat découle des hypothèses de l’énoncé et du modèle explicité dans les étapes.
+15. **Retenir le résultat.** Dans ce modèle, un tour d’avance relative prend exactement 224/9 heures. À partir de midi, le retour au même alignement a donc lieu le lendemain à 12 h 53 min 20 s.
 
 $$T=\frac{224}{9}\,h=24\,h\ 53\,min\ 20\,s$$
 

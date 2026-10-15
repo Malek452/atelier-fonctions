@@ -35,7 +35,7 @@ const plans: Record<string, Cue[]> = {
   '1q6': [],
   '1q7': [
     phase('Traiter le numérateur', 'Traiter le numérateur', false),
-    phase('Passer au quotient', 'Effectuer le quotient', false),
+    phase('Appliquer la règle du quotient', 'Effectuer le quotient', false),
   ],
   '1q8': [phase('Diviser les puissances', 'Effectuer le quotient', false)],
   '2q1': [],
@@ -45,18 +45,18 @@ const plans: Record<string, Cue[]> = {
     phase('Résoudre le premier cas', 'Premier facteur nul'),
   ],
   '2q4': [
-    phase('Exclure la division par zéro', 'Poser la condition'),
+    phase('Exclure la division par zéro', 'Condition d’existence'),
     phase('Multiplier chaque membre par x', 'Éliminer le dénominateur'),
     phase('Distribuer x au premier terme', 'Distribuer sans calculer', false),
     phase('Calculer x × 7x', 'Calculer les produits', false),
   ],
   '2q5': [
-    phase('Garder la valeur interdite', 'Poser la condition'),
+    phase('Déterminer la valeur interdite', 'Condition d’existence'),
     phase('Écrire 1 avec le dénominateur x²', 'Réunir les fractions'),
     phase('Contrôler les deux valeurs', 'Vérifier les solutions'),
   ],
   '2q6': [
-    phase('Contrôler le premier dénominateur', 'Poser les conditions'),
+    phase('Contrôler le premier dénominateur', 'Conditions d’existence'),
     reset('Contrôler le second dénominateur'),
     phase('Multiplier par les deux dénominateurs', 'Éliminer les dénominateurs'),
     phase('Distribuer le premier facteur', 'Développer le produit', false),
@@ -64,7 +64,7 @@ const plans: Record<string, Cue[]> = {
   ],
   '2d1': [phase('Conserver tous les réels', 'Interpréter le résultat')],
   '2d2': [
-    phase('Interdire le dénominateur nul', 'Poser la condition'),
+    phase('Interdire le dénominateur nul', 'Condition d’existence'),
     phase('Factoriser le dénominateur', 'Factoriser', false),
     phase('Exclure le zéro du premier facteur', 'Premier facteur'),
     phase('Exclure les zéros du second facteur', 'Second facteur'),
@@ -97,20 +97,20 @@ const plans: Record<string, Cue[]> = {
     phase('Distribuer les deux termes du premier facteur', 'Développer le produit', false),
     phase('Calculer x × x', 'Calculer les produits', false),
     phase('Appliquer le signe moins au premier terme', 'Traiter le signe moins', false),
-    phase('Regrouper les termes en x', 'Réduire le numérateur', false),
+    phase('Regrouper les termes en x', 'Réduire l’exposant du numérateur', false),
     phase('Chercher les valeurs à exclure', 'Chercher les zéros'),
     phase('Vérifier que 1 n’est pas une nouvelle racine', 'Vérifier les exclusions'),
     phase('Réunir les quatre exclusions', 'Réunir les conditions'),
   ],
   '3q1': [phase('Trouver les zéros', 'Chercher les frontières')],
   '3q2': [
-    phase('Exclure zéro', 'Poser la condition'),
+    phase('Exclure zéro', 'Condition d’existence'),
     phase('Réunir sur le dénominateur x', 'Réunir les fractions'),
     phase('Étudier le numérateur', 'Signe du numérateur'),
     reset('Déduire son signe'),
   ],
   '3q3': [
-    phase('Exclure zéro', 'Poser la condition'),
+    phase('Exclure zéro', 'Condition d’existence'),
     phase('Écrire 1 avec le dénominateur x²', 'Réunir les fractions'),
     phase('Factoriser le numérateur', 'Factoriser', false),
     reset('Prendre les signes opposés'),
@@ -151,7 +151,7 @@ const plans: Record<string, Cue[]> = {
   ],
   '4q6': [phase('Multiplier les exponentielles', 'Réunir les facteurs', false)],
   '4q7': [
-    phase('Soustraire tout l’exposant du bas', 'Effectuer le quotient', false),
+    phase('Soustraire l’exposant du dénominateur', 'Effectuer le quotient', false),
     phase('Distribuer le signe moins', 'Réduire l’exposant', false),
   ],
   '4q8': [
@@ -171,9 +171,9 @@ const plans: Record<string, Cue[]> = {
     phase('Appliquer ln', 'Retrouver l’exposant', false),
     phase('Multiplier les deux côtés par −1', 'Isoler x', false),
   ],
-  '5q3': [phase('Écarter le facteur jamais nul', 'Résoudre le facteur restant', false)],
+  '5q3': [phase('Diviser par le facteur non nul eˣ', 'Résoudre le facteur restant', false)],
   '5q4': [
-    phase('Écarter le facteur jamais nul', 'Résoudre le facteur restant', false),
+    phase('Diviser par le facteur non nul eˣ', 'Résoudre le facteur restant', false),
     phase('Conclure avec le signe de exp', 'Vérifier la possibilité'),
   ],
   '5q5': [phase('Nommer la nouvelle variable', 'Poser X = exp(x)'), reset('Remplacer e²ˣ')],
@@ -190,9 +190,9 @@ const plans: Record<string, Cue[]> = {
     phase('Interdire le zéro du second facteur', 'Second facteur'),
   ],
   '5d2': [
-    phase('Signer le premier terme', 'Signe du premier terme'),
-    phase('Signer le second terme', 'Signe du second terme'),
-    phase('Additionner deux positifs', 'Signe de la somme'),
+    phase('Étudier le signe du premier terme', 'Signe du premier terme'),
+    phase('Étudier le signe du second terme', 'Signe du second terme'),
+    phase('Additionner deux termes strictement positifs', 'Signe de la somme'),
   ],
   '5d3': [
     phase('Changer de variable', 'Poser X = exp(x)'),
@@ -208,10 +208,10 @@ const plans: Record<string, Cue[]> = {
   ],
   '6q1': [phase('Inclure la borne', 'Contrôler la borne')],
   '6q2': [
-    phase('Annuler le premier facteur', 'Zéro du premier facteur'),
-    phase('Annuler le second facteur', 'Zéro du second facteur'),
-    phase('Signer 4 − 2x', 'Signe du premier facteur'),
-    phase('Signer e − eˣ', 'Signe du second facteur'),
+    phase('Chercher le zéro du premier facteur', 'Zéro du premier facteur'),
+    phase('Chercher le zéro du second facteur', 'Zéro du second facteur'),
+    phase('Étudier le signe de 4 − 2x', 'Signe du premier facteur'),
+    phase('Étudier le signe de e − eˣ', 'Signe du second facteur'),
     phase('Multiplier les signes', 'Réunir les signes'),
     phase('Inclure les zéros', 'Choisir les intervalles'),
   ],
@@ -222,15 +222,15 @@ const plans: Record<string, Cue[]> = {
     phase('Comparer les exposants', 'Isoler x', false),
   ],
   '6q5': [
-    phase('Signer le dénominateur', 'Signe du dénominateur'),
+    phase('Étudier le signe du dénominateur', 'Signe du dénominateur'),
     phase('Garder le signe du numérateur', 'Signe du numérateur'),
   ],
   '6d1': [phase('Inclure la borne', 'Contrôler la borne')],
   '6d2': [
-    phase('Annuler le premier facteur', 'Zéro du premier facteur'),
-    phase('Annuler le second facteur', 'Zéro du second facteur'),
-    phase('Signer 4 − 2x', 'Signe du premier facteur'),
-    phase('Signer e − eˣ', 'Signe du second facteur'),
+    phase('Chercher le zéro du premier facteur', 'Zéro du premier facteur'),
+    phase('Chercher le zéro du second facteur', 'Zéro du second facteur'),
+    phase('Étudier le signe de 4 − 2x', 'Signe du premier facteur'),
+    phase('Étudier le signe de e − eˣ', 'Signe du second facteur'),
     phase('Multiplier les signes', 'Réunir les signes'),
     phase('Inclure les zéros', 'Choisir les intervalles'),
   ],
@@ -240,7 +240,7 @@ const plans: Record<string, Cue[]> = {
     phase('Isoler les deux exponentielles', 'Résoudre la condition', false),
   ],
   '6d4': [
-    phase('Signer le dénominateur', 'Signe du dénominateur'),
+    phase('Étudier le signe du dénominateur', 'Signe du dénominateur'),
     phase('Garder le signe du numérateur', 'Signe du numérateur'),
   ],
   '7q1': [phase('Regrouper les termes en ln 3', 'Regrouper', false)],
@@ -249,37 +249,37 @@ const plans: Record<string, Cue[]> = {
     phase('Réunir la différence', 'Réunir les logarithmes'),
     phase('Reconnaître une différence de carrés', 'Factoriser', false),
   ],
-  '7q3': [phase('Séparer le produit positif', 'Utiliser le logarithme', false)],
+  '7q3': [phase('Décomposer le logarithme du produit', 'Utiliser le logarithme', false)],
   '7q4': [phase('Réécrire 32', 'Second logarithme', false)],
   '7q5': [
-    phase('Faire entrer le second coefficient', 'Second logarithme', false),
+    phase('Appliquer 2 ln(a) = ln(a²) au second terme', 'Second logarithme', false),
     phase('Réunir les logarithmes', 'Réunir les logarithmes', false),
   ],
   '7q6': [
-    phase('Ouvrir le logarithme du produit', 'Second logarithme', false),
+    phase('Décomposer le logarithme du produit', 'Second logarithme', false),
     phase('Distribuer −2 au premier terme', 'Distribuer le coefficient', false),
   ],
   '8q1': [
-    phase('Poser la condition de définition', 'Poser la condition'),
-    phase('Faire entrer le coefficient 5', 'Résoudre l’équation'),
+    phase('Poser la condition de définition', 'Condition d’existence'),
+    phase('Appliquer 5 ln(2) = ln(2⁵)', 'Résoudre l’équation'),
     phase('Vérifier la condition', 'Vérifier la solution'),
   ],
   '8q2': [
-    phase('Exiger un argument positif', 'Poser la condition'),
+    phase('Exiger un argument strictement positif', 'Condition d’existence'),
     phase('Comparer les arguments', 'Résoudre l’équation'),
     phase('Vérifier la solution', 'Vérifier la solution'),
   ],
   '8q3': [
-    phase('Poser le domaine', 'Poser la condition'),
+    phase('Déterminer les conditions d’existence', 'Condition d’existence'),
     phase('Faire apparaître le facteur commun', 'Factoriser'),
     phase('Séparer les cas', 'Séparer les deux cas'),
     phase('Résoudre le premier cas', 'Premier cas'),
     phase('Isoler ln x dans le second cas', 'Second cas'),
   ],
   '8q4': [
-    phase('Définir le logarithme', 'Poser les conditions'),
+    phase('Définir le logarithme', 'Conditions d’existence'),
     reset('Éviter un dénominateur nul'),
-    phase('Annuler le numérateur', 'Résoudre l’équation'),
+    phase('Résoudre l’équation du numérateur nul', 'Résoudre l’équation'),
     phase('Contrôler le dénominateur', 'Vérifier la solution'),
   ],
   '8d1': [
@@ -310,7 +310,7 @@ const plans: Record<string, Cue[]> = {
     phase('Définir le second logarithme', 'Second logarithme'),
     reset('Garder la condition la plus forte'),
     phase('Comparer les arguments', 'Résoudre l’inéquation'),
-    phase('Croiser avec le domaine', 'Croiser les conditions'),
+    phase('Prendre l’intersection avec l’ensemble de définition', 'Prendre l’intersection'),
   ],
   '9q2': [
     phase('Définir le premier logarithme', 'Premier logarithme'),
@@ -318,27 +318,27 @@ const plans: Record<string, Cue[]> = {
     phase('Réunir les logarithmes', 'Résoudre l’inéquation'),
     phase('Distribuer les deux termes', 'Développer le produit', false),
     phase('Lire où le trinôme est négatif', 'Étudier le signe'),
-    phase('Respecter aussi x > 3', 'Croiser les conditions'),
+    phase('Respecter aussi x > 3', 'Prendre l’intersection'),
   ],
   '9q3': [
-    phase('Définir ln x', 'Poser la condition'),
-    phase('Diviser par le coefficient positif 2', 'Résoudre l’inéquation'),
+    phase('Définir ln x', 'Condition d’existence'),
+    phase('Diviser par le coefficient strictement positif 2', 'Résoudre l’inéquation'),
   ],
   '9d1': [phase('Définir la racine carrée', 'Condition de la racine')],
   '9d2': [
     phase('Définir le second logarithme', 'Second logarithme'),
     reset('Contrôler le logarithme constant'),
-    phase('Prendre les conditions ensemble', 'Réunir les conditions'),
+    phase('Imposer les deux conditions simultanément', 'Réunir les conditions'),
     reset('Contrôler l’exponentielle extérieure'),
   ],
   '9d3': [
     phase('Définir le logarithme extérieur', 'Logarithme extérieur'),
-    phase('Retirer les facteurs positifs', 'Résoudre la condition', false),
+    phase('Diviser par le facteur strictement positif 2/x', 'Résoudre la condition', false),
   ],
   '10q1': [],
   '10q2': [],
   '10q3': [
-    phase('Rappeler les limites du cosinus', 'Valeurs possibles du cosinus'),
+    phase('Rappeler l’encadrement du cosinus', 'Valeurs possibles du cosinus'),
     phase('Comparer la valeur demandée', 'Tester la valeur demandée'),
     reset('Constater l’impossibilité'),
   ],
@@ -358,7 +358,7 @@ const plans: Record<string, Cue[]> = {
     phase('Répéter les valeurs interdites', 'Exclure tous les zéros'),
   ],
   '10d3': [
-    phase('Lire une hauteur positive', 'Étudier un tour'),
+    phase('Repérer une ordonnée strictement positive', 'Étudier un tour'),
     reset('Exclure les extrémités'),
     phase('Répéter à chaque tour', 'Retrouver tous les tours'),
   ],
@@ -416,7 +416,7 @@ function prepare(activity: Activity, exercise: number): Activity {
   }
   const isDomain = activity.id.includes('d');
   const firstPhase = isDomain
-    ? 'Poser les conditions'
+    ? 'Conditions d’existence'
     : [1, 4].includes(exercise)
       ? 'Utiliser les puissances'
       : exercise === 7

@@ -36,7 +36,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '2x^2+3x-5>0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Le trinôme est défini sur ℝ. On cherche où il est strictement positif : ses racines et un tableau de signes permettront de déterminer les intervalles solutions.',
         },
         {
           title: 'Trouver les zéros',
@@ -64,7 +64,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=]-\\infty,-\\tfrac52[\\;\\cup\\;]1,+\\infty[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le tableau donne un trinôme strictement positif à l’extérieur des deux racines. Les racines sont exclues puisque l’inégalité est stricte.',
         },
       ],
       visual: 'signs',
@@ -79,7 +79,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '7x+\\frac4x-1\\ge0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'La fraction 4/x impose x ≠ 0. Sur cet ensemble, on étudiera le signe du quotient obtenu après réduction au même dénominateur.',
         },
         {
           title: 'Exclure zéro',
@@ -89,7 +89,7 @@ export default {
         {
           title: 'Réunir sur le dénominateur x',
           tex: '\\frac{7x^2+4-x}{x}\\ge0',
-          why: 'On écrit 7x = 7x²/x et −1 = −x/x, puis on réunit les numérateurs.',
+          why: 'Pour x ≠ 0, on peut écrire 7x = 7x²/x et −1 = −x/x. Les termes ont alors le même dénominateur ; on additionne leurs numérateurs avec leurs signes.',
         },
         {
           title: 'Étudier le numérateur',
@@ -101,7 +101,7 @@ export default {
         {
           title: 'Déduire son signe',
           tex: '7x^2-x+4>0',
-          why: 'Sans racine et avec un coefficient de x² positif, ce trinôme est strictement positif partout.',
+          why: 'Un trinôme dont le discriminant est strictement négatif garde le signe de son coefficient dominant sur ℝ. Ici a = 7 > 0 : il est donc strictement positif pour tout réel x.',
         },
         ...signTableSteps(
           signs32,
@@ -113,7 +113,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=]0,+\\infty[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le numérateur est strictement positif sur ℝ : le quotient est positif ou nul exactement pour x > 0. La valeur 0 reste interdite par le dénominateur.',
         },
       ],
       visual: 'signs',
@@ -128,7 +128,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '1+\\frac1x-\\frac6{x^2}<0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Les fractions imposent x ≠ 0. On cherchera où l’expression est strictement négative en conservant cette valeur interdite dans le tableau de signes.',
         },
         {
           title: 'Exclure zéro',
@@ -144,7 +144,7 @@ export default {
         {
           title: 'Réécrire la deuxième fraction',
           tex: '\\frac{x^2}{x^2}+\\frac{x}{x^2}-\\frac6{x^2}<0',
-          why: 'On multiplie le numérateur et le dénominateur de 1/x par x.',
+          why: 'Comme x ≠ 0, multiplier le numérateur et le dénominateur de 1/x par x conserve la valeur de la fraction.',
           focus: '\\frac{x}{x^2}',
         },
         {
@@ -156,7 +156,7 @@ export default {
         {
           title: 'Utiliser le signe du carré',
           tex: 'x^2+x-6<0',
-          why: 'Pour x ≠ 0, x² est positif. Multiplier par ce dénominateur conserve le sens de l’inégalité.',
+          why: 'Pour x ≠ 0, x² est strictement positif. Multiplier les deux membres par x² donne donc une inéquation équivalente, de même sens ; la condition x ≠ 0 reste imposée.',
         },
         {
           title: 'Factoriser le numérateur',
@@ -179,7 +179,7 @@ export default {
         {
           title: 'Prendre les signes opposés',
           tex: '-3<x<2',
-          why: 'Entre les deux racines, x + 3 est positif et x − 2 est négatif : leur produit est négatif.',
+          why: 'Le produit (x + 3)(x − 2) est strictement négatif exactement pour −3 < x < 2. Pour le quotient initial, on conserve en plus la condition x ≠ 0.',
         },
         {
           title: 'Retirer zéro de cet intervalle',
@@ -189,7 +189,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=]-3,0[\\cup]0,2[',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le quotient est strictement négatif entre −3 et 2, sauf en 0 où il n’est pas défini. Les valeurs −3 et 2 sont exclues car elles annulent le numérateur.',
         },
       ],
       visual: 'signs',
@@ -204,7 +204,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'x-3\\ge(x+5)(x-1)',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Les deux membres sont définis sur ℝ. On développera le produit, puis on étudiera le signe du trinôme obtenu.',
         },
         ...expandBinomial((expression) => 'x-3\\ge ' + expression),
         {
@@ -252,12 +252,12 @@ export default {
         {
           title: 'Retenir l’intervalle entre les racines',
           tex: '\\frac{-3-\\sqrt{17}}2\\le x\\le\\frac{-3+\\sqrt{17}}2',
-          why: 'Le coefficient de x² est positif. Le trinôme est négatif entre ses deux racines et nul aux extrémités : on garde les bornes.',
+          why: 'Le coefficient de x² vaut 1 > 0. Le trinôme est strictement négatif entre ses deux racines et nul en chacune d’elles. Comme on demande ≤ 0, les deux bornes sont incluses.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=[\\frac{-3-\\sqrt{17}}2,\\frac{-3+\\sqrt{17}}2]',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Le trinôme est négatif ou nul entre ses deux racines, bornes incluses. Les transformations précédentes étant équivalentes, cet intervalle est l’ensemble des solutions.',
         },
       ],
       visual: 'signs',
@@ -272,7 +272,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_1(x)=\\frac1{\\sqrt{10x^3+12x^2-14x}}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir la racine carrée',
@@ -292,12 +292,12 @@ export default {
         {
           title: 'Factoriser le polynôme',
           tex: '10x(x-\\alpha)(x-\\beta)>0',
-          why: 'On étudie séparément les trois facteurs variables ; le coefficient 10 est positif.',
+          why: 'Comme 5x² + 6x − 7 = 5(x − α)(x − β), le polynôme vaut 10x(x − α)(x − β). Le facteur 10 > 0 ne change pas le signe du produit.',
         },
         {
           title: 'Ordonner les trois zéros',
           tex: '\\alpha<0<\\beta',
-          why: 'Ils découpent la droite réelle en quatre intervalles.',
+          why: 'On a −3 − 2√11 < 0 et 2√11 > 3 puisque 44 > 9. Comme 5 > 0, on obtient α < 0 < β. Ces trois zéros délimitent quatre intervalles.',
         },
         ...signTableSteps(
           signs3d1,
@@ -314,7 +314,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]\\frac{-3-2\\sqrt{11}}5,0[\\cup]\\frac{-3+2\\sqrt{11}}5,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le polynôme sous la racine est strictement positif sur ces deux intervalles. Ses trois zéros sont exclus car la racine carrée est au dénominateur.',
         },
       ],
       visual: 'signs',
@@ -330,7 +330,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_2(x)=\\sqrt{7x+4/x-1}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir la fraction intérieure',
@@ -345,7 +345,7 @@ export default {
         {
           title: 'Réunir sur le dénominateur x',
           tex: '\\frac{7x^2+4-x}{x}\\ge0',
-          why: 'On écrit 7x = 7x²/x et −1 = −x/x, puis on réunit les numérateurs.',
+          why: 'Pour x ≠ 0, on peut écrire 7x = 7x²/x et −1 = −x/x. Les termes ont alors le même dénominateur ; on additionne leurs numérateurs avec leurs signes.',
         },
         {
           title: 'Étudier le numérateur',
@@ -357,7 +357,7 @@ export default {
         {
           title: 'Déduire son signe',
           tex: '7x^2-x+4>0',
-          why: 'Sans racine et avec un coefficient de x² positif, ce trinôme est strictement positif partout.',
+          why: 'Un trinôme dont le discriminant est strictement négatif garde le signe de son coefficient dominant sur ℝ. Ici a = 7 > 0 : il est donc strictement positif pour tout réel x.',
         },
         ...signTableSteps(
           signs32,
@@ -369,7 +369,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]0,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Pour x > 0, la quantité sous la racine est strictement positive. Elle est strictement négative pour x < 0 et non définie en 0 : l’ensemble de définition est donc ]0, +∞[.',
         },
       ],
       visual: 'algebra',
@@ -384,7 +384,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_3(x)=3\\ln\\!\\left(\\frac6{x^2}-1-\\frac1x\\right)',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir les fractions',
@@ -399,12 +399,12 @@ export default {
         {
           title: 'Reconnaître une expression opposée',
           tex: '-\\left(1+\\frac1x-\\frac6{x^2}\\right)>0',
-          why: 'Le signe moins change le signe des trois termes.',
+          why: 'On utilise la distributivité : −(1 + 1/x − 6/x²) = −1 − 1/x + 6/x², pour x ≠ 0.',
         },
         {
           title: 'Multiplier par −1',
           tex: '1+\\frac1x-\\frac6{x^2}<0',
-          why: 'Multiplier une inégalité par un nombre négatif inverse son sens.',
+          why: 'Multiplier les deux membres d’une inégalité par un nombre strictement négatif donne une inégalité équivalente de sens opposé. Ici, on multiplie par −1.',
         },
         {
           title: 'Écrire le quotient à étudier',
@@ -417,7 +417,7 @@ export default {
           explanations33,
           [1, 2],
           [],
-          'L’argument de ln est positif quand le quotient du tableau est négatif. On conserve les deux intervalles marqués −. Les racines et la valeur interdite 0 sont exclues.',
+          'L’argument de ln est strictement positif si et seulement si le quotient du tableau est strictement négatif. On retient les intervalles marqués − ; −3 et 2 annulent l’argument, et 0 est une valeur interdite.',
         ),
         {
           title: 'Utiliser l’étude de signes',
@@ -427,7 +427,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]-3,0[\\cup]0,2[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'L’argument du logarithme est strictement positif exactement sur ces deux intervalles. Il est nul en −3 et en 2, et non défini en 0 : ces trois valeurs sont exclues.',
         },
       ],
       visual: 'algebra',
@@ -442,7 +442,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_4(x)=\\sqrt{x-3-(x+5)(x-1)}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir la racine',
@@ -500,12 +500,12 @@ export default {
         {
           title: 'Retenir l’intervalle entre les racines',
           tex: '\\frac{-3-\\sqrt{17}}2\\le x\\le\\frac{-3+\\sqrt{17}}2',
-          why: 'Le coefficient de x² est positif. Le trinôme est négatif entre ses deux racines et nul aux extrémités : on garde les bornes.',
+          why: 'Le coefficient de x² vaut 1 > 0. Le trinôme est strictement négatif entre ses deux racines et nul en chacune d’elles. Comme on demande ≤ 0, les deux bornes sont incluses.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=[\\frac{-3-\\sqrt{17}}2,\\frac{-3+\\sqrt{17}}2]',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'La quantité sous la racine est positive ou nulle entre les deux racines. Aux deux extrémités, elle vaut 0 ; la racine carrée reste définie, donc les bornes sont incluses.',
         },
       ],
       visual: 'algebra',

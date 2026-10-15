@@ -22,15 +22,15 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'e^{2x+1}=5',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'L’équation est définie pour tout réel x. Comme e^(2x + 1) et 5 sont strictement positifs, on pourra appliquer le logarithme népérien aux deux membres.',
         },
         {
           title: 'Appliquer ln aux deux membres',
           tex: '\\ln(e^{2x+1})=\\ln5',
-          why: 'Les deux membres sont positifs. Le logarithme permet de retrouver l’exposant.',
+          why: 'Les deux membres sont strictement positifs. Comme ln est injective sur ]0, +∞[, appliquer ln aux deux membres donne une équation équivalente.',
         },
         {
-          title: 'Annuler les fonctions inverses',
+          title: 'Utiliser la réciprocité de ln et exp',
           tex: '2x+1=\\ln5',
           why: 'Pour tout réel u, ln(eᵘ) = u.',
         },
@@ -42,12 +42,12 @@ export default {
         {
           title: 'Diviser les deux membres par 2',
           tex: 'x=\\frac{\\ln5-1}2',
-          why: 'Le 2 multiplie x : on divise tout le membre de droite par 2.',
+          why: 'On divise les deux membres par 2, qui est non nul : 2x/2 = x et le membre de droite entier devient (ln(5) − 1)/2.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{\\tfrac{\\ln5-1}2\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Les transformations sont équivalentes : ln est injective sur ]0, +∞[ et la division par 2 est réversible. La valeur obtenue est donc l’unique solution réelle.',
         },
       ],
       visual: 'substitution',
@@ -62,17 +62,17 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '3e^{-x}=4',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'L’équation est définie sur ℝ. On isolera e^(−x), puis on utilisera le logarithme népérien pour déterminer x.',
         },
         {
           title: 'Diviser les deux membres par 3',
           tex: 'e^{-x}=\\frac43',
-          why: 'On commence par isoler l’exponentielle. Le coefficient 3 devient un diviseur du membre de droite.',
+          why: 'On divise les deux membres par 3, qui est non nul : 3e^(−x)/3 = e^(−x) et 4/3 reste à droite. L’équation obtenue est équivalente.',
         },
         {
           title: 'Appliquer ln',
           tex: '\\ln(e^{-x})=\\ln(4/3)',
-          why: '4/3 est positif : on peut prendre son logarithme.',
+          why: 'e^(−x) et 4/3 sont strictement positifs. L’injectivité de ln sur ]0, +∞[ autorise à appliquer ln aux deux membres par équivalence.',
         },
         {
           title: 'Retrouver l’exposant',
@@ -92,7 +92,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{\\ln(3/4)\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Pour tout A > 0, l’équation eᵘ = A équivaut à u = ln(A). Avec u = −x et A = 4/3, on obtient l’unique solution x = −ln(4/3) = ln(3/4).',
         },
       ],
       visual: 'substitution',
@@ -107,7 +107,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'e^{2x}-e^x=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Les exponentielles sont définies sur ℝ. On factorisera par eˣ, qui est strictement positif et ne s’annule donc jamais.',
         },
         {
           title: 'Réécrire la première exponentielle',
@@ -117,12 +117,12 @@ export default {
         {
           title: 'Mettre eˣ en facteur',
           tex: 'e^x(e^x-1)=0',
-          why: 'On sort le facteur commun eˣ. Les termes restants restent dans la parenthèse.',
+          why: 'On utilise la distributivité pour mettre le facteur commun eˣ en facteur. L’identité obtenue est valable pour tout réel x.',
         },
         {
-          title: 'Écarter le facteur jamais nul',
+          title: 'Diviser par le facteur non nul eˣ',
           tex: 'e^x-1=0',
-          why: 'L’exponentielle est strictement positive : eˣ ne peut jamais être zéro. Seule la parenthèse pourrait s’annuler.',
+          why: 'Pour tout réel x, eˣ > 0. On peut donc diviser les deux membres par eˣ ; le produit est nul si et seulement si le facteur entre parenthèses est nul.',
         },
         {
           title: 'Isoler l’exponentielle',
@@ -130,14 +130,14 @@ export default {
           why: 'On ajoute 1 aux deux membres.',
         },
         {
-          title: 'Conclure avec le signe de exp',
+          title: 'Utiliser l’injectivité de exp',
           tex: 'x=0',
-          why: '1 = e⁰. Deux exponentielles égales ont le même exposant, donc x = 0.',
+          why: 'La fonction exp est strictement croissante, donc injective : eᵘ = eᵛ si et seulement si u = v. Comme 1 = e⁰, on obtient x = 0.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{0\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Puisque eˣ ≠ 0, l’équation initiale équivaut à eˣ = 1, puis à x = 0. Cette valeur est l’unique solution.',
         },
       ],
       visual: 'substitution',
@@ -152,7 +152,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'e^{2x}+2e^x=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Les exponentielles sont définies sur ℝ. On factorisera par eˣ, puis on vérifiera si le second facteur peut être nul.',
         },
         {
           title: 'Réécrire la première exponentielle',
@@ -162,12 +162,12 @@ export default {
         {
           title: 'Mettre eˣ en facteur',
           tex: 'e^x(e^x+2)=0',
-          why: 'On sort le facteur commun eˣ. Les termes restants restent dans la parenthèse.',
+          why: 'On utilise la distributivité pour mettre le facteur commun eˣ en facteur. L’identité obtenue est valable pour tout réel x.',
         },
         {
-          title: 'Écarter le facteur jamais nul',
+          title: 'Diviser par le facteur non nul eˣ',
           tex: 'e^x+2=0',
-          why: 'L’exponentielle est strictement positive : eˣ ne peut jamais être zéro. Seule la parenthèse pourrait s’annuler.',
+          why: 'Pour tout réel x, eˣ > 0. On peut donc diviser les deux membres par eˣ ; le produit est nul si et seulement si le facteur entre parenthèses est nul.',
         },
         {
           title: 'Isoler l’exponentielle',
@@ -182,7 +182,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\varnothing',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'L’équation initiale imposerait eˣ = −2, alors que eˣ > 0 pour tout réel x. Elle n’a donc aucune solution réelle.',
         },
       ],
       visual: 'substitution',
@@ -197,12 +197,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '10e^{2x}+12e^x-14=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'L’équation est définie sur ℝ. On posera X = eˣ pour obtenir une équation du second degré, en conservant la condition X > 0.',
         },
         {
           title: 'Nommer la nouvelle variable',
           tex: 'X=e^x,\\qquad X>0',
-          why: 'La lettre X représente eˣ. Attention : elle ne peut prendre que des valeurs strictement positives.',
+          why: 'On pose X = eˣ. L’exponentielle réalise une bijection de ℝ sur ]0, +∞[ : X doit être strictement positif et chaque X > 0 correspond à l’unique réel x = ln(X).',
         },
         {
           title: 'Remplacer e²ˣ',
@@ -224,12 +224,12 @@ export default {
         {
           title: 'Rejeter la première racine',
           tex: '\\frac{-3-2\\sqrt{11}}5<0',
-          why: 'Son numérateur est négatif et son dénominateur est positif. Elle ne peut donc pas représenter eˣ.',
+          why: 'Le numérateur −3 − 2√11 est strictement négatif et le dénominateur 5 strictement positif. Cette racine est donc strictement négative et ne peut pas être égale à eˣ.',
         },
         {
           title: 'Garder la racine positive',
           tex: 'X=\\frac{-3+2\\sqrt{11}}5>0',
-          why: 'Comme 2√11 > 3, le numérateur est positif. Cette racine respecte X > 0.',
+          why: 'Les deux nombres 2√11 et 3 sont positifs, et leurs carrés vérifient 44 > 9. Ainsi 2√11 > 3 : le numérateur est strictement positif et la racine respecte X > 0.',
         },
         {
           title: 'Remplacer X par eˣ',
@@ -239,12 +239,12 @@ export default {
         {
           title: 'Prendre le logarithme',
           tex: 'x=\\ln\\!\\left(\\frac{-3+2\\sqrt{11}}5\\right)',
-          why: 'Le logarithme d’un nombre positif est l’unique exposant qui donne ce nombre.',
+          why: 'Pour tout A > 0, eˣ = A si et seulement si x = ln(A), car ln est la fonction réciproque de exp. La racine conservée est strictement positive.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{\\ln(\\frac{-3+2\\sqrt{11}}5)\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Une seule racine du trinôme est strictement positive. Elle correspond à un unique réel x par x = ln(X) : on obtient ainsi l’unique solution de l’équation initiale.',
         },
       ],
       visual: 'substitution',
@@ -259,10 +259,10 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'e^{3x}-5e^{2x}+e^x=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'L’équation est définie sur ℝ. On factorisera par eˣ, puis on posera X = eˣ ; seules les racines strictement positives en X pourront convenir.',
         },
         {
-          title: 'Sortir le facteur commun eˣ',
+          title: 'Mettre le facteur commun eˣ en facteur',
           tex: 'e^x(e^{2x}-5e^x+1)=0',
           why: 'e³ˣ = eˣ × e²ˣ, −5e²ˣ = eˣ × (−5eˣ) et eˣ = eˣ × 1.',
         },
@@ -274,7 +274,7 @@ export default {
         {
           title: 'Changer de variable',
           tex: 'X^2-5X+1=0,\\qquad X=e^x>0',
-          why: 'On remplace eˣ par X, donc e²ˣ par X².',
+          why: 'On pose X = eˣ > 0, donc e^(2x) = X². Chaque valeur X > 0 correspond à un unique réel x = ln(X), ce qui permettra de revenir à l’inconnue initiale.',
         },
         ...quadraticSteps({
           a: 1,
@@ -286,7 +286,7 @@ export default {
         {
           title: 'Vérifier la plus petite racine',
           tex: '0<\\sqrt{21}<5\\quad\\Longrightarrow\\quad\\frac{5-\\sqrt{21}}2>0',
-          why: '21 < 25, donc √21 < 5. Même la plus petite racine est positive : on garde les deux.',
+          why: 'La racine carrée est strictement croissante sur [0, +∞[. Comme 0 < 21 < 25, on a 0 < √21 < 5 : les deux racines (5 − √21)/2 et (5 + √21)/2 sont strictement positives.',
         },
         {
           title: 'Revenir à x, premier cas',
@@ -301,7 +301,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{\\ln(\\frac{5-\\sqrt{21}}2),\\ln(\\frac{5+\\sqrt{21}}2)\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Les deux racines en X sont strictement positives et distinctes. Chacune correspond à un unique réel x = ln(X) ; ces deux valeurs sont exactement les solutions recherchées.',
         },
       ],
       visual: 'substitution',
@@ -316,7 +316,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'e^{-x}-e^{2x-3}=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Les deux exponentielles sont définies sur ℝ. On les isolera dans les deux membres, puis on utilisera l’injectivité de exp : des images égales ont des antécédents égaux.',
         },
         {
           title: 'Ajouter la seconde exponentielle',
@@ -326,7 +326,7 @@ export default {
         {
           title: 'Comparer les exposants',
           tex: '-x=2x-3',
-          why: 'La fonction exponentielle prend chaque valeur positive une seule fois. Des exponentielles égales ont donc des exposants égaux.',
+          why: 'La fonction exp est strictement croissante sur ℝ, donc injective. Pour tous réels u et v, eᵘ = eᵛ si et seulement si u = v ; on peut donc égaler les exposants.',
         },
         {
           title: 'Soustraire 2x des deux côtés',
@@ -341,7 +341,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{1\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Par injectivité de exp, l’équation initiale équivaut à −x = 2x − 3. Cette équation du premier degré possède l’unique solution x = 1.',
         },
       ],
       visual: 'substitution',
@@ -356,7 +356,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_1(x)=\\frac5{e^{2x}-e^x}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Interdire le dénominateur nul',
@@ -381,12 +381,12 @@ export default {
         {
           title: 'Comparer les exposants',
           tex: 'x\\ne0',
-          why: 'exp prend chaque valeur une seule fois : eˣ = e⁰ seulement si x = 0.',
+          why: 'Par injectivité de exp, eˣ = e⁰ si et seulement si x = 0. La condition eˣ ≠ 1 équivaut donc à x ≠ 0.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R\\setminus\\{0\\}',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Le dénominateur eˣ(eˣ − 1) s’annule exactement pour x = 0. La fonction est définie pour tous les autres réels.',
         },
       ],
       visual: 'substitution',
@@ -401,7 +401,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_2(x)=\\ln(e^{2x}+2e^x)',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le logarithme',
@@ -409,24 +409,24 @@ export default {
           why: 'Le logarithme exige un argument strictement positif.',
         },
         {
-          title: 'Signer le premier terme',
+          title: 'Étudier le signe du premier terme',
           tex: 'e^{2x}>0',
           why: 'Une exponentielle est strictement positive pour tout réel x.',
         },
         {
-          title: 'Signer le second terme',
+          title: 'Étudier le signe du second terme',
           tex: '2e^x>0',
-          why: '2 est positif et eˣ est positif : leur produit l’est aussi.',
+          why: '2 > 0 et eˣ > 0 pour tout réel x. Le produit 2eˣ est donc strictement positif sur ℝ.',
         },
         {
-          title: 'Additionner deux positifs',
+          title: 'Additionner deux termes strictement positifs',
           tex: 'e^{2x}+2e^x>0\\quad\\text{pour tout }x\\in\\mathbb R',
-          why: 'La condition est automatiquement satisfaite.',
+          why: 'La somme de deux réels strictement positifs est strictement positive. L’argument du logarithme est donc strictement positif pour tout réel x.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'La somme e^(2x) + 2eˣ est strictement positive pour tout réel x. Son logarithme est donc défini sur tout ℝ.',
         },
       ],
       visual: 'substitution',
@@ -441,7 +441,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_3(x)=\\ln(10e^{2x}+12e^x-14)',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le logarithme',
@@ -451,17 +451,17 @@ export default {
         {
           title: 'Changer de variable',
           tex: '10X^2+12X-14>0,\\qquad X=e^x>0',
-          why: 'On se ramène à un trinôme, sans oublier que X est positif.',
+          why: 'On pose X = eˣ, donc X > 0 et e^(2x) = X². On étudie le trinôme uniquement pour X > 0, puis on reviendra à x = ln(X).',
         },
         {
           title: 'Nommer les deux racines',
           tex: '\\alpha=\\frac{-3-2\\sqrt{11}}5<0,\\qquad\\beta=\\frac{-3+2\\sqrt{11}}5>0',
-          why: 'Ces racines ont été calculées en 5.5. Le coefficient de X² est positif.',
+          why: 'Ces deux racines ont été calculées en 5.5. On a α < 0 < β et 10X² + 12X − 14 = 10(X − α)(X − β).',
         },
         {
           title: 'Lire les zones positives',
           tex: 'X<\\alpha\\quad\\text{ou}\\quad X>\\beta',
-          why: 'Un trinôme de coefficient dominant positif est positif à l’extérieur de ses deux racines.',
+          why: 'Comme 10 > 0 et α < β, le produit 10(X − α)(X − β) est strictement positif exactement pour X < α ou X > β. Les racines sont exclues.',
         },
         {
           title: 'Respecter X > 0',
@@ -471,12 +471,12 @@ export default {
         {
           title: 'Revenir à x',
           tex: 'x>\\ln\\!\\left(\\frac{-3+2\\sqrt{11}}5\\right)',
-          why: 'On applique ln, qui est croissant sur les nombres positifs. La borne est exclue car l’argument du logarithme initial y vaut zéro.',
+          why: 'β > 0 et ln est strictement croissante sur ]0, +∞[ : eˣ > β équivaut à x > ln(β). L’égalité est exclue car elle annule l’argument du logarithme initial.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=]\\ln(\\frac{-3+2\\sqrt{11}}5),+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'L’argument du logarithme est strictement positif exactement lorsque x dépasse la borne indiquée. À cette borne il vaut 0, ce qui explique son exclusion.',
         },
       ],
       visual: 'substitution',
@@ -491,7 +491,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_4(x)=\\frac{e^x}{e^{3x}-5e^{2x}+e^x}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Interdire le dénominateur nul',
@@ -504,24 +504,24 @@ export default {
           why: 'On retrouve le produit étudié en 5.6.',
         },
         {
-          title: 'Retirer le facteur jamais nul',
+          title: 'Diviser par le facteur non nul eˣ',
           tex: 'e^{2x}-5e^x+1\\ne0',
-          why: 'eˣ ne peut jamais annuler le dénominateur.',
+          why: 'Comme eˣ > 0, le produit eˣ(e²ˣ − 5eˣ + 1) est non nul si et seulement si son second facteur est non nul.',
         },
         {
           title: 'Exclure les deux racines en X',
           tex: 'e^x\\ne\\frac{5-\\sqrt{21}}2,\\qquad e^x\\ne\\frac{5+\\sqrt{21}}2',
-          why: 'Le trinôme en X = eˣ a deux racines positives.',
+          why: 'Le trinôme X² − 5X + 1 a exactement les deux racines indiquées, toutes deux strictement positives. On les exclut pour que le dénominateur soit non nul.',
         },
         {
           title: 'Exprimer les valeurs interdites en x',
           tex: 'x\\ne\\ln(\\frac{5-\\sqrt{21}}2),\\qquad x\\ne\\ln(\\frac{5+\\sqrt{21}}2)',
-          why: 'On applique ln à chacune des deux égalités interdites.',
+          why: 'Pour A > 0, eˣ = A équivaut à x = ln(A). Les deux racines étant strictement positives, leurs logarithmes sont exactement les deux valeurs interdites de x.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=\\mathbb R\\setminus\\{\\ln(\\frac{5-\\sqrt{21}}2),\\ln(\\frac{5+\\sqrt{21}}2)\\}',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Les deux valeurs exclues sont exactement les zéros du dénominateur. Les exponentielles étant définies sur ℝ, aucune autre restriction n’est nécessaire.',
         },
       ],
       visual: 'substitution',

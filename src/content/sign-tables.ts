@@ -36,7 +36,7 @@ export function signTableSteps(
     {
       title: 'Placer les valeurs dans le tableau',
       tex: signTableTex(initial),
-      why: 'La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.',
+      why: 'La première ligne représente les réels dans l’ordre croissant, de −∞ à +∞. On y place les zéros et les valeurs interdites ; chaque intervalle sera ensuite associé à un signe.',
       statement: true,
       table: initial,
     },
@@ -131,29 +131,29 @@ export const signs3d1: SignTableModel = {
   ],
 };
 export const explanations31 = [
-  '2x + 5 s’annule en −5/2. Son coefficient de x est positif : signe − à gauche de ce zéro, signe + à droite.',
+  '2x + 5 s’annule en −5/2. Son coefficient de x est strictement positif : signe − à gauche de ce zéro, signe + à droite.',
   'x − 1 s’annule en 1 : signe − à gauche et signe + à droite. Les blancs aux autres valeurs ne sont pas des zéros.',
   'On multiplie les signes dans chaque intervalle : (−) × (−) = +, (+) × (−) = −, (+) × (+) = +. Le produit vaut 0 aux deux racines.',
 ];
 export const explanations32 = [
-  'Le numérateur a un discriminant négatif et un coefficient de x² positif. Il est strictement positif sur toute la droite réelle.',
-  'x est négatif avant 0, nul en 0 et positif après 0.',
+  'Le discriminant du numérateur est strictement négatif et son coefficient dominant vaut 7 > 0. Ce trinôme garde donc le signe + sur tout ℝ et ne s’annule jamais.',
+  'Pour x < 0, le signe de x est − ; pour x > 0, il est + ; en x = 0, sa valeur est nulle.',
   'Le quotient a le signe de x. La double barre en 0 signifie « non défini » : un zéro au dénominateur ne donne jamais un zéro du quotient.',
 ];
 export const explanations33 = [
   'x + 3 s’annule en −3 et change de − à + à cette valeur.',
   'x − 2 s’annule en 2 et change de − à + à cette valeur.',
-  'Le carré x² est positif des deux côtés de 0 et nul en 0. Son signe ne change pas en traversant 0.',
+  'Pour tout x ≠ 0, x² est strictement positif ; pour x = 0, il est nul. Le signe reste donc + de part et d’autre de 0.',
   'On multiplie les deux signes du numérateur puis on divise par le signe + du dénominateur. Le quotient est nul en −3 et 2 ; la double barre en 0 marque la valeur interdite.',
 ];
 export const explanations34 = [
   'x − x₁ s’annule en x₁ : signe − avant x₁ et signe + après.',
   'x − x₂ s’annule en x₂ : signe − avant x₂ et signe + après.',
-  'Le trinôme est (x − x₁)(x − x₂). Son coefficient dominant est 1. Le produit est positif à l’extérieur des racines, négatif entre elles et nul aux racines.',
+  'On a x₁ < x₂. Les facteurs ont le même signe à l’extérieur des racines et des signes opposés entre elles. Le produit est donc strictement positif à l’extérieur, strictement négatif à l’intérieur et nul aux racines.',
 ];
 export const explanations3d1 = [
-  'x est négatif avant 0, puis positif après 0 ; il s’annule en 0.',
-  'x − α est négatif avant α, puis positif après α ; il s’annule en α.',
-  'x − β est négatif avant β, puis positif après β ; il s’annule en β.',
-  'Le facteur 10 est positif. On multiplie les trois signes : −, puis +, puis −, puis +. Les trois zéros sont α, 0 et β.',
+  'x est strictement négatif pour x < 0, nul en 0 et strictement positif pour x > 0.',
+  'x − α est strictement négatif pour x < α, nul en α et strictement positif pour x > α.',
+  'x − β est strictement négatif pour x < β, nul en β et strictement positif pour x > β.',
+  'Le facteur 10 est strictement positif. On multiplie les trois signes : −, puis +, puis −, puis +. Les trois zéros sont α, 0 et β.',
 ];

@@ -21,7 +21,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln x=5\\ln2',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'On détermine d’abord la condition d’existence x > 0, nécessaire pour définir ln(x). Toutes les transformations seront faites sur cet ensemble.',
         },
         {
           title: 'Poser la condition de définition',
@@ -29,9 +29,9 @@ export default {
           why: 'ln(x) existe uniquement si x est strictement positif.',
         },
         {
-          title: 'Faire entrer le coefficient 5',
+          title: 'Appliquer 5 ln(2) = ln(2⁵)',
           tex: '\\ln x=\\ln(2^5)',
-          why: '5 ln(2) = ln(2⁵).',
+          why: 'Pour a > 0 et p réel, p ln(a) = ln(aᵖ). Comme 2 > 0, on a 5 ln(2) = ln(2⁵).',
         },
         {
           title: 'Calculer la puissance',
@@ -42,7 +42,7 @@ export default {
         {
           title: 'Comparer les arguments',
           tex: 'x=32',
-          why: 'Sur les nombres positifs, ln prend chaque valeur une seule fois. Deux logarithmes égaux ont donc des arguments égaux.',
+          why: 'La fonction ln est strictement croissante sur ]0, +∞[, donc injective. Pour a > 0 et b > 0, ln(a) = ln(b) si et seulement si a = b.',
         },
         {
           title: 'Vérifier la condition',
@@ -52,7 +52,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{32\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Sur x > 0, l’injectivité de ln donne x = 32. Cette valeur respecte la condition d’existence et constitue l’unique solution.',
         },
       ],
       visual: 'logs',
@@ -67,22 +67,22 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\ln(x+2)=\\ln7',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Les arguments des logarithmes doivent être strictement positifs. Ici, on doit avoir x + 2 > 0 ; le logarithme de 7 est déjà défini.',
         },
         {
-          title: 'Exiger un argument positif',
+          title: 'Exiger un argument strictement positif',
           tex: 'x+2>0',
-          why: 'L’argument du logarithme de gauche est x + 2.',
+          why: 'Pour définir ln(x + 2), il faut et il suffit que son argument x + 2 soit strictement positif.',
         },
         {
           title: 'Isoler x dans la condition',
           tex: 'x>-2',
-          why: 'On soustrait 2. L’argument 7 du logarithme de droite est déjà positif.',
+          why: 'On soustrait 2 aux deux membres de x + 2 > 0, ce qui donne x > −2. Comme 7 > 0, le logarithme de droite n’impose aucune autre condition.',
         },
         {
           title: 'Comparer les arguments',
           tex: 'x+2=7',
-          why: 'ln est strictement croissante et prend chaque valeur une seule fois : les arguments sont égaux.',
+          why: 'Sur x > −2, les deux arguments x + 2 et 7 sont strictement positifs. L’injectivité de ln donne ln(x + 2) = ln(7) si et seulement si x + 2 = 7.',
         },
         {
           title: 'Soustraire 2 des deux côtés',
@@ -97,7 +97,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{5\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'Sur x > −2, l’équation équivaut à x + 2 = 7. La valeur 5 respecte cette condition et constitue l’unique solution.',
         },
       ],
       visual: 'logs',
@@ -112,10 +112,10 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '6(\\ln x)^2-2\\ln x=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'La condition d’existence est x > 0. On factorisera ensuite l’expression sans diviser par ln(x), car ln(x) peut être nul.',
         },
         {
-          title: 'Poser le domaine',
+          title: 'Déterminer les conditions d’existence',
           tex: 'x>0',
           why: 'On doit pouvoir calculer ln(x).',
         },
@@ -132,7 +132,7 @@ export default {
         {
           title: 'Séparer les cas',
           tex: '\\ln x=0\\quad\\text{ou}\\quad3\\ln x-1=0',
-          why: 'Un produit nul a au moins un facteur nul ; le coefficient 2 ne peut pas être nul.',
+          why: 'Un produit de réels est nul si et seulement si au moins un facteur est nul. Comme 2 ≠ 0, on obtient ln(x) = 0 ou 3ln(x) − 1 = 0.',
         },
         {
           title: 'Résoudre le premier cas',
@@ -147,17 +147,17 @@ export default {
         {
           title: 'Diviser par 3',
           tex: '\\ln x=\\frac13',
-          why: 'On divise tout le membre de droite par 3.',
+          why: 'On divise les deux membres par 3 ≠ 0 : 3ln(x)/3 = ln(x) et 1/3 reste à droite. On obtient une équation équivalente.',
         },
         {
           title: 'Revenir à x',
           tex: 'x=e^{1/3}',
-          why: 'On applique exp. Les deux solutions 1 et e¹ᐟ³ sont positives.',
+          why: 'Sur x > 0, on a exp(ln(x)) = x. L’injectivité de exp rend cette transformation équivalente ; les deux valeurs 1 et e^(1/3) sont strictement positives.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{1,e^{1/3}\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'La propriété du produit nul donne ln(x) = 0 ou ln(x) = 1/3. Les deux valeurs 1 et e^(1/3) sont strictement positives et vérifient l’équation initiale.',
         },
       ],
       visual: 'logs',
@@ -172,12 +172,12 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: '\\frac{1-2\\ln x}{2+\\ln x}=0',
-          why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
+          why: 'Deux conditions d’existence sont nécessaires : x > 0 pour définir ln(x), et 2 + ln(x) ≠ 0 pour définir le quotient.',
         },
         {
           title: 'Définir le logarithme',
           tex: 'x>0',
-          why: 'Première condition : l’argument de ln doit être positif.',
+          why: 'Première condition d’existence : x > 0, car le logarithme népérien est défini uniquement sur ]0, +∞[.',
         },
         {
           title: 'Éviter un dénominateur nul',
@@ -190,9 +190,9 @@ export default {
           why: 'On soustrait 2, puis on applique exp pour identifier la valeur à exclure.',
         },
         {
-          title: 'Annuler le numérateur',
+          title: 'Résoudre l’équation du numérateur nul',
           tex: '1-2\\ln x=0',
-          why: 'Sur le domaine autorisé, seule l’annulation du numérateur rend la fraction nulle.',
+          why: 'Pour x > 0 et x ≠ e^(−2), le dénominateur est non nul. Le quotient est donc nul si et seulement si son numérateur est nul.',
         },
         {
           title: 'Ajouter 2 ln x',
@@ -212,12 +212,12 @@ export default {
         {
           title: 'Contrôler le dénominateur',
           tex: '2+\\frac12=\\frac52\\ne0',
-          why: 'Le logarithme de la solution vaut 1/2. Le dénominateur n’est donc pas nul.',
+          why: 'La valeur √e est strictement positive et son logarithme vaut 1/2. Le dénominateur vaut donc 2 + 1/2 = 5/2 ≠ 0 : les deux conditions d’existence sont respectées.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'S=\\{\\sqrt e\\}',
-          why: 'S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.',
+          why: 'La valeur √e est strictement positive et rend le dénominateur égal à 5/2, non nul. Elle est l’unique zéro admissible du numérateur, donc l’unique solution.',
         },
       ],
       visual: 'logs',
@@ -232,7 +232,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_1(x)=(\\ln x-5\\ln2)^3',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir ln x',
@@ -257,7 +257,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]0,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'La seule restriction est x > 0 pour définir ln(x). La différence et son cube sont ensuite définis pour toute valeur réelle obtenue.',
         },
       ],
       visual: 'logs',
@@ -272,7 +272,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_2(x)=(\\ln(x+2)-\\ln7)^{-2}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le logarithme',
@@ -282,7 +282,7 @@ export default {
         {
           title: 'Lire l’exposant négatif',
           tex: 'u^{-2}=\\frac1{u^2}\\quad(u\\ne0)',
-          why: 'La puissance −2 signifie un inverse de carré. Sa base ne peut pas être nulle.',
+          why: 'Pour u ≠ 0, u^(−2) = 1/u². Cette puissance impose donc que la différence u des deux logarithmes soit non nulle ; elle peut être strictement négative ou strictement positive.',
         },
         {
           title: 'Interdire la base nulle',
@@ -292,7 +292,7 @@ export default {
         {
           title: 'Comparer les logarithmes',
           tex: '\\ln(x+2)\\ne\\ln7\\quad\\Longrightarrow\\quad x+2\\ne7',
-          why: 'Sur le domaine autorisé, ln prend chaque valeur une seule fois.',
+          why: 'Sur x > −2, les arguments sont strictement positifs. Par injectivité de ln, leurs logarithmes sont différents si et seulement si les arguments sont différents.',
         },
         {
           title: 'Conserver les deux conditions',
@@ -302,7 +302,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]-2,5[\\cup]5,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Il faut simultanément x > −2 pour le logarithme et x ≠ 5 pour la puissance d’exposant négatif. Ces conditions donnent les deux intervalles ouverts indiqués.',
         },
       ],
       visual: 'logs',
@@ -317,7 +317,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_3(x)=\\frac1{6(\\ln x)^2-2\\ln x}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir ln x',
@@ -347,12 +347,12 @@ export default {
         {
           title: 'Réunir les conditions',
           tex: 'x>0,\\qquad x\\notin\\{1,e^{1/3}\\}',
-          why: 'On ne garde que les réels positifs, puis on y enlève ces deux valeurs.',
+          why: 'On part de ]0, +∞[, ensemble de définition de ln, puis on en retire 1 et e^(1/3), qui annulent le dénominateur.',
         },
         {
           title: 'Retenir le résultat',
           tex: 'D=]0,1[\\cup]1,e^{1/3}[\\cup]e^{1/3},+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'Il faut x > 0 et un dénominateur non nul. Ses seuls zéros sont 1 et e^(1/3) : on les retire de ]0, +∞[.',
         },
       ],
       visual: 'logs',
@@ -367,7 +367,7 @@ export default {
         {
           title: 'Lire l’énoncé',
           tex: 'f_4(x)=\\frac{2+\\ln x}{1-2\\ln x}',
-          why: 'Déterminer l’ensemble de définition. On cherche toutes les valeurs de x pour lesquelles chaque calcul est possible.',
+          why: 'On cherche l’ensemble de définition : tous les réels x pour lesquels l’expression de la fonction est définie dans ℝ. Les conditions portant sur chaque opération doivent être satisfaites simultanément.',
         },
         {
           title: 'Définir le logarithme',
@@ -387,7 +387,7 @@ export default {
         {
           title: 'Exprimer la valeur interdite',
           tex: 'x\\ne e^{1/2}=\\sqrt e',
-          why: 'On enlève cette valeur du domaine positif.',
+          why: 'On retire e^(1/2) = √e de ]0, +∞[, car cette valeur annule le dénominateur. Toutes les autres valeurs de cet intervalle sont admises.',
         },
         {
           title: 'Contrôler la valeur qui annule le numérateur',
@@ -397,7 +397,7 @@ export default {
         {
           title: 'Retenir le résultat',
           tex: 'D=]0,\\sqrt e[\\cup]\\sqrt e,+\\infty[',
-          why: 'Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.',
+          why: 'La condition x > 0 définit le logarithme. On exclut ensuite uniquement √e, qui annule le dénominateur ; un zéro du numérateur est autorisé.',
         },
       ],
       visual: 'logs',

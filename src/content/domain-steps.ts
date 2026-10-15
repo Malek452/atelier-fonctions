@@ -14,7 +14,7 @@ export const domain4Steps: Step[] = [
   s(
     'Lire les deux niveaux de dénominateur',
     t`f_4(x)=\frac{2}{\left(7x+\frac4x-1\right)^2}`,
-    'La fraction 4/x doit d’abord exister. Ensuite, le carré au dénominateur de la grande fraction doit être non nul.',
+    'La fraction intérieure 4/x impose x ≠ 0. Le carré qui est au dénominateur du quotient extérieur doit aussi être non nul.',
   ),
   s(
     'Définir la fraction intérieure',
@@ -25,12 +25,12 @@ export const domain4Steps: Step[] = [
     ...s(
       'Interdire le dénominateur extérieur nul',
       t`\left(7x+\frac4x-1\right)^2\ne0`,
-      'La grande fraction a pour numérateur 2. On doit pouvoir diviser par le carré situé au dénominateur.',
+      'Le quotient extérieur a pour dénominateur (7x + 4/x − 1)². Ce carré doit être non nul pour que la division soit définie.',
     ),
     statement: true,
   },
   s(
-    'Enlever le carré dans la condition',
+    'Utiliser la condition de non-annulation du carré',
     t`7x+\frac4x-1\ne0`,
     'Le carré d’un réel est nul si et seulement si ce réel est nul. On cherche donc si la base du carré peut s’annuler.',
   ),
@@ -92,7 +92,7 @@ export const domain5Steps: Step[] = [
   s(
     'Lire les dénominateurs emboîtés',
     t`f_5(x)=\frac{3}{1+\frac1x-\frac6{x^2}}`,
-    'On vérifie d’abord les fractions intérieures, puis le dénominateur de la grande fraction.',
+    'On vérifie d’abord que les fractions 1/x et 6/x² sont définies, puis que le dénominateur du quotient extérieur est non nul.',
   ),
   s(
     'Définir les fractions intérieures',
@@ -103,7 +103,7 @@ export const domain5Steps: Step[] = [
     ...s(
       'Interdire le dénominateur extérieur nul',
       t`1+\frac1x-\frac6{x^2}\ne0`,
-      'Même quand les petites fractions existent, leur somme ne doit pas être nulle : elle sert de dénominateur à la fonction.',
+      'Pour x ≠ 0, les fractions intérieures sont définies. L’expression 1 + 1/x − 6/x² doit en plus être non nulle, car elle est au dénominateur du quotient extérieur.',
     ),
     statement: true,
   },
@@ -116,7 +116,7 @@ export const domain5Steps: Step[] = [
   s(
     'Mettre 1/x au même dénominateur',
     t`\frac{x^2}{x^2}+\frac{x}{x^2}-\frac6{x^2}\ne0`,
-    'On multiplie le numérateur et le dénominateur de 1/x par x.',
+    'Comme x ≠ 0, multiplier le numérateur et le dénominateur de 1/x par x conserve la valeur de la fraction.',
     t`\frac{x}{x^2}`,
   ),
   s(
@@ -181,7 +181,7 @@ export const domain5Steps: Step[] = [
   s(
     'Retenir le domaine',
     t`D=\mathbb R\setminus\{-3,0,2\}`,
-    'Toutes les autres valeurs réelles permettent de calculer les deux petites fractions puis la grande fraction.',
+    'Pour tout réel x distinct de −3, 0 et 2, les fractions intérieures sont définies et le dénominateur extérieur est non nul. Ces conditions sont donc nécessaires et suffisantes.',
   ),
 ];
 
@@ -221,7 +221,7 @@ export const domain6Steps: Step[] = [
     ...s(
       'Comprendre la racine cubique',
       t`\sqrt[3]{u}\quad\text{existe pour tout }u\in\mathbb R`,
-      'Une racine cubique accepte les nombres négatifs, nuls et positifs. Il n’y a aucune condition u ≥ 0.',
+      'La racine cubique est définie pour tout réel u, y compris lorsque u < 0. Elle n’impose donc aucune condition de signe.',
     ),
     statement: true,
   },
