@@ -33,7 +33,11 @@ const focusRange = (step) => {
 for (const activity of activities) {
   prepared[activity.id] = activity.steps.map((step, i) => {
     const previous = activity.steps[i - 1] || step;
-    const from = { ...previous, focus: step.fromFocus || previous.focus };
+    const from = {
+      ...previous,
+      focus: step.fromFocus || previous.focus,
+      focusOccurrence: step.fromFocus ? step.fromFocusOccurrence : previous.focusOccurrence,
+    };
     const sourceRanges = [focusRange(from)],
       targetRanges = [focusRange(step)];
     const operation = step.product || step.collect;

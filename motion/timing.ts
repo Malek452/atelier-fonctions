@@ -1,3 +1,3 @@
 /** Scene and player share a deterministic seek/replay contract. */
-export const STEP_SECONDS = 8;
-export const SETTLED_SECONDS = 7.5;
+export const STEP_SECONDS = 10;
+export const SETTLED_SECONDS = 9.5;

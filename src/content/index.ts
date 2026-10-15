@@ -11,6 +11,20 @@ import e10 from './exercise-10';
 import e11 from './exercise-11';
 import e12 from './exercise-12';
 import type { Exercise } from '../types';
-export const exercises: Exercise[] = [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12];
+import { withTeachingPhases } from './phase-plan';
+export const exercises: Exercise[] = withTeachingPhases([
+  e1,
+  e2,
+  e3,
+  e4,
+  e5,
+  e6,
+  e7,
+  e8,
+  e9,
+  e10,
+  e11,
+  e12,
+]);
 export const activities = exercises.flatMap((e) => e.activities);
 export const getActivity = (id: string) => activities.find((a) => a.id === id);

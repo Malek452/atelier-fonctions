@@ -28,8 +28,11 @@ export interface Step {
   title: string;
   tex: string;
   why: string;
+  /** Named part of the reasoning, inherited until the next explicit phase. */
+  phase?: string;
   /** Exact source fragment to highlight before the current transformation. */
   fromFocus?: string;
+  fromFocusOccurrence?: number;
   /** A single product, animated before returning to the full expression. */
   product?: { left: string; right: string; result: string };
   /** Terms selected in the preceding expression, with an explicit coefficient calculation. */
@@ -46,7 +49,13 @@ export interface Step {
     targetRight?: string;
   };
   /** Copy a common factor to one term; keep the original on the remaining terms. */
-  distribute?: { factor: string; term: string; product: string; remainder: string };
+  distribute?: {
+    factor: string;
+    term: string;
+    product: string;
+    remainder: string;
+    side?: 'left' | 'right';
+  };
   /** A formula/theorem is a new statement, not a transformation of the preceding number. */
   statement?: boolean;
   table?: SignTableFrame;
@@ -54,6 +63,8 @@ export interface Step {
   diagram?: 'fold';
   circle?: { angle: number; label: string; axis: 'sin' | 'cos' };
   /** Exact part to underline; defaults to the last top-level equality member. */ focus?: string;
+  /** One-based occurrence when the exact fragment occurs more than once. */
+  focusOccurrence?: number;
 }
 export interface Activity {
   id: string;

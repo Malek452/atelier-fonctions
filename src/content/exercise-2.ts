@@ -1,6 +1,7 @@
+import { expandBinomial } from './binomial';
 import { domain4Steps, domain5Steps, domain6Steps } from './domain-steps';
 import type { Exercise } from '../types';
-import { quadraticSteps } from './quadratic';
+import { quadraticSteps, discriminantSteps } from './quadratic';
 export default {
   id: 2,
   title: 'Résoudre, puis définir',
@@ -28,38 +29,7 @@ export default {
           tex: 'x^2+3x+10=0',
           why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
         },
-        {
-          title: 'Identifier les trois coefficients',
-          tex: 'a=1,\\quad b=3,\\quad c=10',
-          why: 'Le coefficient de x² est 1, celui de x est 3 et le terme sans x est 10.',
-        },
-        {
-          title: 'Écrire la règle',
-          tex: '\\Delta=b^2-4ac',
-          why: 'Le discriminant permet de savoir si un trinôme peut s’annuler sur les nombres réels.',
-        },
-        {
-          title: 'Remplacer les coefficients',
-          tex: '\\Delta=3^2-4\\times1\\times10',
-          why: 'On remplace a, b et c, sans calculer plusieurs choses à la fois.',
-        },
-        {
-          title: 'Calculer le carré',
-          tex: '\\Delta=9-4\\times1\\times10',
-          why: '3² = 3 × 3 = 9.',
-          focus: '9',
-        },
-        {
-          title: 'Calculer le produit',
-          tex: '\\Delta=9-40',
-          why: '4 × 1 × 10 = 40.',
-          focus: '40',
-        },
-        {
-          title: 'Faire la soustraction',
-          tex: '\\Delta=-31<0',
-          why: '9 − 40 = −31. Un discriminant négatif signifie qu’aucune valeur réelle de x n’annule ce trinôme.',
-        },
+        ...discriminantSteps({ a: 1, b: 3, c: 10 }),
         {
           title: 'Retenir le résultat',
           tex: 'S=\\varnothing',
@@ -256,51 +226,7 @@ export default {
           focus: '-x+4',
           fromFocus: '+4-x',
         },
-        {
-          title: 'Identifier les coefficients',
-          tex: 'a=7,\\quad b=-1,\\quad c=4',
-          why: 'Le coefficient de x² est 7, celui de x est −1 et le terme constant est 4.',
-          statement: true,
-        },
-        {
-          title: 'Écrire la formule du discriminant',
-          tex: '\\Delta=b^2-4ac',
-          why: 'On calcule b² − 4ac pour savoir si ce trinôme possède des racines réelles.',
-          statement: true,
-        },
-        {
-          title: 'Remplacer les coefficients',
-          tex: '\\Delta=(-1)^2-4\\times7\\times4',
-          why: 'On remplace b par −1, a par 7 et c par 4. Les parenthèses indiquent que c’est −1 tout entier qui est au carré.',
-          fromFocus: 'b^2-4ac',
-        },
-        {
-          title: 'Calculer le carré',
-          tex: '\\Delta=1-4\\times7\\times4',
-          why: '(−1)² = (−1) × (−1) = 1.',
-          focus: '1',
-          fromFocus: '(-1)^2',
-        },
-        {
-          title: 'Calculer 4 × 7',
-          tex: '\\Delta=1-28\\times4',
-          why: '4 × 7 = 28. On garde la multiplication par 4.',
-          focus: '28',
-          fromFocus: '4\\times7',
-        },
-        {
-          title: 'Calculer 28 × 4',
-          tex: '\\Delta=1-112',
-          why: '28 × 4 = 112. Il reste à soustraire ce produit à 1.',
-          focus: '112',
-          fromFocus: '28\\times4',
-        },
-        {
-          title: 'Calculer le discriminant',
-          tex: '\\Delta=-111',
-          why: '1 − 112 = −111. Le discriminant est strictement négatif.',
-          fromFocus: '1-112',
-        },
+        ...discriminantSteps({ a: 7, b: -1, c: 4 }),
         {
           title: 'Conclure dans les réels',
           tex: 'S=\\varnothing',
@@ -391,72 +317,7 @@ export default {
           tex: 'x-3=(x+5)(x-1)',
           why: 'Pour x différent de 1 et 3, on multiplie l’égalité par (x − 1)(x − 3). Les dénominateurs se simplifient.',
         },
-        {
-          title: 'Distribuer le premier facteur',
-          tex: 'x-3=x(x-1)+5(x-1)',
-          why: 'Le premier facteur est x + 5. On multiplie la seconde parenthèse par x, puis par 5.',
-          focus: 'x(x-1)',
-        },
-        {
-          title: 'Multiplier x par x',
-          tex: 'x-3=x^2+x(-1)+5(x-1)',
-          why: 'On commence par le premier terme : x × x = x². Le produit par −1 attend son tour.',
-          focus: 'x^2',
-          product: {
-            left: 'x',
-            right: 'x',
-            result: 'x^2',
-          },
-          fromFocus: 'x(x-1)',
-        },
-        {
-          title: 'Multiplier x par −1',
-          tex: 'x-3=x^2-x+5(x-1)',
-          why: 'Un nombre multiplié par −1 donne son opposé : x × (−1) = −x.',
-          focus: '-x',
-          product: {
-            left: 'x',
-            right: '(-1)',
-            result: '-x',
-          },
-          fromFocus: 'x(-1)',
-        },
-        {
-          title: 'Passer au facteur 5',
-          tex: 'x-3=x^2-x+5x+5(-1)',
-          why: 'On distribue maintenant 5 : le premier produit est 5 × x = 5x.',
-          focus: '5x',
-          product: {
-            left: '5',
-            right: 'x',
-            result: '5x',
-          },
-          fromFocus: '5(x-1)',
-        },
-        {
-          title: 'Multiplier 5 par −1',
-          tex: 'x-3=x^2-x+5x-5',
-          why: 'Le dernier produit est négatif : 5 × (−1) = −5.',
-          focus: '-5',
-          product: {
-            left: '5',
-            right: '(-1)',
-            result: '-5',
-          },
-          fromFocus: '5(-1)',
-        },
-        {
-          title: 'Regrouper seulement les termes en x',
-          tex: 'x-3=x^2+4x-5',
-          why: '−x + 5x = (−1 + 5)x = 4x. Le terme x² et la constante −5 restent inchangés.',
-          focus: '4x',
-          collect: {
-            left: '-x',
-            right: '5x',
-            result: '4x',
-            via: '(-1+5)x',
-          },
-        },
+        ...expandBinomial((expression) => 'x-3=' + expression),
         {
           title: 'Soustraire x des deux côtés',
           tex: '-3=x^2+3x-5',
@@ -505,16 +366,7 @@ export default {
           tex: 'x^2+3x+10\\ne0',
           why: 'Une fraction est définie lorsque son dénominateur est non nul. Le numérateur 1 n’impose aucune restriction.',
         },
-        {
-          title: 'Chercher ses zéros',
-          tex: '\\Delta=3^2-4\\times1\\times10',
-          why: 'On étudie le trinôme du dénominateur, exactement comme dans la question 2.1.',
-        },
-        {
-          title: 'Calculer le discriminant',
-          tex: '\\Delta=9-40=-31<0',
-          why: 'Ce trinôme ne possède aucun zéro réel.',
-        },
+        ...discriminantSteps({ a: 1, b: 3, c: 10 }),
         {
           title: 'Conserver tous les réels',
           tex: 'x\\in\\mathbb R',

@@ -1,5 +1,6 @@
+import { expandBinomial } from './binomial';
 import type { Step } from '../types';
-import { quadraticSteps } from './quadratic';
+import { quadraticSteps, discriminantSteps } from './quadratic';
 const t = String.raw;
 const s = (title: string, tex: string, why: string, focus?: string, fromFocus?: string): Step => ({
   title,
@@ -68,32 +69,7 @@ export const domain4Steps: Step[] = [
     ),
     statement: true,
   },
-  {
-    ...s(
-      'Identifier les coefficients',
-      t`a=7,\quad b=-1,\quad c=4`,
-      'Le coefficient de x² est 7, celui de x est −1 et le terme constant est 4.',
-    ),
-    statement: true,
-  },
-  {
-    ...s(
-      'Calculer le discriminant',
-      t`\Delta=(-1)^2-4\times7\times4`,
-      'On applique Δ = b² − 4ac avec b = −1. Les parenthèses sont indispensables.',
-    ),
-    statement: true,
-  },
-  s('Calculer le carré', t`\Delta=1-4\times7\times4`, '(−1) × (−1) = 1.', '1', '(-1)^2'),
-  s('Calculer 4 × 7', t`\Delta=1-28\times4`, '4 × 7 = 28.', '28', t`4\times7`),
-  s('Calculer le produit restant', t`\Delta=1-112`, '28 × 4 = 112.', '112', t`28\times4`),
-  s(
-    'Soustraire',
-    t`\Delta=-111<0`,
-    '1 − 112 = −111. Le discriminant est négatif : le trinôme ne s’annule pour aucun réel.',
-    undefined,
-    '1-112',
-  ),
+  ...discriminantSteps({ a: 7, b: -1, c: 4 }),
   {
     ...s(
       'Écarter toute autre exclusion',
@@ -278,82 +254,13 @@ export const domain6Steps: Step[] = [
     'Le signe moins porte sur tout le second numérateur (x + 5)(x − 1). Les parenthèses doivent rester présentes.',
     'x-3-(x+5)(x-1)',
   ),
-  s(
+  ...expandBinomial(
+    develop,
+    5,
+    -1,
     'Distribuer les deux termes du premier facteur',
-    develop('x(x-1)+5(x-1)'),
-    'Dans le produit intérieur, x puis 5 multiplient la parenthèse x − 1. Le signe moins extérieur attend.',
-    'x(x-1)+5(x-1)',
+    'Regrouper dans la parenthèse',
   ),
-  {
-    ...s(
-      'Distribuer le facteur x',
-      develop(t`x\cdot x+x\cdot(-1)+5(x-1)`),
-      'On écrit les deux produits de x par les termes de x − 1, sans les calculer.',
-      t`x\cdot x+x\cdot(-1)`,
-      'x(x-1)',
-    ),
-    distribute: { factor: 'x', term: 'x', product: t`x\cdot x`, remainder: t`x\cdot(-1)` },
-  },
-  {
-    ...s(
-      'Distribuer le facteur 5',
-      develop(t`x\cdot x+x\cdot(-1)+5\cdot x+5\cdot(-1)`),
-      'On écrit maintenant les deux produits de 5 par les termes de x − 1.',
-      t`5\cdot x+5\cdot(-1)`,
-      '5(x-1)',
-    ),
-    distribute: { factor: '5', term: 'x', product: t`5\cdot x`, remainder: t`5\cdot(-1)` },
-  },
-  {
-    ...s(
-      'Calculer x × x',
-      develop(t`x^2+x\cdot(-1)+5\cdot x+5\cdot(-1)`),
-      'Le premier produit est x². Le signe moins placé devant la grande parenthèse ne change pas.',
-      'x^2',
-      t`x\cdot x`,
-    ),
-    product: { left: 'x', right: 'x', result: 'x^2' },
-  },
-  {
-    ...s(
-      'Calculer x × (−1)',
-      develop(t`x^2-x+5\cdot x+5\cdot(-1)`),
-      'Le second produit est −x.',
-      '-x',
-      t`x\cdot(-1)`,
-    ),
-    product: { left: 'x', right: '(-1)', result: '-x' },
-  },
-  {
-    ...s(
-      'Calculer 5 × x',
-      develop(t`x^2-x+5x+5\cdot(-1)`),
-      'Le troisième produit est 5x.',
-      '5x',
-      t`5\cdot x`,
-    ),
-    product: { left: '5', right: 'x', result: '5x' },
-  },
-  {
-    ...s(
-      'Calculer 5 × (−1)',
-      develop('x^2-x+5x-5'),
-      'Le quatrième produit est −5.',
-      '-5',
-      t`5\cdot(-1)`,
-    ),
-    product: { left: '5', right: '(-1)', result: '-5' },
-  },
-  {
-    ...s(
-      'Regrouper dans la parenthèse',
-      develop('x^2+4x-5'),
-      '−x + 5x = (−1 + 5)x = 4x. Le signe moins extérieur reste en place.',
-      '4x',
-      '-x+5x',
-    ),
-    collect: { left: '-x', right: '5x', via: '(-1+5)x', result: '4x' },
-  },
   s(
     'Appliquer le signe moins au premier terme',
     u(t`x-3-x^2-\left(4x-5\right)`),
@@ -362,11 +269,18 @@ export const domain6Steps: Step[] = [
     t`-\left(x^2+4x-5\right)`,
   ),
   s(
-    'Appliquer le signe moins aux deux termes restants',
-    u('x-3-x^2-4x+5'),
-    '−(4x − 5) = −4x + 5 : chacun des deux signes change.',
-    '-4x+5',
+    'Appliquer le signe moins au terme 4x',
+    u('x-3-x^2-4x-(-5)'),
+    'On prend l’opposé de 4x : cela donne −4x. Le dernier terme reste écrit −(−5), pour garder les deux signes visibles.',
+    '-4x-(-5)',
     t`-\left(4x-5\right)`,
+  ),
+  s(
+    'Prendre l’opposé de −5',
+    u('x-3-x^2-4x+5'),
+    'L’opposé de −5 est +5 : −(−5) = +5. Tous les termes de la parenthèse ont maintenant été traités.',
+    '+5',
+    '-(-5)',
   ),
   {
     ...s(

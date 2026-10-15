@@ -77,9 +77,14 @@ export function* animateOperation(
   arrows.forEach((n) => n.remove());
   equation.underline.end(0);
   const result = positions.result;
-  yield* calculation.to(positions.via || result, 0.85, 16);
+  yield* calculation.rewrite(positions.via || result, 0.85);
   yield* waitFor(0.5);
-  if (work.via) yield* calculation.to(result, 0.75, 12);
+  if (work.via) yield* calculation.rewrite(result, 0.75);
+  // The operands have been used in the calculation. They must not be matched
+  // to another occurrence of x or a digit elsewhere in the complete equation.
+  equation.show(
+    equation.poses.filter((g) => !g.tags.includes('left') && !g.tags.includes('right')),
+  );
   yield* all(
     equation.to(
       target.filter((g) => !g.tags.includes('result')),

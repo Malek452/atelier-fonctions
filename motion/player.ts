@@ -7,6 +7,7 @@ export interface Controller {
   seek(step: number): void;
   replay(step: number, speed: number): void;
   pause(): void;
+  setSpeed(speed: number): void;
   destroy(): void;
 }
 export function mount(
@@ -64,6 +65,9 @@ export function mount(
     pause() {
       player.togglePlayback(false);
       stopAt = -1;
+    },
+    setSpeed(speed) {
+      player.setSpeed(speed);
     },
     destroy() {
       disposed = true;

@@ -1,3 +1,4 @@
+import { expandBinomial } from './binomial';
 import {
   signTableSteps,
   signs31,
@@ -12,7 +13,7 @@ import {
   explanations3d1,
 } from './sign-tables';
 import type { Exercise } from '../types';
-import { quadraticSteps } from './quadratic';
+import { quadraticSteps, discriminantSteps } from './quadratic';
 export default {
   id: 3,
   title: 'Lire les signes',
@@ -92,9 +93,11 @@ export default {
         },
         {
           title: 'Étudier le numérateur',
-          tex: '\\Delta=(-1)^2-4\\times7\\times4=-111',
-          why: 'Le numérateur 7x² − x + 4 a un discriminant négatif.',
+          tex: '7x^2-x+4=0',
+          why: 'Pour déterminer le signe du numérateur, on cherche d’abord ses éventuels zéros. On étudie le trinôme indépendamment du dénominateur.',
+          statement: true,
         },
+        ...discriminantSteps({ a: 7, b: -1, c: 4 }),
         {
           title: 'Déduire son signe',
           tex: '7x^2-x+4>0',
@@ -203,72 +206,7 @@ export default {
           tex: 'x-3\\ge(x+5)(x-1)',
           why: 'Résoudre dans ℝ. Nous allons d’abord poser les conditions utiles, puis détailler le calcul.',
         },
-        {
-          title: 'Distribuer le premier facteur',
-          tex: 'x-3\\ge x(x-1)+5(x-1)',
-          why: 'Le premier facteur est x + 5. On multiplie la seconde parenthèse par x, puis par 5.',
-          focus: 'x(x-1)',
-        },
-        {
-          title: 'Multiplier x par x',
-          tex: 'x-3\\ge x^2+x(-1)+5(x-1)',
-          why: 'On commence par le premier terme : x × x = x². Le produit par −1 attend son tour.',
-          focus: 'x^2',
-          product: {
-            left: 'x',
-            right: 'x',
-            result: 'x^2',
-          },
-          fromFocus: 'x(x-1)',
-        },
-        {
-          title: 'Multiplier x par −1',
-          tex: 'x-3\\ge x^2-x+5(x-1)',
-          why: 'Un nombre multiplié par −1 donne son opposé : x × (−1) = −x.',
-          focus: '-x',
-          product: {
-            left: 'x',
-            right: '(-1)',
-            result: '-x',
-          },
-          fromFocus: 'x(-1)',
-        },
-        {
-          title: 'Passer au facteur 5',
-          tex: 'x-3\\ge x^2-x+5x+5(-1)',
-          why: 'On distribue maintenant 5 : le premier produit est 5 × x = 5x.',
-          focus: '5x',
-          product: {
-            left: '5',
-            right: 'x',
-            result: '5x',
-          },
-          fromFocus: '5(x-1)',
-        },
-        {
-          title: 'Multiplier 5 par −1',
-          tex: 'x-3\\ge x^2-x+5x-5',
-          why: 'Le dernier produit est négatif : 5 × (−1) = −5.',
-          focus: '-5',
-          product: {
-            left: '5',
-            right: '(-1)',
-            result: '-5',
-          },
-          fromFocus: '5(-1)',
-        },
-        {
-          title: 'Regrouper seulement les termes en x',
-          tex: 'x-3\\ge x^2+4x-5',
-          why: '−x + 5x = (−1 + 5)x = 4x. Le terme x² et la constante −5 restent inchangés.',
-          focus: '4x',
-          collect: {
-            left: '-x',
-            right: '5x',
-            result: '4x',
-            via: '(-1+5)x',
-          },
-        },
+        ...expandBinomial((expression) => 'x-3\\ge ' + expression),
         {
           title: 'Soustraire x des deux côtés',
           tex: '-3\\ge x^2+3x-5',
@@ -411,9 +349,11 @@ export default {
         },
         {
           title: 'Étudier le numérateur',
-          tex: '\\Delta=(-1)^2-4\\times7\\times4=-111',
-          why: 'Le numérateur 7x² − x + 4 a un discriminant négatif.',
+          tex: '7x^2-x+4=0',
+          why: 'Pour déterminer le signe du numérateur, on cherche d’abord ses éventuels zéros. On étudie le trinôme indépendamment du dénominateur.',
+          statement: true,
         },
+        ...discriminantSteps({ a: 7, b: -1, c: 4 }),
         {
           title: 'Déduire son signe',
           tex: '7x^2-x+4>0',
@@ -514,72 +454,7 @@ export default {
           tex: 'x-3\\ge(x+5)(x-1)',
           why: 'On retrouve exactement l’inégalité de la question 3.4.',
         },
-        {
-          title: 'Distribuer le premier facteur',
-          tex: 'x-3\\ge x(x-1)+5(x-1)',
-          why: 'Le premier facteur est x + 5. On multiplie la seconde parenthèse par x, puis par 5.',
-          focus: 'x(x-1)',
-        },
-        {
-          title: 'Multiplier x par x',
-          tex: 'x-3\\ge x^2+x(-1)+5(x-1)',
-          why: 'On commence par le premier terme : x × x = x². Le produit par −1 attend son tour.',
-          focus: 'x^2',
-          product: {
-            left: 'x',
-            right: 'x',
-            result: 'x^2',
-          },
-          fromFocus: 'x(x-1)',
-        },
-        {
-          title: 'Multiplier x par −1',
-          tex: 'x-3\\ge x^2-x+5(x-1)',
-          why: 'Un nombre multiplié par −1 donne son opposé : x × (−1) = −x.',
-          focus: '-x',
-          product: {
-            left: 'x',
-            right: '(-1)',
-            result: '-x',
-          },
-          fromFocus: 'x(-1)',
-        },
-        {
-          title: 'Passer au facteur 5',
-          tex: 'x-3\\ge x^2-x+5x+5(-1)',
-          why: 'On distribue maintenant 5 : le premier produit est 5 × x = 5x.',
-          focus: '5x',
-          product: {
-            left: '5',
-            right: 'x',
-            result: '5x',
-          },
-          fromFocus: '5(x-1)',
-        },
-        {
-          title: 'Multiplier 5 par −1',
-          tex: 'x-3\\ge x^2-x+5x-5',
-          why: 'Le dernier produit est négatif : 5 × (−1) = −5.',
-          focus: '-5',
-          product: {
-            left: '5',
-            right: '(-1)',
-            result: '-5',
-          },
-          fromFocus: '5(-1)',
-        },
-        {
-          title: 'Regrouper seulement les termes en x',
-          tex: 'x-3\\ge x^2+4x-5',
-          why: '−x + 5x = (−1 + 5)x = 4x. Le terme x² et la constante −5 restent inchangés.',
-          focus: '4x',
-          collect: {
-            left: '-x',
-            right: '5x',
-            result: '4x',
-            via: '(-1+5)x',
-          },
-        },
+        ...expandBinomial((expression) => 'x-3\\ge ' + expression),
         {
           title: 'Soustraire x des deux côtés',
           tex: '-3\\ge x^2+3x-5',

@@ -29,6 +29,7 @@ function input(tex: string): string {
         return '((' + n + ')/(' + d + '))';
       }
       if (command === 'sqrt') return 'sqrt(' + atom() + ')';
+      if (command === 'ln') return 'ln(' + atom() + ')';
       if (command === 'times' || command === 'cdot') return '*';
       if (command === 'left' || command === 'right') return '';
       if (command === 'Delta') return 'D';
@@ -60,6 +61,62 @@ it('1.4 uses the product 0.5 × 4 and every intermediate expression remains equa
   assert.ok(a.steps.every((s) => !s.tex.includes('sqrt')));
   for (const s of a.steps)
     for (const expression of s.tex.split('=')) close(value(expression), 64, s.tex);
+});
+
+it('all authored distributions copy the correct complete factor and preserve the expression', () => {
+  let count = 0;
+  for (const a of activities)
+    for (const [i, s] of a.steps.entries())
+      if (s.distribute) {
+        const d = s.distribute;
+        for (const x of [-4, -0.5, 0.5, 2, 7])
+          close(
+            value(s.fromFocus!, x),
+            value(d.product, x) + value(d.remainder, x),
+            `${a.id}: ${s.title}`,
+          );
+        const p = data.activities[a.id][i];
+        const source = data.equations[p.source].glyphs;
+        const target = data.equations[p.target].glyphs;
+        const paths = (glyphs: typeof source, tag: string) =>
+          glyphs.filter((g) => g.tags.includes(tag)).map((g) => g.path);
+        assert.deepEqual(paths(source, 'factor'), paths(target, 'factorCopy'));
+        assert.deepEqual(paths(source, 'factor'), paths(target, 'factor'));
+        assert.ok(!source.some((g) => g.tags.includes('factor') && g.tags.includes('term')));
+        assert.ok(!s.product && !s.collect, 'distribution and calculation are separate steps');
+        count++;
+      }
+  assert.equal(count, 18);
+});
+
+it('negative-discriminant calculations remain exact at each substitution and operation', () => {
+  const cases: Record<string, [number, number, number]> = {
+    '2q1': [1, 3, 10],
+    '2d1': [1, 3, 10],
+    '2q4': [7, -1, 4],
+    '2d4': [7, -1, 4],
+    '3q2': [7, -1, 4],
+    '3d2': [7, -1, 4],
+  };
+  for (const [id, [a, b, c]] of Object.entries(cases)) {
+    const steps = getActivity(id)!.steps.filter((s) => s.tex.startsWith('\\Delta='));
+    assert.ok(steps.length >= 8);
+    for (const s of steps)
+      close(value(s.tex.split('=')[1], 1, { a, b, c }), b * b - 4 * a * c, `${id} / ${s.tex}`);
+  }
+});
+
+it('highlights the intended repeated coefficient, constant, or logarithm', () => {
+  const cases: [string, string, string][] = [
+    ['2q5', 'Remplacer a dans le discriminant', String.raw`\Delta=(1)^2-4`],
+    ['2q5', 'Remplacer c dans le discriminant', String.raw`\Delta=(1)^2-4\times(1)`],
+    ['9q2', 'Calculer 1 × (−3)', 'x^2-3x+x'],
+    ['7q1', 'Simplifier le coefficient', String.raw`\ln2+\tfrac12\ln3+`],
+  ];
+  for (const [id, title, expectedBefore] of cases) {
+    const s = getActivity(id)!.steps.find((s) => s.title === title)!;
+    assert.equal(focusParts(s).before, expectedBefore, `${id} / ${title}`);
+  }
 });
 
 it('all 36 authored power laws preserve their selected expression and use the correct exponent operation', () => {

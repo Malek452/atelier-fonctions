@@ -4,6 +4,7 @@ import { it, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
 import App from '../src/App';
 import { getActivity } from '../src/content';
+import { STEP_SECONDS } from '../motion/timing';
 beforeEach(() => {
   window.location.hash = '#accueil';
 });
@@ -118,10 +119,49 @@ it('gives the longer mathematical animation time to finish before automatic adva
     target: { value: '2' },
   });
   fireEvent.click(screen.getByRole('button', { name: 'Lecture' }));
-  act(() => t.mock.timers.tick(9999));
+  const delay = (STEP_SECONDS + 2) * 1000;
+  act(() => t.mock.timers.tick(delay - 1));
   assert.ok(screen.getByRole('heading', { name: 'Additionner les exposants' }));
   act(() => t.mock.timers.tick(1));
   assert.ok(screen.getByRole('heading', { name: 'Calculer la somme' }));
+});
+
+it('announces each reasoning phase and gives a new phase extra reading time', (t) => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  window.location.hash = '#exercice-2-2';
+  const { container } = render(<App />);
+  const a = getActivity('2q2')!;
+  const index = a.steps.findIndex((s) => s.title === 'Écrire la formule de la seconde racine');
+  fireEvent.change(screen.getByRole('combobox', { name: 'Aller à une étape' }), {
+    target: { value: String(index) },
+  });
+  assert.equal(
+    container.querySelector('.reading-phase')!.textContent,
+    'Calculer la seconde racine',
+  );
+  fireEvent.click(screen.getByRole('button', { name: 'Lecture' }));
+  const delay =
+    Math.max((STEP_SECONDS + 2) * 1000, 3500 + a.steps[index].why.split(/\s+/).length * 400) + 2500;
+  act(() => t.mock.timers.tick(delay - 1));
+  assert.ok(screen.getByRole('heading', { name: a.steps[index].title }));
+  act(() => t.mock.timers.tick(1));
+  assert.ok(screen.getByRole('heading', { name: a.steps[index + 1].title }));
+});
+
+it('plays only forward adjacent moves; back and direct selection display the settled step', () => {
+  localStorage.setItem('atelier:motion', 'full');
+  const { container } = render(<App />);
+  const playback = () => container.querySelector('.animation')!.getAttribute('data-playback');
+  fireEvent.click(screen.getByRole('button', { name: 'Étape suivante' }));
+  assert.equal(playback(), 'animate');
+  fireEvent.click(screen.getByRole('button', { name: 'Étape précédente' }));
+  assert.equal(playback(), 'settled');
+  fireEvent.change(screen.getByRole('combobox', { name: 'Aller à une étape' }), {
+    target: { value: '1' },
+  });
+  assert.equal(playback(), 'settled');
+  fireEvent.click(screen.getByRole('button', { name: 'Rejouer cette étape' }));
+  assert.equal(playback(), 'animate');
 });
 it('navigates questions by deep link and keeps motion preference', async () => {
   window.location.hash = '#exercice-1-7';

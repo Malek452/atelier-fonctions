@@ -54,10 +54,12 @@ export function semanticRanges(previous: string, step: Step) {
   } else if (step.distribute) {
     const d = step.distribute;
     const factor = addSource(d.factor, 'factor', scope.start);
-    addSource(d.term, 'term', factor.end);
+    const sourceTerm = addSource(d.term, 'term', d.side === 'right' ? scope.start : factor.end);
+    if (d.side === 'right' && sourceTerm.end > factor.start)
+      throw new Error('Right-distributed factor overlaps its selected term');
     const product = select(step.tex, d.product, 'product');
     const copy = select(step.tex, d.factor, 'factorCopy', product.start);
-    const term = select(step.tex, d.term, 'term', copy.end);
+    const term = select(step.tex, d.term, 'term', d.side === 'right' ? product.start : copy.end);
     if (term.end > product.end) throw new Error('Distributed term outside its product');
     const remainder = select(step.tex, d.remainder, 'remainder', product.end);
     const retained = select(step.tex, d.factor, 'factor', remainder.start);

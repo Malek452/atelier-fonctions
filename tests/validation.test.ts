@@ -80,7 +80,11 @@ for (const a of activities)
       if (s.fromFocus) {
         const previous = a.steps[a.steps.indexOf(s) - 1];
         assert.ok(previous.tex.includes(s.fromFocus));
-        const tex = highlightedTex({ ...previous, focus: s.fromFocus });
+        const tex = highlightedTex({
+          ...previous,
+          focus: s.fromFocus,
+          focusOccurrence: s.fromFocusOccurrence,
+        });
         katex.renderToString(tex, { throwOnError: true });
         const svg = svgFor(tex);
         assert.ok(!svg.includes('data-mml-node="merror"'));

@@ -26,17 +26,9 @@ const step = (
 
 /** A deliberately slow, reusable derivation for the positive-discriminant case.
  * One substitution or arithmetic operation per frame; no numerical approximation. */
-export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): Step[] {
+export function discriminantSteps({ a, b, c, variable = 'x' }: Omit<Quadratic, 'roots'>): Step[] {
+  if (a === 0) throw new Error('A quadratic requires a nonzero leading coefficient.');
   const delta = b * b - 4 * a * c;
-  if (!Number.isInteger(delta) || delta <= 0 || a === 0)
-    throw new Error('quadraticSteps requires a nonzero a and a positive integer discriminant.');
-  let squareFactor = 1;
-  for (let n = 2; n * n <= delta; n++) if (delta % (n * n) === 0) squareFactor = n;
-  const remainder = delta / (squareFactor * squareFactor);
-  const radical =
-    remainder === 1
-      ? `${squareFactor}`
-      : `${squareFactor === 1 ? '' : squareFactor}\\sqrt{${remainder}}`;
   const out: Step[] = [
     {
       ...step(
@@ -44,6 +36,7 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
         `a=${a},\\quad b=${b},\\quad c=${c}`,
         `Dans a${variable}² + b${variable} + c = 0, a = ${a}, b = ${b} et c = ${c}. On conserve le signe de chaque coefficient.`,
       ),
+      focus: `a=${a},\\quad b=${b},\\quad c=${c}`,
       statement: true,
     },
     {
@@ -55,12 +48,31 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
       statement: true,
     },
     step(
-      'Remplacer les coefficients',
-      `\\Delta=(${b})^2-4\\times(${a})\\times(${c})`,
-      `On remplace b par ${b}, a par ${a} et c par ${c}, en gardant les parenthèses autour des nombres signés.`,
-      undefined,
-      'b^2-4ac',
+      'Remplacer b dans le discriminant',
+      `\\Delta=(${b})^2-4ac`,
+      `On remplace seulement b par ${b}. Les parenthèses gardent le signe de b dans le carré.`,
+      `(${b})^2`,
+      'b^2',
     ),
+    {
+      ...step(
+        'Remplacer a dans le discriminant',
+        `\\Delta=(${b})^2-4\\times(${a})\\times c`,
+        `On remplace a par ${a}. Le coefficient c attend l’étape suivante.`,
+        `\\times(${a})`,
+        'a',
+      ),
+    },
+    {
+      ...step(
+        'Remplacer c dans le discriminant',
+        `\\Delta=(${b})^2-4\\times(${a})\\times(${c})`,
+        `On remplace enfin c par ${c}, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.`,
+        `\\times(${c})`,
+        'c',
+      ),
+      focusOccurrence: a === c ? 2 : 1,
+    },
     step(
       'Calculer le carré de b',
       `\\Delta=${b * b}-4\\times(${a})\\times(${c})`,
@@ -97,11 +109,41 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
     step(
       'Obtenir le discriminant',
       `\\Delta=${delta}`,
-      `Le calcul donne Δ = ${delta} > 0. L’équation du second degré a donc deux racines réelles distinctes.`,
+      delta > 0
+        ? `Δ = ${delta} > 0 : le trinôme possède deux racines réelles distinctes.`
+        : delta < 0
+          ? `Δ = ${delta} < 0 : le trinôme ne possède aucune racine réelle.`
+          : 'Δ = 0 : le trinôme possède une racine double.',
       undefined,
       4 * a * c < 0 ? `${b * b}+${-4 * a * c}` : `${b * b}-(${4 * a * c})`,
     ),
   );
+  return out;
+}
+
+export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): Step[] {
+  const delta = b * b - 4 * a * c;
+  if (!Number.isInteger(delta) || delta <= 0 || a === 0)
+    throw new Error('quadraticSteps requires a nonzero a and a positive integer discriminant.');
+  let squareFactor = 1;
+  for (let n = 2; n * n <= delta; n++) if (delta % (n * n) === 0) squareFactor = n;
+  const remainder = delta / (squareFactor * squareFactor);
+  const radical =
+    remainder === 1
+      ? `${squareFactor}`
+      : `${squareFactor === 1 ? '' : squareFactor}\\sqrt{${remainder}}`;
+  const out: Step[] = [
+    {
+      ...step(
+        'Chercher les zéros du trinôme',
+        `${a === 1 ? '' : a}${variable}^2${b < 0 ? '-' : '+'}${Math.abs(b) === 1 ? '' : Math.abs(b)}${variable}${c < 0 ? '-' : '+'}${Math.abs(c)}=0`,
+        'Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.',
+      ),
+      phase: 'Rechercher les racines',
+      statement: true,
+    },
+    ...discriminantSteps({ a, b, c, variable }),
+  ];
   out.push({
     ...step(
       'Remplacer Δ sous la racine',
@@ -138,7 +180,9 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
           ? 'Écrire la formule de la première racine'
           : 'Écrire la formule de la seconde racine',
         prefix + fraction(`-b${sign}${sqrtDelta}`, '2a'),
-        `Comme a ≠ 0 et Δ > 0, on utilise le signe ${sign === '-' ? 'moins' : 'plus'} devant √Δ. La barre de fraction divise tout le numérateur par 2a.`,
+        index === 0
+          ? 'Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.'
+          : 'La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.',
         `${sign}${sqrtDelta}`,
       ),
       statement: true,
@@ -200,7 +244,7 @@ export function quadraticSteps({ a, b, c, variable = 'x', roots }: Quadratic): S
         remainder === 1
           ? `Au numérateur, −(${b}) ${sign === '-' ? '−' : '+'} ${squareFactor} = ${numerator}.`
           : `L’opposé de ${b} est ${-b}. La racine reste sous forme exacte.`,
-        numerator,
+        `{${numerator}}`,
         remainder === 1 ? `-(${b})${sign}${radical}` : `-(${b})`,
       ),
     );

@@ -334,31 +334,43 @@ $$x^2+3x+10=0$$
 
 $$x^2+3x+10=0$$
 
-2. **Identifier les trois coefficients.** Le coefficient de x² est 1, celui de x est 3 et le terme sans x est 10.
+2. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = 10. On conserve le signe de chaque coefficient.
 
 $$a=1,\quad b=3,\quad c=10$$
 
-3. **Écrire la règle.** Le discriminant permet de savoir si un trinôme peut s’annuler sur les nombres réels.
+3. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-4. **Remplacer les coefficients.** On remplace a, b et c, sans calculer plusieurs choses à la fois.
+4. **Remplacer b dans le discriminant.** On remplace seulement b par 3. Les parenthèses gardent le signe de b dans le carré.
 
-$$\Delta=3^2-4\times1\times10$$
+$$\Delta=(3)^2-4ac$$
 
-5. **Calculer le carré.** 3² = 3 × 3 = 9.
+5. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
 
-$$\Delta=9-4\times1\times10$$
+$$\Delta=(3)^2-4\times(1)\times c$$
 
-6. **Calculer le produit.** 4 × 1 × 10 = 40.
+6. **Remplacer c dans le discriminant.** On remplace enfin c par 10, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
-$$\Delta=9-40$$
+$$\Delta=(3)^2-4\times(1)\times(10)$$
 
-7. **Faire la soustraction.** 9 − 40 = −31. Un discriminant négatif signifie qu’aucune valeur réelle de x n’annule ce trinôme.
+7. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
 
-$$\Delta=-31<0$$
+$$\Delta=9-4\times(1)\times(10)$$
 
-8. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+8. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+
+$$\Delta=9-(4)\times(10)$$
+
+9. **Calculer 4ac.** 4 × (10) = 40. Le signe moins de la formule reste devant ce produit.
+
+$$\Delta=9-(40)$$
+
+10. **Obtenir le discriminant.** Δ = -31 < 0 : le trinôme ne possède aucune racine réelle.
+
+$$\Delta=-31$$
+
+11. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=\varnothing$$
 
@@ -374,115 +386,127 @@ $$2x^2+3x-5=0$$
 
 $$2x^2+3x-5=0$$
 
-2. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 2, b = 3 et c = -5. On conserve le signe de chaque coefficient.
+2. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$2x^2+3x-5=0$$
+
+3. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 2, b = 3 et c = -5. On conserve le signe de chaque coefficient.
 
 $$a=2,\quad b=3,\quad c=-5$$
 
-3. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+4. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-4. **Remplacer les coefficients.** On remplace b par 3, a par 2 et c par -5, en gardant les parenthèses autour des nombres signés.
+5. **Remplacer b dans le discriminant.** On remplace seulement b par 3. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(3)^2-4ac$$
+
+6. **Remplacer a dans le discriminant.** On remplace a par 2. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(3)^2-4\times(2)\times c$$
+
+7. **Remplacer c dans le discriminant.** On remplace enfin c par -5, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(3)^2-4\times(2)\times(-5)$$
 
-5. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
+8. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
 
 $$\Delta=9-4\times(2)\times(-5)$$
 
-6. **Calculer 4 × a.** 4 × 2 = 8. Il reste à multiplier ce nombre par c.
+9. **Calculer 4 × a.** 4 × 2 = 8. Il reste à multiplier ce nombre par c.
 
 $$\Delta=9-(8)\times(-5)$$
 
-7. **Calculer 4ac.** 8 × (-5) = -40. Le signe moins de la formule reste devant ce produit.
+10. **Calculer 4ac.** 8 × (-5) = -40. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=9-(-40)$$
 
-8. **Soustraire un nombre négatif.** Soustraire -40 revient à ajouter 40.
+11. **Soustraire un nombre négatif.** Soustraire -40 revient à ajouter 40.
 
 $$\Delta=9+40$$
 
-9. **Obtenir le discriminant.** Le calcul donne Δ = 49 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+12. **Obtenir le discriminant.** Δ = 49 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=49$$
 
-10. **Remplacer Δ sous la racine.** Δ vaut 49. On cherche maintenant sa racine carrée positive.
+13. **Remplacer Δ sous la racine.** Δ vaut 49. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{49}$$
 
-11. **Calculer la racine de Δ.** 7 est positif et 7² = 49, donc √Δ = 7.
+14. **Calculer la racine de Δ.** 7 est positif et 7² = 49, donc √Δ = 7.
 
 $$\sqrt{\Delta}=7$$
 
-12. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+15. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-13. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
+16. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2a}$$
 
-14. **Remplacer a au dénominateur.** a = 2, donc le dénominateur 2a devient 2 × (2).
+17. **Remplacer a au dénominateur.** a = 2, donc le dénominateur 2a devient 2 × (2).
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2\times(2)}$$
 
-15. **Remplacer Δ dans la formule.** On remplace Δ par 49 sous la racine carrée.
+18. **Remplacer Δ dans la formule.** On remplace Δ par 49 sous la racine carrée.
 
 $$x_1=\frac{-(3)-\sqrt{49}}{2\times(2)}$$
 
-16. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
+19. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
 
 $$x_1=\frac{-(3)-7}{2\times(2)}$$
 
-17. **Calculer le dénominateur.** 2 × (2) = 4. Tout le numérateur reste au-dessus de la barre.
+20. **Calculer le dénominateur.** 2 × (2) = 4. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(3)-7}{4}$$
 
-18. **Calculer le numérateur.** Au numérateur, −(3) − 7 = -10.
+21. **Calculer le numérateur.** Au numérateur, −(3) − 7 = -10.
 
 $$x_1=\frac{-10}{4}$$
 
-19. **Simplifier la fraction.** On réduit la fraction -10/4 pour obtenir cette valeur exacte.
+22. **Simplifier la fraction.** On réduit la fraction -10/4 pour obtenir cette valeur exacte.
 
 $$x_1=-\frac52$$
 
-20. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+23. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-21. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
+24. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2a}$$
 
-22. **Remplacer a au dénominateur.** a = 2, donc le dénominateur 2a devient 2 × (2).
+25. **Remplacer a au dénominateur.** a = 2, donc le dénominateur 2a devient 2 × (2).
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2\times(2)}$$
 
-23. **Remplacer Δ dans la formule.** On remplace Δ par 49 sous la racine carrée.
+26. **Remplacer Δ dans la formule.** On remplace Δ par 49 sous la racine carrée.
 
 $$x_2=\frac{-(3)+\sqrt{49}}{2\times(2)}$$
 
-24. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
+27. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
 
 $$x_2=\frac{-(3)+7}{2\times(2)}$$
 
-25. **Calculer le dénominateur.** 2 × (2) = 4. Tout le numérateur reste au-dessus de la barre.
+28. **Calculer le dénominateur.** 2 × (2) = 4. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(3)+7}{4}$$
 
-26. **Calculer le numérateur.** Au numérateur, −(3) + 7 = 4.
+29. **Calculer le numérateur.** Au numérateur, −(3) + 7 = 4.
 
 $$x_2=\frac{4}{4}$$
 
-27. **Simplifier la fraction.** On réduit la fraction 4/4 pour obtenir cette valeur exacte.
+30. **Simplifier la fraction.** On réduit la fraction 4/4 pour obtenir cette valeur exacte.
 
 $$x_2=1$$
 
-28. **Rassembler les deux valeurs.** Le mot « ou » signifie que chacune de ces deux valeurs est une solution.
+31. **Rassembler les deux valeurs.** Le mot « ou » signifie que chacune de ces deux valeurs est une solution.
 
 $$x=-\frac52\quad\text{ou}\quad x=1$$
 
-29. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+32. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=\{-\tfrac52,1\}$$
 
@@ -522,115 +546,127 @@ $$2x=0\quad\text{ou}\quad5x^2+6x-7=0$$
 
 $$x=0$$
 
-8. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 5, b = 6 et c = -7. On conserve le signe de chaque coefficient.
+8. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$5x^2+6x-7=0$$
+
+9. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 5, b = 6 et c = -7. On conserve le signe de chaque coefficient.
 
 $$a=5,\quad b=6,\quad c=-7$$
 
-9. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+10. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-10. **Remplacer les coefficients.** On remplace b par 6, a par 5 et c par -7, en gardant les parenthèses autour des nombres signés.
+11. **Remplacer b dans le discriminant.** On remplace seulement b par 6. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(6)^2-4ac$$
+
+12. **Remplacer a dans le discriminant.** On remplace a par 5. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(6)^2-4\times(5)\times c$$
+
+13. **Remplacer c dans le discriminant.** On remplace enfin c par -7, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(6)^2-4\times(5)\times(-7)$$
 
-11. **Calculer le carré de b.** (6) × (6) = 36. Les autres opérations attendent.
+14. **Calculer le carré de b.** (6) × (6) = 36. Les autres opérations attendent.
 
 $$\Delta=36-4\times(5)\times(-7)$$
 
-12. **Calculer 4 × a.** 4 × 5 = 20. Il reste à multiplier ce nombre par c.
+15. **Calculer 4 × a.** 4 × 5 = 20. Il reste à multiplier ce nombre par c.
 
 $$\Delta=36-(20)\times(-7)$$
 
-13. **Calculer 4ac.** 20 × (-7) = -140. Le signe moins de la formule reste devant ce produit.
+16. **Calculer 4ac.** 20 × (-7) = -140. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=36-(-140)$$
 
-14. **Soustraire un nombre négatif.** Soustraire -140 revient à ajouter 140.
+17. **Soustraire un nombre négatif.** Soustraire -140 revient à ajouter 140.
 
 $$\Delta=36+140$$
 
-15. **Obtenir le discriminant.** Le calcul donne Δ = 176 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+18. **Obtenir le discriminant.** Δ = 176 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=176$$
 
-16. **Remplacer Δ sous la racine.** Δ vaut 176. On cherche maintenant sa racine carrée positive.
+19. **Remplacer Δ sous la racine.** Δ vaut 176. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{176}$$
 
-17. **Extraire un carré parfait.** 176 = 16 × 11. Le facteur 16 est le carré de 4.
+20. **Extraire un carré parfait.** 176 = 16 × 11. Le facteur 16 est le carré de 4.
 
 $$\sqrt{\Delta}=\sqrt{16\times11}$$
 
-18. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √16 = 4.
+21. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √16 = 4.
 
 $$\sqrt{\Delta}=4\sqrt{11}$$
 
-19. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+22. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-20. **Remplacer b avec son signe.** b = 6, donc −b s’écrit −(6). On garde le signe moins devant la racine.
+23. **Remplacer b avec son signe.** b = 6, donc −b s’écrit −(6). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(6)-\sqrt{\Delta}}{2a}$$
 
-21. **Remplacer a au dénominateur.** a = 5, donc le dénominateur 2a devient 2 × (5).
+24. **Remplacer a au dénominateur.** a = 5, donc le dénominateur 2a devient 2 × (5).
 
 $$x_1=\frac{-(6)-\sqrt{\Delta}}{2\times(5)}$$
 
-22. **Remplacer Δ dans la formule.** On remplace Δ par 176 sous la racine carrée.
+25. **Remplacer Δ dans la formule.** On remplace Δ par 176 sous la racine carrée.
 
 $$x_1=\frac{-(6)-\sqrt{176}}{2\times(5)}$$
 
-23. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
+26. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
 
 $$x_1=\frac{-(6)-4\sqrt{11}}{2\times(5)}$$
 
-24. **Calculer le dénominateur.** 2 × (5) = 10. Tout le numérateur reste au-dessus de la barre.
+27. **Calculer le dénominateur.** 2 × (5) = 10. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(6)-4\sqrt{11}}{10}$$
 
-25. **Simplifier le signe de −b.** L’opposé de 6 est -6. La racine reste sous forme exacte.
+28. **Simplifier le signe de −b.** L’opposé de 6 est -6. La racine reste sous forme exacte.
 
 $$x_1=\frac{-6-4\sqrt{11}}{10}$$
 
-26. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
+29. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
 
 $$x_1=\frac{-3-2\sqrt{11}}5$$
 
-27. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+30. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-28. **Remplacer b avec son signe.** b = 6, donc −b s’écrit −(6). On garde le signe plus devant la racine.
+31. **Remplacer b avec son signe.** b = 6, donc −b s’écrit −(6). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(6)+\sqrt{\Delta}}{2a}$$
 
-29. **Remplacer a au dénominateur.** a = 5, donc le dénominateur 2a devient 2 × (5).
+32. **Remplacer a au dénominateur.** a = 5, donc le dénominateur 2a devient 2 × (5).
 
 $$x_2=\frac{-(6)+\sqrt{\Delta}}{2\times(5)}$$
 
-30. **Remplacer Δ dans la formule.** On remplace Δ par 176 sous la racine carrée.
+33. **Remplacer Δ dans la formule.** On remplace Δ par 176 sous la racine carrée.
 
 $$x_2=\frac{-(6)+\sqrt{176}}{2\times(5)}$$
 
-31. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
+34. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
 
 $$x_2=\frac{-(6)+4\sqrt{11}}{2\times(5)}$$
 
-32. **Calculer le dénominateur.** 2 × (5) = 10. Tout le numérateur reste au-dessus de la barre.
+35. **Calculer le dénominateur.** 2 × (5) = 10. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(6)+4\sqrt{11}}{10}$$
 
-33. **Simplifier le signe de −b.** L’opposé de 6 est -6. La racine reste sous forme exacte.
+36. **Simplifier le signe de −b.** L’opposé de 6 est -6. La racine reste sous forme exacte.
 
 $$x_2=\frac{-6+4\sqrt{11}}{10}$$
 
-34. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
+37. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
 
 $$x_2=\frac{-3+2\sqrt{11}}5$$
 
-35. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+38. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=\{\frac{-3-2\sqrt{11}}5,0,\frac{-3+2\sqrt{11}}5\}$$
 
@@ -682,35 +718,43 @@ $$7x^2+4-x=0$$
 
 $$7x^2-x+4=0$$
 
-11. **Identifier les coefficients.** Le coefficient de x² est 7, celui de x est −1 et le terme constant est 4.
+11. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 7, b = -1 et c = 4. On conserve le signe de chaque coefficient.
 
 $$a=7,\quad b=-1,\quad c=4$$
 
-12. **Écrire la formule du discriminant.** On calcule b² − 4ac pour savoir si ce trinôme possède des racines réelles.
+12. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-13. **Remplacer les coefficients.** On remplace b par −1, a par 7 et c par 4. Les parenthèses indiquent que c’est −1 tout entier qui est au carré.
+13. **Remplacer b dans le discriminant.** On remplace seulement b par -1. Les parenthèses gardent le signe de b dans le carré.
 
-$$\Delta=(-1)^2-4\times7\times4$$
+$$\Delta=(-1)^2-4ac$$
 
-14. **Calculer le carré.** (−1)² = (−1) × (−1) = 1.
+14. **Remplacer a dans le discriminant.** On remplace a par 7. Le coefficient c attend l’étape suivante.
 
-$$\Delta=1-4\times7\times4$$
+$$\Delta=(-1)^2-4\times(7)\times c$$
 
-15. **Calculer 4 × 7.** 4 × 7 = 28. On garde la multiplication par 4.
+15. **Remplacer c dans le discriminant.** On remplace enfin c par 4, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
-$$\Delta=1-28\times4$$
+$$\Delta=(-1)^2-4\times(7)\times(4)$$
 
-16. **Calculer 28 × 4.** 28 × 4 = 112. Il reste à soustraire ce produit à 1.
+16. **Calculer le carré de b.** (-1) × (-1) = 1. Les autres opérations attendent.
 
-$$\Delta=1-112$$
+$$\Delta=1-4\times(7)\times(4)$$
 
-17. **Calculer le discriminant.** 1 − 112 = −111. Le discriminant est strictement négatif.
+17. **Calculer 4 × a.** 4 × 7 = 28. Il reste à multiplier ce nombre par c.
+
+$$\Delta=1-(28)\times(4)$$
+
+18. **Calculer 4ac.** 28 × (4) = 112. Le signe moins de la formule reste devant ce produit.
+
+$$\Delta=1-(112)$$
+
+19. **Obtenir le discriminant.** Δ = -111 < 0 : le trinôme ne possède aucune racine réelle.
 
 $$\Delta=-111$$
 
-18. **Conclure dans les réels.** Un discriminant négatif ne donne aucune racine réelle. L’équation initiale, définie pour x ≠ 0, n’a donc aucune solution réelle.
+20. **Conclure dans les réels.** Un discriminant négatif ne donne aucune racine réelle. L’équation initiale, définie pour x ≠ 0, n’a donc aucune solution réelle.
 
 $$S=\varnothing$$
 
@@ -746,115 +790,127 @@ $$\frac{x^2+x-6}{x^2}=0$$
 
 $$x^2+x-6=0$$
 
-7. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 1 et c = -6. On conserve le signe de chaque coefficient.
+7. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$x^2+x-6=0$$
+
+8. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 1 et c = -6. On conserve le signe de chaque coefficient.
 
 $$a=1,\quad b=1,\quad c=-6$$
 
-8. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+9. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-9. **Remplacer les coefficients.** On remplace b par 1, a par 1 et c par -6, en gardant les parenthèses autour des nombres signés.
+10. **Remplacer b dans le discriminant.** On remplace seulement b par 1. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(1)^2-4ac$$
+
+11. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(1)^2-4\times(1)\times c$$
+
+12. **Remplacer c dans le discriminant.** On remplace enfin c par -6, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(1)^2-4\times(1)\times(-6)$$
 
-10. **Calculer le carré de b.** (1) × (1) = 1. Les autres opérations attendent.
+13. **Calculer le carré de b.** (1) × (1) = 1. Les autres opérations attendent.
 
 $$\Delta=1-4\times(1)\times(-6)$$
 
-11. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+14. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
 
 $$\Delta=1-(4)\times(-6)$$
 
-12. **Calculer 4ac.** 4 × (-6) = -24. Le signe moins de la formule reste devant ce produit.
+15. **Calculer 4ac.** 4 × (-6) = -24. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=1-(-24)$$
 
-13. **Soustraire un nombre négatif.** Soustraire -24 revient à ajouter 24.
+16. **Soustraire un nombre négatif.** Soustraire -24 revient à ajouter 24.
 
 $$\Delta=1+24$$
 
-14. **Obtenir le discriminant.** Le calcul donne Δ = 25 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+17. **Obtenir le discriminant.** Δ = 25 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=25$$
 
-15. **Remplacer Δ sous la racine.** Δ vaut 25. On cherche maintenant sa racine carrée positive.
+18. **Remplacer Δ sous la racine.** Δ vaut 25. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{25}$$
 
-16. **Calculer la racine de Δ.** 5 est positif et 5² = 25, donc √Δ = 5.
+19. **Calculer la racine de Δ.** 5 est positif et 5² = 25, donc √Δ = 5.
 
 $$\sqrt{\Delta}=5$$
 
-17. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+20. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-18. **Remplacer b avec son signe.** b = 1, donc −b s’écrit −(1). On garde le signe moins devant la racine.
+21. **Remplacer b avec son signe.** b = 1, donc −b s’écrit −(1). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(1)-\sqrt{\Delta}}{2a}$$
 
-19. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+22. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_1=\frac{-(1)-\sqrt{\Delta}}{2\times(1)}$$
 
-20. **Remplacer Δ dans la formule.** On remplace Δ par 25 sous la racine carrée.
+23. **Remplacer Δ dans la formule.** On remplace Δ par 25 sous la racine carrée.
 
 $$x_1=\frac{-(1)-\sqrt{25}}{2\times(1)}$$
 
-21. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
+24. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
 
 $$x_1=\frac{-(1)-5}{2\times(1)}$$
 
-22. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+25. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(1)-5}{2}$$
 
-23. **Calculer le numérateur.** Au numérateur, −(1) − 5 = -6.
+26. **Calculer le numérateur.** Au numérateur, −(1) − 5 = -6.
 
 $$x_1=\frac{-6}{2}$$
 
-24. **Simplifier la fraction.** On réduit la fraction -6/2 pour obtenir cette valeur exacte.
+27. **Simplifier la fraction.** On réduit la fraction -6/2 pour obtenir cette valeur exacte.
 
 $$x_1=-3$$
 
-25. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+28. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-26. **Remplacer b avec son signe.** b = 1, donc −b s’écrit −(1). On garde le signe plus devant la racine.
+29. **Remplacer b avec son signe.** b = 1, donc −b s’écrit −(1). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(1)+\sqrt{\Delta}}{2a}$$
 
-27. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+30. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_2=\frac{-(1)+\sqrt{\Delta}}{2\times(1)}$$
 
-28. **Remplacer Δ dans la formule.** On remplace Δ par 25 sous la racine carrée.
+31. **Remplacer Δ dans la formule.** On remplace Δ par 25 sous la racine carrée.
 
 $$x_2=\frac{-(1)+\sqrt{25}}{2\times(1)}$$
 
-29. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
+32. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
 
 $$x_2=\frac{-(1)+5}{2\times(1)}$$
 
-30. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+33. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(1)+5}{2}$$
 
-31. **Calculer le numérateur.** Au numérateur, −(1) + 5 = 4.
+34. **Calculer le numérateur.** Au numérateur, −(1) + 5 = 4.
 
 $$x_2=\frac{4}{2}$$
 
-32. **Simplifier la fraction.** On réduit la fraction 4/2 pour obtenir cette valeur exacte.
+35. **Simplifier la fraction.** On réduit la fraction 4/2 pour obtenir cette valeur exacte.
 
 $$x_2=2$$
 
-33. **Contrôler les deux valeurs.** Aucune des deux racines n’est interdite par les dénominateurs initiaux.
+36. **Contrôler les deux valeurs.** Aucune des deux racines n’est interdite par les dénominateurs initiaux.
 
 $$-3\ne0,\qquad2\ne0$$
 
-34. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+37. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=\{-3,2\}$$
 
@@ -882,127 +938,147 @@ $$x-3\ne0\quad\Longrightarrow\quad x\ne3$$
 
 $$x-3=(x+5)(x-1)$$
 
-5. **Distribuer le premier facteur.** Le premier facteur est x + 5. On multiplie la seconde parenthèse par x, puis par 5.
+5. **Distribuer le premier facteur.** La parenthèse x − 1 multiplie chacun des termes x et 5. On copie cette parenthèse ; aucun produit n’est encore calculé.
 
 $$x-3=x(x-1)+5(x-1)$$
 
-6. **Multiplier x par x.** On commence par le premier terme : x × x = x². Le produit par −1 attend son tour.
+6. **Distribuer le facteur x.** x multiplie les deux termes de la parenthèse : x, puis -1. On écrit les multiplications avant de les effectuer.
 
-$$x-3=x^2+x(-1)+5(x-1)$$
+$$x-3=x\cdot x+x\cdot(-1)+5(x-1)$$
 
-7. **Multiplier x par −1.** Un nombre multiplié par −1 donne son opposé : x × (−1) = −x.
+7. **Calculer x × x.** x × x = x². Les autres produits et les signes extérieurs restent inchangés.
+
+$$x-3=x^2+x\cdot(-1)+5(x-1)$$
+
+8. **Calculer x × (−1).** x × (-1) = −x. On conserve le signe négatif avec le terme.
 
 $$x-3=x^2-x+5(x-1)$$
 
-8. **Passer au facteur 5.** On distribue maintenant 5 : le premier produit est 5 × x = 5x.
+9. **Distribuer le facteur 5.** On passe maintenant au facteur 5. Il multiplie x, puis -1 ; les deux produits sont d’abord écrits.
 
-$$x-3=x^2-x+5x+5(-1)$$
+$$x-3=x^2-x+5\cdot x+5\cdot(-1)$$
 
-9. **Multiplier 5 par −1.** Le dernier produit est négatif : 5 × (−1) = −5.
+10. **Calculer 5 × x.** 5 × x = 5x. Le dernier produit reste écrit.
+
+$$x-3=x^2-x+5x+5\cdot(-1)$$
+
+11. **Calculer 5 × (−1).** 5 × (-1) = -5. On a calculé les quatre produits, un à un.
 
 $$x-3=x^2-x+5x-5$$
 
-10. **Regrouper seulement les termes en x.** −x + 5x = (−1 + 5)x = 4x. Le terme x² et la constante −5 restent inchangés.
+12. **Regrouper seulement les termes en x.** −x + 5x = (-1 + 5)x = 4x. Seuls les termes en x sont réunis ; x² et la constante restent en place.
 
 $$x-3=x^2+4x-5$$
 
-11. **Soustraire x des deux côtés.** À gauche, x − x = 0. À droite, 4x − x = 3x.
+13. **Soustraire x des deux côtés.** À gauche, x − x = 0. À droite, 4x − x = 3x.
 
 $$-3=x^2+3x-5$$
 
-12. **Ajouter 3 des deux côtés.** À gauche, −3 + 3 = 0. À droite, −5 + 3 = −2.
+14. **Ajouter 3 des deux côtés.** À gauche, −3 + 3 = 0. À droite, −5 + 3 = −2.
 
 $$0=x^2+3x-2$$
 
-13. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = -2. On conserve le signe de chaque coefficient.
+15. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$x^2+3x-2=0$$
+
+16. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = -2. On conserve le signe de chaque coefficient.
 
 $$a=1,\quad b=3,\quad c=-2$$
 
-14. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+17. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-15. **Remplacer les coefficients.** On remplace b par 3, a par 1 et c par -2, en gardant les parenthèses autour des nombres signés.
+18. **Remplacer b dans le discriminant.** On remplace seulement b par 3. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(3)^2-4ac$$
+
+19. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(3)^2-4\times(1)\times c$$
+
+20. **Remplacer c dans le discriminant.** On remplace enfin c par -2, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(3)^2-4\times(1)\times(-2)$$
 
-16. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
+21. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
 
 $$\Delta=9-4\times(1)\times(-2)$$
 
-17. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+22. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
 
 $$\Delta=9-(4)\times(-2)$$
 
-18. **Calculer 4ac.** 4 × (-2) = -8. Le signe moins de la formule reste devant ce produit.
+23. **Calculer 4ac.** 4 × (-2) = -8. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=9-(-8)$$
 
-19. **Soustraire un nombre négatif.** Soustraire -8 revient à ajouter 8.
+24. **Soustraire un nombre négatif.** Soustraire -8 revient à ajouter 8.
 
 $$\Delta=9+8$$
 
-20. **Obtenir le discriminant.** Le calcul donne Δ = 17 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+25. **Obtenir le discriminant.** Δ = 17 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=17$$
 
-21. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
+26. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{17}$$
 
-22. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+27. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-23. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
+28. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2a}$$
 
-24. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+29. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2\times(1)}$$
 
-25. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
+30. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
 
 $$x_1=\frac{-(3)-\sqrt{17}}{2\times(1)}$$
 
-26. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+31. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(3)-\sqrt{17}}{2}$$
 
-27. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
+32. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
 
 $$x_1=\frac{-3-\sqrt{17}}{2}$$
 
-28. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+33. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-29. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
+34. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2a}$$
 
-30. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+35. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2\times(1)}$$
 
-31. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
+36. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
 
 $$x_2=\frac{-(3)+\sqrt{17}}{2\times(1)}$$
 
-32. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+37. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(3)+\sqrt{17}}{2}$$
 
-33. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
+38. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
 
 $$x_2=\frac{-3+\sqrt{17}}{2}$$
 
-34. **Vérifier les exclusions.** Ni 1 ni 3 n’annule le trinôme. Les racines calculées sont donc différentes des deux valeurs interdites.
+39. **Vérifier les exclusions.** Ni 1 ni 3 n’annule le trinôme. Les racines calculées sont donc différentes des deux valeurs interdites.
 
 $$1^2+3\cdot1-2=2,\quad3^2+3\cdot3-2=16$$
 
-35. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+40. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=\{\frac{-3-\sqrt{17}}2,\frac{-3+\sqrt{17}}2\}$$
 
@@ -1022,19 +1098,47 @@ $$f_1(x)=\frac1{x^2+3x+10}$$
 
 $$x^2+3x+10\ne0$$
 
-3. **Chercher ses zéros.** On étudie le trinôme du dénominateur, exactement comme dans la question 2.1.
+3. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = 10. On conserve le signe de chaque coefficient.
 
-$$\Delta=3^2-4\times1\times10$$
+$$a=1,\quad b=3,\quad c=10$$
 
-4. **Calculer le discriminant.** Ce trinôme ne possède aucun zéro réel.
+4. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
-$$\Delta=9-40=-31<0$$
+$$\Delta=b^2-4ac$$
 
-5. **Conserver tous les réels.** Aucun nombre réel ne rend le dénominateur nul.
+5. **Remplacer b dans le discriminant.** On remplace seulement b par 3. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(3)^2-4ac$$
+
+6. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(3)^2-4\times(1)\times c$$
+
+7. **Remplacer c dans le discriminant.** On remplace enfin c par 10, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
+
+$$\Delta=(3)^2-4\times(1)\times(10)$$
+
+8. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
+
+$$\Delta=9-4\times(1)\times(10)$$
+
+9. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+
+$$\Delta=9-(4)\times(10)$$
+
+10. **Calculer 4ac.** 4 × (10) = 40. Le signe moins de la formule reste devant ce produit.
+
+$$\Delta=9-(40)$$
+
+11. **Obtenir le discriminant.** Δ = -31 < 0 : le trinôme ne possède aucune racine réelle.
+
+$$\Delta=-31$$
+
+12. **Conserver tous les réels.** Aucun nombre réel ne rend le dénominateur nul.
 
 $$x\in\mathbb R$$
 
-6. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+13. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
 
 $$D=\mathbb R$$
 
@@ -1154,35 +1258,47 @@ $$7x+\frac4x-1=\frac{7x^2-x+4}{x}$$
 
 $$x\ne0\quad\text{et}\quad 7x^2-x+4\ne0$$
 
-10. **Identifier les coefficients.** Le coefficient de x² est 7, celui de x est −1 et le terme constant est 4.
+10. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 7, b = -1 et c = 4. On conserve le signe de chaque coefficient.
 
 $$a=7,\quad b=-1,\quad c=4$$
 
-11. **Calculer le discriminant.** On applique Δ = b² − 4ac avec b = −1. Les parenthèses sont indispensables.
+11. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
-$$\Delta=(-1)^2-4\times7\times4$$
+$$\Delta=b^2-4ac$$
 
-12. **Calculer le carré.** (−1) × (−1) = 1.
+12. **Remplacer b dans le discriminant.** On remplace seulement b par -1. Les parenthèses gardent le signe de b dans le carré.
 
-$$\Delta=1-4\times7\times4$$
+$$\Delta=(-1)^2-4ac$$
 
-13. **Calculer 4 × 7.** 4 × 7 = 28.
+13. **Remplacer a dans le discriminant.** On remplace a par 7. Le coefficient c attend l’étape suivante.
 
-$$\Delta=1-28\times4$$
+$$\Delta=(-1)^2-4\times(7)\times c$$
 
-14. **Calculer le produit restant.** 28 × 4 = 112.
+14. **Remplacer c dans le discriminant.** On remplace enfin c par 4, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
-$$\Delta=1-112$$
+$$\Delta=(-1)^2-4\times(7)\times(4)$$
 
-15. **Soustraire.** 1 − 112 = −111. Le discriminant est négatif : le trinôme ne s’annule pour aucun réel.
+15. **Calculer le carré de b.** (-1) × (-1) = 1. Les autres opérations attendent.
 
-$$\Delta=-111<0$$
+$$\Delta=1-4\times(7)\times(4)$$
 
-16. **Écarter toute autre exclusion.** Pour chaque x non nul, la base du carré est donc définie et non nulle. Son carré est lui aussi non nul.
+16. **Calculer 4 × a.** 4 × 7 = 28. Il reste à multiplier ce nombre par c.
+
+$$\Delta=1-(28)\times(4)$$
+
+17. **Calculer 4ac.** 28 × (4) = 112. Le signe moins de la formule reste devant ce produit.
+
+$$\Delta=1-(112)$$
+
+18. **Obtenir le discriminant.** Δ = -111 < 0 : le trinôme ne possède aucune racine réelle.
+
+$$\Delta=-111$$
+
+19. **Écarter toute autre exclusion.** Pour chaque x non nul, la base du carré est donc définie et non nulle. Son carré est lui aussi non nul.
 
 $$7x^2-x+4\ne0\quad\text{pour tout }x\in\mathbb R$$
 
-17. **Retenir le domaine.** La seule valeur interdite est 0, à cause de 4/x. Le carré extérieur n’impose aucune exclusion supplémentaire.
+20. **Retenir le domaine.** La seule valeur interdite est 0, à cause de 4/x. Le carré extérieur n’impose aucune exclusion supplémentaire.
 
 $$D=\mathbb R\setminus\{0\}$$
 
@@ -1312,35 +1428,35 @@ $$u(x)=\frac{x-3}{(x-1)(x-3)}-\frac{(x+5)(x-1)}{(x-1)(x-3)}$$
 
 $$u(x)=\frac{x-3-(x+5)(x-1)}{(x-1)(x-3)}$$
 
-12. **Distribuer les deux termes du premier facteur.** Dans le produit intérieur, x puis 5 multiplient la parenthèse x − 1. Le signe moins extérieur attend.
+12. **Distribuer les deux termes du premier facteur.** La parenthèse x − 1 multiplie chacun des termes x et 5. On copie cette parenthèse ; aucun produit n’est encore calculé.
 
 $$u(x)=\frac{x-3-\left(x(x-1)+5(x-1)\right)}{(x-1)(x-3)}$$
 
-13. **Distribuer le facteur x.** On écrit les deux produits de x par les termes de x − 1, sans les calculer.
+13. **Distribuer le facteur x.** x multiplie les deux termes de la parenthèse : x, puis -1. On écrit les multiplications avant de les effectuer.
 
 $$u(x)=\frac{x-3-\left(x\cdot x+x\cdot(-1)+5(x-1)\right)}{(x-1)(x-3)}$$
 
-14. **Distribuer le facteur 5.** On écrit maintenant les deux produits de 5 par les termes de x − 1.
+14. **Calculer x × x.** x × x = x². Les autres produits et les signes extérieurs restent inchangés.
 
-$$u(x)=\frac{x-3-\left(x\cdot x+x\cdot(-1)+5\cdot x+5\cdot(-1)\right)}{(x-1)(x-3)}$$
+$$u(x)=\frac{x-3-\left(x^2+x\cdot(-1)+5(x-1)\right)}{(x-1)(x-3)}$$
 
-15. **Calculer x × x.** Le premier produit est x². Le signe moins placé devant la grande parenthèse ne change pas.
+15. **Calculer x × (−1).** x × (-1) = −x. On conserve le signe négatif avec le terme.
 
-$$u(x)=\frac{x-3-\left(x^2+x\cdot(-1)+5\cdot x+5\cdot(-1)\right)}{(x-1)(x-3)}$$
+$$u(x)=\frac{x-3-\left(x^2-x+5(x-1)\right)}{(x-1)(x-3)}$$
 
-16. **Calculer x × (−1).** Le second produit est −x.
+16. **Distribuer le facteur 5.** On passe maintenant au facteur 5. Il multiplie x, puis -1 ; les deux produits sont d’abord écrits.
 
 $$u(x)=\frac{x-3-\left(x^2-x+5\cdot x+5\cdot(-1)\right)}{(x-1)(x-3)}$$
 
-17. **Calculer 5 × x.** Le troisième produit est 5x.
+17. **Calculer 5 × x.** 5 × x = 5x. Le dernier produit reste écrit.
 
 $$u(x)=\frac{x-3-\left(x^2-x+5x+5\cdot(-1)\right)}{(x-1)(x-3)}$$
 
-18. **Calculer 5 × (−1).** Le quatrième produit est −5.
+18. **Calculer 5 × (−1).** 5 × (-1) = -5. On a calculé les quatre produits, un à un.
 
 $$u(x)=\frac{x-3-\left(x^2-x+5x-5\right)}{(x-1)(x-3)}$$
 
-19. **Regrouper dans la parenthèse.** −x + 5x = (−1 + 5)x = 4x. Le signe moins extérieur reste en place.
+19. **Regrouper dans la parenthèse.** −x + 5x = (-1 + 5)x = 4x. Seuls les termes en x sont réunis ; x² et la constante restent en place.
 
 $$u(x)=\frac{x-3-\left(x^2+4x-5\right)}{(x-1)(x-3)}$$
 
@@ -1348,123 +1464,139 @@ $$u(x)=\frac{x-3-\left(x^2+4x-5\right)}{(x-1)(x-3)}$$
 
 $$u(x)=\frac{x-3-x^2-\left(4x-5\right)}{(x-1)(x-3)}$$
 
-21. **Appliquer le signe moins aux deux termes restants.** −(4x − 5) = −4x + 5 : chacun des deux signes change.
+21. **Appliquer le signe moins au terme 4x.** On prend l’opposé de 4x : cela donne −4x. Le dernier terme reste écrit −(−5), pour garder les deux signes visibles.
+
+$$u(x)=\frac{x-3-x^2-4x-(-5)}{(x-1)(x-3)}$$
+
+22. **Prendre l’opposé de −5.** L’opposé de −5 est +5 : −(−5) = +5. Tous les termes de la parenthèse ont maintenant été traités.
 
 $$u(x)=\frac{x-3-x^2-4x+5}{(x-1)(x-3)}$$
 
-22. **Regrouper les termes en x.** x − 4x = (1 − 4)x = −3x. Les constantes −3 et +5 restent écrites.
+23. **Regrouper les termes en x.** x − 4x = (1 − 4)x = −3x. Les constantes −3 et +5 restent écrites.
 
 $$u(x)=\frac{-x^2-3x-3+5}{(x-1)(x-3)}$$
 
-23. **Additionner les constantes.** −3 + 5 = 2.
+24. **Additionner les constantes.** −3 + 5 = 2.
 
 $$u(x)=\frac{-x^2-3x+2}{(x-1)(x-3)}$$
 
-24. **Mettre −1 en facteur.** −x² − 3x + 2 = −(x² + 3x − 2). Le signe moins ne joue aucun rôle dans la recherche des zéros.
+25. **Mettre −1 en facteur.** −x² − 3x + 2 = −(x² + 3x − 2). Le signe moins ne joue aucun rôle dans la recherche des zéros.
 
 $$u(x)=-\frac{x^2+3x-2}{(x-1)(x-3)}$$
 
-25. **Chercher les valeurs à exclure.** Les dénominateurs sont déjà non nuls. L’argument u(x) s’annule exactement quand ce trinôme s’annule : on calcule ces valeurs pour les exclure.
+26. **Chercher les valeurs à exclure.** Les dénominateurs sont déjà non nuls. L’argument u(x) s’annule exactement quand ce trinôme s’annule : on calcule ces valeurs pour les exclure.
 
 $$x^2+3x-2=0$$
 
-26. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = -2. On conserve le signe de chaque coefficient.
+27. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$x^2+3x-2=0$$
+
+28. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = -2. On conserve le signe de chaque coefficient.
 
 $$a=1,\quad b=3,\quad c=-2$$
 
-27. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+29. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-28. **Remplacer les coefficients.** On remplace b par 3, a par 1 et c par -2, en gardant les parenthèses autour des nombres signés.
+30. **Remplacer b dans le discriminant.** On remplace seulement b par 3. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(3)^2-4ac$$
+
+31. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(3)^2-4\times(1)\times c$$
+
+32. **Remplacer c dans le discriminant.** On remplace enfin c par -2, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(3)^2-4\times(1)\times(-2)$$
 
-29. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
+33. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
 
 $$\Delta=9-4\times(1)\times(-2)$$
 
-30. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+34. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
 
 $$\Delta=9-(4)\times(-2)$$
 
-31. **Calculer 4ac.** 4 × (-2) = -8. Le signe moins de la formule reste devant ce produit.
+35. **Calculer 4ac.** 4 × (-2) = -8. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=9-(-8)$$
 
-32. **Soustraire un nombre négatif.** Soustraire -8 revient à ajouter 8.
+36. **Soustraire un nombre négatif.** Soustraire -8 revient à ajouter 8.
 
 $$\Delta=9+8$$
 
-33. **Obtenir le discriminant.** Le calcul donne Δ = 17 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+37. **Obtenir le discriminant.** Δ = 17 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=17$$
 
-34. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
+38. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{17}$$
 
-35. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+39. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-36. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
+40. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2a}$$
 
-37. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+41. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2\times(1)}$$
 
-38. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
+42. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
 
 $$x_1=\frac{-(3)-\sqrt{17}}{2\times(1)}$$
 
-39. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+43. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(3)-\sqrt{17}}{2}$$
 
-40. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
+44. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
 
 $$x_1=\frac{-3-\sqrt{17}}{2}$$
 
-41. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+45. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-42. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
+46. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2a}$$
 
-43. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+47. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2\times(1)}$$
 
-44. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
+48. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
 
 $$x_2=\frac{-(3)+\sqrt{17}}{2\times(1)}$$
 
-45. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+49. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(3)+\sqrt{17}}{2}$$
 
-46. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
+50. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
 
 $$x_2=\frac{-3+\sqrt{17}}{2}$$
 
-47. **Vérifier que 1 n’est pas une nouvelle racine.** La valeur 1 était déjà interdite par une fraction intérieure. Elle est distincte des deux racines du trinôme.
+51. **Vérifier que 1 n’est pas une nouvelle racine.** La valeur 1 était déjà interdite par une fraction intérieure. Elle est distincte des deux racines du trinôme.
 
 $$1^2+3\times1-2=2\ne0$$
 
-48. **Vérifier aussi la valeur 3.** La valeur 3 est elle aussi distincte des deux racines. On a donc quatre valeurs interdites différentes.
+52. **Vérifier aussi la valeur 3.** La valeur 3 est elle aussi distincte des deux racines. On a donc quatre valeurs interdites différentes.
 
 $$3^2+3\times3-2=16\ne0$$
 
-49. **Réunir les quatre exclusions.** On exclut 1 et 3 pour définir les fractions intérieures, puis les deux racines pour que la racine cubique au dénominateur ne soit pas nulle.
+53. **Réunir les quatre exclusions.** On exclut 1 et 3 pour définir les fractions intérieures, puis les deux racines pour que la racine cubique au dénominateur ne soit pas nulle.
 
 $$x\notin\left\{\frac{-3-\sqrt{17}}2,\frac{-3+\sqrt{17}}2,1,3\right\}$$
 
-50. **Retenir le domaine.** Aucune condition de positivité n’est nécessaire pour une racine cubique. Tous les réels autres que ces quatre valeurs sont autorisés.
+54. **Retenir le domaine.** Aucune condition de positivité n’est nécessaire pour une racine cubique. Tous les réels autres que ces quatre valeurs sont autorisés.
 
 $$D=\mathbb R\setminus\{\frac{-3-\sqrt{17}}2,\frac{-3+\sqrt{17}}2,1,3\}$$
 
@@ -1488,139 +1620,151 @@ $$2x^2+3x-5>0$$
 
 $$2x^2+3x-5=0$$
 
-3. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 2, b = 3 et c = -5. On conserve le signe de chaque coefficient.
+3. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$2x^2+3x-5=0$$
+
+4. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 2, b = 3 et c = -5. On conserve le signe de chaque coefficient.
 
 $$a=2,\quad b=3,\quad c=-5$$
 
-4. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+5. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-5. **Remplacer les coefficients.** On remplace b par 3, a par 2 et c par -5, en gardant les parenthèses autour des nombres signés.
+6. **Remplacer b dans le discriminant.** On remplace seulement b par 3. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(3)^2-4ac$$
+
+7. **Remplacer a dans le discriminant.** On remplace a par 2. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(3)^2-4\times(2)\times c$$
+
+8. **Remplacer c dans le discriminant.** On remplace enfin c par -5, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(3)^2-4\times(2)\times(-5)$$
 
-6. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
+9. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
 
 $$\Delta=9-4\times(2)\times(-5)$$
 
-7. **Calculer 4 × a.** 4 × 2 = 8. Il reste à multiplier ce nombre par c.
+10. **Calculer 4 × a.** 4 × 2 = 8. Il reste à multiplier ce nombre par c.
 
 $$\Delta=9-(8)\times(-5)$$
 
-8. **Calculer 4ac.** 8 × (-5) = -40. Le signe moins de la formule reste devant ce produit.
+11. **Calculer 4ac.** 8 × (-5) = -40. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=9-(-40)$$
 
-9. **Soustraire un nombre négatif.** Soustraire -40 revient à ajouter 40.
+12. **Soustraire un nombre négatif.** Soustraire -40 revient à ajouter 40.
 
 $$\Delta=9+40$$
 
-10. **Obtenir le discriminant.** Le calcul donne Δ = 49 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+13. **Obtenir le discriminant.** Δ = 49 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=49$$
 
-11. **Remplacer Δ sous la racine.** Δ vaut 49. On cherche maintenant sa racine carrée positive.
+14. **Remplacer Δ sous la racine.** Δ vaut 49. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{49}$$
 
-12. **Calculer la racine de Δ.** 7 est positif et 7² = 49, donc √Δ = 7.
+15. **Calculer la racine de Δ.** 7 est positif et 7² = 49, donc √Δ = 7.
 
 $$\sqrt{\Delta}=7$$
 
-13. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+16. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-14. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
+17. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2a}$$
 
-15. **Remplacer a au dénominateur.** a = 2, donc le dénominateur 2a devient 2 × (2).
+18. **Remplacer a au dénominateur.** a = 2, donc le dénominateur 2a devient 2 × (2).
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2\times(2)}$$
 
-16. **Remplacer Δ dans la formule.** On remplace Δ par 49 sous la racine carrée.
+19. **Remplacer Δ dans la formule.** On remplace Δ par 49 sous la racine carrée.
 
 $$x_1=\frac{-(3)-\sqrt{49}}{2\times(2)}$$
 
-17. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
+20. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
 
 $$x_1=\frac{-(3)-7}{2\times(2)}$$
 
-18. **Calculer le dénominateur.** 2 × (2) = 4. Tout le numérateur reste au-dessus de la barre.
+21. **Calculer le dénominateur.** 2 × (2) = 4. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(3)-7}{4}$$
 
-19. **Calculer le numérateur.** Au numérateur, −(3) − 7 = -10.
+22. **Calculer le numérateur.** Au numérateur, −(3) − 7 = -10.
 
 $$x_1=\frac{-10}{4}$$
 
-20. **Simplifier la fraction.** On réduit la fraction -10/4 pour obtenir cette valeur exacte.
+23. **Simplifier la fraction.** On réduit la fraction -10/4 pour obtenir cette valeur exacte.
 
 $$x_1=-\frac52$$
 
-21. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+24. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-22. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
+25. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2a}$$
 
-23. **Remplacer a au dénominateur.** a = 2, donc le dénominateur 2a devient 2 × (2).
+26. **Remplacer a au dénominateur.** a = 2, donc le dénominateur 2a devient 2 × (2).
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2\times(2)}$$
 
-24. **Remplacer Δ dans la formule.** On remplace Δ par 49 sous la racine carrée.
+27. **Remplacer Δ dans la formule.** On remplace Δ par 49 sous la racine carrée.
 
 $$x_2=\frac{-(3)+\sqrt{49}}{2\times(2)}$$
 
-25. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
+28. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
 
 $$x_2=\frac{-(3)+7}{2\times(2)}$$
 
-26. **Calculer le dénominateur.** 2 × (2) = 4. Tout le numérateur reste au-dessus de la barre.
+29. **Calculer le dénominateur.** 2 × (2) = 4. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(3)+7}{4}$$
 
-27. **Calculer le numérateur.** Au numérateur, −(3) + 7 = 4.
+30. **Calculer le numérateur.** Au numérateur, −(3) + 7 = 4.
 
 $$x_2=\frac{4}{4}$$
 
-28. **Simplifier la fraction.** On réduit la fraction 4/4 pour obtenir cette valeur exacte.
+31. **Simplifier la fraction.** On réduit la fraction 4/4 pour obtenir cette valeur exacte.
 
 $$x_2=1$$
 
-29. **Écrire le produit de facteurs.** À partir des racines, 2(x + 5/2)(x − 1) = (2x + 5)(x − 1).
+32. **Écrire le produit de facteurs.** À partir des racines, 2(x + 5/2)(x − 1) = (2x + 5)(x − 1).
 
 $$(2x+5)(x-1)>0$$
 
-30. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+33. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&-\frac52&&1&&+\infty\\\hline 2x+5&&&&&&&\\x-1&&&&&&&\\\hline (2x+5)(x-1)&&&&&&&\\\hline\end{array}$$
 
-31. **Compléter la ligne 1.** 2x + 5 s’annule en −5/2. Son coefficient de x est positif : signe − à gauche de ce zéro, signe + à droite.
+34. **Compléter la ligne 1.** 2x + 5 s’annule en −5/2. Son coefficient de x est positif : signe − à gauche de ce zéro, signe + à droite.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&-\frac52&&1&&+\infty\\\hline 2x+5&&-&0&+&&+&\\x-1&&&&&&&\\\hline (2x+5)(x-1)&&&&&&&\\\hline\end{array}$$
 
-32. **Compléter la ligne 2.** x − 1 s’annule en 1 : signe − à gauche et signe + à droite. Les blancs aux autres valeurs ne sont pas des zéros.
+35. **Compléter la ligne 2.** x − 1 s’annule en 1 : signe − à gauche et signe + à droite. Les blancs aux autres valeurs ne sont pas des zéros.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&-\frac52&&1&&+\infty\\\hline 2x+5&&-&0&+&&+&\\x-1&&-&&-&0&+&\\\hline (2x+5)(x-1)&&&&&&&\\\hline\end{array}$$
 
-33. **Compléter la ligne du résultat.** On multiplie les signes dans chaque intervalle : (−) × (−) = +, (+) × (−) = −, (+) × (+) = +. Le produit vaut 0 aux deux racines.
+36. **Compléter la ligne du résultat.** On multiplie les signes dans chaque intervalle : (−) × (−) = +, (+) × (−) = −, (+) × (+) = +. Le produit vaut 0 aux deux racines.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&-\frac52&&1&&+\infty\\\hline 2x+5&&-&0&+&&+&\\x-1&&-&&-&0&+&\\\hline (2x+5)(x-1)&&+&0&-&0&+&\\\hline\end{array}$$
 
-34. **Lire les intervalles à conserver.** On demande un produit strictement positif. On conserve les deux intervalles marqués +, à l’extérieur des racines. Les deux zéros sont exclus.
+37. **Lire les intervalles à conserver.** On demande un produit strictement positif. On conserve les deux intervalles marqués +, à l’extérieur des racines. Les deux zéros sont exclus.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&-\frac52&&1&&+\infty\\\hline 2x+5&&-&0&+&&+&\\x-1&&-&&-&0&+&\\\hline (2x+5)(x-1)&&+&0&-&0&+&\\\hline\end{array}$$
 
-35. **Retenir les zones positives.** On demande strictement plus que zéro. Les deux zéros −5/2 et 1 ne sont donc pas inclus.
+38. **Retenir les zones positives.** On demande strictement plus que zéro. Les deux zéros −5/2 et 1 ne sont donc pas inclus.
 
 $$x<-\frac52\quad\text{ou}\quad x>1$$
 
-36. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+39. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=]-\infty,-\tfrac52[\;\cup\;]1,+\infty[$$
 
@@ -1644,35 +1788,71 @@ $$x\ne0$$
 
 $$\frac{7x^2+4-x}{x}\ge0$$
 
-4. **Étudier le numérateur.** Le numérateur 7x² − x + 4 a un discriminant négatif.
+4. **Étudier le numérateur.** Pour déterminer le signe du numérateur, on cherche d’abord ses éventuels zéros. On étudie le trinôme indépendamment du dénominateur.
 
-$$\Delta=(-1)^2-4\times7\times4=-111$$
+$$7x^2-x+4=0$$
 
-5. **Déduire son signe.** Sans racine et avec un coefficient de x² positif, ce trinôme est strictement positif partout.
+5. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 7, b = -1 et c = 4. On conserve le signe de chaque coefficient.
+
+$$a=7,\quad b=-1,\quad c=4$$
+
+6. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+
+$$\Delta=b^2-4ac$$
+
+7. **Remplacer b dans le discriminant.** On remplace seulement b par -1. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(-1)^2-4ac$$
+
+8. **Remplacer a dans le discriminant.** On remplace a par 7. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(-1)^2-4\times(7)\times c$$
+
+9. **Remplacer c dans le discriminant.** On remplace enfin c par 4, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
+
+$$\Delta=(-1)^2-4\times(7)\times(4)$$
+
+10. **Calculer le carré de b.** (-1) × (-1) = 1. Les autres opérations attendent.
+
+$$\Delta=1-4\times(7)\times(4)$$
+
+11. **Calculer 4 × a.** 4 × 7 = 28. Il reste à multiplier ce nombre par c.
+
+$$\Delta=1-(28)\times(4)$$
+
+12. **Calculer 4ac.** 28 × (4) = 112. Le signe moins de la formule reste devant ce produit.
+
+$$\Delta=1-(112)$$
+
+13. **Obtenir le discriminant.** Δ = -111 < 0 : le trinôme ne possède aucune racine réelle.
+
+$$\Delta=-111$$
+
+14. **Déduire son signe.** Sans racine et avec un coefficient de x² positif, ce trinôme est strictement positif partout.
 
 $$7x^2-x+4>0$$
 
-6. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+15. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&&&&\\x&&&&&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-7. **Compléter la ligne 1.** Le numérateur a un discriminant négatif et un coefficient de x² positif. Il est strictement positif sur toute la droite réelle.
+16. **Compléter la ligne 1.** Le numérateur a un discriminant négatif et un coefficient de x² positif. Il est strictement positif sur toute la droite réelle.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&&&&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-8. **Compléter la ligne 2.** x est négatif avant 0, nul en 0 et positif après 0.
+17. **Compléter la ligne 2.** x est négatif avant 0, nul en 0 et positif après 0.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-9. **Compléter la ligne du résultat.** Le quotient a le signe de x. La double barre en 0 signifie « non défini » : un zéro au dénominateur ne donne jamais un zéro du quotient.
+18. **Compléter la ligne du résultat.** Le quotient a le signe de x. La double barre en 0 signifie « non défini » : un zéro au dénominateur ne donne jamais un zéro du quotient.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&-&\Vert&+&\\\hline\end{array}$$
 
-10. **Lire les intervalles à conserver.** On cherche un quotient positif ou nul. Il ne s’annule jamais : on conserve seulement x > 0. La double barre interdit 0 même si l’inégalité est large.
+19. **Lire les intervalles à conserver.** On cherche un quotient positif ou nul. Il ne s’annule jamais : on conserve seulement x > 0. La double barre interdit 0 même si l’inégalité est large.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&-&\Vert&+&\\\hline\end{array}$$
 
-11. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+20. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=]0,+\infty[$$
 
@@ -1764,159 +1944,179 @@ $$x-3\ge(x+5)(x-1)$$
 
 $$x-3\ge(x+5)(x-1)$$
 
-2. **Distribuer le premier facteur.** Le premier facteur est x + 5. On multiplie la seconde parenthèse par x, puis par 5.
+2. **Distribuer le premier facteur.** La parenthèse x − 1 multiplie chacun des termes x et 5. On copie cette parenthèse ; aucun produit n’est encore calculé.
 
 $$x-3\ge x(x-1)+5(x-1)$$
 
-3. **Multiplier x par x.** On commence par le premier terme : x × x = x². Le produit par −1 attend son tour.
+3. **Distribuer le facteur x.** x multiplie les deux termes de la parenthèse : x, puis -1. On écrit les multiplications avant de les effectuer.
 
-$$x-3\ge x^2+x(-1)+5(x-1)$$
+$$x-3\ge x\cdot x+x\cdot(-1)+5(x-1)$$
 
-4. **Multiplier x par −1.** Un nombre multiplié par −1 donne son opposé : x × (−1) = −x.
+4. **Calculer x × x.** x × x = x². Les autres produits et les signes extérieurs restent inchangés.
+
+$$x-3\ge x^2+x\cdot(-1)+5(x-1)$$
+
+5. **Calculer x × (−1).** x × (-1) = −x. On conserve le signe négatif avec le terme.
 
 $$x-3\ge x^2-x+5(x-1)$$
 
-5. **Passer au facteur 5.** On distribue maintenant 5 : le premier produit est 5 × x = 5x.
+6. **Distribuer le facteur 5.** On passe maintenant au facteur 5. Il multiplie x, puis -1 ; les deux produits sont d’abord écrits.
 
-$$x-3\ge x^2-x+5x+5(-1)$$
+$$x-3\ge x^2-x+5\cdot x+5\cdot(-1)$$
 
-6. **Multiplier 5 par −1.** Le dernier produit est négatif : 5 × (−1) = −5.
+7. **Calculer 5 × x.** 5 × x = 5x. Le dernier produit reste écrit.
+
+$$x-3\ge x^2-x+5x+5\cdot(-1)$$
+
+8. **Calculer 5 × (−1).** 5 × (-1) = -5. On a calculé les quatre produits, un à un.
 
 $$x-3\ge x^2-x+5x-5$$
 
-7. **Regrouper seulement les termes en x.** −x + 5x = (−1 + 5)x = 4x. Le terme x² et la constante −5 restent inchangés.
+9. **Regrouper seulement les termes en x.** −x + 5x = (-1 + 5)x = 4x. Seuls les termes en x sont réunis ; x² et la constante restent en place.
 
 $$x-3\ge x^2+4x-5$$
 
-8. **Soustraire x des deux côtés.** On retranche x de chaque membre. Cela ne change pas le sens de l’inégalité.
+10. **Soustraire x des deux côtés.** On retranche x de chaque membre. Cela ne change pas le sens de l’inégalité.
 
 $$-3\ge x^2+3x-5$$
 
-9. **Ajouter 3 des deux côtés.** On ajoute 3 à chaque membre.
+11. **Ajouter 3 des deux côtés.** On ajoute 3 à chaque membre.
 
 $$0\ge x^2+3x-2$$
 
-10. **Lire l’inégalité dans l’autre ordre.** Dire « 0 est supérieur ou égal au trinôme » revient à dire « le trinôme est inférieur ou égal à 0 ».
+12. **Lire l’inégalité dans l’autre ordre.** Dire « 0 est supérieur ou égal au trinôme » revient à dire « le trinôme est inférieur ou égal à 0 ».
 
 $$x^2+3x-2\le0$$
 
-11. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = -2. On conserve le signe de chaque coefficient.
+13. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$x^2+3x-2=0$$
+
+14. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = -2. On conserve le signe de chaque coefficient.
 
 $$a=1,\quad b=3,\quad c=-2$$
 
-12. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+15. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-13. **Remplacer les coefficients.** On remplace b par 3, a par 1 et c par -2, en gardant les parenthèses autour des nombres signés.
+16. **Remplacer b dans le discriminant.** On remplace seulement b par 3. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(3)^2-4ac$$
+
+17. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(3)^2-4\times(1)\times c$$
+
+18. **Remplacer c dans le discriminant.** On remplace enfin c par -2, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(3)^2-4\times(1)\times(-2)$$
 
-14. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
+19. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
 
 $$\Delta=9-4\times(1)\times(-2)$$
 
-15. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+20. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
 
 $$\Delta=9-(4)\times(-2)$$
 
-16. **Calculer 4ac.** 4 × (-2) = -8. Le signe moins de la formule reste devant ce produit.
+21. **Calculer 4ac.** 4 × (-2) = -8. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=9-(-8)$$
 
-17. **Soustraire un nombre négatif.** Soustraire -8 revient à ajouter 8.
+22. **Soustraire un nombre négatif.** Soustraire -8 revient à ajouter 8.
 
 $$\Delta=9+8$$
 
-18. **Obtenir le discriminant.** Le calcul donne Δ = 17 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+23. **Obtenir le discriminant.** Δ = 17 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=17$$
 
-19. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
+24. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{17}$$
 
-20. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+25. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-21. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
+26. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2a}$$
 
-22. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+27. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2\times(1)}$$
 
-23. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
+28. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
 
 $$x_1=\frac{-(3)-\sqrt{17}}{2\times(1)}$$
 
-24. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+29. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(3)-\sqrt{17}}{2}$$
 
-25. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
+30. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
 
 $$x_1=\frac{-3-\sqrt{17}}{2}$$
 
-26. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+31. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-27. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
+32. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2a}$$
 
-28. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+33. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2\times(1)}$$
 
-29. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
+34. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
 
 $$x_2=\frac{-(3)+\sqrt{17}}{2\times(1)}$$
 
-30. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+35. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(3)+\sqrt{17}}{2}$$
 
-31. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
+36. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
 
 $$x_2=\frac{-3+\sqrt{17}}{2}$$
 
-32. **Nommer les deux bornes.** La première racine x₁ est plus petite que la seconde x₂. Elles serviront de repères dans le tableau.
+37. **Nommer les deux bornes.** La première racine x₁ est plus petite que la seconde x₂. Elles serviront de repères dans le tableau.
 
 $$x_1=\frac{-3-\sqrt{17}}2,\quad x_2=\frac{-3+\sqrt{17}}2$$
 
-33. **Factoriser avec les deux racines.** Le coefficient de x² est 1, donc x² + 3x − 2 = (x − x₁)(x − x₂). On cherche où ce produit est négatif ou nul.
+38. **Factoriser avec les deux racines.** Le coefficient de x² est 1, donc x² + 3x − 2 = (x − x₁)(x − x₂). On cherche où ce produit est négatif ou nul.
 
 $$(x-x_1)(x-x_2)\le0$$
 
-34. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+39. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&&&&&&\\x-x_2&&&&&&&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
-35. **Compléter la ligne 1.** x − x₁ s’annule en x₁ : signe − avant x₁ et signe + après.
+40. **Compléter la ligne 1.** x − x₁ s’annule en x₁ : signe − avant x₁ et signe + après.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&&&&&&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
-36. **Compléter la ligne 2.** x − x₂ s’annule en x₂ : signe − avant x₂ et signe + après.
+41. **Compléter la ligne 2.** x − x₂ s’annule en x₂ : signe − avant x₂ et signe + après.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
-37. **Compléter la ligne du résultat.** Le trinôme est (x − x₁)(x − x₂). Son coefficient dominant est 1. Le produit est positif à l’extérieur des racines, négatif entre elles et nul aux racines.
+42. **Compléter la ligne du résultat.** Le trinôme est (x − x₁)(x − x₂). Son coefficient dominant est 1. Le produit est positif à l’extérieur des racines, négatif entre elles et nul aux racines.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&+&0&-&0&+&\\\hline\end{array}$$
 
-38. **Lire les intervalles à conserver.** On conserve l’intervalle marqué − et les deux zéros, car on demande ≤ 0. Les deux bornes sont incluses.
+43. **Lire les intervalles à conserver.** On conserve l’intervalle marqué − et les deux zéros, car on demande ≤ 0. Les deux bornes sont incluses.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&+&0&-&0&+&\\\hline\end{array}$$
 
-39. **Retenir l’intervalle entre les racines.** Le coefficient de x² est positif. Le trinôme est négatif entre ses deux racines et nul aux extrémités : on garde les bornes.
+44. **Retenir l’intervalle entre les racines.** Le coefficient de x² est positif. Le trinôme est négatif entre ses deux racines et nul aux extrémités : on garde les bornes.
 
 $$\frac{-3-\sqrt{17}}2\le x\le\frac{-3+\sqrt{17}}2$$
 
-40. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+45. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=[\frac{-3-\sqrt{17}}2,\frac{-3+\sqrt{17}}2]$$
 
@@ -2010,35 +2210,71 @@ $$7x+4/x-1\ge0$$
 
 $$\frac{7x^2+4-x}{x}\ge0$$
 
-5. **Étudier le numérateur.** Le numérateur 7x² − x + 4 a un discriminant négatif.
+5. **Étudier le numérateur.** Pour déterminer le signe du numérateur, on cherche d’abord ses éventuels zéros. On étudie le trinôme indépendamment du dénominateur.
 
-$$\Delta=(-1)^2-4\times7\times4=-111$$
+$$7x^2-x+4=0$$
 
-6. **Déduire son signe.** Sans racine et avec un coefficient de x² positif, ce trinôme est strictement positif partout.
+6. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 7, b = -1 et c = 4. On conserve le signe de chaque coefficient.
+
+$$a=7,\quad b=-1,\quad c=4$$
+
+7. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+
+$$\Delta=b^2-4ac$$
+
+8. **Remplacer b dans le discriminant.** On remplace seulement b par -1. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(-1)^2-4ac$$
+
+9. **Remplacer a dans le discriminant.** On remplace a par 7. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(-1)^2-4\times(7)\times c$$
+
+10. **Remplacer c dans le discriminant.** On remplace enfin c par 4, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
+
+$$\Delta=(-1)^2-4\times(7)\times(4)$$
+
+11. **Calculer le carré de b.** (-1) × (-1) = 1. Les autres opérations attendent.
+
+$$\Delta=1-4\times(7)\times(4)$$
+
+12. **Calculer 4 × a.** 4 × 7 = 28. Il reste à multiplier ce nombre par c.
+
+$$\Delta=1-(28)\times(4)$$
+
+13. **Calculer 4ac.** 28 × (4) = 112. Le signe moins de la formule reste devant ce produit.
+
+$$\Delta=1-(112)$$
+
+14. **Obtenir le discriminant.** Δ = -111 < 0 : le trinôme ne possède aucune racine réelle.
+
+$$\Delta=-111$$
+
+15. **Déduire son signe.** Sans racine et avec un coefficient de x² positif, ce trinôme est strictement positif partout.
 
 $$7x^2-x+4>0$$
 
-7. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+16. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&&&&\\x&&&&&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-8. **Compléter la ligne 1.** Le numérateur a un discriminant négatif et un coefficient de x² positif. Il est strictement positif sur toute la droite réelle.
+17. **Compléter la ligne 1.** Le numérateur a un discriminant négatif et un coefficient de x² positif. Il est strictement positif sur toute la droite réelle.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&&&&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-9. **Compléter la ligne 2.** x est négatif avant 0, nul en 0 et positif après 0.
+18. **Compléter la ligne 2.** x est négatif avant 0, nul en 0 et positif après 0.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&&&&\\\hline\end{array}$$
 
-10. **Compléter la ligne du résultat.** Le quotient a le signe de x. La double barre en 0 signifie « non défini » : un zéro au dénominateur ne donne jamais un zéro du quotient.
+19. **Compléter la ligne du résultat.** Le quotient a le signe de x. La double barre en 0 signifie « non défini » : un zéro au dénominateur ne donne jamais un zéro du quotient.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&-&\Vert&+&\\\hline\end{array}$$
 
-11. **Lire les intervalles à conserver.** La racine carrée exige un argument positif ou nul. Le quotient ne s’annule jamais et 0 reste interdit : on conserve seulement x > 0.
+20. **Lire les intervalles à conserver.** La racine carrée exige un argument positif ou nul. Le quotient ne s’annule jamais et 0 reste interdit : on conserve seulement x > 0.
 
 $$\begin{array}{c|ccccc}\hline x&-\infty&&0&&+\infty\\\hline 7x^2-x+4&&+&&+&\\x&&-&0&+&\\\hline \frac{7x^2-x+4}{x}&&-&\Vert&+&\\\hline\end{array}$$
 
-12. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+21. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
 
 $$D=]0,+\infty[$$
 
@@ -2126,159 +2362,179 @@ $$x-3-(x+5)(x-1)\ge0$$
 
 $$x-3\ge(x+5)(x-1)$$
 
-4. **Distribuer le premier facteur.** Le premier facteur est x + 5. On multiplie la seconde parenthèse par x, puis par 5.
+4. **Distribuer le premier facteur.** La parenthèse x − 1 multiplie chacun des termes x et 5. On copie cette parenthèse ; aucun produit n’est encore calculé.
 
 $$x-3\ge x(x-1)+5(x-1)$$
 
-5. **Multiplier x par x.** On commence par le premier terme : x × x = x². Le produit par −1 attend son tour.
+5. **Distribuer le facteur x.** x multiplie les deux termes de la parenthèse : x, puis -1. On écrit les multiplications avant de les effectuer.
 
-$$x-3\ge x^2+x(-1)+5(x-1)$$
+$$x-3\ge x\cdot x+x\cdot(-1)+5(x-1)$$
 
-6. **Multiplier x par −1.** Un nombre multiplié par −1 donne son opposé : x × (−1) = −x.
+6. **Calculer x × x.** x × x = x². Les autres produits et les signes extérieurs restent inchangés.
+
+$$x-3\ge x^2+x\cdot(-1)+5(x-1)$$
+
+7. **Calculer x × (−1).** x × (-1) = −x. On conserve le signe négatif avec le terme.
 
 $$x-3\ge x^2-x+5(x-1)$$
 
-7. **Passer au facteur 5.** On distribue maintenant 5 : le premier produit est 5 × x = 5x.
+8. **Distribuer le facteur 5.** On passe maintenant au facteur 5. Il multiplie x, puis -1 ; les deux produits sont d’abord écrits.
 
-$$x-3\ge x^2-x+5x+5(-1)$$
+$$x-3\ge x^2-x+5\cdot x+5\cdot(-1)$$
 
-8. **Multiplier 5 par −1.** Le dernier produit est négatif : 5 × (−1) = −5.
+9. **Calculer 5 × x.** 5 × x = 5x. Le dernier produit reste écrit.
+
+$$x-3\ge x^2-x+5x+5\cdot(-1)$$
+
+10. **Calculer 5 × (−1).** 5 × (-1) = -5. On a calculé les quatre produits, un à un.
 
 $$x-3\ge x^2-x+5x-5$$
 
-9. **Regrouper seulement les termes en x.** −x + 5x = (−1 + 5)x = 4x. Le terme x² et la constante −5 restent inchangés.
+11. **Regrouper seulement les termes en x.** −x + 5x = (-1 + 5)x = 4x. Seuls les termes en x sont réunis ; x² et la constante restent en place.
 
 $$x-3\ge x^2+4x-5$$
 
-10. **Soustraire x des deux côtés.** On retranche x de chaque membre. Cela ne change pas le sens de l’inégalité.
+12. **Soustraire x des deux côtés.** On retranche x de chaque membre. Cela ne change pas le sens de l’inégalité.
 
 $$-3\ge x^2+3x-5$$
 
-11. **Ajouter 3 des deux côtés.** On ajoute 3 à chaque membre.
+13. **Ajouter 3 des deux côtés.** On ajoute 3 à chaque membre.
 
 $$0\ge x^2+3x-2$$
 
-12. **Lire l’inégalité dans l’autre ordre.** Dire « 0 est supérieur ou égal au trinôme » revient à dire « le trinôme est inférieur ou égal à 0 ».
+14. **Lire l’inégalité dans l’autre ordre.** Dire « 0 est supérieur ou égal au trinôme » revient à dire « le trinôme est inférieur ou égal à 0 ».
 
 $$x^2+3x-2\le0$$
 
-13. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = -2. On conserve le signe de chaque coefficient.
+15. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$x^2+3x-2=0$$
+
+16. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = 3 et c = -2. On conserve le signe de chaque coefficient.
 
 $$a=1,\quad b=3,\quad c=-2$$
 
-14. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+17. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-15. **Remplacer les coefficients.** On remplace b par 3, a par 1 et c par -2, en gardant les parenthèses autour des nombres signés.
+18. **Remplacer b dans le discriminant.** On remplace seulement b par 3. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(3)^2-4ac$$
+
+19. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(3)^2-4\times(1)\times c$$
+
+20. **Remplacer c dans le discriminant.** On remplace enfin c par -2, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(3)^2-4\times(1)\times(-2)$$
 
-16. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
+21. **Calculer le carré de b.** (3) × (3) = 9. Les autres opérations attendent.
 
 $$\Delta=9-4\times(1)\times(-2)$$
 
-17. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+22. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
 
 $$\Delta=9-(4)\times(-2)$$
 
-18. **Calculer 4ac.** 4 × (-2) = -8. Le signe moins de la formule reste devant ce produit.
+23. **Calculer 4ac.** 4 × (-2) = -8. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=9-(-8)$$
 
-19. **Soustraire un nombre négatif.** Soustraire -8 revient à ajouter 8.
+24. **Soustraire un nombre négatif.** Soustraire -8 revient à ajouter 8.
 
 $$\Delta=9+8$$
 
-20. **Obtenir le discriminant.** Le calcul donne Δ = 17 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+25. **Obtenir le discriminant.** Δ = 17 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=17$$
 
-21. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
+26. **Remplacer Δ sous la racine.** Δ vaut 17. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{17}$$
 
-22. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+27. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-23. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
+28. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2a}$$
 
-24. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+29. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_1=\frac{-(3)-\sqrt{\Delta}}{2\times(1)}$$
 
-25. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
+30. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
 
 $$x_1=\frac{-(3)-\sqrt{17}}{2\times(1)}$$
 
-26. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+31. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(3)-\sqrt{17}}{2}$$
 
-27. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
+32. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
 
 $$x_1=\frac{-3-\sqrt{17}}{2}$$
 
-28. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+33. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-29. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
+34. **Remplacer b avec son signe.** b = 3, donc −b s’écrit −(3). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2a}$$
 
-30. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+35. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_2=\frac{-(3)+\sqrt{\Delta}}{2\times(1)}$$
 
-31. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
+36. **Remplacer Δ dans la formule.** On remplace Δ par 17 sous la racine carrée.
 
 $$x_2=\frac{-(3)+\sqrt{17}}{2\times(1)}$$
 
-32. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+37. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(3)+\sqrt{17}}{2}$$
 
-33. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
+38. **Simplifier le signe de −b.** L’opposé de 3 est -3. La racine reste sous forme exacte.
 
 $$x_2=\frac{-3+\sqrt{17}}{2}$$
 
-34. **Nommer les deux bornes.** La première racine x₁ est plus petite que la seconde x₂. Elles serviront de repères dans le tableau.
+39. **Nommer les deux bornes.** La première racine x₁ est plus petite que la seconde x₂. Elles serviront de repères dans le tableau.
 
 $$x_1=\frac{-3-\sqrt{17}}2,\quad x_2=\frac{-3+\sqrt{17}}2$$
 
-35. **Factoriser avec les deux racines.** Le coefficient de x² est 1, donc x² + 3x − 2 = (x − x₁)(x − x₂). On cherche où ce produit est négatif ou nul.
+40. **Factoriser avec les deux racines.** Le coefficient de x² est 1, donc x² + 3x − 2 = (x − x₁)(x − x₂). On cherche où ce produit est négatif ou nul.
 
 $$(x-x_1)(x-x_2)\le0$$
 
-36. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
+41. **Placer les valeurs dans le tableau.** La ligne x va de −∞ à +∞. Les valeurs remarquables sont rangées dans l’ordre croissant ; les signes seront placés entre elles, sur chaque intervalle.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&&&&&&\\x-x_2&&&&&&&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
-37. **Compléter la ligne 1.** x − x₁ s’annule en x₁ : signe − avant x₁ et signe + après.
+42. **Compléter la ligne 1.** x − x₁ s’annule en x₁ : signe − avant x₁ et signe + après.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&&&&&&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
-38. **Compléter la ligne 2.** x − x₂ s’annule en x₂ : signe − avant x₂ et signe + après.
+43. **Compléter la ligne 2.** x − x₂ s’annule en x₂ : signe − avant x₂ et signe + après.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&&&&&&\\\hline\end{array}$$
 
-39. **Compléter la ligne du résultat.** Le trinôme est (x − x₁)(x − x₂). Son coefficient dominant est 1. Le produit est positif à l’extérieur des racines, négatif entre elles et nul aux racines.
+44. **Compléter la ligne du résultat.** Le trinôme est (x − x₁)(x − x₂). Son coefficient dominant est 1. Le produit est positif à l’extérieur des racines, négatif entre elles et nul aux racines.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&+&0&-&0&+&\\\hline\end{array}$$
 
-40. **Lire les intervalles à conserver.** La condition obtenue est x² + 3x − 2 ≤ 0. On garde le signe − et les deux zéros : aux bornes, la quantité sous la racine vaut 0, ce qui est autorisé.
+45. **Lire les intervalles à conserver.** La condition obtenue est x² + 3x − 2 ≤ 0. On garde le signe − et les deux zéros : aux bornes, la quantité sous la racine vaut 0, ce qui est autorisé.
 
 $$\begin{array}{c|ccccccc}\hline x&-\infty&&x_1&&x_2&&+\infty\\\hline x-x_1&&-&0&+&&+&\\x-x_2&&-&&-&0&+&\\\hline x^2+3x-2&&+&0&-&0&+&\\\hline\end{array}$$
 
-41. **Retenir l’intervalle entre les racines.** Le coefficient de x² est positif. Le trinôme est négatif entre ses deux racines et nul aux extrémités : on garde les bornes.
+46. **Retenir l’intervalle entre les racines.** Le coefficient de x² est positif. Le trinôme est négatif entre ses deux racines et nul aux extrémités : on garde les bornes.
 
 $$\frac{-3-\sqrt{17}}2\le x\le\frac{-3+\sqrt{17}}2$$
 
-42. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
+47. **Retenir le résultat.** Ce domaine regroupe toutes les valeurs autorisées par les conditions précédentes. Une borne ouverte est exclue ; une borne fermée est incluse.
 
 $$D=[\frac{-3-\sqrt{17}}2,\frac{-3+\sqrt{17}}2]$$
 
@@ -2826,131 +3082,143 @@ $$10X^2+12X-14=0$$
 
 $$5X^2+6X-7=0$$
 
-5. **Identifier les coefficients.** Dans aX² + bX + c = 0, a = 5, b = 6 et c = -7. On conserve le signe de chaque coefficient.
+5. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$5X^2+6X-7=0$$
+
+6. **Identifier les coefficients.** Dans aX² + bX + c = 0, a = 5, b = 6 et c = -7. On conserve le signe de chaque coefficient.
 
 $$a=5,\quad b=6,\quad c=-7$$
 
-6. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+7. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-7. **Remplacer les coefficients.** On remplace b par 6, a par 5 et c par -7, en gardant les parenthèses autour des nombres signés.
+8. **Remplacer b dans le discriminant.** On remplace seulement b par 6. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(6)^2-4ac$$
+
+9. **Remplacer a dans le discriminant.** On remplace a par 5. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(6)^2-4\times(5)\times c$$
+
+10. **Remplacer c dans le discriminant.** On remplace enfin c par -7, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(6)^2-4\times(5)\times(-7)$$
 
-8. **Calculer le carré de b.** (6) × (6) = 36. Les autres opérations attendent.
+11. **Calculer le carré de b.** (6) × (6) = 36. Les autres opérations attendent.
 
 $$\Delta=36-4\times(5)\times(-7)$$
 
-9. **Calculer 4 × a.** 4 × 5 = 20. Il reste à multiplier ce nombre par c.
+12. **Calculer 4 × a.** 4 × 5 = 20. Il reste à multiplier ce nombre par c.
 
 $$\Delta=36-(20)\times(-7)$$
 
-10. **Calculer 4ac.** 20 × (-7) = -140. Le signe moins de la formule reste devant ce produit.
+13. **Calculer 4ac.** 20 × (-7) = -140. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=36-(-140)$$
 
-11. **Soustraire un nombre négatif.** Soustraire -140 revient à ajouter 140.
+14. **Soustraire un nombre négatif.** Soustraire -140 revient à ajouter 140.
 
 $$\Delta=36+140$$
 
-12. **Obtenir le discriminant.** Le calcul donne Δ = 176 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+15. **Obtenir le discriminant.** Δ = 176 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=176$$
 
-13. **Remplacer Δ sous la racine.** Δ vaut 176. On cherche maintenant sa racine carrée positive.
+16. **Remplacer Δ sous la racine.** Δ vaut 176. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{176}$$
 
-14. **Extraire un carré parfait.** 176 = 16 × 11. Le facteur 16 est le carré de 4.
+17. **Extraire un carré parfait.** 176 = 16 × 11. Le facteur 16 est le carré de 4.
 
 $$\sqrt{\Delta}=\sqrt{16\times11}$$
 
-15. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √16 = 4.
+18. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √16 = 4.
 
 $$\sqrt{\Delta}=4\sqrt{11}$$
 
-16. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+19. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$X_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-17. **Remplacer b avec son signe.** b = 6, donc −b s’écrit −(6). On garde le signe moins devant la racine.
+20. **Remplacer b avec son signe.** b = 6, donc −b s’écrit −(6). On garde le signe moins devant la racine.
 
 $$X_1=\frac{-(6)-\sqrt{\Delta}}{2a}$$
 
-18. **Remplacer a au dénominateur.** a = 5, donc le dénominateur 2a devient 2 × (5).
+21. **Remplacer a au dénominateur.** a = 5, donc le dénominateur 2a devient 2 × (5).
 
 $$X_1=\frac{-(6)-\sqrt{\Delta}}{2\times(5)}$$
 
-19. **Remplacer Δ dans la formule.** On remplace Δ par 176 sous la racine carrée.
+22. **Remplacer Δ dans la formule.** On remplace Δ par 176 sous la racine carrée.
 
 $$X_1=\frac{-(6)-\sqrt{176}}{2\times(5)}$$
 
-20. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
+23. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
 
 $$X_1=\frac{-(6)-4\sqrt{11}}{2\times(5)}$$
 
-21. **Calculer le dénominateur.** 2 × (5) = 10. Tout le numérateur reste au-dessus de la barre.
+24. **Calculer le dénominateur.** 2 × (5) = 10. Tout le numérateur reste au-dessus de la barre.
 
 $$X_1=\frac{-(6)-4\sqrt{11}}{10}$$
 
-22. **Simplifier le signe de −b.** L’opposé de 6 est -6. La racine reste sous forme exacte.
+25. **Simplifier le signe de −b.** L’opposé de 6 est -6. La racine reste sous forme exacte.
 
 $$X_1=\frac{-6-4\sqrt{11}}{10}$$
 
-23. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
+26. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
 
 $$X_1=\frac{-3-2\sqrt{11}}5$$
 
-24. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+27. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$X_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-25. **Remplacer b avec son signe.** b = 6, donc −b s’écrit −(6). On garde le signe plus devant la racine.
+28. **Remplacer b avec son signe.** b = 6, donc −b s’écrit −(6). On garde le signe plus devant la racine.
 
 $$X_2=\frac{-(6)+\sqrt{\Delta}}{2a}$$
 
-26. **Remplacer a au dénominateur.** a = 5, donc le dénominateur 2a devient 2 × (5).
+29. **Remplacer a au dénominateur.** a = 5, donc le dénominateur 2a devient 2 × (5).
 
 $$X_2=\frac{-(6)+\sqrt{\Delta}}{2\times(5)}$$
 
-27. **Remplacer Δ dans la formule.** On remplace Δ par 176 sous la racine carrée.
+30. **Remplacer Δ dans la formule.** On remplace Δ par 176 sous la racine carrée.
 
 $$X_2=\frac{-(6)+\sqrt{176}}{2\times(5)}$$
 
-28. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
+31. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
 
 $$X_2=\frac{-(6)+4\sqrt{11}}{2\times(5)}$$
 
-29. **Calculer le dénominateur.** 2 × (5) = 10. Tout le numérateur reste au-dessus de la barre.
+32. **Calculer le dénominateur.** 2 × (5) = 10. Tout le numérateur reste au-dessus de la barre.
 
 $$X_2=\frac{-(6)+4\sqrt{11}}{10}$$
 
-30. **Simplifier le signe de −b.** L’opposé de 6 est -6. La racine reste sous forme exacte.
+33. **Simplifier le signe de −b.** L’opposé de 6 est -6. La racine reste sous forme exacte.
 
 $$X_2=\frac{-6+4\sqrt{11}}{10}$$
 
-31. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
+34. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
 
 $$X_2=\frac{-3+2\sqrt{11}}5$$
 
-32. **Rejeter la première racine.** Son numérateur est négatif et son dénominateur est positif. Elle ne peut donc pas représenter eˣ.
+35. **Rejeter la première racine.** Son numérateur est négatif et son dénominateur est positif. Elle ne peut donc pas représenter eˣ.
 
 $$\frac{-3-2\sqrt{11}}5<0$$
 
-33. **Garder la racine positive.** Comme 2√11 > 3, le numérateur est positif. Cette racine respecte X > 0.
+36. **Garder la racine positive.** Comme 2√11 > 3, le numérateur est positif. Cette racine respecte X > 0.
 
 $$X=\frac{-3+2\sqrt{11}}5>0$$
 
-34. **Remplacer X par eˣ.** On revient maintenant à l’inconnue de départ.
+37. **Remplacer X par eˣ.** On revient maintenant à l’inconnue de départ.
 
 $$e^x=\frac{-3+2\sqrt{11}}5$$
 
-35. **Prendre le logarithme.** Le logarithme d’un nombre positif est l’unique exposant qui donne ce nombre.
+38. **Prendre le logarithme.** Le logarithme d’un nombre positif est l’unique exposant qui donne ce nombre.
 
 $$x=\ln\!\left(\frac{-3+2\sqrt{11}}5\right)$$
 
-36. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+39. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=\{\ln(\frac{-3+2\sqrt{11}}5)\}$$
 
@@ -2978,99 +3246,111 @@ $$e^{2x}-5e^x+1=0$$
 
 $$X^2-5X+1=0,\qquad X=e^x>0$$
 
-5. **Identifier les coefficients.** Dans aX² + bX + c = 0, a = 1, b = -5 et c = 1. On conserve le signe de chaque coefficient.
+5. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$X^2-5X+1=0$$
+
+6. **Identifier les coefficients.** Dans aX² + bX + c = 0, a = 1, b = -5 et c = 1. On conserve le signe de chaque coefficient.
 
 $$a=1,\quad b=-5,\quad c=1$$
 
-6. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+7. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-7. **Remplacer les coefficients.** On remplace b par -5, a par 1 et c par 1, en gardant les parenthèses autour des nombres signés.
+8. **Remplacer b dans le discriminant.** On remplace seulement b par -5. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(-5)^2-4ac$$
+
+9. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(-5)^2-4\times(1)\times c$$
+
+10. **Remplacer c dans le discriminant.** On remplace enfin c par 1, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(-5)^2-4\times(1)\times(1)$$
 
-8. **Calculer le carré de b.** (-5) × (-5) = 25. Les autres opérations attendent.
+11. **Calculer le carré de b.** (-5) × (-5) = 25. Les autres opérations attendent.
 
 $$\Delta=25-4\times(1)\times(1)$$
 
-9. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+12. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
 
 $$\Delta=25-(4)\times(1)$$
 
-10. **Calculer 4ac.** 4 × (1) = 4. Le signe moins de la formule reste devant ce produit.
+13. **Calculer 4ac.** 4 × (1) = 4. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=25-(4)$$
 
-11. **Obtenir le discriminant.** Le calcul donne Δ = 21 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+14. **Obtenir le discriminant.** Δ = 21 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=21$$
 
-12. **Remplacer Δ sous la racine.** Δ vaut 21. On cherche maintenant sa racine carrée positive.
+15. **Remplacer Δ sous la racine.** Δ vaut 21. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{21}$$
 
-13. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+16. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$X_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-14. **Remplacer b avec son signe.** b = -5, donc −b s’écrit −(-5). On garde le signe moins devant la racine.
+17. **Remplacer b avec son signe.** b = -5, donc −b s’écrit −(-5). On garde le signe moins devant la racine.
 
 $$X_1=\frac{-(-5)-\sqrt{\Delta}}{2a}$$
 
-15. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+18. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$X_1=\frac{-(-5)-\sqrt{\Delta}}{2\times(1)}$$
 
-16. **Remplacer Δ dans la formule.** On remplace Δ par 21 sous la racine carrée.
+19. **Remplacer Δ dans la formule.** On remplace Δ par 21 sous la racine carrée.
 
 $$X_1=\frac{-(-5)-\sqrt{21}}{2\times(1)}$$
 
-17. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+20. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$X_1=\frac{-(-5)-\sqrt{21}}{2}$$
 
-18. **Simplifier le signe de −b.** L’opposé de -5 est 5. La racine reste sous forme exacte.
+21. **Simplifier le signe de −b.** L’opposé de -5 est 5. La racine reste sous forme exacte.
 
 $$X_1=\frac{5-\sqrt{21}}{2}$$
 
-19. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+22. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$X_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-20. **Remplacer b avec son signe.** b = -5, donc −b s’écrit −(-5). On garde le signe plus devant la racine.
+23. **Remplacer b avec son signe.** b = -5, donc −b s’écrit −(-5). On garde le signe plus devant la racine.
 
 $$X_2=\frac{-(-5)+\sqrt{\Delta}}{2a}$$
 
-21. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+24. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$X_2=\frac{-(-5)+\sqrt{\Delta}}{2\times(1)}$$
 
-22. **Remplacer Δ dans la formule.** On remplace Δ par 21 sous la racine carrée.
+25. **Remplacer Δ dans la formule.** On remplace Δ par 21 sous la racine carrée.
 
 $$X_2=\frac{-(-5)+\sqrt{21}}{2\times(1)}$$
 
-23. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+26. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$X_2=\frac{-(-5)+\sqrt{21}}{2}$$
 
-24. **Simplifier le signe de −b.** L’opposé de -5 est 5. La racine reste sous forme exacte.
+27. **Simplifier le signe de −b.** L’opposé de -5 est 5. La racine reste sous forme exacte.
 
 $$X_2=\frac{5+\sqrt{21}}{2}$$
 
-25. **Vérifier la plus petite racine.** 21 < 25, donc √21 < 5. Même la plus petite racine est positive : on garde les deux.
+28. **Vérifier la plus petite racine.** 21 < 25, donc √21 < 5. Même la plus petite racine est positive : on garde les deux.
 
 $$0<\sqrt{21}<5\quad\Longrightarrow\quad\frac{5-\sqrt{21}}2>0$$
 
-26. **Revenir à x, premier cas.** Dans le premier cas, on applique ln à eˣ = (5 − √21)/2.
+29. **Revenir à x, premier cas.** Dans le premier cas, on applique ln à eˣ = (5 − √21)/2.
 
 $$x=\ln\!\left(\frac{5-\sqrt{21}}2\right)$$
 
-27. **Revenir à x, second cas.** On applique la même opération à la seconde racine positive.
+30. **Revenir à x, second cas.** On applique la même opération à la seconde racine positive.
 
 $$x=\ln\!\left(\frac{5+\sqrt{21}}2\right)$$
 
-28. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+31. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=\{\ln(\frac{5-\sqrt{21}}2),\ln(\frac{5+\sqrt{21}}2)\}$$
 
@@ -3842,19 +4122,23 @@ $$4\ln3-2(\ln3+\ln\sqrt e)$$
 
 $$4\ln3-2(\ln3+\tfrac12)$$
 
-5. **Distribuer −2 au premier terme.** −2 multiplie ln 3 puis 1/2. On traite le premier produit.
+5. **Distribuer −2 au premier terme.** Le coefficient −2 multiplie chaque terme de la parenthèse. On écrit les deux produits en gardant le signe négatif avec le facteur, sans calculer.
 
-$$4\ln3-2\ln3-2\times\tfrac12$$
+$$4\ln3+(-2)\cdot\ln3+(-2)\cdot\tfrac12$$
 
-6. **Calculer le second produit.** −2 × 1/2 = −1.
+6. **Calculer le premier produit.** On calcule seulement (−2) × ln 3, qui s’écrit −2 ln 3. Le second produit attend.
+
+$$4\ln3-2\ln3+(-2)\cdot\tfrac12$$
+
+7. **Calculer le second produit.** −2 × 1/2 = −1.
 
 $$4\ln3-2\ln3-1$$
 
-7. **Regrouper les logarithmes identiques.** 4 ln 3 − 2 ln 3 = (4 − 2) ln 3.
+8. **Regrouper les logarithmes identiques.** 4 ln 3 − 2 ln 3 = (4 − 2) ln 3.
 
 $$2\ln3-1$$
 
-8. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
+9. **Retenir le résultat.** C’est la forme simplifiée de l’expression de départ. Chaque transformation respecte les conditions précisées.
 
 $$2\ln3-1$$
 
@@ -4256,151 +4540,171 @@ $$\ln((x+1)(x-3))<\ln3$$
 
 $$(x+1)(x-3)<3$$
 
-6. **Distribuer les deux termes.** On multiplie la seconde parenthèse par x, puis par 1.
+6. **Distribuer les deux termes.** La parenthèse x − 3 multiplie chacun des termes x et 1. On copie cette parenthèse ; aucun produit n’est encore calculé.
 
 $$x(x-3)+1(x-3)<3$$
 
-7. **Multiplier x par x.** On ne traite que le premier produit : x × x = x².
+7. **Distribuer le facteur x.** x multiplie les deux termes de la parenthèse : x, puis -3. On écrit les multiplications avant de les effectuer.
 
-$$x^2+x(-3)+1(x-3)<3$$
+$$x\cdot x+x\cdot(-3)+1(x-3)<3$$
 
-8. **Multiplier x par −3.** x × (−3) = −3x.
+8. **Calculer x × x.** x × x = x². Les autres produits et les signes extérieurs restent inchangés.
+
+$$x^2+x\cdot(-3)+1(x-3)<3$$
+
+9. **Calculer x × (−3).** x × (-3) = −3x. On conserve le signe négatif avec le terme.
 
 $$x^2-3x+1(x-3)<3$$
 
-9. **Multiplier 1 par x.** 1 × x = x.
+10. **Distribuer le facteur 1.** On passe maintenant au facteur 1. Il multiplie x, puis -3 ; les deux produits sont d’abord écrits.
 
-$$x^2-3x+x+1(-3)<3$$
+$$x^2-3x+1\cdot x+1\cdot(-3)<3$$
 
-10. **Multiplier 1 par −3.** 1 × (−3) = −3.
+11. **Calculer 1 × x.** 1 × x = x. Le dernier produit reste écrit.
+
+$$x^2-3x+x+1\cdot(-3)<3$$
+
+12. **Calculer 1 × (−3).** 1 × (-3) = -3. On a calculé les quatre produits, un à un.
 
 $$x^2-3x+x-3<3$$
 
-11. **Regrouper les termes en x.** −3x + x = (−3 + 1)x = −2x.
+13. **Regrouper seulement les termes en x.** −3x + x = (-3 + 1)x = −2x. Seuls les termes en x sont réunis ; x² et la constante restent en place.
 
 $$x^2-2x-3<3$$
 
-12. **Soustraire 3 des deux membres.** −3 − 3 = −6.
+14. **Soustraire 3 des deux membres.** −3 − 3 = −6.
 
 $$x^2-2x-6<0$$
 
-13. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = -2 et c = -6. On conserve le signe de chaque coefficient.
+15. **Chercher les zéros du trinôme.** Pour trouver les racines, on résout l’équation « trinôme = 0 ». Ces valeurs serviront ensuite à répondre à la question de départ.
+
+$$x^2-2x-6=0$$
+
+16. **Identifier les coefficients.** Dans ax² + bx + c = 0, a = 1, b = -2 et c = -6. On conserve le signe de chaque coefficient.
 
 $$a=1,\quad b=-2,\quad c=-6$$
 
-14. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
+17. **Écrire la formule du discriminant.** Le discriminant est b² − 4ac. Son signe détermine le nombre de racines réelles.
 
 $$\Delta=b^2-4ac$$
 
-15. **Remplacer les coefficients.** On remplace b par -2, a par 1 et c par -6, en gardant les parenthèses autour des nombres signés.
+18. **Remplacer b dans le discriminant.** On remplace seulement b par -2. Les parenthèses gardent le signe de b dans le carré.
+
+$$\Delta=(-2)^2-4ac$$
+
+19. **Remplacer a dans le discriminant.** On remplace a par 1. Le coefficient c attend l’étape suivante.
+
+$$\Delta=(-2)^2-4\times(1)\times c$$
+
+20. **Remplacer c dans le discriminant.** On remplace enfin c par -6, avec son signe. Tous les coefficients sont maintenant en place ; on peut commencer les calculs.
 
 $$\Delta=(-2)^2-4\times(1)\times(-6)$$
 
-16. **Calculer le carré de b.** (-2) × (-2) = 4. Les autres opérations attendent.
+21. **Calculer le carré de b.** (-2) × (-2) = 4. Les autres opérations attendent.
 
 $$\Delta=4-4\times(1)\times(-6)$$
 
-17. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
+22. **Calculer 4 × a.** 4 × 1 = 4. Il reste à multiplier ce nombre par c.
 
 $$\Delta=4-(4)\times(-6)$$
 
-18. **Calculer 4ac.** 4 × (-6) = -24. Le signe moins de la formule reste devant ce produit.
+23. **Calculer 4ac.** 4 × (-6) = -24. Le signe moins de la formule reste devant ce produit.
 
 $$\Delta=4-(-24)$$
 
-19. **Soustraire un nombre négatif.** Soustraire -24 revient à ajouter 24.
+24. **Soustraire un nombre négatif.** Soustraire -24 revient à ajouter 24.
 
 $$\Delta=4+24$$
 
-20. **Obtenir le discriminant.** Le calcul donne Δ = 28 > 0. L’équation du second degré a donc deux racines réelles distinctes.
+25. **Obtenir le discriminant.** Δ = 28 > 0 : le trinôme possède deux racines réelles distinctes.
 
 $$\Delta=28$$
 
-21. **Remplacer Δ sous la racine.** Δ vaut 28. On cherche maintenant sa racine carrée positive.
+26. **Remplacer Δ sous la racine.** Δ vaut 28. On cherche maintenant sa racine carrée positive.
 
 $$\sqrt{\Delta}=\sqrt{28}$$
 
-22. **Extraire un carré parfait.** 28 = 4 × 7. Le facteur 4 est le carré de 2.
+27. **Extraire un carré parfait.** 28 = 4 × 7. Le facteur 4 est le carré de 2.
 
 $$\sqrt{\Delta}=\sqrt{4\times7}$$
 
-23. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √4 = 2.
+28. **Calculer la racine de Δ.** Pour des facteurs positifs, la racine d’un produit est le produit des racines : √4 = 2.
 
 $$\sqrt{\Delta}=2\sqrt{7}$$
 
-24. **Écrire la formule de la première racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+29. **Écrire la formule de la première racine.** Δ est positif : calculons la première racine avec le signe moins devant √Δ. La barre de fraction divise tout le numérateur par 2a.
 
 $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
 
-25. **Remplacer b avec son signe.** b = -2, donc −b s’écrit −(-2). On garde le signe moins devant la racine.
+30. **Remplacer b avec son signe.** b = -2, donc −b s’écrit −(-2). On garde le signe moins devant la racine.
 
 $$x_1=\frac{-(-2)-\sqrt{\Delta}}{2a}$$
 
-26. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+31. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_1=\frac{-(-2)-\sqrt{\Delta}}{2\times(1)}$$
 
-27. **Remplacer Δ dans la formule.** On remplace Δ par 28 sous la racine carrée.
+32. **Remplacer Δ dans la formule.** On remplace Δ par 28 sous la racine carrée.
 
 $$x_1=\frac{-(-2)-\sqrt{28}}{2\times(1)}$$
 
-28. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
+33. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe moins devant cette valeur est conservé.
 
 $$x_1=\frac{-(-2)-2\sqrt{7}}{2\times(1)}$$
 
-29. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+34. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_1=\frac{-(-2)-2\sqrt{7}}{2}$$
 
-30. **Simplifier le signe de −b.** L’opposé de -2 est 2. La racine reste sous forme exacte.
+35. **Simplifier le signe de −b.** L’opposé de -2 est 2. La racine reste sous forme exacte.
 
 $$x_1=\frac{2-2\sqrt{7}}{2}$$
 
-31. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
+36. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
 
 $$x_1=1-\sqrt7$$
 
-32. **Écrire la formule de la seconde racine.** Comme a ≠ 0 et Δ > 0, on utilise le signe plus devant √Δ. La barre de fraction divise tout le numérateur par 2a.
+37. **Écrire la formule de la seconde racine.** La première racine est calculée. Pour obtenir la seconde, on reprend la formule avec le signe plus devant √Δ ; le dénominateur reste 2a.
 
 $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
-33. **Remplacer b avec son signe.** b = -2, donc −b s’écrit −(-2). On garde le signe plus devant la racine.
+38. **Remplacer b avec son signe.** b = -2, donc −b s’écrit −(-2). On garde le signe plus devant la racine.
 
 $$x_2=\frac{-(-2)+\sqrt{\Delta}}{2a}$$
 
-34. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
+39. **Remplacer a au dénominateur.** a = 1, donc le dénominateur 2a devient 2 × (1).
 
 $$x_2=\frac{-(-2)+\sqrt{\Delta}}{2\times(1)}$$
 
-35. **Remplacer Δ dans la formule.** On remplace Δ par 28 sous la racine carrée.
+40. **Remplacer Δ dans la formule.** On remplace Δ par 28 sous la racine carrée.
 
 $$x_2=\frac{-(-2)+\sqrt{28}}{2\times(1)}$$
 
-36. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
+41. **Utiliser la racine carrée calculée.** On utilise la valeur exacte de √Δ obtenue précédemment. Le signe plus devant cette valeur est conservé.
 
 $$x_2=\frac{-(-2)+2\sqrt{7}}{2\times(1)}$$
 
-37. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
+42. **Calculer le dénominateur.** 2 × (1) = 2. Tout le numérateur reste au-dessus de la barre.
 
 $$x_2=\frac{-(-2)+2\sqrt{7}}{2}$$
 
-38. **Simplifier le signe de −b.** L’opposé de -2 est 2. La racine reste sous forme exacte.
+43. **Simplifier le signe de −b.** L’opposé de -2 est 2. La racine reste sous forme exacte.
 
 $$x_2=\frac{2+2\sqrt{7}}{2}$$
 
-39. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
+44. **Simplifier la fraction.** On divise tous les termes du numérateur et le dénominateur par leur facteur commun 2.
 
 $$x_2=1+\sqrt7$$
 
-40. **Lire où le trinôme est négatif.** Le coefficient de x² est positif : le trinôme est négatif entre ses deux racines.
+45. **Lire où le trinôme est négatif.** Le coefficient de x² est positif : le trinôme est négatif entre ses deux racines.
 
 $$1-\sqrt7<x<1+\sqrt7$$
 
-41. **Respecter aussi x > 3.** La racine inférieure est sous 3 et la racine supérieure au-dessus de 3. On ne garde que la partie compatible avec le domaine.
+46. **Respecter aussi x > 3.** La racine inférieure est sous 3 et la racine supérieure au-dessus de 3. On ne garde que la partie compatible avec le domaine.
 
 $$3<x<1+\sqrt7$$
 
-42. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
+47. **Retenir le résultat.** S désigne l’ensemble des solutions. On ne conserve que les valeurs compatibles avec l’énoncé et ses conditions de définition.
 
 $$S=]3,1+\sqrt7[$$
 

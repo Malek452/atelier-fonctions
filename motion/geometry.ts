@@ -62,29 +62,25 @@ export function place(
     ],
   }));
 }
-/** Ordered glyph matching: repeated numbers cannot steal an earlier occurrence. */
-export function matchGlyphs(from: Glyph[], to: Glyph[]): [number, number][] {
-  const table = Array.from({ length: from.length + 1 }, () => new Uint16Array(to.length + 1));
-  for (let i = from.length - 1; i >= 0; i--)
-    for (let j = to.length - 1; j >= 0; j--)
-      table[i][j] =
-        from[i].path === to[j].path
-          ? table[i + 1][j + 1] + 1
-          : Math.max(table[i + 1][j], table[i][j + 1]);
+/** Only the identical beginning/end of a rewrite is retained automatically.
+ * The changed middle is one mathematical replacement, never a bag of glyphs.
+ * Explicit factor/exponent layers contain their complete, authored identity. */
+export function contextPairs(from: Glyph[], to: Glyph[]): [number, number][] {
   const pairs: [number, number][] = [];
-  let i = 0,
-    j = 0;
-  while (i < from.length && j < to.length) {
-    if (from[i].path === to[j].path) {
-      pairs.push([i++, j++]);
-    } else if (table[i + 1][j] >= table[i][j + 1]) i++;
-    else j++;
+  let first = 0;
+  while (first < Math.min(from.length, to.length) && from[first].path === to[first].path) {
+    pairs.push([first, first]);
+    first++;
   }
-  return pairs;
+  let i = from.length - 1,
+    j = to.length - 1;
+  const tail: [number, number][] = [];
+  while (i >= first && j >= first && from[i].path === to[j].path) tail.push([i--, j--]);
+  return [...pairs, ...tail.reverse()];
 }
 /** Align on a retained glyph when space allows, so a base or left member stays put. */
 export function align(from: Pose[], to: Pose[]): Pose[] {
-  const matches = matchGlyphs(from, to);
+  const matches = contextPairs(from, to);
   const anchor =
     matches.find(([i, j]) => !from[i].tags.includes('focus') && !to[j].tags.includes('focus')) ||
     matches.find(
@@ -101,9 +97,17 @@ export function align(from: Pose[], to: Pose[]): Pose[] {
 }
 export function activityLayouts(data: EquationData, steps: PreparedStep[]): Pose[][] {
   const result: Pose[][] = [];
+  let previous: PreparedStep | undefined;
   for (const step of steps) {
     const poses = place(data.equations[step.target]);
-    result.push(result.length && !step.statement ? align(result[result.length - 1], poses) : poses);
+    const unchanged =
+      previous && data.equations[previous.target].tex === data.equations[step.target].tex;
+    result.push(
+      result.length && (!step.statement || unchanged)
+        ? align(result[result.length - 1], poses)
+        : poses,
+    );
+    previous = step;
   }
   return result;
 }

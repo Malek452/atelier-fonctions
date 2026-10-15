@@ -2,7 +2,7 @@ import { Node, Path, Line } from '@motion-canvas/2d';
 import { all, Color, easeInOutCubic, tween } from '@motion-canvas/core';
 import type { ThreadGenerator } from '@motion-canvas/core';
 import type { Pose } from './geometry';
-import { arcPoint, bounds, center, GOLD, matchGlyphs } from './geometry';
+import { arcPoint, bounds, center, GOLD, INK, contextPairs } from './geometry';
 
 /** Each mathematical glyph has its own persistent position and outline. */
 export class EquationLayer {
@@ -62,19 +62,15 @@ export class EquationLayer {
   }
   *to(target: Pose[], duration: number, lift = 22, collapseAt?: [number, number]): ThreadGenerator {
     const source = this.poses,
-      pairs = matchGlyphs(source, target);
+      pairs = contextPairs(source, target);
     const usedFrom = new Set(pairs.map((p) => p[0])),
       usedTo = new Set(pairs.map((p) => p[1]));
     const removed = source.map((_, i) => i).filter((i) => !usedFrom.has(i));
     const inserted = target.map((_, i) => i).filter((i) => !usedTo.has(i));
-    const origin = center(
-      removed.map((i) => source[i]).length ? removed.map((i) => source[i]) : source,
-    );
     const destination =
       collapseAt ||
       center(inserted.map((i) => target[i]).length ? inserted.map((i) => target[i]) : target);
     const tracks: { node: Path; from: Pose; to: Pose; arc: number }[] = [];
-    const morphs: ThreadGenerator[] = [];
     this.underline.end(0);
     for (const [i, j] of pairs)
       tracks.push({
@@ -86,16 +82,16 @@ export class EquationLayer {
             ? lift
             : 0,
       });
-    // Changed symbols transform at the site of the operation. No whole-formula
-    // opacity tween, and no anonymous glyph matching across other occurrences.
-    for (let k = 0; k < Math.max(removed.length, inserted.length); k++) {
-      const i = removed[k],
-        j = inserted[k];
-      if (i !== undefined && j !== undefined) {
-        const node = this.nodes[i];
-        tracks.push({ node, from: source[i], to: target[j], arc: lift });
-        morphs.push(node.data(this.outlines[target[j].path], duration, easeInOutCubic));
-      } else if (i !== undefined) {
+    // No outline morph: a minus sign must never visually become a number or x.
+    // Non-retained syntax is replaced together halfway through the movement.
+    const outgoing = removed.map((i) => this.nodes[i]);
+    const incoming = inserted.map((j) => {
+      const node = this.create(target[j]);
+      node.opacity(0);
+      return node;
+    });
+    if (collapseAt)
+      for (const i of removed) {
         const p = source[i];
         tracks.push({
           node: this.nodes[i],
@@ -103,25 +99,39 @@ export class EquationLayer {
           to: { ...p, x: destination[0], y: destination[1], sx: p.sx * 0.001, sy: p.sy * 0.001 },
           arc: lift,
         });
-      } else {
-        const p = target[j],
-          start = { ...p, x: origin[0], y: origin[1], sx: p.sx * 0.001, sy: p.sy * 0.001 };
-        const node = this.create(start);
-        this.nodes.push(node);
-        tracks.push({ node, from: start, to: p, arc: lift });
       }
-    }
-    yield* all(
-      tween(duration, (value) => {
-        const t = easeInOutCubic(value);
-        for (const { node, from, to, arc } of tracks) {
-          node.position(arcPoint([from.x, from.y], [to.x, to.y], t, arc));
-          node.scale([from.sx + (to.sx - from.sx) * t, from.sy + (to.sy - from.sy) * t]);
-          node.fill(Color.lerp(from.color, to.color, t));
-        }
-      }),
-      ...morphs,
-    );
+    yield* tween(duration, (value) => {
+      const t = easeInOutCubic(value);
+      if (!collapseAt) outgoing.forEach((n) => n.opacity(value < 0.5 ? 1 : 0));
+      incoming.forEach((n) => n.opacity(value < 0.5 ? 0 : 1));
+      for (const { node, from, to, arc } of tracks) {
+        node.position(arcPoint([from.x, from.y], [to.x, to.y], t, arc));
+        node.scale([from.sx + (to.sx - from.sx) * t, from.sy + (to.sy - from.sy) * t]);
+        node.fill(Color.lerp(from.color, to.color, t));
+      }
+    });
+    incoming.forEach((n) => n.remove());
     this.show(target);
+  }
+
+  /** A local substitution/calculation: point to the operands, then replace the
+   * expression as a unit. Movement is reserved for explicitly identified terms. */
+  *rewrite(target: Pose[], duration = 1.65): ThreadGenerator {
+    const pairs = contextPairs(this.poses, target);
+    const retained = new Set(pairs.map(([i]) => i));
+    const changed = this.poses.map((p, i) => ({
+      ...p,
+      color: retained.has(i) ? INK : GOLD,
+      tags: retained.has(i) ? [] : ['replacement'],
+    }));
+    if (changed.some((p) => p.tags.length)) {
+      this.show(changed);
+      yield* this.emphasize(duration * 0.4, 'replacement');
+    } else {
+      yield* this.emphasize(duration * 0.4);
+    }
+    // An atomic rewrite avoids ever displaying a half-old, half-new equality.
+    this.show(target);
+    yield* this.emphasize(duration * 0.6);
   }
 }

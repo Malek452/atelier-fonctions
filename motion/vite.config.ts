@@ -17,10 +17,13 @@ export default defineConfig({
     },
   ],
   build: {
+    manifest: 'manifest.json',
     outDir: 'public/animations',
     emptyOutDir: true,
     copyPublicDir: false,
     target: 'es2022',
-    rollupOptions: { output: { entryFileNames: '[name].js', chunkFileNames: '[name]-[hash].js' } },
+    rollupOptions: {
+      output: { entryFileNames: '[name]-[hash].js', chunkFileNames: '[name]-[hash].js' },
+    },
   },
 });

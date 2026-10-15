@@ -45,6 +45,7 @@ export default {
           tex: '\\ln2+\\tfrac12\\ln3+\\ln3',
           why: '2 × 1/2 = 1.',
           focus: '\\ln3',
+          focusOccurrence: 2,
         },
         {
           title: 'Regrouper les termes en ln 3',
@@ -297,15 +298,28 @@ export default {
         },
         {
           title: 'Distribuer −2 au premier terme',
-          tex: '4\\ln3-2\\ln3-2\\times\\tfrac12',
-          why: '−2 multiplie ln 3 puis 1/2. On traite le premier produit.',
+          tex: '4\\ln3+(-2)\\cdot\\ln3+(-2)\\cdot\\tfrac12',
+          why: 'Le coefficient −2 multiplie chaque terme de la parenthèse. On écrit les deux produits en gardant le signe négatif avec le facteur, sans calculer.',
+          focus: '(-2)\\cdot\\ln3',
+          fromFocus: '-2(\\ln3+\\tfrac12)',
+          distribute: {
+            factor: '-2',
+            term: '\\ln3',
+            product: '(-2)\\cdot\\ln3',
+            remainder: '(-2)\\cdot\\tfrac12',
+          },
+        },
+        {
+          title: 'Calculer le premier produit',
+          tex: '4\\ln3-2\\ln3+(-2)\\cdot\\tfrac12',
+          why: 'On calcule seulement (−2) × ln 3, qui s’écrit −2 ln 3. Le second produit attend.',
           focus: '-2\\ln3',
           product: {
-            left: '-2',
+            left: '(-2)',
             right: '\\ln3',
             result: '-2\\ln3',
           },
-          fromFocus: '-2(\\ln3+\\tfrac12)',
+          fromFocus: '(-2)\\cdot\\ln3',
         },
         {
           title: 'Calculer le second produit',
@@ -313,11 +327,11 @@ export default {
           why: '−2 × 1/2 = −1.',
           focus: '-1',
           product: {
-            left: '-2',
+            left: '(-2)',
             right: '\\tfrac12',
             result: '-1',
           },
-          fromFocus: '-2\\times\\tfrac12',
+          fromFocus: '(-2)\\cdot\\tfrac12',
         },
         {
           title: 'Regrouper les logarithmes identiques',

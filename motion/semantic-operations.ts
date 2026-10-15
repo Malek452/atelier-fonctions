@@ -6,7 +6,7 @@ import { BLUE, GOLD, SAGE, INK, bounds, center } from './geometry';
 import type { Pose } from './geometry';
 import type { EquationData } from './equation-data';
 
-export const POWER_SECONDS = 4.5;
+export const POWER_SECONDS = 5.2;
 export const DISTRIBUTE_SECONDS = 3.9;
 const tagged = (poses: Pose[], tag: string) => poses.filter((p) => p.tags.includes(tag));
 const without = (poses: Pose[], tags: string[]) =>
@@ -44,15 +44,19 @@ export function* animatePower(
   yield* equation.tint('exponentRight', BLUE, 0.4);
   const rightLine = underline(parent, tagged(equation.poses, 'exponentRight'), BLUE);
   yield* all(equation.emphasize(0.45, 'exponentLeft'), rightLine.end(1, 0.45));
-  yield* waitFor(0.4);
+  yield* waitFor(0.7);
   yield* all(equation.tint('baseLeft', SAGE, 0.4), equation.tint('baseRight', SAGE, 0.4));
-  yield* waitFor(0.3);
+  yield* waitFor(0.7);
   rightLine.remove();
   const roles = ['baseLeft', 'baseRight', 'exponentLeft', 'exponentRight'];
   const moving = roles
     .filter((tag) => tagged(equation.poses, tag).length > 0)
     .map((tag) => ({ tag, layer: layer(parent, data, tagged(equation.poses, tag)) }));
   equation.show(without(equation.poses, roles));
+  // The operation sign is already readable when the exponents meet. In
+  // particular, 2 and 3 must never form the misleading temporary exponent 23.
+  const operator = tagged(target, 'operator');
+  const sign = layer(parent, data, operator);
   yield* all(
     equation.to(without(target, [...roles, 'operator']), 1.3, 8),
     ...moving.map(({ tag, layer: l }) =>
@@ -65,13 +69,7 @@ export function* animatePower(
   );
   // Two identical base outlines meet exactly, then become one retained outline.
   moving.find((m) => m.tag === 'baseRight')?.layer.remove();
-  const operator = tagged(target, 'operator');
-  const sign = layer(
-    parent,
-    data,
-    operator.map((p) => ({ ...p, sx: p.sx * 0.001, sy: p.sy * 0.001 })),
-  );
-  yield* sign.to(operator, 0.4, 0);
+  yield* sign.emphasize(0.4, 'operator');
   moving.forEach((m) => m.layer.remove());
   sign.remove();
   equation.show(target);

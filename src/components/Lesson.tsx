@@ -8,18 +8,23 @@ export function Lesson({ activity, reduced }: { activity: Activity; reduced: boo
   const [step, setStep] = useState(0),
     [playing, setPlaying] = useState(false),
     [replay, setReplay] = useState(0),
+    [animate, setAnimate] = useState(false),
     [pauseSignal, setPauseSignal] = useState(0),
     [speed, setSpeed] = useState(1),
     [sceneAvailable, setSceneAvailable] = useState(reduced);
   const last = activity.steps.length - 1,
     current = activity.steps[step];
+  const phases = activity.steps.slice(0, step + 1).filter((s) => s.phase);
+  const phase = phases.at(-1)?.phase;
   const pause = () => {
     setPlaying(false);
     setPauseSignal((n) => n + 1);
   };
-  const go = (n: number) => {
+  const go = (n: number, adjacent = true) => {
     pause();
-    setStep(Math.max(0, Math.min(last, n)));
+    const next = Math.max(0, Math.min(last, n));
+    setStep(next);
+    setAnimate(adjacent && next === step + 1);
     setReplay((v) => v + 1);
   };
   const toggle = () => {
@@ -28,18 +33,22 @@ export function Lesson({ activity, reduced }: { activity: Activity; reduced: boo
       return;
     }
     if (step === last) setStep(0);
+    setAnimate(true);
     setPlaying(true);
     setReplay((n) => n + 1);
   };
   useEffect(() => {
     if (!playing || !sceneAvailable) return;
-    const delay = Math.max((STEP_SECONDS + 2) * 1000, 3500 + current.why.split(/\s+/).length * 400);
+    const delay =
+      Math.max((STEP_SECONDS + 2) * 1000, 3500 + current.why.split(/\s+/).length * 400) +
+      (current.phase ? 2500 : 0);
     const timer = setTimeout(() => {
       if (step === last) {
         setPlaying(false);
         return;
       }
       setStep((n) => n + 1);
+      setAnimate(true);
       setReplay((n) => n + 1);
     }, delay / speed);
     return () => clearTimeout(timer);
@@ -91,9 +100,12 @@ export function Lesson({ activity, reduced }: { activity: Activity; reduced: boo
           flèches gauche et droite.
         </p>
         <div className="reading-step-title" aria-live="polite">
-          <span>
-            ÉTAPE {step + 1} / {activity.steps.length}
-          </span>
+          <div className="reading-position">
+            <span className="reading-phase">{phase}</span>
+            <span>
+              ÉTAPE {step + 1} / {activity.steps.length}
+            </span>
+          </div>
           <h1>{current.title}</h1>
         </div>
         <Animation
@@ -101,6 +113,7 @@ export function Lesson({ activity, reduced }: { activity: Activity; reduced: boo
           step={step}
           reduced={reduced}
           replay={replay}
+          animate={animate}
           speed={speed}
           pauseSignal={pauseSignal}
           onAvailable={setSceneAvailable}
@@ -131,7 +144,11 @@ export function Lesson({ activity, reduced }: { activity: Activity; reduced: boo
         </button>
         <label className="step-select">
           <span className="sr-only">Aller à une étape</span>
-          <select aria-label="Aller à une étape" value={step} onChange={(e) => go(+e.target.value)}>
+          <select
+            aria-label="Aller à une étape"
+            value={step}
+            onChange={(e) => go(+e.target.value, false)}
+          >
             {activity.steps.map((s, i) => (
               <option key={i} value={i}>
                 {i + 1}. {s.title}
@@ -154,6 +171,7 @@ export function Lesson({ activity, reduced }: { activity: Activity; reduced: boo
             title="Rejouer cette étape"
             onClick={() => {
               pause();
+              setAnimate(true);
               setReplay((n) => n + 1);
             }}
           >

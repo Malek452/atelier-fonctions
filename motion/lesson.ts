@@ -4,22 +4,10 @@ import type { Activity, Step } from '../src/types';
 import type { EquationData } from './equation-data';
 import compiled from './generated/equations.json';
 import { EquationLayer } from './EquationLayer';
-import {
-  activityLayouts,
-  BLUE as blue,
-  GOLD as gold,
-  INK as ink,
-  matchGlyphs,
-  sourcePoses,
-} from './geometry';
+import { activityLayouts, BLUE as blue, GOLD as gold, INK as ink, sourcePoses } from './geometry';
 import { animateOperation } from './operations';
-import {
-  animatePower,
-  animateDistribution,
-  POWER_SECONDS,
-  DISTRIBUTE_SECONDS,
-} from './semantic-operations';
-import { STEP_SECONDS } from './timing';
+import { animatePower, animateDistribution } from './semantic-operations';
+import { finishStep } from './step-clock';
 import { motionTex } from './tex';
 const equations = compiled as unknown as EquationData;
 export default makeScene2D(function* (view) {
@@ -37,8 +25,16 @@ export default makeScene2D(function* (view) {
   // Diagrams are mounted only for their dedicated explanatory step, not alongside every formula.
   const diagramNodes: (Rect | Line | Txt | Circle | Latex)[] = [];
   const angle = createSignal(0);
-  function setDiagram(step: Step): Rect | null {
+  let circleAnswer: Latex | null = null,
+    circleInstruction: Txt | null = null;
+  function revealCircleAnswer() {
+    circleInstruction?.opacity(0);
+    circleAnswer?.opacity(1);
+  }
+  function setDiagram(step: Step, previous?: Step): Rect | null {
     let flap: Rect | null = null;
+    circleAnswer = null;
+    circleInstruction = null;
     diagramNodes.forEach((n) => n.remove());
     diagramNodes.length = 0;
     formula.root.opacity(step.diagram || step.circle ? 0 : 1);
@@ -51,7 +47,16 @@ export default makeScene2D(function* (view) {
           y: -10,
           stroke: blue,
           lineWidth: 3,
+          lineDash: [6, 6],
+        }),
+        new Rect({
+          width: 180,
+          height: 255,
+          x: -90,
+          y: -10,
           fill: '#284238',
+          stroke: blue,
+          lineWidth: 2,
         }),
         new Line({
           points: [
@@ -62,7 +67,7 @@ export default makeScene2D(function* (view) {
           lineWidth: 3,
           lineDash: [7, 7],
         }),
-        new Txt({ text: 'b : grand côté', y: 147, fill: gold, fontSize: 24 }),
+        new Txt({ text: 'b : grand côté avant pliage', y: 153, fill: gold, fontSize: 22 }),
         new Txt({ text: 'a', x: -212, fill: blue, fontSize: 26 }),
         new Txt({ text: 'b / 2', x: -90, y: -164, fill: gold, fontSize: 23 }),
         new Txt({ text: 'b / 2', x: 90, y: -164, fill: gold, fontSize: 23 }),
@@ -81,8 +86,20 @@ export default makeScene2D(function* (view) {
         fontSize: 38,
         x: 230,
         y: 0,
+        opacity: 0,
+      });
+      circleAnswer = annotation;
+      circleInstruction = new Txt({
+        text: 'Plaçons le rayon…',
+        x: 220,
+        y: 0,
+        fill: ink,
+        fontSize: 25,
       });
       annotation.scale(() => Math.min(1, 370 / Math.max(1, annotation.width())));
+      const targetCoordinate = isCos
+        ? cx + R * Math.cos(step.circle.angle)
+        : -R * Math.sin(step.circle.angle);
       diagramNodes.push(
         new Circle({ x: cx, size: R * 2, stroke: '#718977', lineWidth: 2 }),
         new Line({
@@ -105,6 +122,20 @@ export default makeScene2D(function* (view) {
         }),
         new Line({ points: () => [[cx, 0], point()], stroke: ink, lineWidth: 2 }),
         new Line({
+          points: isCos
+            ? [
+                [targetCoordinate, -R],
+                [targetCoordinate, R],
+              ]
+            : [
+                [cx - R, targetCoordinate],
+                [cx + R, targetCoordinate],
+              ],
+          stroke: color,
+          lineWidth: 1.5,
+          lineDash: [3, 6],
+        }),
+        new Line({
           points: () => [point(), projection()],
           stroke: color,
           lineWidth: 2,
@@ -117,6 +148,7 @@ export default makeScene2D(function* (view) {
         new Txt({ text: '1', x: cx + 18, y: -131, fill: ink, fontSize: 19 }),
         new Txt({ text: '−1', x: cx + 22, y: 137, fill: ink, fontSize: 19 }),
         annotation,
+        circleInstruction,
         new Txt({
           text: isCos ? 'On lit la coordonnée horizontale.' : 'On lit la coordonnée verticale.',
           x: 220,
@@ -125,6 +157,19 @@ export default makeScene2D(function* (view) {
           fontSize: 19,
         }),
       );
+      if (previous?.circle)
+        diagramNodes.push(
+          new Circle({
+            position: [
+              cx + R * Math.cos(previous.circle.angle),
+              -R * Math.sin(previous.circle.angle),
+            ],
+            size: 14,
+            stroke: color,
+            lineWidth: 2,
+            fill: '#182923',
+          }),
+        );
     }
     diagramNodes.forEach((n) => view.add(n));
     if (step.diagram === 'fold') {
@@ -144,12 +189,12 @@ export default makeScene2D(function* (view) {
   }
   setDiagram(data.steps[0]);
   yield* formula.emphasize(0.6);
-  yield* waitFor(STEP_SECONDS - 0.6);
+  yield* finishStep(0);
   for (let i = 1; i < data.steps.length; i++) {
     const s = data.steps[i],
       previous = data.steps[i - 1];
     angle(previous.circle?.angle || 0);
-    const flap = setDiagram(s);
+    const flap = setDiagram(s, previous);
     if (s.diagram || s.circle) {
       if (flap) {
         yield* waitFor(0.7);
@@ -157,8 +202,11 @@ export default makeScene2D(function* (view) {
       } else if (s.circle) {
         yield* waitFor(0.7);
         yield* angle(s.circle.angle, 2);
+        // The displayed exact value describes the reached point, never an
+        // intermediate moving coordinate. The first solution stays marked.
+        revealCircleAnswer();
       }
-      yield* waitFor(STEP_SECONDS - 2.7);
+      yield* finishStep(i);
       continue;
     }
     const source = sourcePoses(layouts[i - 1], equations.equations[steps[i].source]);
@@ -168,34 +216,24 @@ export default makeScene2D(function* (view) {
       // The accessible HTML table occupies this same surface in the reader.
       // Keep editor/export timeline slots deterministic without morphing tables.
       formula.show(target);
-      yield* waitFor(STEP_SECONDS);
     } else if (steps[i].semantic) {
       const distribution = steps[i].semantic === 'distribute';
       if (distribution) yield* animateDistribution(view, formula, target, equations);
       else yield* animatePower(view, formula, target, equations);
-      yield* waitFor(STEP_SECONDS - (distribution ? DISTRIBUTE_SECONDS : POWER_SECONDS));
     } else if (steps[i].work) {
       yield* animateOperation(view, formula, target, steps[i], equations);
-      yield* waitFor(STEP_SECONDS - (steps[i].work!.via ? 6.1 : 5.35));
-    } else if (
-      s.statement ||
-      previous.table ||
-      previous.diagram ||
-      previous.circle ||
-      matchGlyphs(source, target).length < Math.max(source.length, target.length) * 0.3
-    ) {
+    } else if (steps[i].statement || previous.table || previous.diagram || previous.circle) {
       // A new statement is not presented as an algebraic equivalence: give it
       // directly, then trace the part to read. No decorative whole-slide tween.
       formula.show(target);
       yield* formula.emphasize(0.7);
-      yield* waitFor(STEP_SECONDS - 0.7);
     } else {
       yield* formula.emphasize(0.6);
       yield* waitFor(0.45);
-      yield* formula.to(target, 1.65);
+      yield* formula.rewrite(target, 1.65);
       yield* formula.emphasize(0.5);
-      yield* waitFor(STEP_SECONDS - 3.2);
     }
+    yield* finishStep(i);
   }
   yield* waitFor(0.1);
 });

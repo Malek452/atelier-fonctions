@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import compiled from '../motion/generated/equations.json';
 import type { EquationData } from '../motion/equation-data';
 import { activities } from '../src/content';
-import { activityLayouts, arcPoint, bounds, matchGlyphs, sourcePoses } from '../motion/geometry';
+import { activityLayouts, arcPoint, bounds, contextPairs, sourcePoses } from '../motion/geometry';
 import { SETTLED_SECONDS, STEP_SECONDS } from '../motion/timing';
 import { mathjax } from 'mathjax-full/js/mathjax.js';
 import { TeX } from 'mathjax-full/js/input/tex.js';
@@ -91,7 +91,7 @@ it('lays out every step within the stage with finite complete glyph geometry', (
       count++;
     }
   }
-  assert.equal(count, 1080);
+  assert.equal(count, 1156);
 });
 it('anchors all products and collections to their source terms and destination', () => {
   let products = 0,
@@ -127,20 +127,19 @@ it('retains the base 7 while its exponents are assembled and simplified', () => 
     assert.ok(Math.abs(p.x - bases[0].x) < 0.001);
     assert.ok(Math.abs(p.y - bases[0].y) < 0.001);
   }
-  const from = layouts[2],
-    to = layouts[3],
-    matches = matchGlyphs(from, to);
-  assert.ok(
-    matches.some(
-      ([i, j]) =>
-        from[i].symbol === '32' && to[j].symbol === '32' && Math.abs(from[i].y - to[j].y) > 20,
-    ),
-  );
+  const transition = data.activities['1q2'][3];
+  const from = sourcePoses(layouts[2], data.equations[transition.source]);
+  const to = layouts[3];
+  const sourceExponent = from.find((p) => p.tags.includes('exponentRight'))!;
+  const targetExponent = to.find((p) => p.tags.includes('exponentRight'))!;
+  assert.equal(sourceExponent.symbol, '32');
+  assert.equal(targetExponent.symbol, '32');
+  assert.ok(Math.abs(sourceExponent.y - targetExponent.y) > 20);
 });
 it('preserves occurrence order and moves along a continuous path with exact endpoints', () => {
   const from = data.equations[data.activities['1q2'][3].source].glyphs;
   const to = data.equations[data.activities['1q2'][3].target].glyphs;
-  const pairs = matchGlyphs(from, to);
+  const pairs = contextPairs(from, to);
   for (let n = 1; n < pairs.length; n++) {
     assert.ok(pairs[n][0] > pairs[n - 1][0] && pairs[n][1] > pairs[n - 1][1]);
   }
@@ -149,4 +148,29 @@ it('preserves occurrence order and moves along a continuous path with exact endp
   assert.ok(Math.abs(end[0] - 110) < 1e-10 && Math.abs(end[1] - 20) < 1e-10);
   assert.ok(arcPoint([10, 20], [110, 20], 0.5)[1] < 20);
   assert.ok(SETTLED_SECONDS > 6.1 && STEP_SECONDS > SETTLED_SECONDS);
+});
+
+it('never borrows a matching glyph from the changed middle of an unrelated rewrite', () => {
+  const make = (text: string) =>
+    [...text].map((path) => ({ path })) as Parameters<typeof contextPairs>[0];
+  assert.deepEqual(contextPairs(make('a1x+b'), make('a2x-b')), [
+    [0, 0],
+    [4, 4],
+  ]);
+  assert.deepEqual(contextPairs(make('123'), make('321')), []);
+});
+
+it('every new mathematical statement has an explicit presentation boundary', () => {
+  for (const a of activities) {
+    assert.equal(a.steps[0].phase, 'Énoncé');
+    assert.equal(a.steps.at(-1)!.phase, 'Conclusion');
+    for (const [i, s] of a.steps.entries()) {
+      assert.equal(!!data.activities[a.id][i].statement, !!s.statement, `${a.id}/${i}`);
+      if (s.title === 'Écrire la formule de la seconde racine') {
+        assert.equal(s.phase, 'Calculer la seconde racine');
+        assert.equal(s.statement, true);
+      }
+      if (s.title === 'Chercher les zéros du trinôme') assert.equal(s.statement, true);
+    }
+  }
 });

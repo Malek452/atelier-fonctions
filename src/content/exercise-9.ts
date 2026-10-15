@@ -1,3 +1,4 @@
+import { expandBinomial } from './binomial';
 import type { Exercise } from '../types';
 import { quadraticSteps } from './quadratic';
 export default {
@@ -104,71 +105,7 @@ export default {
           tex: '(x+1)(x-3)<3',
           why: 'ln est strictement croissante sur les nombres positifs.',
         },
-        {
-          title: 'Distribuer les deux termes',
-          tex: 'x(x-3)+1(x-3)<3',
-          why: 'On multiplie la seconde parenthèse par x, puis par 1.',
-        },
-        {
-          title: 'Multiplier x par x',
-          tex: 'x^2+x(-3)+1(x-3)<3',
-          why: 'On ne traite que le premier produit : x × x = x².',
-          focus: 'x^2',
-          product: {
-            left: 'x',
-            right: 'x',
-            result: 'x^2',
-          },
-          fromFocus: 'x(x-3)',
-        },
-        {
-          title: 'Multiplier x par −3',
-          tex: 'x^2-3x+1(x-3)<3',
-          why: 'x × (−3) = −3x.',
-          focus: '-3x',
-          product: {
-            left: 'x',
-            right: '(-3)',
-            result: '-3x',
-          },
-          fromFocus: 'x(-3)',
-        },
-        {
-          title: 'Multiplier 1 par x',
-          tex: 'x^2-3x+x+1(-3)<3',
-          why: '1 × x = x.',
-          focus: '+x',
-          product: {
-            left: '1',
-            right: 'x',
-            result: 'x',
-          },
-          fromFocus: '1(x-3)',
-        },
-        {
-          title: 'Multiplier 1 par −3',
-          tex: 'x^2-3x+x-3<3',
-          why: '1 × (−3) = −3.',
-          focus: '-3',
-          product: {
-            left: '1',
-            right: '(-3)',
-            result: '-3',
-          },
-          fromFocus: '1(-3)',
-        },
-        {
-          title: 'Regrouper les termes en x',
-          tex: 'x^2-2x-3<3',
-          why: '−3x + x = (−3 + 1)x = −2x.',
-          focus: '-2x',
-          collect: {
-            left: '-3x',
-            right: 'x',
-            result: '-2x',
-            via: '(-3+1)x',
-          },
-        },
+        ...expandBinomial((expression) => expression + '<3', 1, -3, 'Distribuer les deux termes'),
         {
           title: 'Soustraire 3 des deux membres',
           tex: 'x^2-2x-6<0',

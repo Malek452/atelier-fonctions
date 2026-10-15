@@ -22,9 +22,19 @@ await build({
   target: 'node22',
   jsx: 'automatic',
 });
+// Bundle Motion Canvas itself for the scheduler regression (its published
+// extensionless imports otherwise require the browser bundler).
+await build({
+  entryPoints: ['tests/timing.test.ts'],
+  bundle: true,
+  format: 'esm',
+  platform: 'node',
+  outfile: '.cache/tests/timing.test.js',
+  target: 'node22',
+});
 await writeFile(
   '.cache/tests/run.mjs',
-  "await import('./setup.js');\nawait import('./validation.test.js');\nawait import('./mathematics.test.js');\nawait import('./interactions.test.js');\nawait import('./animation.test.js');\nawait import('./teaching-details.test.js');\n",
+  "await import('./setup.js');\nawait import('./validation.test.js');\nawait import('./mathematics.test.js');\nawait import('./interactions.test.js');\nawait import('./animation.test.js');\nawait import('./teaching-details.test.js');\nawait import('./timing.test.js');\n",
 );
 const child = spawn(
   process.execPath,
