@@ -82,6 +82,9 @@ export function* animateOperation(
   if (work.via) yield* calculation.rewrite(result, 0.75);
   // The operands have been used in the calculation. They must not be matched
   // to another occurrence of x or a digit elsewhere in the complete equation.
+  const consumed = new EquationLayer(data.paths);
+  consumed.show(equation.poses.filter((g) => g.tags.includes('left') || g.tags.includes('right')));
+  parent.add(consumed.root);
   equation.show(
     equation.poses.filter((g) => !g.tags.includes('left') && !g.tags.includes('right')),
   );
@@ -93,7 +96,9 @@ export function* animateOperation(
       center(resultSlot),
     ),
     calculation.to(resultSlot, 1.15, 24),
+    consumed.to([], 1.15, 8, center(resultSlot)),
   );
+  consumed.remove();
   calculation.remove();
   equation.show(target);
   yield* equation.emphasize(0.45);

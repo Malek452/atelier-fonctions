@@ -211,7 +211,8 @@ export default makeScene2D(function* (view) {
     }
     const source = sourcePoses(layouts[i - 1], equations.equations[steps[i].source]);
     const target = layouts[i];
-    formula.show(source);
+    if (previous.table || previous.diagram || previous.circle) formula.show(target);
+    else yield* formula.to(source, 0.25, 0);
     if (s.table) {
       // The accessible HTML table occupies this same surface in the reader.
       // Keep editor/export timeline slots deterministic without morphing tables.
@@ -222,10 +223,12 @@ export default makeScene2D(function* (view) {
       else yield* animatePower(view, formula, target, equations);
     } else if (steps[i].work) {
       yield* animateOperation(view, formula, target, steps[i], equations);
-    } else if (steps[i].statement || previous.table || previous.diagram || previous.circle) {
-      // A new statement is not presented as an algebraic equivalence: give it
-      // directly, then trace the part to read. No decorative whole-slide tween.
-      formula.show(target);
+    } else if (previous.table || previous.diagram || previous.circle) {
+      yield* formula.emphasize(0.7);
+    } else if (steps[i].statement) {
+      // A different statement changes the board smoothly as a whole. It is
+      // never confused with a local algebraic calculation.
+      yield* formula.introduce(target);
       yield* formula.emphasize(0.7);
     } else {
       yield* formula.emphasize(0.6);

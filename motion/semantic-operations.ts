@@ -39,7 +39,11 @@ export function* animatePower(
   target: Pose[],
   data: EquationData,
 ): ThreadGenerator {
-  equation.show(equation.poses.map((p) => ({ ...p, color: INK })));
+  yield* equation.to(
+    equation.poses.map((p) => ({ ...p, color: INK })),
+    0.25,
+    0,
+  );
   yield* equation.tint('exponentLeft', GOLD, 0.4);
   yield* equation.tint('exponentRight', BLUE, 0.4);
   const rightLine = underline(parent, tagged(equation.poses, 'exponentRight'), BLUE);
