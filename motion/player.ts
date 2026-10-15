@@ -27,6 +27,7 @@ export function mount(
     0,
   );
   let disposed = false,
+    initialized = false,
     stopAt = -1;
   const unrender = player.onRender.subscribe(async () => {
     try {
@@ -38,7 +39,12 @@ export function mount(
     }
   });
   const uncalc = player.onRecalculated.subscribe(() => {
-    if (!disposed) onReady();
+    // setSpeed recalculates the timeline too. Only the first calculation should
+    // initialize the selected step; later ones restore the player's own frame.
+    if (!disposed && !initialized) {
+      initialized = true;
+      onReady();
+    }
   });
   const unframe = player.onFrameChanged.subscribe((frame) => {
     if (stopAt >= 0 && frame >= stopAt) {
@@ -59,8 +65,10 @@ export function mount(
       player.setSpeed(speed);
       const begin = Math.max(0, step * STEP);
       stopAt = Math.round((begin + SETTLED_SECONDS) * FPS);
-      player.requestSeek(Math.round(begin * FPS));
+      // Playing from the end resets Motion Canvas to frame zero. Apply our
+      // explicit step seek afterwards so that reset cannot overwrite it.
       player.togglePlayback(true);
+      player.requestSeek(Math.round(begin * FPS));
     },
     pause() {
       player.togglePlayback(false);
